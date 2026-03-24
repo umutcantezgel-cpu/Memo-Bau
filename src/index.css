@@ -1,0 +1,587 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   VISUAL POLISH & GPU EFFECTS
+   ========================================================================== */
+
+/* Subtler film grain noise texture */
+.bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.03;
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+/* Morphing Blob Gradient Background */
+@keyframes morphGradient {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+
+  33% {
+    transform: scale(1.1) translate(2%, 3%);
+  }
+
+  66% {
+    transform: scale(0.9) translate(-2%, -1%);
+  }
+
+  100% {
+    transform: scale(1) translate(0, 0);
+  }
+}
+
+.animate-morph-gradient {
+  animation: morphGradient 15s ease-in-out infinite;
+  will-change: transform;
+}
+
+/*
+===================================================================
+ANTIGRAVITY PREMIUM DESIGN SYSTEM - MEMOBAU GMBH
+Phase 1: Token Foundation (Tailwind v4)
+===================================================================
+*/
+
+/* ----------------------------------------------------------------
+   1. The Core Theme (@theme)
+   ---------------------------------------------------------------- */
+@theme {
+  /* Typografie (Kapitel 2) */
+  /* Fallbacks will be refined in the root layout later. */
+  --font-sans: "Inter", -apple-system, sans-serif;
+
+  /* Mathematische Skala - Große Terz (Faktor 1.250) + Fluid Typografie */
+  --text-hero: clamp(2.5rem, 5vw + 1rem, 3.8125rem);
+  /* ~61px */
+  --text-h1: clamp(2rem, 4vw + 0.5rem, 3.0625rem);
+  /* ~49px */
+  --text-h2: clamp(1.75rem, 3vw + 0.25rem, 2.4375rem);
+  /* ~39px */
+  --text-h3: clamp(1.5rem, 2vw + 0.25rem, 1.9375rem);
+  /* ~31px */
+  --text-h4: clamp(1.25rem, 1.5vw + 0.25rem, 1.5625rem);
+  /* ~25px */
+  --text-lead: clamp(1.125rem, 1.25vw + 0.25rem, 1.25rem);
+  /* ~20px */
+  --text-body: 1rem;
+  /* 16px */
+  --text-small: 0.8125rem;
+  /* ~13px */
+  --text-xs: 0.625rem;
+  /* ~10px */
+
+  /* Zeilenhöhen (Kapitel 2.4) */
+  --leading-hero: 1.05;
+  --leading-h1: 1.1;
+  --leading-h2: 1.2;
+  --leading-h3: 1.3;
+  --leading-h4: 1.4;
+  --leading-lead: 1.6;
+  --leading-body: 1.6;
+  --leading-small: 1.5;
+  --leading-xs: 1.4;
+
+  /* Zeichenabstände */
+  --tracking-hero: -0.03em;
+  --tracking-h1: -0.02em;
+  --tracking-h2: -0.01em;
+  --tracking-h3: 0em;
+  --tracking-small: 0.01em;
+  --tracking-xs: 0.02em;
+
+  /* Farben (Kapitel 1) */
+  /* Primär-Grün (Wald/Natur) */
+  --color-primary-base: oklch(35% 0.07 145);
+  /* Tiefes sattes Grün */
+  --color-primary-hover: oklch(30% 0.06 145);
+  --color-primary-active: oklch(25% 0.05 145);
+  --color-primary-disabled: oklch(35% 0.02 145);
+  --color-primary-bg: oklch(98% 0.01 145);
+
+  /* Sekundär-Grün (Helles Premium-Grün für Hover/Subtil) */
+  --color-secondary-base: oklch(50% 0.09 145);
+  --color-secondary-hover: oklch(45% 0.08 145);
+  --color-secondary-active: oklch(40% 0.07 145);
+  --color-secondary-disabled: oklch(50% 0.03 145);
+  --color-secondary-bg: oklch(95% 0.02 145);
+
+  /* Akzent-Braun (Erde/Natürlichkeit) */
+  --color-accent-base: oklch(40% 0.08 80);
+  --color-accent-hover: oklch(35% 0.07 80);
+  --color-accent-active: oklch(30% 0.06 80);
+  --color-accent-disabled: oklch(40% 0.02 80);
+  --color-accent-bg: oklch(97% 0.01 80);
+
+  /* Die Neutral-Palette */
+  --color-neutral-white: #ffffff;
+  --color-neutral-offwhite: oklch(98% 0.01 100);
+  --color-neutral-lightgray: oklch(90% 0.005 100);
+  --color-neutral-midgray: oklch(60% 0.01 100);
+  --color-neutral-darkgray: oklch(25% 0.01 145);
+  /* Warmes Grün-Dunkelgrau für Text */
+  --color-neutral-black: oklch(10% 0.01 145);
+  /* Nachtschwarz für Dark Mode Basis */
+
+  /* Semantische Farben */
+  --color-success: oklch(55% 0.12 145);
+  --color-warning: oklch(60% 0.12 80);
+  --color-error: oklch(55% 0.15 25);
+  --color-info: oklch(50% 0.09 145);
+
+  /* 4-Pixel Grid Spacing (Kapitel 3) */
+  --spacing-space-1: 0.25rem;
+  /* 4px */
+  --spacing-space-2: 0.5rem;
+  /* 8px */
+  --spacing-space-3: 0.75rem;
+  /* 12px */
+  --spacing-space-4: 1rem;
+  /* 16px */
+  --spacing-space-5: 1.25rem;
+  /* 20px */
+  --spacing-space-6: 1.5rem;
+  /* 24px */
+  --spacing-space-8: 2rem;
+  /* 32px */
+  --spacing-space-10: 2.5rem;
+  /* 40px */
+  --spacing-space-12: 3rem;
+  /* 48px */
+  --spacing-space-16: 4rem;
+  /* 64px */
+  --spacing-space-20: 5rem;
+  /* 80px */
+  --spacing-space-24: 6rem;
+  /* 96px */
+  --spacing-space-32: 8rem;
+  /* 128px */
+
+  /* Radius (Kapitel 3) */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-full: 9999px;
+
+  /* Schatten (5 Erhebungsstufen in warmem Grün-Ton) */
+  --shadow-elevation-1: 0 1px 3px 0 rgba(19, 36, 25, 0.05);
+  --shadow-elevation-2: 0 4px 6px -1px rgba(19, 36, 25, 0.08);
+  --shadow-elevation-3: 0 10px 15px -3px rgba(19, 36, 25, 0.12);
+  --shadow-elevation-4: 0 20px 25px -5px rgba(19, 36, 25, 0.16);
+  --shadow-elevation-5: 0 25px 50px -12px rgba(19, 36, 25, 0.20);
+  /* Highlight Reflex */
+  --shadow-highlight: inset 0 1px 0 0 rgba(255, 255, 255, 0.3);
+
+  /* Animation Timings (Kapitel 4) */
+  --default-transition-duration: 300ms;
+  --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Federphysik System (CSS Voreinstellungen) */
+  /* Annäherung an simple Spring für Standard Hover via cubic-bezier */
+  --animate-spring-standard: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --animate-spring-bouncy: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --animate-spring-gentle: cubic-bezier(0.4, 0, 0.2, 1);
+  --animate-spring-fast: cubic-bezier(0.1, 0.9, 0.2, 1);
+
+  /* Z-Index Skala */
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal-backdrop: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-tooltip: 600;
+
+  /* Breakpunkte (Kapitel 7.1) */
+  /* Tailwind standard breaks are sm (640), md (768), lg (1024), xl (1280), 2xl (1536).
+     We remap them to the requested 7-step scale by adding custom query names. */
+  --breakpoint-bp-1: 360px;
+  /* Standard phone */
+  --breakpoint-bp-2: 414px;
+  /* Large phone */
+  --breakpoint-bp-3: 768px;
+  /* Tablet portrait */
+  --breakpoint-bp-4: 1024px;
+  /* Tablet landscape */
+  --breakpoint-bp-5: 1200px;
+  /* Desktop (Max Inhaltsbreite) */
+  --breakpoint-bp-6: 1440px;
+  /* Large Desktop */
+}
+
+/* ----------------------------------------------------------------
+   2. Base Layers & Resets
+   ---------------------------------------------------------------- */
+@layer base {
+  :root {
+    /* Set default background */
+    background-color: var(--color-neutral-white);
+    color: var(--color-neutral-darkgray);
+    font-family: var(--font-sans);
+    line-height: var(--leading-body);
+
+    /* Text Rendering Optimization */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    /* ==========================================================
+       MOTION DESIGN SYSTEM - 6 CORE EASINGS
+       ========================================================== */
+    /* ── MICRO: Sofort-Feedback (Hover, Focus, Zustandswechsel) ── */
+    --motion-micro-duration: 150ms;
+    --motion-micro-easing: cubic-bezier(0.2, 0, 0, 1);
+
+    /* ── STANDARD: UI-Übergänge (Dropdowns, Tooltips, Panels) ── */
+    --motion-standard-duration: 250ms;
+    --motion-standard-easing: cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* ── EMPHASIS: Aufmerksamkeits-Animationen (Entry, Scroll-Reveal) ── */
+    --motion-emphasis-duration: 400ms;
+    --motion-emphasis-easing: cubic-bezier(0.16, 1, 0.3, 1);
+
+    /* ── DRAMATIC: Große Eingangs-Choreographien (Hero, Map, Sections) ── */
+    --motion-dramatic-duration: 600ms;
+    --motion-dramatic-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    /* ── GENTLE: Hintergrund-Bewegungen (Parallax, Floating, Deko) ── */
+    --motion-gentle-duration: 800ms;
+    --motion-gentle-easing: cubic-bezier(0.25, 0.1, 0.25, 1);
+
+    /* ── EXIT: Ausgangs-Animationen (muss schneller sein als Entry) ── */
+    --motion-exit-duration: 200ms;
+    --motion-exit-easing: cubic-bezier(0.4, 0, 1, 1);
+  }
+
+  /* Global Selection */
+  ::selection {
+    background-color: var(--color-primary-base);
+    color: var(--color-neutral-white);
+  }
+
+  /* Focus Indicator Accessibility (Kapitel 9.3) */
+  *:focus-visible {
+    outline: 3px solid var(--color-primary-base);
+    outline-offset: 2px;
+  }
+
+  /* Reduced Motion (Phase 5) */
+  @media (prefers-reduced-motion: reduce) {
+
+    /* Alle Animationen deaktivieren */
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    /* Scroll-Reveal-Elemente sofort sichtbar */
+    .reveal-element {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+
+    /* Parallax deaktivieren */
+    .parallax-element {
+      transform: none !important;
+    }
+
+    /* Hero-Animationen: Sofort sichtbar, keine Choreographie */
+    .hero-element {
+      opacity: 1 !important;
+      transform: none !important;
+      animation: none !important;
+    }
+
+    /* Counter: Sofort Endwert zeigen */
+    .counter {
+      animation: none !important;
+    }
+
+    /* Magnetische Effekte deaktivieren */
+    .magnetic-element {
+      transform: none !important;
+    }
+
+    /* Custom Cursor deaktivieren */
+    .custom-cursor {
+      display: none !important;
+    }
+  }
+
+  /* Heading Overrides */
+  h1 {
+    font-size: var(--text-h1);
+    line-height: var(--leading-h1);
+    letter-spacing: var(--tracking-h1);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: var(--text-h2);
+    line-height: var(--leading-h2);
+    letter-spacing: var(--tracking-h2);
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: var(--text-h3);
+    line-height: var(--leading-h3);
+    letter-spacing: var(--tracking-h3);
+    font-weight: 700;
+  }
+
+  h4 {
+    font-size: var(--text-h4);
+    line-height: var(--leading-h4);
+    letter-spacing: var(--tracking-h4);
+  }
+
+  /* Smooth Scrolling */
+  html {
+    scroll-behavior: smooth;
+    /* 100vw ensures no layout jumps from scrollbars on windows */
+    scrollbar-gutter: stable;
+  }
+
+
+
+  /* Accessibility: Global Focus Styles */
+  *:focus-visible {
+    outline: 2px solid var(--color-accent-base);
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+
+
+}
+
+/* ----------------------------------------------------------------
+   3. Custom Utilities
+   ---------------------------------------------------------------- */
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 1px 2px rgba(19, 36, 25, 0.1);
+  }
+
+  /* GPU-Accelerated Containment (Phase 5) */
+  .section-animated {
+    contain: layout style;
+  }
+
+  .animated-card {
+    contain: layout style paint;
+  }
+
+  /* GPU trigger for un-composited animation fallbacks */
+  .gpu-trigger {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Layout Architecture (Kapitel 3) */
+  .layout-grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    gap: var(--spacing-space-8);
+    /* 32px desktop */
+  }
+
+  @media (max-width: 1024px) {
+    .layout-grid {
+      gap: var(--spacing-space-6);
+      /* 24px tablet */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .layout-grid {
+      gap: var(--spacing-space-4);
+      /* 16px mobile */
+    }
+  }
+
+  /* Micro-Animations Library (Kapitel 4 / 5) */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes pinDrop {
+    0% {
+      opacity: 0;
+      transform: translateY(-40px) scale(0.8);
+    }
+
+    50% {
+      opacity: 1;
+      transform: translateY(5px) scale(1.05);
+    }
+
+    75% {
+      transform: translateY(-2px) scale(0.98);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes pageEnter {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  @keyframes drawLine {
+    to {
+      stroke-dashoffset: -100;
+    }
+  }
+
+  .animate-draw-line {
+    stroke-dasharray: 10 15;
+    animation: drawLine 30s linear infinite;
+  }
+
+
+  .animate-fade-in-up {
+    animation: fadeInUp var(--motion-standard-duration) var(--animate-spring-gentle) forwards;
+  }
+
+  .animate-fade-in-up-dramatic {
+    animation: fadeInUp var(--motion-dramatic-duration) var(--motion-dramatic-easing) forwards;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 600ms ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 700ms var(--animate-spring-standard) forwards;
+  }
+
+  .animate-page-enter {
+    animation: pageEnter 600ms var(--animate-spring-gentle) forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Accessibility delay utilities */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* ----------------------------------------------------------------
+   4. NOCTIS Dark Mode Strategy (Kapitel 1.5) - DISABLED FOR NOW
+   ---------------------------------------------------------------- */
+/* Removing auto-dark mode inversion to ensure consistent premium light theme across all devices
+.dark {
+  --color-neutral-white: oklch(10% 0.01 145);
+  --color-neutral-darkgray: oklch(90% 0.005 100);
+  --color-neutral-offwhite: oklch(15% 0.02 145);
+
+  background-color: var(--color-neutral-white);
+  color: var(--color-neutral-darkgray);
+
+  --color-primary-base: oklch(50% 0.1 145);
+  --color-primary-bg: oklch(18% 0.03 145);
+
+  --shadow-elevation-1: 0 0 0 1px rgba(255, 255, 255, 0.05);
+  --shadow-elevation-2: 0 0 0 1px rgba(255, 255, 255, 0.08), 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-elevation-3: 0 0 0 1px rgba(255, 255, 255, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+  --shadow-elevation-4: 0 0 0 1px rgba(255, 255, 255, 0.12), 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+  --shadow-elevation-5: 0 0 0 1px rgba(255, 255, 255, 0.15), 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+*/
+
+/* Dark Mode Transition */
+html {
+  transition: background-color 400ms ease, color 400ms ease;
+}
+
+/* ==========================================================================
+   FLOATING ELEMENTS – Z-INDEX HIERARCHY
+   z-40: Calendly CTA (lowest priority)
+   z-45: MobileQuickContact FAB
+   z-50: Scroll-to-Top
+   z-55: Mobile TOC Button
+   z-70: TOC Backdrop
+   z-80: TOC Panel
+   ========================================================================== */
+.calendly-badge-widget {
+  z-index: 40 !important;
+}

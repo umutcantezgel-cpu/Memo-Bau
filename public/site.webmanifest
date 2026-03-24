@@ -1,0 +1,15 @@
+{
+    "name": "MemoBau | Exklusive Gartenkunst",
+    "short_name": "MemoBau",
+    "icons": [
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/"
+}
