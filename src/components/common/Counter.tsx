@@ -8,6 +8,7 @@ interface CounterProps {
     suffix?: string;
     prefix?: string;
     className?: string;
+    startImmediately?: boolean;
 }
 
 export const Counter: React.FC<CounterProps> = ({
@@ -17,13 +18,23 @@ export const Counter: React.FC<CounterProps> = ({
     suffix = '',
     prefix = '',
     className = '',
+    startImmediately = false,
 }) => {
     const { ref, hasIntersected } = useIntersectionObserver({ threshold: 0.1 });
     const contentRef = useRef<HTMLSpanElement>(null);
     const [isFinished, setIsFinished] = useState(false);
 
     useEffect(() => {
-        if (!hasIntersected || isFinished || !contentRef.current) return;
+        const shouldAnimate = startImmediately || hasIntersected;
+        if (!shouldAnimate || isFinished || !contentRef.current) return;
+
+        // Respect user's accessibility preference for reduced motion
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (prefersReducedMotion) {
+            contentRef.current.textContent = `${prefix}${end.toFixed(decimals)}${suffix}`;
+            requestAnimationFrame(() => setIsFinished(true));
+            return;
+        }
 
         let startTime: number | null = null;
         let animationFrameId: number;
