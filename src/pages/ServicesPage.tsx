@@ -30,6 +30,10 @@ export const ServicesPage: React.FC = () => {
                     { name: 'Home', url: '/' },
                     { name: 'Leistungen', url: '/services' }
                 ]}
+                services={SERVICES.map(s => ({
+                    name: s.title,
+                    description: s.description
+                }))}
             />
 
             <PageHero

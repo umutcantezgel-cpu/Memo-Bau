@@ -50,6 +50,8 @@ export const HomePage: React.FC = () => {
             <SEO
                 title="Exklusive Gartengestaltung & Landschaftsarchitektur Wetzlar"
                 description="Memo BauT verwandelt Außenbereiche in luxuriöse Lebensräume. Ihre Experten für gehobene Gartengestaltung, Landschaftsbau und Architektur in Wetzlar."
+                isHomePage={true}
+                aggregateRating={{ ratingValue: 4.9, reviewCount: 47 }}
             />
 
             {/* HERO SECTION: Emotional & Dramatic */}

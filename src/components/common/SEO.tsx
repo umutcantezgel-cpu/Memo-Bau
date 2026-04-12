@@ -13,11 +13,20 @@ interface SEOProps {
     faqs?: { q: string; a: string }[];
     breadcrumbs?: { name: string; url: string }[];
     noindex?: boolean;
+    isHomePage?: boolean;
     localBusiness?: {
         city: string;
         zip: string;
         lat: number;
         lng: number;
+    };
+    services?: {
+        name: string;
+        description: string;
+    }[];
+    aggregateRating?: {
+        ratingValue: number;
+        reviewCount: number;
     };
 }
 
@@ -29,25 +38,35 @@ export const SEO: React.FC<SEOProps> = ({
     faqs,
     breadcrumbs,
     noindex = false,
-    localBusiness
+    isHomePage = false,
+    localBusiness,
+    services,
+    aggregateRating
 }) => {
     const { pathname } = useLocation();
-    // Auto-generate canonical from current route if not explicitly provided
     const resolvedCanonical = canonical || `${SITE_URL}${pathname === '/' ? '' : pathname}`;
     const siteTitle = `${title} | ${COMPANY_INFO.name}`;
 
-    // Schema.org LocalBusiness Markup
-    const schemaData = {
+    // ══════════════════════════════════════════════════════════════
+    // SCHEMA 1: LocalBusiness (on every page)
+    // ══════════════════════════════════════════════════════════════
+    const localBusinessSchema = {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "HomeAndConstructionBusiness",
+        "@id": `${SITE_URL}/#business`,
         "name": localBusiness ? `${COMPANY_INFO.name} - Standort ${localBusiness.city}` : COMPANY_INFO.name,
         "alternateName": "Memo-BauT Garten- und Landschaftsbau",
         "url": resolvedCanonical,
-        "logo": "https://memobaut.de/logo.png",
-        "image": "https://memobaut.de/logo.png",
-        "description": "Professioneller Garten- und Landschaftsbau in der Region Wetzlar. Seit 2005 realisieren wir anspruchsvolle Außenanlagen – Pflasterarbeiten, Zaunbau, Terrassengestaltung und mehr.",
+        "logo": `${SITE_URL}/logo.png`,
+        "image": `${SITE_URL}/images/final/hero-home.webp`,
+        "description": `Professioneller Garten- und Landschaftsbau in der Region Wetzlar. Seit ${COMPANY_INFO.founded} realisieren wir anspruchsvolle Außenanlagen – Pflasterarbeiten, Zaunbau, Terrassengestaltung und mehr.`,
         "telephone": COMPANY_INFO.phone,
         "email": COMPANY_INFO.email,
+        "founder": {
+            "@type": "Person",
+            "name": "Mehmet Tezgel"
+        },
+        "foundingDate": `${COMPANY_INFO.founded}`,
         "address": {
             "@type": "PostalAddress",
             "streetAddress": COMPANY_INFO.address.street,
@@ -65,26 +84,101 @@ export const SEO: React.FC<SEOProps> = ({
             {
                 "@type": "OpeningHoursSpecification",
                 "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "07:00",
+                "closes": "18:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday"],
                 "opens": "08:00",
-                "closes": "17:00"
+                "closes": "14:00"
             }
         ],
         "priceRange": "€€",
-        "areaServed": localBusiness ? localBusiness.city : "Wetzlar, Werdorf, Lahn-Dill-Kreis",
-        "sameAs": [
-            "https://www.google.com/maps?cid=GOOGLE_CID_HIER_EINTRAGEN"
-        ]
+        "areaServed": localBusiness ? localBusiness.city : "Wetzlar, Werdorf, Lahn-Dill-Kreis, Gießen",
+        "knowsAbout": [
+            "Gartengestaltung", "Landschaftsbau", "Pflasterarbeiten",
+            "Terrassenbau", "Zaunbau", "Natursteinarbeiten",
+            "Gartenplanung", "Gartenpflege"
+        ],
+        "sameAs": [],
+        ...(aggregateRating ? {
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": aggregateRating.ratingValue,
+                "reviewCount": aggregateRating.reviewCount,
+                "bestRating": 5,
+                "worstRating": 1
+            }
+        } : {})
+    };
+
+    // ══════════════════════════════════════════════════════════════
+    // SCHEMA 2: Organization (only on homepage)
+    // ══════════════════════════════════════════════════════════════
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": `${SITE_URL}/#organization`,
+        "name": COMPANY_INFO.name,
+        "alternateName": "Memo-BauT Garten- und Landschaftsbau",
+        "url": SITE_URL,
+        "logo": {
+            "@type": "ImageObject",
+            "url": `${SITE_URL}/logo.png`,
+            "width": 250,
+            "height": 60
+        },
+        "founder": {
+            "@type": "Person",
+            "name": "Mehmet Tezgel",
+            "jobTitle": "Inhaber & Geschäftsführer"
+        },
+        "foundingDate": `${COMPANY_INFO.founded}`,
+        "foundingLocation": {
+            "@type": "Place",
+            "name": "Werdorf, Hessen"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": COMPANY_INFO.phone,
+            "contactType": "customer service",
+            "availableLanguage": ["German", "Turkish"],
+            "areaServed": "DE"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": COMPANY_INFO.address.street,
+            "addressLocality": COMPANY_INFO.address.city,
+            "addressRegion": "Hessen",
+            "postalCode": COMPANY_INFO.address.zip,
+            "addressCountry": "DE"
+        },
+        "sameAs": []
+    };
+
+    // ══════════════════════════════════════════════════════════════
+    // SCHEMA 3: WebSite + SearchAction (only on homepage)
+    // ══════════════════════════════════════════════════════════════
+    const webSiteSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": `${SITE_URL}/#website`,
+        "name": COMPANY_INFO.name,
+        "url": SITE_URL,
+        "publisher": { "@id": `${SITE_URL}/#organization` },
+        "inLanguage": "de-DE"
     };
 
     return (
         <Helmet>
-            {/* Standard Meta */}
+            {/* ─── Standard Meta ─── */}
             <title>{siteTitle}</title>
             <meta name="description" content={description} />
             <link rel="canonical" href={resolvedCanonical} />
             {noindex && <meta name="robots" content="noindex, follow" />}
 
-            {/* Open Graph / Facebook */}
+            {/* ─── Open Graph / Facebook ─── */}
             <meta property="og:type" content="website" />
             <meta property="og:url" content={resolvedCanonical} />
             <meta property="og:title" content={siteTitle} />
@@ -93,18 +187,30 @@ export const SEO: React.FC<SEOProps> = ({
             <meta property="og:site_name" content={COMPANY_INFO.name} />
             <meta property="og:locale" content="de_DE" />
 
-            {/* Twitter */}
+            {/* ─── Twitter ─── */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={siteTitle} />
             <meta name="twitter:description" content={description} />
             <meta name="twitter:image" content={`${SITE_URL}${image}`} />
 
-            {/* Structured Data - Base */}
+            {/* ─── Schema: LocalBusiness (always) ─── */}
             <script type="application/ld+json">
-                {JSON.stringify(schemaData)}
+                {JSON.stringify(localBusinessSchema)}
             </script>
 
-            {/* Structured Data - FAQ */}
+            {/* ─── Schema: Organization + WebSite (homepage only) ─── */}
+            {isHomePage && (
+                <script type="application/ld+json">
+                    {JSON.stringify(organizationSchema)}
+                </script>
+            )}
+            {isHomePage && (
+                <script type="application/ld+json">
+                    {JSON.stringify(webSiteSchema)}
+                </script>
+            )}
+
+            {/* ─── Schema: FAQ ─── */}
             {faqs && faqs.length > 0 && (
                 <script type="application/ld+json">
                     {JSON.stringify({
@@ -122,7 +228,7 @@ export const SEO: React.FC<SEOProps> = ({
                 </script>
             )}
 
-            {/* Structured Data - Breadcrumbs */}
+            {/* ─── Schema: Breadcrumbs ─── */}
             {breadcrumbs && breadcrumbs.length > 0 && (
                 <script type="application/ld+json">
                     {JSON.stringify({
@@ -133,6 +239,26 @@ export const SEO: React.FC<SEOProps> = ({
                             "position": index + 1,
                             "name": bc.name,
                             "item": `${SITE_URL}${bc.url}`
+                        }))
+                    })}
+                </script>
+            )}
+
+            {/* ─── Schema: Service (for service pages) ─── */}
+            {services && services.length > 0 && (
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ItemList",
+                        "itemListElement": services.map((service, idx) => ({
+                            "@type": "ListItem",
+                            "position": idx + 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": service.name,
+                                "description": service.description,
+                                "provider": { "@id": `${SITE_URL}/#business` }
+                            }
                         }))
                     })}
                 </script>
