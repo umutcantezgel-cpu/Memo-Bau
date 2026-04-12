@@ -55,7 +55,22 @@ const generateSitemap = () => {
         changefreq: 'monthly'
     }));
 
-    const allPages = [...staticPages, ...servicePages, ...locationPages];
+    // ── Blog/Ratgeber slugs (synced with src/core/blog.data.ts) ──
+    const BLOG_SLUGS = [
+        'gartengestaltung-kosten', 'pflasterarbeiten-preise',
+        'terrassenplatten-vergleich', 'garten-winterfest-machen'
+    ];
+
+    const blogPages = [
+        { route: '/ratgeber', priority: '0.8', changefreq: 'weekly' },
+        ...BLOG_SLUGS.map(slug => ({
+            route: `/ratgeber/${slug}`,
+            priority: '0.7',
+            changefreq: 'monthly'
+        }))
+    ];
+
+    const allPages = [...staticPages, ...servicePages, ...locationPages, ...blogPages];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -75,7 +90,7 @@ ${allPages.map(item => `    <url>
     }
 
     fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap.trim());
-    console.log(`Sitemap generated with ${allPages.length} routes (${staticPages.length} static + ${servicePages.length} services + ${locationPages.length} locations) at ${path.join(publicDir, 'sitemap.xml')}`);
+    console.log(`Sitemap generated with ${allPages.length} routes (${staticPages.length} static + ${servicePages.length} services + ${locationPages.length} locations + ${blogPages.length} blog) at ${path.join(publicDir, 'sitemap.xml')}`);
 };
 
 try {

@@ -56,6 +56,12 @@ const AccessibilityPage = lazy(() =>
 const ServiceDetailPage = lazy(() =>
   import('./pages/ServiceDetailPage').then((module) => ({ default: module.ServiceDetailPage })),
 );
+const BlogPage = lazy(() =>
+  import('./pages/BlogPage').then((module) => ({ default: module.BlogPage })),
+);
+const BlogPostPage = lazy(() =>
+  import('./pages/BlogPostPage').then((module) => ({ default: module.BlogPostPage })),
+);
 const AdminApp = lazy(() =>
   import('./admin/AdminApp').then((module) => ({ default: module.AdminApp })),
 );
@@ -188,6 +194,8 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
                 <Route path="/produkte" element={<ProductsPage />} />
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/leistungen/:serviceSlug" element={<ServiceDetailPage />} />
+                <Route path="/ratgeber" element={<BlogPage />} />
+                <Route path="/ratgeber/:postSlug" element={<BlogPostPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/standorte" element={<LocationOverviewPage />} />
                 <Route path="/standorte/:cityId" element={<LocationPage />} />
