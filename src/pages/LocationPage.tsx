@@ -8,6 +8,7 @@ import { InteractiveMap } from '../components/features/InteractiveMap';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
 import { Star, MapPin, ArrowRight, Phone, CheckCircle } from 'lucide-react';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 
 export const LocationPage: React.FC = () => {
     const { cityId } = useParams<{ cityId: string }>();
@@ -106,19 +107,10 @@ export const LocationPage: React.FC = () => {
             )}
 
             {/* ═══ 4. VISIBLE BREADCRUMBS ═══ */}
-            <div className="bg-neutral-offwhite border-b border-neutral-lightgray/30">
-                <div className="max-w-[1200px] mx-auto px-6 py-3">
-                    <nav aria-label="Breadcrumb" className="text-xs text-neutral-midgray">
-                        <ol className="flex items-center gap-1.5 flex-wrap">
-                            <li><Link to="/" className="hover:text-accent-base transition-colors">Home</Link></li>
-                            <li className="text-neutral-lightgray">/</li>
-                            <li><Link to="/standorte" className="hover:text-accent-base transition-colors">Standorte</Link></li>
-                            <li className="text-neutral-lightgray">/</li>
-                            <li className="text-neutral-darkgray font-semibold">{locationConfig.name}</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+            <Breadcrumbs items={[
+                { label: 'Standorte', href: '/standorte' },
+                { label: locationConfig.name }
+            ]} />
 
             {/* ═══ 5. MAIN CONTENT ENGINE ═══ */}
             <LocationSectionRenderer config={locationConfig} />

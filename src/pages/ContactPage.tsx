@@ -8,6 +8,7 @@ import { InteractiveMap } from '../components/features/InteractiveMap';
 import { SEO } from '../components/common/SEO';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { InlineWidget } from 'react-calendly';
 import { CookieBlocker } from '../components/common/CookieBlocker';
 
@@ -83,6 +84,8 @@ export const ContactPage: React.FC = () => {
                     { name: 'Kontakt', url: '/contact' }
                 ]}
             />
+
+            <Breadcrumbs items={[{ label: 'Kontakt' }]} />
 
             <PageHero
                 title="Kontakt aufnehmen"

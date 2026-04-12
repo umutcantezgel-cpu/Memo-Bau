@@ -6,6 +6,7 @@ import { SectionTitle } from '../components/common/SectionTitle';
 import { Reveal } from '../components/common/Reveal';
 import { StaggeredList } from '../components/common/StaggeredList';
 import { Section } from '../components/layout/Section';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { COMPANY_INFO, STATS } from '../core/constants';
 
 export const AboutPage: React.FC = () => (
@@ -18,6 +19,8 @@ export const AboutPage: React.FC = () => (
                 { name: 'Über Uns', url: '/about' }
             ]}
         />
+
+        <Breadcrumbs items={[{ label: 'Über Uns' }]} />
 
         <PageHero
             title="Leidenschaft für Gärten"

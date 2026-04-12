@@ -11,6 +11,7 @@ import { Reveal } from '../components/common/Reveal';
 
 import { Lightbox } from '../components/common/Lightbox';
 import { Section } from '../components/layout/Section';
+import { Breadcrumbs } from '../components/common/Breadcrumbs';
 
 export const GalleryPage: React.FC = () => {
     const navigate = useNavigate();
@@ -53,6 +54,8 @@ export const GalleryPage: React.FC = () => {
                 isOpen={!!lightboxItem}
                 onClose={() => setLightboxItem(null)}
             />
+
+            <Breadcrumbs items={[{ label: 'Portfolio' }]} />
 
             <PageHero
                 title="Unsere Projekte"
