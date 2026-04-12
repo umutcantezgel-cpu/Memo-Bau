@@ -277,7 +277,7 @@ export const ContactPage: React.FC = () => {
                                 title="Terminbuchung aktivieren"
                                 description="Wir nutzen Calendly für eine einfache Terminbuchung. Bitte akzeptieren Sie die Marketing-Cookies, um das Buchungsformular zu laden."
                             >
-                                <InlineWidget url={import.meta.env.VITE_CALENDLY_URL || 'https://calendly.com/placeholder'} styles={{ height: '700px', width: '100%' }} />
+                                <InlineWidget url={import.meta.env.VITE_CALENDLY_URL || 'https://calendly.com/mehmet68-tezgel/30min'} styles={{ height: '700px', width: '100%' }} />
                             </CookieBlocker>
                         </div>
                     </div>

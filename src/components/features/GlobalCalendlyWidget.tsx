@@ -6,7 +6,7 @@ const LEGAL_PATHS = ['/impressum', '/datenschutz', '/agb', '/cookie-richtlinie',
 
 export const GlobalCalendlyWidget: React.FC = () => {
     const [rootElement, setRootElement] = useState<HTMLElement | null>(null);
-    const calendlyUrl = import.meta.env.VITE_CALENDLY_URL || 'https://calendly.com/placeholder'; // Update with actual URL
+    const calendlyUrl = import.meta.env.VITE_CALENDLY_URL || 'https://calendly.com/mehmet68-tezgel/30min'; // Fallback to actual URL
 
     useEffect(() => {
         if (typeof window !== 'undefined') {
