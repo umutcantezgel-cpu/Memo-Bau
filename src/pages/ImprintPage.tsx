@@ -3,7 +3,7 @@ import { SEO } from '../components/common/SEO';
 import { PageHero } from '../components/common/PageHero';
 import { LegalLayout } from '../components/legal/LegalLayout';
 import { LegalDefinition } from '../components/legal/LegalDefinition';
-import { LegalAccordion } from '../components/legal/LegalAccordion';
+
 import { LegalInfoBox } from '../components/legal/LegalInfoBox';
 import { LegalCrossLinks } from '../components/legal/LegalCrossLinks';
 import { COMPANY_INFO } from '../core/constants';
@@ -38,6 +38,7 @@ export const ImprintPage: React.FC = () => {
                 <LegalInfoBox variant="kontakt" title="Diensteanbieter">
                     <p>
                         <strong>{COMPANY_INFO.name}</strong><br />
+                        {COMPANY_INFO.owner}<br />
                         {COMPANY_INFO.address.street}<br />
                         {COMPANY_INFO.address.zip} {COMPANY_INFO.address.city}<br />
                         Bundesrepublik Deutschland
@@ -120,7 +121,8 @@ export const ImprintPage: React.FC = () => {
                 {/* ─── SEKTION 6: HAFTUNG FÜR INHALTE ─── */}
                 <h2>6. Haftung für Inhalte</h2>
 
-                <LegalAccordion title="Haftung für eigene Inhalte (§ 7 DDG)">
+                <div className="mb-8">
+                    <h3>Haftung für eigene Inhalte (§ 7 DDG)</h3>
                     <p>
                         Als Diensteanbieter sind wir gemäß § 7 Abs. 1 <LegalDefinition term="DDG" definition="Digitale-Dienste-Gesetz – das seit Februar 2024 geltende deutsche Umsetzungsgesetz des EU Digital Services Act (DSA), ersetzt das bisherige TMG." /> für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
                     </p>
@@ -130,9 +132,10 @@ export const ImprintPage: React.FC = () => {
                     <p>
                         Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
                     </p>
-                </LegalAccordion>
+                </div>
 
-                <LegalAccordion title="Haftung für externe Links">
+                <div className="mb-8">
+                    <h3>Haftung für externe Links</h3>
                     <p>
                         Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
                     </p>
@@ -142,12 +145,12 @@ export const ImprintPage: React.FC = () => {
                     <p>
                         Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
                     </p>
-                </LegalAccordion>
+                </div>
 
                 {/* ─── SEKTION 7: URHEBERRECHT ─── */}
                 <h2>7. Urheberrecht & geistiges Eigentum</h2>
 
-                <LegalAccordion title="Urheberrechtliche Hinweise">
+                <div className="mb-8">
                     <p>
                         Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten (insbesondere Fotos, 3D-Renderings, Texte und Logos) unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
                     </p>
@@ -157,7 +160,7 @@ export const ImprintPage: React.FC = () => {
                     <p>
                         Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
                     </p>
-                </LegalAccordion>
+                </div>
 
                 <br />
                 <p className="text-sm font-bold text-neutral-midgray">

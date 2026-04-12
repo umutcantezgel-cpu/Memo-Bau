@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { ArrowRight, ChevronDown, Leaf, PenTool, Sprout, Shield, Award, CheckCircle, Plus, Minus } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import { SERVICES } from '../core/constants';
+import { SERVICES, COMPANY_INFO } from '../core/constants';
 import { Button } from '../components/common/Button';
 import { Reveal } from '../components/common/Reveal';
 
@@ -120,7 +120,7 @@ export const HomePage: React.FC = () => {
                 <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
                     <div className="flex flex-wrap justify-center gap-space-8 md:gap-space-24 opacity-70">
                         <div className="flex items-center gap-3 hover:opacity-100 transition-opacity duration-[var(--default-transition-duration)]"><Shield className="w-5 h-5 text-accent-base" /><span className="text-white text-sm font-semibold tracking-widest uppercase">Premium Qualität</span></div>
-                        <div className="flex items-center gap-3 hover:opacity-100 transition-opacity duration-[var(--default-transition-duration)]"><Award className="w-5 h-5 text-accent-base" /><span className="text-white text-sm font-semibold tracking-widest uppercase"><Counter end={15} duration={2000} suffix="+" /> Jahre Expertise</span></div>
+                        <div className="flex items-center gap-3 hover:opacity-100 transition-opacity duration-[var(--default-transition-duration)]"><Award className="w-5 h-5 text-accent-base" /><span className="text-white text-sm font-semibold tracking-widest uppercase"><Counter end={new Date().getFullYear() - COMPANY_INFO.founded} duration={2000} suffix="+" /> Jahre Expertise</span></div>
                         <div className="flex items-center gap-3 hover:opacity-100 transition-opacity duration-[var(--default-transition-duration)]"><CheckCircle className="w-5 h-5 text-accent-base" /><span className="text-white text-sm font-semibold tracking-widest uppercase">Höchste Präzision</span></div>
                     </div>
                 </div>

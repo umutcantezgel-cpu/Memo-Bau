@@ -229,6 +229,9 @@ export const AgbPage: React.FC = () => {
                     <strong>12.2.</strong> Ist der Auftraggeber Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher <strong>Gerichtsstand für alle Streitigkeiten {COMPANY_INFO.address.city}</strong> (AG Wetzlar). Dies gilt auch, wenn der Auftraggeber keinen allgemeinen Gerichtsstand in Deutschland hat.
                 </p>
                 <p>
+                    <strong className="text-primary-base">Verbraucherhinweis:</strong> Für Verbraucher i.S.d. § 13 BGB gilt dieser ausschließliche Gerichtsstand nicht; es gelten die gesetzlichen Bestimmungen, insbesondere der Gerichtsstand am Wohnsitz des Verbrauchers (§ 29c ZPO).
+                </p>
+                <p>
                     <strong>12.3. Salvatorische Klausel:</strong> Sollten einzelne Bestimmungen unwirksam oder undurchführbar sein, bleibt die Wirksamkeit des Vertrages im Übrigen unberührt. An die Stelle der unwirksamen Bestimmung tritt die wirksame Regelung, deren Wirkungen der wirtschaftlichen Zielsetzung am nächsten kommen.
                 </p>
                 <p>

@@ -233,7 +233,7 @@ export const PrivacyPage: React.FC = () => {
                 {/* ─── KAPITEL 10 ─── */}
                 <h2>10. Karteneinbindung (OpenStreetMap / Leaflet)</h2>
                 <p>
-                    Für die Darstellung interaktiver Karten verwenden wir OpenStreetMap-Kartenkacheln über die Leaflet-Bibliothek. Beim Laden der Karte wird Ihre IP-Adresse an die Server der OpenStreetMap Foundation (OSMF) übertragen. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an ansprechender Standortdarstellung).
+                    Für die Darstellung interaktiver Karten verwenden wir OpenStreetMap-Kartenkacheln über die Leaflet-Bibliothek. Beim Laden der Karte wird Ihre IP-Adresse an die Server der OpenStreetMap Foundation (OSMF) übertragen. Die Einbindung erfolgt auf Grundlage Ihrer ausdrücklichen Einwilligung über unseren Cookie-Banner (2-Klick-Lösung) gemäß Art. 6 Abs. 1 lit. a DSGVO. Sie können diese Einwilligung jederzeit widerrufen.
                 </p>
 
                 {/* ─── KAPITEL 11 ─── */}

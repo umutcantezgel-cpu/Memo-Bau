@@ -143,6 +143,28 @@ export const CookiePolicyPage: React.FC = () => {
                     </table>
                 </div>
 
+                <h3>Externe Medien (nur mit Einwilligung)</h3>
+                <div className="overflow-x-auto mb-space-8">
+                    <table className="w-full text-sm border-collapse">
+                        <thead>
+                            <tr className="border-b-2 border-neutral-lightgray">
+                                <th className="text-left py-3 pr-4 font-bold text-neutral-darkgray">Cookie</th>
+                                <th className="text-left py-3 pr-4 font-bold text-neutral-darkgray">Anbieter</th>
+                                <th className="text-left py-3 pr-4 font-bold text-neutral-darkgray">Zweck</th>
+                                <th className="text-left py-3 font-bold text-neutral-darkgray">Lebensdauer</th>
+                            </tr>
+                        </thead>
+                        <tbody className="text-neutral-midgray">
+                            <tr className="border-b border-neutral-lightgray/50">
+                                <td className="py-3 pr-4 font-mono text-xs">Calendly Session</td>
+                                <td className="py-3 pr-4">Calendly LLC</td>
+                                <td className="py-3 pr-4">Ermöglicht die interaktive Terminbuchung und speichert Sitzungsdaten.</td>
+                                <td className="py-3">Session</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
                 {/* ─── Einstellungen ändern ─── */}
                 <h2>4. Cookie-Einstellungen ändern</h2>
                 <p>
