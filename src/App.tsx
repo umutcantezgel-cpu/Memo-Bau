@@ -53,6 +53,9 @@ const CookiePolicyPage = lazy(() =>
 const AccessibilityPage = lazy(() =>
   import('./pages/AccessibilityPage').then((module) => ({ default: module.AccessibilityPage })),
 );
+const ServiceDetailPage = lazy(() =>
+  import('./pages/ServiceDetailPage').then((module) => ({ default: module.ServiceDetailPage })),
+);
 const AdminApp = lazy(() =>
   import('./admin/AdminApp').then((module) => ({ default: module.AdminApp })),
 );
@@ -184,6 +187,7 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
                 <Route path="/" element={<HomePage />} />
                 <Route path="/produkte" element={<ProductsPage />} />
                 <Route path="/services" element={<ServicesPage />} />
+                <Route path="/leistungen/:serviceSlug" element={<ServiceDetailPage />} />
                 <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/standorte" element={<LocationOverviewPage />} />
                 <Route path="/standorte/:cityId" element={<LocationPage />} />

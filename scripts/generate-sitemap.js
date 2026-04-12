@@ -16,6 +16,12 @@ const LOCATION_SLUGS = [
     'lahnau', 'huettenberg', 'weilburg', 'schoeffengrund', 'pohlheim'
 ];
 
+// ── All 6 service detail slugs (synced with src/core/services.data.ts) ──
+const SERVICE_SLUGS = [
+    'gartendesign', 'landschaftsbau', 'pflasterarbeiten',
+    'bepflanzung', 'bewaesserung', 'gartenpflege'
+];
+
 const generateSitemap = () => {
     const today = new Date().toISOString().split('T')[0];
 
@@ -42,7 +48,14 @@ const generateSitemap = () => {
         changefreq: 'monthly'
     }));
 
-    const allPages = [...staticPages, ...locationPages];
+    // ── Dynamic service detail pages (6 services) ──
+    const servicePages = SERVICE_SLUGS.map(slug => ({
+        route: `/leistungen/${slug}`,
+        priority: '0.9',
+        changefreq: 'monthly'
+    }));
+
+    const allPages = [...staticPages, ...servicePages, ...locationPages];
 
     const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -62,7 +75,7 @@ ${allPages.map(item => `    <url>
     }
 
     fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap.trim());
-    console.log(`Sitemap generated with ${allPages.length} routes (${staticPages.length} static + ${locationPages.length} locations) at ${path.join(publicDir, 'sitemap.xml')}`);
+    console.log(`Sitemap generated with ${allPages.length} routes (${staticPages.length} static + ${servicePages.length} services + ${locationPages.length} locations) at ${path.join(publicDir, 'sitemap.xml')}`);
 };
 
 try {
