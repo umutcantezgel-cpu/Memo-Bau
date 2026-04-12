@@ -111,6 +111,26 @@ export const LocationOverviewPage: React.FC = () => {
                         <InteractiveMap />
                     </div>
                 </Reveal>
+
+                {/* SEO-Textblock: Regionale Verankerung */}
+                <Reveal animation="fade-in-up">
+                    <div className="mt-space-24 max-w-3xl mx-auto">
+                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-6 text-center">
+                            Ihr Garten- und Landschaftsbau Partner in Mittelhessen
+                        </h2>
+                        <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
+                            <p>
+                                Unser Einzugsgebiet erstreckt sich vom Lahn-Dill-Kreis über den Landkreis Gießen bis in die Wetterau und den Kreis Limburg-Weilburg. In jedem dieser Gebiete haben wir über die Jahre echte Erfahrung aufgebaut. Wir kennen die Besonderheiten jeder Lage: Die Hangsituationen in Braunfels und Solms brauchen andere Lösungen als die flachen Grundstücke in der Lahnaue bei Lahnau oder Wetzlar. In Dillenburg und Herborn arbeiten wir häufig mit den regionaltypischen Grauwacke-Natursteinen, während in der Wetterau bei Butzbach und Bad Nauheim Sandstein und Basalt dominieren.
+                            </p>
+                            <p>
+                                Die Entfernungen in unserem Einsatzgebiet sind überschaubar — kein Standort ist mehr als 35 Kilometer von unserem Bauhof in Werdorf entfernt. Das bedeutet: Kurze Anfahrten, keine überhöhten Fahrtkosten, und im Notfall sind wir innerhalb von 30 Minuten bei Ihnen. Für Projekte außerhalb unseres Kerngebiets sprechen Sie uns bitte direkt an — bei entsprechender Projektgröße fahren wir auch gerne weiter.
+                            </p>
+                            <p>
+                                Auf den Standortseiten finden Sie zu jeder Stadt konkrete Informationen: Welche Leistungen wir dort anbieten, wie viele Projekte wir bereits realisiert haben, und Erfahrungsberichte von zufriedenen Kunden direkt aus der Nachbarschaft. So bekommen Sie einen ehrlichen Eindruck davon, was wir in Ihrer Gemeinde bereits umgesetzt haben.
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
             </Section>
         </main >
     );

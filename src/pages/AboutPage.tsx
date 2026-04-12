@@ -173,6 +173,69 @@ export const AboutPage: React.FC = () => (
                     </div>
                 ))}
             </StaggeredList>
+
+            {/* Team Expertise & Arbeitsweise */}
+            <div className="mt-space-24 border-t border-neutral-lightgray pt-space-20">
+                <Reveal animation="fade-in-up">
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
+                            Unser Team — Handwerker mit Herzblut
+                        </h2>
+                        <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
+                            <p>
+                                Hinter Memo BauT steht ein eingespieltes Team aus erfahrenen Landschaftsgärtnern, Pflasterlegern und Grünpflegespezialisten. Jeder bei uns hat eine abgeschlossene Berufsausbildung im Garten- und Landschaftsbau — keine Quereinsteiger, keine Leiharbeiter. Das macht sich in der Qualität jedes einzelnen Projekts bemerkbar.
+                            </p>
+                            <p>
+                                Unser Gründer Mehmet Tezgel bringt über 7 Jahre Berufserfahrung im GaLaBau mit. Was 2019 mit einem Minibagger und einer klaren Vision begann, ist heute ein Fachbetrieb mit eigenem Maschinenpark — Bagger, Radlader, Rüttelplatten, Bewässerungsbohrer, Pflanzmaschinen — alles, was man für professionellen Gartenbau braucht. Keine gemieteten Geräte von der Baumaschinen-Börse. Eigene Maschinen, die wir kennen und die zuverlässig funktionieren.
+                            </p>
+                            <p>
+                                Wir arbeiten grundsätzlich nach dem Prinzip: ein Projekt, ein Team, volle Aufmerksamkeit. Das heißt, wir haben keine fünf Baustellen gleichzeitig laufen, bei denen die Mitarbeiter hin- und hergeschickt werden. Wenn wir bei Ihnen anfangen, bleiben wir, bis alles fertig ist. Das spart Zeit, vermeidet Fehler und gibt Ihnen die Sicherheit, dass Ihr Garten nicht zur Dauerbaustelle wird.
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
+            </div>
+
+            {/* Unsere Arbeitsweise im Detail */}
+            <div className="mt-space-20">
+                <Reveal animation="fade-in-up">
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
+                            Wie wir arbeiten — transparent und verbindlich
+                        </h2>
+                        <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
+                            <p>
+                                Planung ist bei uns nicht nur ein Prospekt mit hübschen Bildern. Wir erstellen echte Ausführungspläne mit Maßen, Schichtangaben, Materiallisten und einer detaillierten Kostenkalkulation. Sie wissen vorher, was es kostet — und es gibt keine bösen Überraschungen auf der Rechnung. Das unterscheidet uns von vielen Mitbewerbern, die erst mal anfangen und dann nachrechnen.
+                            </p>
+                            <p>
+                                Unsere Materialien beziehen wir von regionalen Baustoffhändlern und direkt von Herstellern, mit denen wir seit Jahren zusammenarbeiten. Naturstein aus dem Westerwald, Keramikplatten aus italienischer Produktion, Rollrasen von einer Gärtnerei bei Gießen, Stauden und Gehölze von lokalen Baumschulen. Wir wissen, woher jedes Material kommt und können für die Qualität bürgen.
+                            </p>
+                            <p>
+                                Bei der Umsetzung halten wir uns an die anerkannten Regeln der Technik: ZTV-Wegebau für Pflasterarbeiten, DIN 18915 für Bodenarbeiten, DIN 18916 für Pflanzarbeiten, FLL-Richtlinien für Dachbegrünungen. Das klingt trocken, ist aber der Grund, warum unsere Pflasterflächen auch nach 20 Jahren noch plan liegen und unsere Pflanzungen nicht nach dem ersten Winter eingehen.
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
+            </div>
+
+            {/* Regionaler Bezug */}
+            <div className="mt-space-20 mb-space-12">
+                <Reveal animation="fade-in-up">
+                    <div className="max-w-3xl mx-auto">
+                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
+                            Regional verwurzelt — von Wetzlar bis Gießen
+                        </h2>
+                        <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
+                            <p>
+                                Der Lahn-Dill-Kreis und der nördliche Gießener Raum sind unser Revier. Wir kennen die Böden hier — den schweren Lehm im Dilltal, den steinigen Untergrund an den Hängen bei Braunfels, den sandigen Boden in der Wetterau. Dieses lokale Wissen fließt in jede unserer Planungen ein. Denn der schönste Bepflanzungsplan nützt nichts, wenn er nicht zum Standort passt.
+                            </p>
+                            <p>
+                                Viele unserer Kunden empfehlen uns im Freundes- und Bekanntenkreis weiter. Das ist für uns das größte Kompliment und der beste Beweis dafür, dass unsere Arbeit überzeugt. In Aßlar, Wetzlar und Lahnau kennt man uns mittlerweile — nicht, weil wir die lauteste Werbung machen, sondern weil die Gärten für sich sprechen.
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
+            </div>
         </Section>
     </main>
 );

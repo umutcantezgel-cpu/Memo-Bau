@@ -141,14 +141,43 @@ export const GalleryPage: React.FC = () => {
 
 
 
+                {/* Portfolio Einleitung */}
+                <Reveal animation="fade-in-up">
+                    <div className="mt-space-20 max-w-3xl mx-auto">
+                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-6 text-center">
+                            Jeder Garten erzählt eine Geschichte
+                        </h2>
+                        <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
+                            <p>
+                                Die Projekte, die Sie hier sehen, sind keine Hochglanz-Katalogbilder aus dem Internet. Es sind echte Gärten echten Kunden in unserer Region — in Wetzlar, Aßlar, Dillenburg, Lahnau und Umgebung. Jedes einzelne Projekt wurde von uns geplant, gebaut und abgenommen. Vom ersten Spatenstich bis zum letzten Pflanzloch.
+                            </p>
+                            <p>
+                                Was Sie auf den Fotos vielleicht nicht sehen: Den fachgerechten Unterbau unter den Pflasterflächen. Die Drainage, die dafür sorgt, dass auch bei Starkregen kein Wasser steht. Die sorgfältige Bodenvorbereitung vor der Bepflanzung. All das steckt in jedem Projekt — auch wenn es am Ende unsichtbar ist. Denn das Fundament entscheidet über die Langlebigkeit.
+                            </p>
+                            <p>
+                                Wir dokumentieren unsere Projekte bewusst zu verschiedenen Jahreszeiten. Denn ein guter Garten sieht nicht nur im Juni gut aus, wenn alles blüht — sondern auch im November, wenn die Gräser im Raureif stehen, und im Februar, wenn die immergrünen Gehölze Struktur geben. Diese ganzjährige Ästhetik ist unser Qualitätsanspruch.
+                            </p>
+                        </div>
+                    </div>
+                </Reveal>
+
                 {/* Final CTA */}
                 <Reveal animation="scale-in">
                     <div className="mt-space-24 text-center bg-primary-base rounded-[var(--radius-xl)] p-space-16 relative overflow-hidden shadow-elevation-3">
                         <div className="absolute top-0 right-0 w-full h-full bg-neutral-white opacity-[0.03] mix-blend-overlay"></div>
-                        <h2 className="text-h2 font-sans font-bold text-neutral-white mb-space-8 tracking-h2 relative z-10 text-balance">Lassen Sie uns Ihr Projekt starten</h2>
-                        <Button variant="gold" icon={ArrowRight} onClick={() => navigate('/contact')} className="relative z-10">
-                            Kostenloses Angebot
-                        </Button>
+                        <h2 className="text-h2 font-sans font-bold text-neutral-white mb-space-4 tracking-h2 relative z-10 text-balance">Lassen Sie uns Ihr Projekt starten</h2>
+                        <p className="text-neutral-white/70 text-sm relative z-10 mb-space-8 max-w-xl mx-auto">
+                            Kostenlose Erstberatung vor Ort. Transparenter Festpreis. Keine versteckten Kosten.
+                            Rufen Sie uns an oder nutzen Sie unser Kontaktformular.
+                        </p>
+                        <div className="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
+                            <Button variant="gold" icon={ArrowRight} onClick={() => navigate('/contact')}>
+                                Kostenloses Angebot
+                            </Button>
+                            <button onClick={() => window.location.href = 'tel:+4917670162293'} className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-[var(--radius-md)] border-2 border-neutral-white/30 text-neutral-white font-bold text-sm hover:bg-neutral-white/10 transition-colors">
+                                +49 176 70162293
+                            </button>
+                        </div>
                     </div>
                 </Reveal>
             </Section>
