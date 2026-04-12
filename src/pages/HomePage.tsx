@@ -54,6 +54,20 @@ export const HomePage: React.FC = () => {
                 aggregateRating={{ ratingValue: 4.9, reviewCount: 47 }}
             />
 
+            {/* VideoObject Schema for Hero */}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "VideoObject",
+                    "name": "Memo BauT – Exklusive Gartengestaltung in Wetzlar",
+                    "description": "Einblick in unsere Premium-Garten- und Landschaftsbauprojekte im Raum Wetzlar, Gießen und Mittelhessen.",
+                    "thumbnailUrl": "https://memobaut.de/images/final/hero-home.webp",
+                    "contentUrl": "https://memobaut.de/videos/hero-garden-latest.mp4",
+                    "uploadDate": "2025-01-15",
+                    "duration": "PT30S"
+                })
+            }} />
+
             {/* HERO SECTION: Emotional & Dramatic */}
             <section className="relative min-h-[90vh] flex items-center pt-20 overflow-hidden bg-neutral-darkgray">
 
@@ -64,6 +78,7 @@ export const HomePage: React.FC = () => {
                         loop
                         muted
                         playsInline
+                        preload="metadata"
                         poster="/images/final/hero-home.webp"
                         className="w-full h-full object-cover object-center opacity-70"
                     >
@@ -71,8 +86,10 @@ export const HomePage: React.FC = () => {
                         {/* Fallback image if video is not supported or taking long to load */}
                         <img
                             src="/images/final/hero-home.webp"
-                            alt="Luxuriöser Garten mit Pool"
+                            alt="Exklusive Gartengestaltung von Memo BauT – Premium Pool-Garten in Wetzlar"
                             className="w-full h-full object-cover object-center"
+                            width={1920}
+                            height={1080}
                         />
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-b from-neutral-darkgray/80 via-neutral-darkgray/60 to-neutral-darkgray/90 mix-blend-multiply" />
