@@ -35,7 +35,7 @@ export const AboutPage: React.FC = () => (
                     </h2>
                     <div className="w-20 h-1 bg-accent-base mb-8"></div>
                     <p className="text-body text-neutral-midgray font-normal leading-body mb-space-6 max-w-prose">
-                        Was 2011 als ambitionierte Vision begann, ist heute ein etabliertes
+                        Was 2019 als ambitionierte Vision begann, ist heute ein etabliertes
                         Unternehmen für Premium-Garten- und Landschaftsbau. Mit über 50 exklusiv realisierten Projekten
                         haben wir uns zum führenden Ansprechpartner für anspruchsvolle Außenanlagen in der Region entwickelt.
                     </p>

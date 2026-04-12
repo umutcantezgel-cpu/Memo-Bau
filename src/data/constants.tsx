@@ -160,7 +160,7 @@ export const COMPANY_INFO = {
   name: 'Memo BauT',
   tagline: 'Garten- & Landschaftsbau',
   slogan: 'Ihr Traumgarten wird Wirklichkeit',
-  founded: 2011,
+  founded: 2019,
   employees: '15+',
   projects: '50+',
   phone: '+49 176 70162293',
@@ -173,7 +173,7 @@ export const COMPANY_INFO = {
 };
 
 export const STATS = [
-  { label: 'Jahre Erfahrung', value: '15+' },
+  { label: 'Jahre Erfahrung', value: '7+' },
   { label: 'Zufriedene Kunden', value: '50+' },
   { label: 'Projekte realisiert', value: '50+' },
   { label: 'Mitarbeiter', value: '15+' },

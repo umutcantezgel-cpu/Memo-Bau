@@ -206,7 +206,7 @@ export const COMPANY_INFO = {
     owner: 'Inhaber: Mehmet Tezgel',
     tagline: 'Exklusive Gartenkunst',
     slogan: 'Räume für die Sinne. Gärten für die Ewigkeit.',
-    founded: 2011,
+    founded: 2019,
     employees: '15+',
     projects: '50+',
     region: 'Wetzlar • Gießen • Frankfurt',
@@ -221,7 +221,7 @@ export const COMPANY_INFO = {
 };
 
 export const STATS = [
-    { label: 'Jahre Exzellenz', value: '15+' },
+    { label: 'Jahre Exzellenz', value: '7+' },
     { label: 'Realisierte Träume', value: '50+' },
     { label: 'Design Awards', value: '12' },
     { label: 'Experten-Team', value: '25' },

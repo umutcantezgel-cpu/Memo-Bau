@@ -203,7 +203,7 @@ const getDefaultData = (): CMSData => ({
         tagline: 'Exklusive Gartenkunst',
         description: 'Ihr zuverlässiger Partner für hochwertige Baustoffe, Werkzeuge und professionellen Service in der Region Wetzlar-Gießen.',
         missionStatement: 'Räume für die Sinne. Gärten für die Ewigkeit.',
-        foundedYear: 2011,
+        foundedYear: 2019,
         hours: [
             { day: 'Montag', openTime: '08:00', closeTime: '18:00', isClosed: false },
             { day: 'Dienstag', openTime: '08:00', closeTime: '18:00', isClosed: false },
