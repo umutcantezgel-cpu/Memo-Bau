@@ -1,6 +1,6 @@
 import { ReactNode } from 'react';
 
-export type ViewType = 'home' | 'services' | 'gallery' | 'about' | 'contact' | 'standorte';
+export type ViewType = 'home' | 'services' | 'gallery' | 'about' | 'contact' | 'standorte' | 'ratgeber';
 export type PortfolioCategory = 'privat' | 'gewerbe' | 'oeffentlich' | 'bad' | 'living' | 'kitchen' | 'outdoor';
 export type PortfolioSize = 'small' | 'wide' | 'tall' | 'large';
 

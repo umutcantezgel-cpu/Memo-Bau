@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Ruler, ShieldCheck, Sprout, Sparkles, Award } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { SERVICES } from '../core/constants';
 import { Button } from '../components/common/Button';
 import { PageHero } from '../components/common/PageHero';
@@ -17,6 +17,16 @@ const SERVICE_DETAILS: Record<number, string> = {
     4: 'Die richtige Pflanze am richtigen Ort: Wir wählen Gehölze, Stauden und Gräser, die zu Ihrem Standort und Ihren Pflegewünschen passen. Von imposanten Solitärbäumen über blühende Staudenbeete bis zu dichten Hecken für maximale Privatsphäre. Unser Premium-Rollrasen verwandelt kahle Flächen innerhalb eines Tages in saftige Grünflächen – inklusive professioneller Pflegeberatung.',
     5: 'Moderne Bewässerungstechnik spart Zeit, Wasser und Geld. Wir installieren vollautomatische Systeme mit Bodenfeuchtesensoren und App-Steuerung, die Ihren Garten auch während Ihres Urlaubs optimal versorgen. Zusätzlich integrieren wir auf Wunsch Zisternen zur Regenwassernutzung – nachhaltig und kosteneffizient für die kommenden Jahre.',
     6: 'Ein Garten ist niemals fertig, er entwickelt sich stetig weiter. Mit unseren Wartungsverträgen bleiben Ihre Pflanzen vital, der Rasen dicht und die Beete gepflegt. Von der Frühjahrskur über den sommerlichen Formschnitt bis zur Wintervorbereitung – wir kümmern uns um alle saisonalen Arbeiten, damit Sie Ihren Garten einfach nur genießen können.',
+};
+
+// Map service IDs to detail page slugs
+const SERVICE_SLUG_MAP: Record<number, string> = {
+    1: 'gartendesign',
+    2: 'landschaftsbau',
+    3: 'pflasterarbeiten',
+    4: 'bepflanzung',
+    5: 'bewaesserung',
+    6: 'gartenpflege',
 };
 
 export const ServicesPage: React.FC = () => {
@@ -126,9 +136,20 @@ export const ServicesPage: React.FC = () => {
                                         </div>
                                     </div>
 
-                                    <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/contact')} className="px-8">
-                                        Beratung vereinbaren
-                                    </Button>
+                                    <div className="flex items-center gap-3">
+                                        <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/contact')} className="px-8">
+                                            Beratung vereinbaren
+                                        </Button>
+                                        {SERVICE_SLUG_MAP[service.id] && (
+                                            <Link
+                                                to={`/leistungen/${SERVICE_SLUG_MAP[service.id]}`}
+                                                className="text-sm font-semibold text-neutral-midgray hover:text-accent-base transition-colors flex items-center gap-1"
+                                            >
+                                                Details
+                                                <ArrowRight className="w-3 h-3" />
+                                            </Link>
+                                        )}
+                                    </div>
                                 </div>
                             </div>
                         </Reveal>

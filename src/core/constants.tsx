@@ -11,6 +11,7 @@ export const NAVIGATION: NavigationItem[] = [
     { name: 'Leistungen', id: 'services' },
     { name: 'Projekte', id: 'gallery' },
     { name: 'Standorte', id: 'standorte' },
+    { name: 'Ratgeber', id: 'ratgeber' },
     { name: 'Über Uns', id: 'about' },
     { name: 'Kontakt', id: 'contact' },
 ];
