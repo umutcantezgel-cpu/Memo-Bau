@@ -33,7 +33,9 @@ export const QuickContactForm: React.FC<QuickContactFormProps> = ({ prefillLocat
                 },
                 body: JSON.stringify({
                     ...formData,
-                    subject: `Neue Anfrage ${prefillLocation ? `aus ${prefillLocation}` : ''}`
+                    subject: `Neue Anfrage ${prefillLocation ? `aus ${prefillLocation}` : ''}`,
+                    privacyConsentGiven: true,
+                    privacyConsentTimestamp: new Date().toISOString()
                 })
             });
 

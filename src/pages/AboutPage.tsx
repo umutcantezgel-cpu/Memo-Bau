@@ -22,7 +22,7 @@ export const AboutPage: React.FC = () => (
         <PageHero
             title="Leidenschaft für Gärten"
             subtitle="Über Memo BauT"
-            description="Seit über 15 Jahren gestalten wir exklusive Gärten und Außenanlagen in der Region Wetzlar-Gießen."
+            description={`Seit ${new Date().getFullYear() - COMPANY_INFO.founded} Jahren gestalten wir exklusive Gärten und Außenanlagen in der Region Wetzlar-Gießen.`}
             backgroundImage="/images/final/about-hero.webp"
         />
 
@@ -153,7 +153,7 @@ export const AboutPage: React.FC = () => (
             <SectionTitle subtitle="Unsere Stärken" title="Warum Memo BauT?" />
             <StaggeredList className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" baseDelay={0} staggerDelay={100}>
                 {[
-                    { icon: Award, title: '15+ Jahre Erfahrung', description: 'Kompetenz aus dutzenden exklusiven Projekten in der Region.' },
+                    { icon: Award, title: `${new Date().getFullYear() - COMPANY_INFO.founded}+ Jahre Erfahrung`, description: 'Kompetenz aus dutzenden exklusiven Projekten in der Region.' },
                     { icon: TreePine, title: 'Alles aus einer Hand', description: 'Von der Planung über die Umsetzung bis zur Pflege.' },
                     { icon: Leaf, title: 'Nachhaltig', description: 'Umweltbewusste Materialien und ressourcenschonende Arbeit.' },
                     { icon: Hammer, title: 'Zertifizierte Qualität', description: 'Fachgerechte Ausführung nach anerkannten Standards.' },

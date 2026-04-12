@@ -8,6 +8,7 @@ import { Reveal } from '../components/common/Reveal';
 import { StaggeredList } from '../components/common/StaggeredList';
 import { Counter } from '../components/common/Counter';
 import { SEO } from '../components/common/SEO';
+import { TestimonialCarousel } from '../components/features/TestimonialCarousel';
 
 const FaqItem: React.FC<{ faq: { q: string, a: string }, idx: number }> = ({ faq, idx }) => {
     const [isOpen, setIsOpen] = useState(false);
@@ -78,7 +79,7 @@ export const HomePage: React.FC = () => {
                 <div className="relative z-30 max-w-[1200px] mx-auto px-6 lg:px-12 w-full text-center flex flex-col items-center">
                     <Reveal animation="fade-in-up-dramatic" delay={0}>
                         <span className="inline-block py-1 px-3 border border-white/30 rounded-full bg-white/5 backdrop-blur-md text-white/90 text-[10px] md:text-xs uppercase tracking-[0.3em] font-medium mb-space-8">
-                            Est. 2005 • Wetzlar Region
+                            Est. 2011 • Wetzlar Region
                         </span>
                     </Reveal>
                     <Reveal animation="fade-in-up-dramatic" delay={100}>
@@ -254,6 +255,8 @@ export const HomePage: React.FC = () => {
             </section>
 
 
+
+            <TestimonialCarousel />
 
             {/* FAQ SECTION */}
             <section className="py-space-20 md:py-space-24 bg-neutral-white">

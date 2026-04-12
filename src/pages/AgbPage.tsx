@@ -162,23 +162,32 @@ export const AgbPage: React.FC = () => {
                         Um Ihr Widerrufsrecht auszuüben, müssen Sie uns:<br />
                         <strong>{COMPANY_INFO.name}</strong><br />
                         {COMPANY_INFO.address.street}, {COMPANY_INFO.address.zip} {COMPANY_INFO.address.city}<br />
+                        Telefon: {COMPANY_INFO.phone}<br />
                         E-Mail: {COMPANY_INFO.email}<br />
                         <br />
-                        mittels einer eindeutigen Erklärung (z.B. per Post oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren.
+                        mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
+                    </p>
+                    <p>
+                        <strong>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</strong>
                     </p>
 
                     <h4>Folgen des Widerrufs</h4>
                     <p>
-                        Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen unverzüglich und spätestens binnen vierzehn Tagen ab Eingang Ihrer Widerrufserklärung zurückzuzahlen. Wir verwenden dasselbe Zahlungsmittel wie bei der ursprünglichen Transaktion.
+                        Wenn Sie diesen Vertrag widerrufen, haben wir Ihnen alle Zahlungen, die wir von Ihnen erhalten haben, unverzüglich und spätestens binnen vierzehn Tagen ab dem Tag zurückzuzahlen, an dem die Mitteilung über Ihren Widerruf dieses Vertrags bei uns eingegangen ist. Für diese Rückzahlung verwenden wir dasselbe Zahlungsmittel, das Sie bei der ursprünglichen Transaktion eingesetzt haben, es sei denn, mit Ihnen wurde ausdrücklich etwas anderes vereinbart; in keinem Fall werden Ihnen wegen dieser Rückzahlung Entgelte berechnet.
                     </p>
                     <p>
-                        <strong>Wertersatzpflicht:</strong> Haben Sie verlangt, dass die Leistungen während der Widerrufsfrist beginnen, ist ein angemessener Betrag für die bereits erbrachten Leistungen zu zahlen.
+                        <strong>Wertersatzpflicht:</strong> Haben Sie verlangt, dass die Dienstleistungen während der Widerrufsfrist beginnen sollen, so haben Sie uns einen angemessenen Betrag zu zahlen, der dem Anteil der bis zu dem Zeitpunkt, zu dem Sie uns von der Ausübung des Widerrufsrechts hinsichtlich dieses Vertrags unterrichten, bereits erbrachten Dienstleistungen im Vergleich zum Gesamtumfang der im Vertrag vorgesehenen Dienstleistungen entspricht.
+                    </p>
+
+                    <h4>Vorzeitiges Erlöschen des Widerrufsrechts</h4>
+                    <p>
+                        Das Widerrufsrecht erlischt vorzeitig, wenn wir die Dienstleistung vollständig erbracht haben und mit der Ausführung der Dienstleistung erst begonnen haben, nachdem Sie dazu Ihre ausdrückliche Zustimmung gegeben haben und gleichzeitig Ihre Kenntnis davon bestätigt haben, dass Sie Ihr Widerrufsrecht bei vollständiger Vertragserfüllung durch uns verlieren.
                     </p>
                 </LegalAccordion>
 
                 <LegalAccordion title="Muster-Widerrufsformular">
                     <p>
-                        (Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses Formular aus und senden Sie es per Post oder E-Mail an uns zurück.)
+                        (Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses Formular aus und senden Sie es zurück.)
                     </p>
                     <div className="bg-neutral-offwhite p-space-6 rounded-[var(--radius-lg)] font-mono text-sm border border-neutral-lightgray">
                         <p>An:</p>
@@ -189,13 +198,13 @@ export const AgbPage: React.FC = () => {
                         <br />
                         <p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung (*):</p>
                         <br />
-                        <p>[Projektbezeichnung / Angebotsnummer]</p>
+                        <p>______________________________</p>
                         <br />
-                        <p>Beauftragt am (*):</p>
+                        <p>Bestellt am (*) / erhalten am (*):</p>
                         <p>Name des/der Verbraucher(s):</p>
                         <p>Anschrift des/der Verbraucher(s):</p>
                         <br />
-                        <p>Unterschrift (nur bei Papier):</p>
+                        <p>Unterschrift des/der Verbraucher(s) (nur bei Mitteilung auf Papier):</p>
                         <p>Datum:</p>
                         <hr className="my-4 border-neutral-lightgray" />
                         <p className="text-xs text-neutral-midgray">(*) Unzutreffendes streichen.</p>

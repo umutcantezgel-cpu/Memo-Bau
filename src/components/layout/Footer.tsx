@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Linkedin, MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { NAVIGATION, COMPANY_INFO } from '../../core/constants';
 
@@ -23,22 +23,7 @@ export const Footer: React.FC = () => (
             <br />
             {COMPANY_INFO.tagline}
           </p>
-          <div className="flex space-x-4">
-            {[
-              { Icon: Instagram, href: '#', label: 'Instagram' },
-              { Icon: Facebook, href: '#', label: 'Facebook' },
-              { Icon: Linkedin, href: '#', label: 'LinkedIn' },
-            ].map(({ Icon, href, label }, i) => (
-              <a
-                key={i}
-                href={href}
-                aria-label={label}
-                className="w-10 h-10 rounded-full bg-neutral-white/10 flex items-center justify-center text-neutral-white/60 transition-[background-color,color,transform] duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] hover:bg-accent-base hover:text-white hover:scale-110"
-              >
-                <Icon size={18} />
-              </a>
-            ))}
-          </div>
+          {/* Social-Media-Links entfernt – erst wieder einbinden, wenn echte Profile existieren */}
         </div>
         <div>
           <h2 className="text-lg font-bold mb-6 text-neutral-white/90">Navigation</h2>

@@ -49,7 +49,9 @@ export const ContactPage: React.FC = () => {
                 },
                 body: JSON.stringify({
                     subject: 'Neue Haupt-Anfrage über Website',
-                    ...formData
+                    ...formData,
+                    privacyConsentGiven: true,
+                    privacyConsentTimestamp: new Date().toISOString()
                 })
             });
 

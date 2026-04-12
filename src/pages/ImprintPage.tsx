@@ -13,7 +13,7 @@ export const ImprintPage: React.FC = () => {
         <main className="bg-neutral-white min-h-screen">
             <SEO
                 title="Impressum | Memo BauT – Garten- & Landschaftsbau Werdorf"
-                description={`Impressum der ${COMPANY_INFO.name}. Angaben gemäß § 5 DDG, Kontaktdaten, Registereintrag, berufsrechtliche Angaben und Haftungshinweise.`}
+                description={`Impressum der ${COMPANY_INFO.name}. Angaben gemäß § 5 DDG, Kontaktdaten, Steuerdaten, berufsrechtliche Angaben und Haftungshinweise.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
                     { name: 'Impressum', url: '/impressum' }
@@ -66,18 +66,8 @@ export const ImprintPage: React.FC = () => {
                     </p>
                 </LegalInfoBox>
 
-                {/* ─── SEKTION 2: REGISTEREINTRAG ─── */}
-                <h2>2. Registereintrag & Umsatzsteuer</h2>
-                <p>
-                    Die Eintragung im zuständigen <LegalDefinition term="Handelsregister" definition="Das Handelsregister ist ein öffentliches Verzeichnis, das von den Amtsgerichten geführt wird und Anmeldungen aller Kaufleute im Bezirk des Registergerichts verzeichnet." /> ist erfolgt.
-                </p>
-
-                <LegalInfoBox variant="pflicht" title="Registerdaten">
-                    <p>
-                        <strong>Registergericht:</strong> Amtsgericht Wetzlar<br />
-                        <strong>Registernummer:</strong> HRB 123456
-                    </p>
-                </LegalInfoBox>
+                {/* ─── SEKTION 2: STEUERDATEN ─── */}
+                <h2>2. Steuerdaten</h2>
 
                 <p>
                     <strong>Steuernummer:</strong><br />

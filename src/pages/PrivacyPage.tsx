@@ -169,7 +169,7 @@ export const PrivacyPage: React.FC = () => {
                 <h2>6. Hosting & Server-Logfiles</h2>
                 <h3>Externes Hosting</h3>
                 <p>
-                    Diese Website wird bei externen, professionellen Dienstleistern gehostet. Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf Servern des Hosters gespeichert. Der Einsatz erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherer Bereitstellung).
+                    Diese Website wird bei der Vercel Inc. (440 N Barranca Ave #4133, Covina, CA 91723, USA) gehostet. Die Domainregistrierung erfolgt über die STRATO AG (Pascalstraße 10, 10587 Berlin). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf Servern des Hosters gespeichert. Vercel ist nach dem EU-US Data Privacy Framework zertifiziert. Der Einsatz erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherer Bereitstellung).
                 </p>
                 <p>
                     Wir haben einen Vertrag über <LegalDefinition term="Auftragsverarbeitung (AVV)" definition="Vertrag gemäß Art. 28 DSGVO, der sicherstellt, dass ein externer Dienstleister weisungsgebunden und datenschutzkonform personenbezogene Daten verarbeitet." /> mit unserem Hosting-Anbieter geschlossen.
@@ -243,44 +243,20 @@ export const PrivacyPage: React.FC = () => {
                 </p>
 
                 {/* ─── KAPITEL 12 ─── */}
-                <h2>12. Analyse-Tools</h2>
-
-                <LegalAccordion title="Google Analytics">
-                    <p>
-                        Soweit Sie Ihre Einwilligung erteilt haben (Art. 6 Abs. 1 lit. a DSGVO), verwenden wir auf dieser Website Google Analytics, einen Webanalysedienst der Google Ireland Limited. Wir haben die <strong>IP-Anonymisierung</strong> aktiviert.
-                    </p>
-                    <p>
-                        Google ist nach dem EU-US Data Privacy Framework zertifiziert. Im Auftrag des Betreibers wird Google die Informationen nutzen, um Ihre Nutzung der Website auszuwerten und Reports zu erstellen.
-                    </p>
-                    <p>
-                        Sie können die Speicherung der Cookies durch eine entsprechende Einstellung Ihrer Browser-Software oder in unseren Cookie-Einstellungen verhindern.
-                    </p>
-                </LegalAccordion>
-
-                <LegalAccordion title="Google Maps">
-                    <p>
-                        Diese Seite nutzt über eine API den Kartendienst Google Maps. Zur Nutzung der Funktionen von Google Maps ist es notwendig, Ihre IP-Adresse zu speichern. Diese Informationen werden in der Regel an einen Server von Google in den USA übertragen.
-                    </p>
-                    <p>
-                        Die Nutzung von Google Maps erfolgt im Interesse einer ansprechenden Darstellung unserer Online-Angebote und an einer leichten Auffindbarkeit der von uns angegebenen Orte (Art. 6 Abs. 1 lit. f DSGVO).
-                    </p>
-                </LegalAccordion>
-
-                {/* ─── KAPITEL 13 ─── */}
-                <h2>13. Social Media Präsenzen</h2>
+                <h2>12. Social Media Präsenzen</h2>
                 <p>
                     Wir unterhalten Onlinepräsenzen in sozialen Netzwerken, um mit dort aktiven Kunden und Interessenten zu kommunizieren. Beim Aufruf der jeweiligen Netzwerke gelten die Geschäftsbedingungen und Datenschutzbestimmungen der jeweiligen Betreiber.
                 </p>
 
-                {/* ─── KAPITEL 14 ─── */}
-                <h2>14. Änderungen dieser Datenschutzerklärung</h2>
+                {/* ─── KAPITEL 13 ─── */}
+                <h2>13. Änderungen dieser Datenschutzerklärung</h2>
                 <p>
                     Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen umzusetzen. Das aktuelle Datum der letzten Aktualisierung finden Sie im Inhaltsverzeichnis dieser Seite.
                 </p>
 
                 <br />
                 <p className="text-sm font-bold text-neutral-midgray">
-                    Stand der Datenschutzerklärung: März 2026.
+                    Stand der Datenschutzerklärung: April 2026.
                 </p>
 
                 {/* ─── QUERVERWEISE ─── */}
