@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useCallback } from 'react';
 import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 
 interface CounterProps {
@@ -22,70 +22,80 @@ export const Counter: React.FC<CounterProps> = ({
 }) => {
     const { ref, hasIntersected } = useIntersectionObserver({ threshold: 0.1 });
     const contentRef = useRef<HTMLSpanElement>(null);
-    const [isFinished, setIsFinished] = useState(false);
+    const hasAnimatedRef = useRef(false);
+    const animationFrameRef = useRef<number>(0);
+
+    const formatValue = useCallback(
+        (val: number) => `${prefix}${val.toFixed(decimals)}${suffix}`,
+        [prefix, decimals, suffix]
+    );
 
     useEffect(() => {
         const shouldAnimate = startImmediately || hasIntersected;
-        if (!shouldAnimate || isFinished || !contentRef.current) return;
+        if (!shouldAnimate || hasAnimatedRef.current || !contentRef.current) return;
+
+        // Mark as animating immediately to prevent double-fire in StrictMode
+        hasAnimatedRef.current = true;
+
+        // For startImmediately counters (e.g. hero section), skip animation
+        // to avoid showing misleading intermediate values (UWG §5 compliance)
+        if (startImmediately) {
+            contentRef.current.textContent = formatValue(end);
+            return;
+        }
 
         // Respect user's accessibility preference for reduced motion
         const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
         if (prefersReducedMotion) {
-            contentRef.current.textContent = `${prefix}${end.toFixed(decimals)}${suffix}`;
-            requestAnimationFrame(() => setIsFinished(true));
+            contentRef.current.textContent = formatValue(end);
             return;
         }
 
         let startTime: number | null = null;
-        let animationFrameId: number;
-
         const easeOutQuad = (t: number) => t * (2 - t);
 
         const animateCount = (timestamp: number) => {
             if (!startTime) startTime = timestamp;
             const progress = timestamp - startTime;
             const percentage = Math.min(progress / duration, 1);
-
-            // Apply easing
             const easeProgress = easeOutQuad(percentage);
-            const currentCount = (easeProgress * end).toFixed(decimals);
+            const currentCount = easeProgress * end;
 
             if (contentRef.current) {
-                // Direct DOM manipulation inside RAF avoids React re-renders
-                contentRef.current.textContent = `${prefix}${currentCount}${suffix}`;
+                contentRef.current.textContent = formatValue(currentCount);
             }
 
             if (progress < duration) {
-                animationFrameId = requestAnimationFrame(animateCount);
-            } else {
-                if (contentRef.current) {
-                    contentRef.current.textContent = `${prefix}${end.toFixed(decimals)}${suffix}`;
-                }
-                setIsFinished(true);
+                animationFrameRef.current = requestAnimationFrame(animateCount);
+            } else if (contentRef.current) {
+                contentRef.current.textContent = formatValue(end);
             }
         };
 
-        animationFrameId = requestAnimationFrame(animateCount);
+        animationFrameRef.current = requestAnimationFrame(animateCount);
 
         return () => {
-            if (animationFrameId) {
-                cancelAnimationFrame(animationFrameId);
+            if (animationFrameRef.current) {
+                cancelAnimationFrame(animationFrameRef.current);
             }
         };
-    }, [hasIntersected, end, duration, decimals, prefix, suffix, isFinished]);
+    }, [hasIntersected, startImmediately, end, duration, formatValue]);
+
+    // For startImmediately counters, render the end value as initial content
+    // to prevent the "0+" flash before hydration/effect fires
+    const initialDisplay = startImmediately ? formatValue(end) : formatValue(0);
 
     return (
         <span
             ref={(node) => {
                 ref.current = node;
-                if (node && !contentRef.current) {
+                if (node) {
                     contentRef.current = node;
                 }
             }}
             className={`inline-block transform-gpu ${className}`}
         >
-            {/* Fallback to 0 initial state */}
-            {prefix}{0..toFixed(decimals)}{suffix}
+            {initialDisplay}
         </span>
     );
 };

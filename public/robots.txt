@@ -1,4 +1,11 @@
 User-agent: *
 Allow: /
 Disallow: /api/
+Disallow: /admin/
+Disallow: /.ai-*
+Disallow: /.expansion-*
+Disallow: /.pipeline-*
+Disallow: /.project-*
+Disallow: /.discovery-*
+
 Sitemap: https://memobaut.de/sitemap.xml

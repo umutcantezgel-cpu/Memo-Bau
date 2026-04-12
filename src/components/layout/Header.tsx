@@ -69,7 +69,7 @@ export const Header: React.FC<HeaderProps> = ({
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-10">
+            <nav aria-label="Hauptnavigation" className="hidden lg:flex items-center space-x-10">
               {NAVIGATION.map((item) => (
                 <Link
                   key={item.id}
@@ -103,7 +103,7 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                 className={`p-3 -mr-3 transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] hover:text-accent-base ${scrolled ? 'text-neutral-darkgray' : 'text-neutral-white'
                   }`}
-                aria-label="Toggle menu"
+                aria-label={mobileMenuOpen ? 'Menü schließen' : 'Menü öffnen'}
                 aria-expanded={mobileMenuOpen ? "true" : "false"}
               >
                 {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -119,7 +119,7 @@ export const Header: React.FC<HeaderProps> = ({
         className={`fixed inset-0 bg-neutral-white z-[900] transition-transform duration-[var(--motion-emphasis-duration)] ease-[var(--motion-emphasis-easing)]  will-change-transform lg:hidden pt-24 px-6 ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
           }`}
       >
-        <div className="flex flex-col space-y-2">
+        <nav aria-label="Mobile Navigation" className="flex flex-col space-y-2">
           {NAVIGATION.map((item, index) => (
             <Link
               key={item.id}
@@ -143,7 +143,7 @@ export const Header: React.FC<HeaderProps> = ({
               Kostenlose Beratung
             </Button>
           </div>
-        </div>
+        </nav>
       </div>
     </>
   );

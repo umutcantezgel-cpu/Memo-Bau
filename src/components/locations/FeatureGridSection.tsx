@@ -31,7 +31,7 @@ export const FeatureGridSection: React.FC<FeatureGridSectionProps> = ({ config, 
                     const isHighlighted = highlightFirst && idx === 0;
 
                     return (
-                        <Reveal key={idx} animation="fade-in-up" delay={(idx * 100) as any}>
+                        <Reveal key={idx} animation="fade-in-up" delay={idx * 100}>
                             <div
                                 className={`h-full p-space-8 rounded-[var(--radius-lg)] transition-all duration-300 ${isHighlighted
                                     ? 'bg-neutral-darkgray text-neutral-white shadow-elevation-3 scale-105 z-10 relative'

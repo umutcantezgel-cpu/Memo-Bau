@@ -23,7 +23,7 @@ export const ValuePropositionSection: React.FC<ValuePropositionSectionProps> = (
             <Section bgVariant="offwhite" className="py-8 md:py-12">
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-space-8 max-w-5xl mx-auto">
                     {stats.map((stat, idx) => (
-                        <Reveal key={idx} animation="fade-in-up" delay={(idx * 100) as any}>
+                        <Reveal key={idx} animation="fade-in-up" delay={idx * 100}>
                             <div className="text-center">
                                 <span className="block text-4xl md:text-5xl font-sans font-bold mb-2 tracking-tighter" style={{ color: accentColor }}>
                                     {stat.value}

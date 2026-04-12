@@ -11,14 +11,17 @@ const BASE_URL = 'https://memobaut.de'; // Updated domain
 const generateSitemap = () => {
     const sitemapData = [
         { route: '/', priority: '1.0', changefreq: 'weekly' },
-        { route: '/services', priority: '0.9', changefreq: 'weekly' },
-        { route: '/contact', priority: '0.9', changefreq: 'weekly' },
+        { route: '/services', priority: '0.9', changefreq: 'monthly' },
+        { route: '/contact', priority: '0.9', changefreq: 'monthly' },
         { route: '/gallery', priority: '0.8', changefreq: 'weekly' },
         { route: '/about', priority: '0.8', changefreq: 'monthly' },
-        { route: '/products', priority: '0.8', changefreq: 'monthly' },
+        { route: '/produkte', priority: '0.8', changefreq: 'monthly' },
         { route: '/standorte', priority: '0.7', changefreq: 'monthly' },
-        { route: '/impressum', priority: '0.5', changefreq: 'yearly' },
-        { route: '/datenschutz', priority: '0.5', changefreq: 'yearly' }
+        { route: '/impressum', priority: '0.3', changefreq: 'yearly' },
+        { route: '/datenschutz', priority: '0.3', changefreq: 'yearly' },
+        { route: '/agb', priority: '0.3', changefreq: 'yearly' },
+        { route: '/cookie-richtlinie', priority: '0.2', changefreq: 'yearly' },
+        { route: '/barrierefreiheit', priority: '0.2', changefreq: 'yearly' }
     ];
 
     const today = new Date().toISOString().split('T')[0];

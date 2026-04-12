@@ -4,7 +4,7 @@ import { useIntersectionObserver } from '../../hooks/useIntersectionObserver';
 interface RevealProps {
     children: React.ReactNode;
     animation?: 'fade-in-up' | 'fade-in-up-dramatic' | 'fade-in' | 'scale-in';
-    delay?: 0 | 100 | 200 | 300 | 400 | 500;
+    delay?: number;
     threshold?: number;
     className?: string;
     as?: React.ElementType;

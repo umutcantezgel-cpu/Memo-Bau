@@ -52,7 +52,7 @@ export const LocalProjectShowcase: React.FC<LocalProjectShowcaseProps> = ({ conf
 
             <div className={`grid grid-cols-1 ${layout === 'masonry' ? 'md:grid-cols-2 gap-space-8' : 'md:grid-cols-2 lg:grid-cols-4 gap-space-6'}`}>
                 {projects.map((project, idx) => (
-                    <Reveal key={project.id} animation="fade-in-up" delay={(idx * 100) as any}>
+                    <Reveal key={project.id} animation="fade-in-up" delay={idx * 100}>
                         <div className="group cursor-pointer">
                             <div className={`relative overflow-hidden rounded-[var(--radius-lg)] mb-space-4 ${layout === 'masonry' && idx % 2 !== 0 ? 'aspect-[4/5]' : 'aspect-square'}`}>
                                 <img

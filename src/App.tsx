@@ -10,6 +10,7 @@ import { MobileQuickContact } from './components/features/MobileQuickContact';
 import { GlobalCalendlyWidget } from './components/features/GlobalCalendlyWidget';
 import { ScrollProgressIndicator } from './components/common/ScrollProgressIndicator';
 import { PageTransition } from './components/common/PageTransition';
+import { NotFoundPage } from './pages/NotFoundPage';
 import { ThemeProvider } from 'next-themes';
 import { AnimatePresence } from 'framer-motion';
 
@@ -193,6 +194,7 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
                 <Route path="/agb" element={<AgbPage />} />
                 <Route path="/cookie-richtlinie" element={<CookiePolicyPage />} />
                 <Route path="/barrierefreiheit" element={<AccessibilityPage />} />
+                <Route path="*" element={<NotFoundPage />} />
               </Routes>
             </PageTransition>
           </AnimatePresence>

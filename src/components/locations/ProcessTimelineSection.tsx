@@ -44,7 +44,7 @@ export const ProcessTimelineSection: React.FC<ProcessTimelineSectionProps> = ({ 
                 <div className="hidden md:block absolute top-[28px] left-[16%] right-[16%] h-[2px] bg-neutral-lightgray z-0" />
 
                 {steps.map((step, idx) => (
-                    <Reveal key={idx} animation="fade-in-up" delay={(idx * 150) as any}>
+                    <Reveal key={idx} animation="fade-in-up" delay={idx * 150}>
                         <div className="relative z-10 flex flex-col items-center text-center">
                             <div
                                 className="w-14 h-14 rounded-full flex items-center justify-center bg-neutral-white shadow-elevation-2 font-bold text-xl mb-space-6 border-2"

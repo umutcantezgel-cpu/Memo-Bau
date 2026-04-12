@@ -17,7 +17,7 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ children, lastUpdated 
     const [mobileTocOpen, setMobileTocOpen] = useState(false);
 
     // Extract headings for TOC
-    useEffect(() => {
+    const computeTocItems = useCallback(() => {
         const contentSection = document.getElementById('legal-content');
         if (!contentSection) return;
 
@@ -34,7 +34,11 @@ export const LegalLayout: React.FC<LegalLayoutProps> = ({ children, lastUpdated 
         });
 
         setTocItems(items);
-    }, [children]);
+    }, []);
+
+    useEffect(() => {
+        requestAnimationFrame(computeTocItems);
+    }, [children, computeTocItems]);
 
     // Track scroll progress + show/hide scroll-to-top
     const handleScroll = useCallback(() => {

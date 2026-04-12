@@ -1,6 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { useLocation } from 'react-router-dom';
 import { COMPANY_INFO } from '../../core/constants';
+
+const SITE_URL = 'https://memobaut.de';
 
 interface SEOProps {
     title: string;
@@ -21,13 +24,16 @@ interface SEOProps {
 export const SEO: React.FC<SEOProps> = ({
     title,
     description,
-    canonical = 'https://memobaut.de',
+    canonical,
     image = '/images/final/hero-home.webp',
     faqs,
     breadcrumbs,
     noindex = false,
     localBusiness
 }) => {
+    const { pathname } = useLocation();
+    // Auto-generate canonical from current route if not explicitly provided
+    const resolvedCanonical = canonical || `${SITE_URL}${pathname === '/' ? '' : pathname}`;
     const siteTitle = `${title} | ${COMPANY_INFO.name}`;
 
     // Schema.org LocalBusiness Markup
@@ -36,7 +42,7 @@ export const SEO: React.FC<SEOProps> = ({
         "@type": "LocalBusiness",
         "name": localBusiness ? `${COMPANY_INFO.name} - Standort ${localBusiness.city}` : COMPANY_INFO.name,
         "alternateName": "Memo-BauT Garten- und Landschaftsbau",
-        "url": canonical,
+        "url": resolvedCanonical,
         "logo": "https://memobaut.de/logo.png",
         "image": "https://memobaut.de/logo.png",
         "description": "Professioneller Garten- und Landschaftsbau in der Region Wetzlar. Seit 2005 realisieren wir anspruchsvolle Außenanlagen – Pflasterarbeiten, Zaunbau, Terrassengestaltung und mehr.",
@@ -75,15 +81,15 @@ export const SEO: React.FC<SEOProps> = ({
             {/* Standard Meta */}
             <title>{siteTitle}</title>
             <meta name="description" content={description} />
-            <link rel="canonical" href={canonical} />
+            <link rel="canonical" href={resolvedCanonical} />
             {noindex && <meta name="robots" content="noindex, follow" />}
 
             {/* Open Graph / Facebook */}
             <meta property="og:type" content="website" />
-            <meta property="og:url" content={canonical} />
+            <meta property="og:url" content={resolvedCanonical} />
             <meta property="og:title" content={siteTitle} />
             <meta property="og:description" content={description} />
-            <meta property="og:image" content={`${canonical}${image}`} />
+            <meta property="og:image" content={`${SITE_URL}${image}`} />
             <meta property="og:site_name" content={COMPANY_INFO.name} />
             <meta property="og:locale" content="de_DE" />
 
@@ -91,7 +97,7 @@ export const SEO: React.FC<SEOProps> = ({
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content={siteTitle} />
             <meta name="twitter:description" content={description} />
-            <meta name="twitter:image" content={`${canonical}${image}`} />
+            <meta name="twitter:image" content={`${SITE_URL}${image}`} />
 
             {/* Structured Data - Base */}
             <script type="application/ld+json">
@@ -126,7 +132,7 @@ export const SEO: React.FC<SEOProps> = ({
                             "@type": "ListItem",
                             "position": index + 1,
                             "name": bc.name,
-                            "item": `${canonical.split('/').slice(0, 3).join('/')}${bc.url}`
+                            "item": `${SITE_URL}${bc.url}`
                         }))
                     })}
                 </script>

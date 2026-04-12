@@ -147,9 +147,9 @@ export const InteractiveMap: React.FC = () => {
     return (
         <div className="w-full h-[600px] rounded-[var(--radius-xl)] overflow-hidden shadow-elevation-2 border border-neutral-lightgray/20 relative z-0 interactive-map-wrapper">
             <CookieBlocker
-                type="analytics"
+                type="marketing"
                 title="Interaktive Karte aktivieren"
-                description="Um unsere Standorte komfortabel auf einer interaktiven Karte zu betrachten, laden wir Kartendaten (Leaflet/OpenStreetMap). Bitte akzeptieren Sie die Einbindung externer Medien (Analyse-Cookies)."
+                description="Um unsere Standorte komfortabel auf einer interaktiven Karte zu betrachten, laden wir Kartendaten von externen Servern (CARTO/OpenStreetMap). Dabei wird Ihre IP-Adresse übertragen. Bitte erteilen Sie Ihre Einwilligung."
             >
                 <MapContainer
                     center={HQ_COORDS}

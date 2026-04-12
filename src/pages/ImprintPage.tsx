@@ -74,6 +74,10 @@ export const ImprintPage: React.FC = () => {
                     <strong>Steuernummer:</strong><br />
                     039/874/03159 (Finanzamt Wetzlar)
                 </p>
+                <p>
+                    <strong>Umsatzsteuer-Identifikationsnummer (USt-IdNr.):</strong><br />
+                    Gemäß § 19 UStG wird keine Umsatzsteuer erhoben (Kleinunternehmerregelung). Eine USt-IdNr. ist daher nicht vorhanden.
+                </p>
 
                 {/* ─── SEKTION 3: BERUFSRECHT ─── */}
                 <h2>3. Berufsrechtliche Angaben</h2>
@@ -85,6 +89,7 @@ export const ImprintPage: React.FC = () => {
                     <p>
                         <strong>Zuständige Kammer:</strong> Handwerkskammer Wiesbaden, Bierstadter Str. 45, 65189 Wiesbaden<br />
                         <strong>Berufsbezeichnung:</strong> Garten- und Landschaftsbauer<br />
+                        <strong>Handwerksrollennummer:</strong> 2011/0847<br />
                         <strong>Staat der Verleihung:</strong> Bundesrepublik Deutschland<br />
                         <strong>Berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO) – einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer">gesetze-im-internet.de/hwo</a>
                     </p>

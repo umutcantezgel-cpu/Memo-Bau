@@ -227,6 +227,7 @@ Phase 1: Token Foundation (Tailwind v4)
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    font-feature-settings: 'kern' 1, 'liga' 1;
 
     /* ==========================================================
        MOTION DESIGN SYSTEM - 6 CORE EASINGS

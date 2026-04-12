@@ -36,7 +36,7 @@ export const LocalFAQSection: React.FC<LocalFAQSectionProps> = ({ config }) => {
                         const isOpen = openIndex === index;
 
                         return (
-                            <Reveal key={index} animation="fade-in-up" delay={(index * 50) as any}>
+                            <Reveal key={index} animation="fade-in-up" delay={index * 50}>
                                 <div
                                     className={`bg-neutral-white border rounded-[var(--radius-lg)] overflow-hidden transition-colors duration-300 ${isOpen ? 'border-neutral-lightgray shadow-elevation-1' : 'border-neutral-offwhite hover:border-neutral-lightgray'
                                         }`}

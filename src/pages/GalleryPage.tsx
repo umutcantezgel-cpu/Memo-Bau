@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import { SEO } from '../components/common/SEO';
 import { ArrowRight } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PortfolioCategory, PortfolioItem } from '../types';
 import { PORTFOLIO_ITEMS } from '../core/constants';
@@ -14,7 +14,16 @@ import { Section } from '../components/layout/Section';
 
 export const GalleryPage: React.FC = () => {
     const navigate = useNavigate();
-    const [filter, setFilter] = useState<PortfolioCategory | 'all'>('all');
+    const [searchParams, setSearchParams] = useSearchParams();
+    const filter = (searchParams.get('filter') as PortfolioCategory | 'all') || 'all';
+
+    const handleFilterChange = useCallback((newFilter: PortfolioCategory | 'all') => {
+        if (newFilter === 'all') {
+            setSearchParams({});
+        } else {
+            setSearchParams({ filter: newFilter });
+        }
+    }, [setSearchParams]);
     const [lightboxItem, setLightboxItem] = useState<PortfolioItem | null>(null);
 
     const filters: { id: PortfolioCategory | 'all'; label: string }[] = [
@@ -60,7 +69,7 @@ export const GalleryPage: React.FC = () => {
                         {filters.map((f) => (
                             <button
                                 key={f.id}
-                                onClick={() => setFilter(f.id)}
+                                onClick={() => handleFilterChange(f.id)}
                                 className={`px-8 py-3 rounded-full text-xs uppercase tracking-widest font-bold transition-all duration-[var(--default-transition-duration)] ${filter === f.id
                                     ? 'bg-accent-base text-neutral-white shadow-elevation-2 transform scale-105'
                                     : 'bg-neutral-white text-neutral-midgray border border-neutral-lightgray hover:border-accent-base hover:text-accent-base'
