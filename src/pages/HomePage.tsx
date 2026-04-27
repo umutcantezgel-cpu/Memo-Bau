@@ -4,9 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import { SERVICES, COMPANY_INFO } from '../core/constants';
 import { Button } from '../components/common/Button';
 import { Reveal } from '../components/common/Reveal';
-
 import { StaggeredList } from '../components/common/StaggeredList';
+
 import { Counter } from '../components/common/Counter';
+import { TrustSignals } from '../components/common/TrustSignals';
+import { ValueProposition } from '../components/common/ValueProposition';
 import { SEO } from '../components/common/SEO';
 import { TestimonialCarousel } from '../components/features/TestimonialCarousel';
 
@@ -78,7 +80,7 @@ export const HomePage: React.FC = () => {
                         loop
                         muted
                         playsInline
-                        preload="metadata"
+                        preload="auto"
                         poster="/images/final/hero-home.webp"
                         className="w-full h-full object-cover object-center opacity-70"
                     >
@@ -90,6 +92,7 @@ export const HomePage: React.FC = () => {
                             className="w-full h-full object-cover object-center"
                             width={1920}
                             height={1080}
+                            fetchPriority="high"
                         />
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-b from-neutral-darkgray/80 via-neutral-darkgray/60 to-neutral-darkgray/90 mix-blend-multiply" />
@@ -122,6 +125,7 @@ export const HomePage: React.FC = () => {
                                 Portfolio entdecken
                             </Button>
                         </div>
+                        <TrustSignals className="mt-6 text-white/90" showStars={true} showGuarantee={true} />
                     </Reveal>
                 </div>
 
@@ -194,6 +198,15 @@ export const HomePage: React.FC = () => {
                                 ))}
                             </StaggeredList>
                         </div>
+                    </div>
+                    
+                    <div className="mt-space-16 pt-space-16 border-t border-neutral-lightgray">
+                        <ValueProposition 
+                            beforeState="Ein Standard-Garten erfordert viel unstrukturierte Arbeit, wirkt oft unruhig und nutzt das Potenzial des Grundstücks nicht aus."
+                            afterState="Ein architektonisch durchdachter Garten erweitert den Wohnraum, wertet die Immobilie messbar auf und bietet ganzjährige Erholung bei minimalem Pflegeaufwand."
+                            metric="100% Planungssicherheit"
+                            timeframe="Fixpreis-Garantie"
+                        />
                     </div>
                 </div>
             </section>
@@ -378,6 +391,7 @@ export const HomePage: React.FC = () => {
                                 Telefonisch beraten
                             </Button>
                         </div>
+                        <TrustSignals className="mt-8" guaranteeText="Kostenloses Erstgespräch" />
                     </Reveal>
                 </div>
             </section>

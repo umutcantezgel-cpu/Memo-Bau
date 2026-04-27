@@ -85,11 +85,10 @@ export const SERVICES: ServiceItem[] = [
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
-    // Projekt 1: Detail-Aufnahmen (kleine Dateien = Nahaufnahmen)
     {
         id: 1,
         category: 'privat',
-        title: 'Terrassen-Lounge mit Glasdach',
+        title: 'Terrassenanlage mit Holzpergola und Feinsteinzeug',
         size: 'large',
         imageUrl: '/images/final/gallery-01.webp',
         images: [
@@ -97,64 +96,65 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
             '/images/final/gallery-02.webp',
         ],
     },
-    // Projekt 2: Gartengestaltung (mittlere Dateien ~9 MB)
     {
         id: 2,
         category: 'privat',
-        title: 'Moderne Gartengestaltung',
-        size: 'wide',
-        imageUrl: '/images/final/gallery-03.webp',
+        title: 'Moderne Terrassenüberdachung mit Glasschiebewänden',
+        size: 'large',
+        imageUrl: '/images/final/gallery-04.webp',
         images: [
-            '/images/final/gallery-03.webp',
             '/images/final/gallery-04.webp',
+            '/images/final/gallery-07.webp',
+            '/images/final/gallery-08.webp',
+            '/images/final/gallery-09.webp',
+            '/images/final/gallery-10.webp',
         ],
     },
-    // Projekt 3: Panorama (große Einzelaufnahme 13+ MB)
     {
         id: 3,
-        category: 'gewerbe',
-        title: 'Corporate Green Campus',
+        category: 'privat',
+        title: 'Erhöhte Natursteinterrasse mit Blockstufen',
         size: 'tall',
-        imageUrl: '/images/final/gallery-05.webp',
+        imageUrl: '/images/final/gallery-06.webp',
     },
-    // Projekt 4: Landschafts-Projekt (~11 MB Gruppe)
     {
         id: 4,
         category: 'privat',
-        title: 'Mediterrane Gartenoase',
-        size: 'large',
-        imageUrl: '/images/final/gallery-06.webp',
-        images: [
-            '/images/final/gallery-06.webp',
-            '/images/final/gallery-07.webp',
-            '/images/final/gallery-08.webp',
-        ],
+        title: 'Gepflasterter Sitzplatz im Garten',
+        size: 'wide',
+        imageUrl: '/images/final/gallery-05.webp',
     },
-    // Projekt 5: Premium-Garten (große Dateien 12-18 MB)
     {
         id: 5,
         category: 'privat',
-        title: 'Premium Gartenanlage',
+        title: 'Eingangsbereich und Zuwegung mit Rechteckpflaster',
         size: 'wide',
-        imageUrl: '/images/final/gallery-09.webp',
+        imageUrl: '/images/final/gallery-13.webp',
         images: [
-            '/images/final/gallery-09.webp',
-            '/images/final/gallery-10.webp',
-            '/images/final/gallery-11.webp',
+            '/images/final/gallery-13.webp',
+            '/images/final/gallery-12.webp',
         ],
     },
-    // Projekt 6: Außenanlage (~11 MB Gruppe)
     {
         id: 6,
-        category: 'oeffentlich',
-        title: 'Parkanlage Revitalisierung',
-        size: 'large',
-        imageUrl: '/images/final/gallery-12.webp',
-        images: [
-            '/images/final/gallery-12.webp',
-            '/images/final/gallery-13.webp',
-            '/images/final/gallery-14.webp',
-        ],
+        category: 'privat',
+        title: 'Rollrasenverlegung mit modernem Sichtschutzzaun',
+        size: 'wide',
+        imageUrl: '/images/final/gallery-11.webp',
+    },
+    {
+        id: 7,
+        category: 'privat',
+        title: 'Garten-Neuanlage und Erdarbeiten',
+        size: 'wide',
+        imageUrl: '/images/final/gallery-14.webp',
+    },
+    {
+        id: 8,
+        category: 'gewerbe',
+        title: 'Maschinentransport für Erdarbeiten',
+        size: 'tall',
+        imageUrl: '/images/final/gallery-03.webp',
     },
 ];
 

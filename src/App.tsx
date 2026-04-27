@@ -14,7 +14,6 @@ import { NotFoundPage } from './pages/NotFoundPage';
 import { ThemeProvider } from 'next-themes';
 import { AnimatePresence } from 'framer-motion';
 import { StickyMobileCta } from './components/features/StickyMobileCta';
-import { useScrollDepth } from './hooks/useTrackingHooks';
 import { useFocusManagement } from './hooks/useFocusManagement';
 import { OfflineBanner } from './components/common/OfflineBanner';
 
