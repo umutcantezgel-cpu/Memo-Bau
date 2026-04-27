@@ -22,6 +22,7 @@ export default defineConfig({
           vendor: ['react', 'react-dom', 'react-router-dom', 'react-helmet-async'],
           leaflet: ['react-leaflet', 'leaflet'],
           motion: ['framer-motion'],
+          icons: ['lucide-react'],
         },
       },
     },

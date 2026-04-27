@@ -263,10 +263,18 @@ Phase 1: Token Foundation (Tailwind v4)
     color: var(--color-neutral-white);
   }
 
-  /* Focus Indicator Accessibility (Kapitel 9.3) */
+  /* Focus Indicator Accessibility — Double-Ring (WCAG AAA)
+     White inner ring + brand outer ring = visible on ANY background */
   *:focus-visible {
-    outline: 3px solid var(--color-primary-base);
+    outline: 2px solid var(--color-neutral-white);
     outline-offset: 2px;
+    box-shadow: 0 0 0 4px var(--color-primary-base);
+  }
+
+  /* Placeholder contrast ≥ 4.5:1 (WCAG AAA for input hints) */
+  ::placeholder {
+    color: var(--color-neutral-midgray);
+    opacity: 1;
   }
 
   /* Reduced Motion (Phase 5) */
@@ -316,12 +324,122 @@ Phase 1: Token Foundation (Tailwind v4)
     }
   }
 
+  /* ─── High Contrast Mode (WCAG AAA) ─── */
+  @media (prefers-contrast: more) {
+    :root {
+      --shadow-elevation-1: 0 0 0 2px var(--color-neutral-darkgray);
+      --shadow-elevation-2: 0 0 0 2px var(--color-neutral-darkgray);
+      --shadow-elevation-3: 0 0 0 2px var(--color-neutral-darkgray);
+      --shadow-elevation-4: 0 0 0 3px var(--color-neutral-darkgray);
+      --shadow-elevation-5: 0 0 0 3px var(--color-neutral-darkgray);
+    }
+
+    *:focus-visible {
+      outline-width: 3px;
+    }
+  }
+
+  /* ─── Reduced Transparency ─── */
+  @media (prefers-reduced-transparency: reduce) {
+    .bg-noise {
+      display: none !important;
+    }
+
+    .backdrop-blur-md,
+    .backdrop-blur-sm {
+      backdrop-filter: none !important;
+      background-color: var(--color-neutral-darkgray) !important;
+    }
+  }
+
+  /* ─── Touch Devices: Disable hover-only effects ─── */
+  @media (hover: none) and (pointer: coarse) {
+    .hover\:-translate-y-\[2px\]:hover {
+      transform: none !important;
+    }
+
+    .magnetic-element {
+      transform: none !important;
+    }
+  }
+
+  /* ─── Forced Colors (Windows High Contrast) ─── */
+  @media (forced-colors: active) {
+    * {
+      forced-color-adjust: auto;
+    }
+
+    button,
+    a {
+      border: 1px solid transparent;
+    }
+
+    *:focus-visible {
+      outline: 3px solid Highlight;
+      outline-offset: 2px;
+    }
+
+    svg {
+      fill: currentColor;
+      stroke: currentColor;
+    }
+  }
+
+  /* ─── Print Stylesheet ─── */
+  @media print {
+    header,
+    footer,
+    nav,
+    .cookie-consent,
+    .sticky-mobile-cta,
+    .scroll-progress-indicator,
+    .calendly-badge-widget,
+    .mobile-quick-contact,
+    .bg-noise {
+      display: none !important;
+    }
+
+    body {
+      color: #000 !important;
+      background: #fff !important;
+      font-size: 12pt;
+      line-height: 1.5;
+    }
+
+    a[href]::after {
+      content: " (" attr(href) ")";
+      font-size: 0.8em;
+      color: #555;
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript"]::after {
+      content: "";
+    }
+
+    img,
+    .card,
+    section {
+      break-inside: avoid;
+    }
+
+    h1, h2, h3, h4 {
+      break-after: avoid;
+    }
+
+    main {
+      max-width: 100% !important;
+      padding: 0 !important;
+    }
+  }
+
   /* Heading Overrides */
   h1 {
     font-size: var(--text-h1);
     line-height: var(--leading-h1);
     letter-spacing: var(--tracking-h1);
     font-weight: 700;
+    text-wrap: balance;
   }
 
   h2 {
@@ -329,6 +447,7 @@ Phase 1: Token Foundation (Tailwind v4)
     line-height: var(--leading-h2);
     letter-spacing: var(--tracking-h2);
     font-weight: 700;
+    text-wrap: balance;
   }
 
   h3 {
@@ -336,12 +455,24 @@ Phase 1: Token Foundation (Tailwind v4)
     line-height: var(--leading-h3);
     letter-spacing: var(--tracking-h3);
     font-weight: 700;
+    text-wrap: balance;
   }
 
   h4 {
     font-size: var(--text-h4);
     line-height: var(--leading-h4);
     letter-spacing: var(--tracking-h4);
+    text-wrap: balance;
+  }
+
+  /* Typography Polish (Phase 2) */
+  p {
+    text-wrap: pretty;
+    hyphens: auto;
+  }
+
+  body {
+    font-variant-numeric: lining-nums;
   }
 
   /* Smooth Scrolling */
@@ -353,12 +484,7 @@ Phase 1: Token Foundation (Tailwind v4)
 
 
 
-  /* Accessibility: Global Focus Styles */
-  *:focus-visible {
-    outline: 2px solid var(--color-accent-base);
-    outline-offset: 4px;
-    border-radius: 2px;
-  }
+  /* Accessibility: Global Focus Styles — handled by double-ring above */
 
 
 }

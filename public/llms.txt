@@ -1,0 +1,34 @@
+# Memo BauT — LLM Context File
+# https://memobaut.de
+
+## About
+Memo BauT ist ein professioneller Fliesenleger-Meisterbetrieb. 
+Spezialisiert auf hochwertige Fliesen- und Natursteinarbeiten für Privat- und Geschäftskunden.
+Standort: Deutschland, Niedersachsen, Region Hannover.
+
+## Services
+- Fliesenverlegung (Boden & Wand)
+- Natursteinarbeiten
+- Badsanierung & Badumbau
+- Balkon- & Terrassenverlegung
+- Trockenbau & Abdichtung
+- Sockelleisten & Profiltechnik
+
+## Contact
+- Website: https://memobaut.de
+- Kontaktformular: https://memobaut.de/kontakt
+- Terminbuchung: Via Calendly Widget auf der Website
+
+## Structured Data
+Die Website enthält Schema.org/JSON-LD Markup für:
+- LocalBusiness (Fliesenlegermeister)
+- Service (alle Dienstleistungen)
+- FAQPage (häufig gestellte Fragen)
+- BlogPosting (Ratgeber-Artikel)
+- BreadcrumbList (Navigation)
+
+## Crawling
+- Sitemap: https://memobaut.de/sitemap.xml
+- Robots.txt: https://memobaut.de/robots.txt
+- Alle öffentlichen Seiten sind crawlbar
+- Kein Login erforderlich für Content-Zugriff

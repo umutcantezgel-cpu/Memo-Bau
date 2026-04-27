@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { NAVIGATION, COMPANY_INFO } from '../../core/constants';
 
 export const Footer: React.FC = () => (
-  <footer className="bg-neutral-darkgray text-neutral-white pt-space-20 pb-space-10 lg:pb-32 border-t border-neutral-white/10">
+  <footer role="contentinfo" className="bg-neutral-darkgray text-neutral-white pt-space-20 pb-space-10 lg:pb-32 border-t border-neutral-white/10">
     <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
         <div>
@@ -27,42 +27,46 @@ export const Footer: React.FC = () => (
         </div>
         <div>
           <h2 className="text-lg font-bold mb-6 text-neutral-white/90">Navigation</h2>
-          <ul className="space-y-3 text-sm text-neutral-white/60">
-            {NAVIGATION.map((item) => (
-              <li key={item.id}>
-                <Link
-                  to={item.id === 'home' ? '/' : `/${item.id}`}
-                  className="hover:text-accent-base transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] flex items-center group"
-                >
-                  <span className="w-1.5 h-1.5 bg-accent-base rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]"></span>
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <nav aria-label="Footer Links">
+            <ul className="space-y-3 text-sm text-neutral-white/60">
+              {NAVIGATION.map((item) => (
+                <li key={item.id}>
+                  <Link
+                    to={item.id === 'home' ? '/' : `/${item.id}`}
+                    className="hover:text-accent-base transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] flex items-center group"
+                  >
+                    <span className="w-1.5 h-1.5 bg-accent-base rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]"></span>
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
         <div>
           <h2 className="text-lg font-bold mb-6 text-neutral-white/90">Leistungen</h2>
-          <ul className="space-y-3 text-sm text-neutral-white/60">
-            {[
-              { label: 'Gartendesign', slug: 'gartendesign' },
-              { label: 'Landschaftsbau', slug: 'landschaftsbau' },
-              { label: 'Pflasterarbeiten', slug: 'pflasterarbeiten' },
-              { label: 'Bepflanzung', slug: 'bepflanzung' },
-              { label: 'Bewässerung', slug: 'bewaesserung' },
-              { label: 'Gartenpflege', slug: 'gartenpflege' },
-            ].map((item) => (
-              <li key={item.slug}>
-                <Link
-                  to={`/leistungen/${item.slug}`}
-                  className="hover:text-accent-base transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] flex items-center group"
-                >
-                  <span className="w-1.5 h-1.5 bg-accent-base rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]"></span>
-                  {item.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          <nav aria-label="Footer Leistungen">
+            <ul className="space-y-3 text-sm text-neutral-white/60">
+              {[
+                { label: 'Gartendesign', slug: 'gartendesign' },
+                { label: 'Landschaftsbau', slug: 'landschaftsbau' },
+                { label: 'Pflasterarbeiten', slug: 'pflasterarbeiten' },
+                { label: 'Bepflanzung', slug: 'bepflanzung' },
+                { label: 'Bewässerung', slug: 'bewaesserung' },
+                { label: 'Gartenpflege', slug: 'gartenpflege' },
+              ].map((item) => (
+                <li key={item.slug}>
+                  <Link
+                    to={`/leistungen/${item.slug}`}
+                    className="hover:text-accent-base transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] flex items-center group"
+                  >
+                    <span className="w-1.5 h-1.5 bg-accent-base rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]"></span>
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
         </div>
         <div>
           <h2 className="text-lg font-bold mb-6 text-neutral-white/90">Öffnungszeiten</h2>
