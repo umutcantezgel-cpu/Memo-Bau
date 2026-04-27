@@ -2,7 +2,7 @@ import React, { useState, useEffect, Suspense, lazy } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/layout/Header';
 import { Footer } from './components/layout/Footer';
-import { CookieConsent } from './components/common/CookieConsent';
+import { CookieConsentProvider } from './components/common/CookieConsentProvider';
 import { GoogleAnalytics } from './components/features/GoogleAnalytics';
 import { ErrorBoundary } from './components/common/ErrorBoundary';
 import { PersonalizationProvider } from './context/PersonalizationContext';
@@ -13,6 +13,19 @@ import { PageTransition } from './components/common/PageTransition';
 import { NotFoundPage } from './pages/NotFoundPage';
 import { ThemeProvider } from 'next-themes';
 import { AnimatePresence } from 'framer-motion';
+import { StickyMobileCta } from './components/features/StickyMobileCta';
+import { useScrollDepth } from './hooks/useTrackingHooks';
+import { useFocusManagement } from './hooks/useFocusManagement';
+import { OfflineBanner } from './components/common/OfflineBanner';
+
+import { usePageTracking, useScrollDepth } from './hooks/useTrackingHooks';
+
+const GlobalTracker = () => {
+    const location = useLocation();
+    useScrollDepth();
+    usePageTracking(location.pathname, location.search);
+    return null;
+};
 
 const HomePage = lazy(() =>
   import('./pages/HomePage').then((module) => ({ default: module.HomePage })),
@@ -116,6 +129,7 @@ const App: React.FC = () => {
           <Suspense fallback={<LoadingFallback />}>
             <MaintenancePage />
           </Suspense>
+          <CookieConsentProvider />
         </ThemeProvider>
       </ErrorBoundary>
     );
@@ -163,12 +177,15 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
   setMobileMenuOpen,
 }) => {
   const location = useLocation();
+  useFocusManagement();
 
   return (
     <div className="font-sans text-neutral-darkgray bg-neutral-white selection:bg-primary-base selection:text-neutral-white min-h-screen flex flex-col antialiased relative">
       {/* Global subtle film grain noise */}
       <div className="bg-noise absolute inset-0 pointer-events-none z-[1]" aria-hidden="true" />
-
+      
+      <GlobalTracker />
+      <OfflineBanner />
       <ScrollToTop />
       {/* Skip to main content link for keyboard users */}
       <a
@@ -185,7 +202,7 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
 
       <ScrollProgressIndicator />
 
-      <main id="main-content" className="flex-grow" role="main">
+      <main id="main-content" className="flex-grow" role="main" tabIndex={-1}>
         <Suspense fallback={<LoadingFallback />}>
           <AnimatePresence mode="wait">
             <PageTransition>
@@ -215,8 +232,10 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
 
       <Footer />
       <MobileQuickContact />
+      <StickyMobileCta />
+      <GlobalTracker />
       <GlobalCalendlyWidget />
-      <CookieConsent />
+      <CookieConsentProvider />
       <GoogleAnalytics />
     </div>
   );
