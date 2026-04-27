@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { PopupWidget } from 'react-calendly';
+import React, { useState, useEffect, lazy, Suspense } from 'react';
 import { useLocation } from 'react-router-dom';
 import { getConsentState } from '../../services/userProfile.service';
+
+const PopupWidget = lazy(() => import('react-calendly').then(mod => ({ default: mod.PopupWidget })));
 
 const LEGAL_PATHS = ['/impressum', '/datenschutz', '/agb', '/cookie-richtlinie', '/barrierefreiheit'];
 
@@ -46,13 +47,15 @@ export const GlobalCalendlyWidget: React.FC = () => {
 
     return (
         <div className="hidden md:block" style={{ zIndex: 40 }}>
-            <PopupWidget
-                url={calendlyUrl}
-                rootElement={rootElement}
-                text="Kostenlose Beratung buchen"
-                textColor="#ffffff"
-                color="#b38b59"
-            />
+            <Suspense fallback={null}>
+                <PopupWidget
+                    url={calendlyUrl}
+                    rootElement={rootElement}
+                    text="Kostenlose Beratung buchen"
+                    textColor="#ffffff"
+                    color="#b38b59"
+                />
+            </Suspense>
         </div>
     );
 };
