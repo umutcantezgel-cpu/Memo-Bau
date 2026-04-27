@@ -95,7 +95,7 @@ export const PersonalizationProvider: React.FC<PersonalizationProviderProps> = (
     // Update content variations when segment changes
     const contentVariations = getContentVariations(profile.segment);
 
-    // Check consent state on mount and on storage changes
+    // Check consent state on mount and on storage/consent changes
     useEffect(() => {
         const checkConsent = () => {
             const hasConsent = hasPersonalizationConsent();
@@ -103,7 +103,11 @@ export const PersonalizationProvider: React.FC<PersonalizationProviderProps> = (
         };
 
         window.addEventListener('storage', checkConsent);
-        return () => window.removeEventListener('storage', checkConsent);
+        window.addEventListener('consent_updated', checkConsent);
+        return () => {
+            window.removeEventListener('storage', checkConsent);
+            window.removeEventListener('consent_updated', checkConsent);
+        };
     }, []);
 
     // Auto-update segment based on behavioral data
