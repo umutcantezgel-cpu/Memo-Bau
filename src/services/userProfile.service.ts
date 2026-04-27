@@ -15,6 +15,7 @@ import {
     DEFAULT_PREFERENCES,
     DEFAULT_BEHAVIORAL_DATA,
 } from '../types/userProfile.types';
+import * as CookieConsent from 'vanilla-cookieconsent';
 
 // ============================================================================
 // UTILITY FUNCTIONS
@@ -84,6 +85,24 @@ export const setConsentState = (consent: ConsentState): void => {
 export const hasPersonalizationConsent = (): boolean => {
     const consent = getConsentState();
     return consent?.personalization === true;
+};
+
+export const syncConsentFromLibrary = (): void => {
+    const analytics = CookieConsent.acceptedCategory('analytics');
+    const marketing = CookieConsent.acceptedCategory('marketing');
+    const personalization = CookieConsent.acceptedCategory('personalization');
+
+    const newState: ConsentState = {
+        analytics,
+        marketing,
+        personalization,
+        timestamp: Date.now()
+    };
+
+    setConsentState(newState);
+
+    // Trigger legacy event for backwards compatibility
+    window.dispatchEvent(new CustomEvent('consent_updated', { detail: newState }));
 };
 
 // ============================================================================
