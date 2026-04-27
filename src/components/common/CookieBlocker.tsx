@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { getConsentState, setConsentState } from '../../services/userProfile.service';
+import { getConsentState } from '../../services/userProfile.service';
 import { Button } from './Button';
 import { ShieldAlert } from 'lucide-react';
+import * as CookieConsent from 'vanilla-cookieconsent';
 
 interface CookieBlockerProps {
     children: React.ReactNode;
@@ -44,13 +45,7 @@ export const CookieBlocker: React.FC<CookieBlockerProps> = ({ children, type, ti
     }, [type]);
 
     const handleAccept = () => {
-        const currentConsent = getConsentState() || { analytics: false, marketing: false, personalization: false, timestamp: Date.now() };
-        const newConsent = { ...currentConsent, [type]: true, timestamp: Date.now() };
-        setConsentState(newConsent);
-        localStorage.setItem('cookie-consent', 'accepted');
-        setHasConsent(true);
-        window.dispatchEvent(new Event('consent_updated'));
-        window.dispatchEvent(new StorageEvent('storage', { key: 'memobau_consent' }));
+        CookieConsent.showPreferences();
     };
 
     if (!isMounted) return null; // Prevent hydration errors
@@ -64,7 +59,7 @@ export const CookieBlocker: React.FC<CookieBlockerProps> = ({ children, type, ti
                 {description}
             </p>
             <Button onClick={handleAccept} variant="primary" className="text-sm font-semibold">
-                Inhalte laden & Cookies akzeptieren
+                Cookie-Einstellungen öffnen
             </Button>
             <p className="text-xs text-neutral-midgray mt-4 max-w-xs leading-relaxed">
                 Ihre Einwilligung können Sie jederzeit in unserer <a href="/datenschutz" className="text-accent-base hover:text-primary-base underline underline-offset-2 transition-colors duration-[var(--default-transition-duration)]">Datenschutzerklärung</a> widerrufen.
