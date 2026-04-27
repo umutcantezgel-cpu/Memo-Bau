@@ -8,6 +8,7 @@
   <!-- Security Headers -->
   <meta http-equiv="X-Content-Type-Options" content="nosniff" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <!-- TODO: Implement Nonce-based CSP for script-src to strictly enforce prior-blocking (remove global googletagmanager/calendly whitelist) -->
   <meta http-equiv="Content-Security-Policy"
     content="default-src 'self'; script-src 'self' 'unsafe-inline' https://*.googletagmanager.com https://assets.calendly.com; style-src 'self' 'unsafe-inline' https://*.googleapis.com https://assets.calendly.com; font-src 'self' https://*.gstatic.com data:; img-src 'self' data: https: blob:; connect-src 'self' https://*.googleapis.com https://*.google-analytics.com https://*.analytics.google.com; frame-src 'self' https://calendly.com;" />
 
