@@ -16,40 +16,64 @@ export const GoogleAnalytics: React.FC = () => {
     const location = useLocation();
 
     useEffect(() => {
-        // Check for consent and valid ID
-        const consent = getConsentState();
-        const hasConsent = consent?.analytics === true;
+        const handleAnalytics = () => {
+            const consent = getConsentState();
+            const hasConsent = consent?.analytics === true;
 
-        if (!hasConsent || !GA_MEASUREMENT_ID) {
-            return;
-        }
-
-        // Initialize GA if not already initialized
-        if (!window.gtag) {
-            const script = document.createElement('script');
-            script.async = true;
-            script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-
-            document.head.appendChild(script);
-
-            script.onload = () => {
-                window.dataLayer = window.dataLayer || [];
-                function gtag(...args: unknown[]) {
-                    window.dataLayer.push(args);
+            if (!hasConsent) {
+                if (window.gtag) {
+                    window.gtag('consent', 'update', { analytics_storage: 'denied' });
                 }
-                window.gtag = gtag;
-                gtag('js', new Date());
-                gtag('config', GA_MEASUREMENT_ID, {
+                const existingScript = document.getElementById('ga-script');
+                if (existingScript) {
+                    existingScript.remove();
+                }
+                return;
+            }
+
+            if (!GA_MEASUREMENT_ID) return;
+
+            // Initialize GA if not already initialized
+            if (!document.getElementById('ga-script')) {
+                const script = document.createElement('script');
+                script.id = 'ga-script';
+                script.async = true;
+                script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+
+                document.head.appendChild(script);
+
+                script.onload = () => {
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(...args: unknown[]) {
+                        window.dataLayer.push(args);
+                    }
+                    window.gtag = gtag;
+                    
+                    gtag('consent', 'default', { analytics_storage: 'denied' });
+                    gtag('consent', 'update', { analytics_storage: 'granted' });
+                    
+                    gtag('js', new Date());
+                    gtag('config', GA_MEASUREMENT_ID, {
+                        page_path: location.pathname,
+                        anonymize_ip: true, // GDPR compliance
+                    });
+                };
+            } else if (window.gtag) {
+                // Send pageview on route change
+                window.gtag('consent', 'update', { analytics_storage: 'granted' });
+                window.gtag('config', GA_MEASUREMENT_ID, {
                     page_path: location.pathname,
-                    anonymize_ip: true, // GDPR compliance
                 });
-            };
-        } else {
-            // Send pageview on route change
-            window.gtag('config', GA_MEASUREMENT_ID, {
-                page_path: location.pathname,
-            });
-        }
+            }
+        };
+
+        handleAnalytics();
+        
+        window.addEventListener('consent_updated', handleAnalytics);
+        
+        return () => {
+            window.removeEventListener('consent_updated', handleAnalytics);
+        };
     }, [location.pathname]);
 
     return null;
