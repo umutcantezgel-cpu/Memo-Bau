@@ -32,6 +32,7 @@ Vollständig responsive, performante Premium-Website für die **Memo BauT** – 
 |  **Mobile-First Design** | Optimiert für alle Geräte ab 320px Breite |
 |  **15× Premium-Rechtsseiten** | Impressum, Datenschutz (14 Kapitel), AGB, Cookie-Richtlinie, Barrierefreiheit |
 |  **Barrierefreiheit** | WCAG 2.1 AA konform mit Tastatur-Navigation & Reduced-Motion |
+|  **DSGVO & TTDSG Compliance** | Granulares Cookie-Consent Management (`vanilla-cookieconsent`) mit strengem "Prior Blocking" für Drittanbieter-Scripte (GA4, Calendly) |
 |  **SEO-optimiert** | Meta-Tags, Sitemap, robots.txt, semantisches HTML, Open Graph |
 |  **Performance** | Code-Splitting, Lazy-Loading, Gzip-Kompression, optimierte Bilder |
 
@@ -49,6 +50,7 @@ Vollständig responsive, performante Premium-Website für die **Memo BauT** – 
 | **Karten** | Leaflet + React-Leaflet |
 | **Terminbuchung** | React-Calendly |
 | **SEO** | React-Helmet-Async |
+| **Compliance** | Vanilla-Cookieconsent (DSGVO/TTDSG) |
 | **Build** | Vite 6.3 + SWC |
 | **Linting** | ESLint 9 + Prettier |
 | **Deployment** | Netlify / Vercel |
@@ -134,6 +136,7 @@ Erstelle eine `.env`-Datei basierend auf `.env.example`:
 | Variable | Beschreibung | Required |
 |---|---|---|
 | `VITE_CALENDLY_URL` | Calendly Terminbuchungs-URL | Optional |
+| `VITE_GA_MEASUREMENT_ID` | Google Analytics 4 Measurement ID | Optional |
 | `VITE_GEMINI_API_KEY` | Google Gemini API Key (Admin-Chat) | Optional |
 
 ---
