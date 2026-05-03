@@ -12,7 +12,6 @@ export const ValuePropositionSection: React.FC<ValuePropositionSectionProps> = (
     const accentColor = `oklch(var(--color-accent-base-l) var(--color-accent-base-c) calc(var(--color-accent-base-h) + ${config.accentShift}deg))`;
 
     const stats = [
-        { label: 'Projekte in Region', value: `${config.projektAnzahl}+` },
         { label: 'Anfahrt', value: `${config.fahrzeitMin} Min` },
         { label: 'Kundenzufriedenheit', value: '100%' },
         { label: 'Erfahrung', value: '25 Jahre' }
@@ -21,7 +20,7 @@ export const ValuePropositionSection: React.FC<ValuePropositionSectionProps> = (
     if (variant === 'stats-heavy') {
         return (
             <Section bgVariant="offwhite" className="py-8 md:py-12">
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-space-8 max-w-5xl mx-auto">
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-space-8 max-w-5xl mx-auto">
                     {stats.map((stat, idx) => (
                         <Reveal key={idx} animation="fade-in-up" delay={idx * 100}>
                             <div className="text-center">

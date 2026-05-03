@@ -169,10 +169,7 @@ export const LocationPage: React.FC = () => {
                                     Warum Memo-BauT in {locationConfig.name}?
                                 </h3>
                                 <ul className="space-y-3">
-                                    <li className="flex items-start gap-3 text-sm text-neutral-darkgray">
-                                        <CheckCircle className="w-5 h-5 text-primary-base shrink-0 mt-0.5" />
-                                        <span><strong>{locationConfig.projektAnzahl}+ realisierte Projekte</strong> im Raum {locationConfig.name}</span>
-                                    </li>
+
                                     <li className="flex items-start gap-3 text-sm text-neutral-darkgray">
                                         <CheckCircle className="w-5 h-5 text-primary-base shrink-0 mt-0.5" />
                                         <span>Nur <strong>{locationConfig.entfernungKm} km</strong> von unserem Standort entfernt ({locationConfig.fahrzeitMin} Min. Fahrzeit)</span>

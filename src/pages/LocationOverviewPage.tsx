@@ -126,7 +126,7 @@ export const LocationOverviewPage: React.FC = () => {
                                 Die Entfernungen in unserem Einsatzgebiet sind überschaubar - kein Standort ist mehr als 35 Kilometer von unserem Bauhof in Aßlar entfernt. Das bedeutet: Kurze Anfahrten, keine überhöhten Fahrtkosten, und im Notfall sind wir innerhalb von 30 Minuten bei Ihnen. Für Projekte außerhalb unseres Kerngebiets sprechen Sie uns bitte direkt an - bei entsprechender Projektgröße fahren wir auch gerne weiter.
                             </p>
                             <p>
-                                Auf den Standortseiten finden Sie zu jeder Stadt konkrete Informationen: Welche Leistungen wir dort anbieten, wie viele Projekte wir bereits realisiert haben, und Erfahrungsberichte von zufriedenen Kunden direkt aus der Nachbarschaft. So bekommen Sie einen ehrlichen Eindruck davon, was wir in Ihrer Gemeinde bereits umgesetzt haben.
+                                Auf den Standortseiten finden Sie zu jeder Stadt konkrete Informationen: Welche Leistungen wir dort anbieten und Erfahrungsberichte von zufriedenen Kunden direkt aus der Nachbarschaft. So bekommen Sie einen ehrlichen Eindruck davon, was wir in Ihrer Gemeinde bereits umgesetzt haben.
                             </p>
                         </div>
                     </div>

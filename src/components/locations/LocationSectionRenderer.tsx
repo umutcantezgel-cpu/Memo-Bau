@@ -3,7 +3,7 @@ import { CityConfig } from '../../core/cityConfig.types';
 import { HeroVariant } from './HeroVariant';
 import { LocalStorySection } from './LocalStorySection';
 import { FeatureGridSection } from './FeatureGridSection';
-import { LocalProjectShowcase } from './LocalProjectShowcase';
+
 import { LocalFAQSection } from './LocalFAQSection';
 import { PremiumContactBanner } from './PremiumContactBanner';
 import { ProcessTimelineSection } from './ProcessTimelineSection';
@@ -48,7 +48,6 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
                     {renderHero()}
                     <ValuePropositionSection config={config} variant="stats-heavy" />
                     <FeatureGridSection config={config} />
-                    <LocalProjectShowcase config={config} />
                     <LocalStorySection config={config} reversed={true} />
                     <LocalFAQSection config={config} />
                     <PremiumContactBanner config={config} />
@@ -62,7 +61,6 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
             return (
                 <>
                     {renderHero()}
-                    <LocalProjectShowcase config={config} layout="masonry" />
                     <LocalStorySection config={config} />
                     <FeatureGridSection config={config} highlightFirst={true} />
                     <ValuePropositionSection config={config} variant="minimal" />
@@ -81,7 +79,6 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
                     <LocalStorySection config={config} highlightLocalReferences={true} />
                     <FeatureGridSection config={config} />
                     <ValuePropositionSection config={config} variant="elegant" />
-                    <LocalProjectShowcase config={config} limit={3} />
                     <ProcessTimelineSection config={config} />
                     <LocalFAQSection config={config} />
                     <PremiumContactBanner config={config} />
