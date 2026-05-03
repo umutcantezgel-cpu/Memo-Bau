@@ -30,7 +30,6 @@ const generateSitemap = () => {
         { route: '/', priority: '1.0', changefreq: 'weekly' },
         { route: '/services', priority: '0.9', changefreq: 'monthly' },
         { route: '/contact', priority: '0.9', changefreq: 'monthly' },
-        { route: '/gallery', priority: '0.8', changefreq: 'weekly' },
         { route: '/about', priority: '0.8', changefreq: 'monthly' },
         { route: '/produkte', priority: '0.8', changefreq: 'monthly' },
         { route: '/standorte', priority: '0.8', changefreq: 'monthly' },
