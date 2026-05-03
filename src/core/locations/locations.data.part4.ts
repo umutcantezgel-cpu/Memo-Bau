@@ -30,11 +30,6 @@ export const locationLahnau: CityConfig = {
 
     ctaPrimary: 'Gartenkonzept anfragen',
     ctaSecondary: 'Unsere Projekte ansehen',
-    testimonialLocal: {
-        text: 'Unser Garten in Lahnau wurde mit viel Gespür für die Natur gestaltet. Fühlt sich an wie eine private Oase direkt an der Lahn.',
-        author: 'Familie W.',
-        location: 'Lahnau (Waldgirmes)'
-    },
     projektAnzahl: 12,
 
     faqItems: [
@@ -89,11 +84,6 @@ export const locationHuettenberg: CityConfig = {
 
     ctaPrimary: 'Vor-Ort-Termin vereinbaren',
     ctaSecondary: 'Leistungen erkunden',
-    testimonialLocal: {
-        text: 'Die Umsetzung unserer neuen Einfahrt in Hüttenberg war absolut professionell. Die Qualität der Pflasterarbeiten ist beeindruckend.',
-        author: 'Herr M.',
-        location: 'Hüttenberg'
-    },
     projektAnzahl: 18,
 
     faqItems: [
@@ -148,11 +138,6 @@ export const locationWeilburg: CityConfig = {
 
     ctaPrimary: 'Projekt in Weilburg starten',
     ctaSecondary: 'Portfolio ansehen',
-    testimonialLocal: {
-        text: 'Die Herausforderung unseres steilen Grundstücks an der Lahn wurde von Memo-BauT meisterhaft gelöst. Die Natursteinmauern sind ein echter Blickfang.',
-        author: 'Familie E.',
-        location: 'Weilburg (Lahnhang)'
-    },
     projektAnzahl: 15,
 
     faqItems: [
@@ -207,11 +192,6 @@ export const locationSchoeffengrund: CityConfig = {
 
     ctaPrimary: 'Gartenplanung anfragen',
     ctaSecondary: 'Unsere Leitfäden lesen',
-    testimonialLocal: {
-        text: 'Unser neuer Rollrasen und die Bewässerungsanlage funktionieren einwandfrei. Toller Service hier im Schöffengrund!',
-        author: 'Frau P.',
-        location: 'Schöffengrund (Schwalbach)'
-    },
     projektAnzahl: 10,
 
     faqItems: [
@@ -266,11 +246,6 @@ export const locationPohlheim: CityConfig = {
 
     ctaPrimary: 'Kostenlose Erstberatung in Pohlheim',
     ctaSecondary: 'Mehr über uns erfahren',
-    testimonialLocal: {
-        text: 'Die Konzeption unserer kompletten Außenanlage beim Neubau in Watzenborn war hervorragend. Vom ersten Entwurf bis zum letzten Stein.',
-        author: 'Familie K.',
-        location: 'Pohlheim (Watzenborn-Steinberg)'
-    },
     projektAnzahl: 22,
 
     faqItems: [

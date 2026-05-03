@@ -30,12 +30,6 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         ctaPrimary: 'Stadtgarten in Gießen anfragen',
         ctaSecondary: 'Designlinien entdecken',
-        testimonialLocal: {
-            text: 'Unser Garten im Gießener Mühlenviertel war winzig und unansehnlich. Memo-BauT hat jeden Zentimeter genutzt: Mit maßgefertigten Cortenstahl-Hochbeeten und hellen Keramikplatten wirkt die Terrasse jetzt dreimal so groß.',
-            author: 'Sara & Tim W.',
-            location: 'Gießen Zentrum',
-            rating: 5
-        },
         projektAnzahl: 154,
 
         faqItems: [
@@ -80,12 +74,6 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         ctaPrimary: 'Projekt in Linden besprechen',
         ctaSecondary: 'Terrassen-Beispiele ansehen',
-        testimonialLocal: {
-            text: 'Für unseren Neubau in Leihgestern brauchten wir quasi einmal "alles". Memo-BauT hat vom groben Erdaushub über die 80qm Edelpflaster-Einfahrt bis zum Rollrasen fantastisch und zügig abgeliefert.',
-            author: 'Familie D.',
-            location: 'Linden-Leihgestern',
-            rating: 5
-        },
         projektAnzahl: 64,
 
         faqItems: [
@@ -130,12 +118,6 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         ctaPrimary: 'Gartenwunsch in Langgöns äußern',
         ctaSecondary: 'Natursteingärten entdecken',
-        testimonialLocal: {
-            text: 'Unser abfallendes Grundstück in Niederkleen war schwer nutzbar. Memo-BauT hat in zwei Wochen wunderschöne, geschwungene Trockenmauern aus Basalt gezogen. Der Garten ist nun auf drei Ebenen ein absolutes Highlight.',
-            author: 'Heinrich M.',
-            location: 'Langgöns-Niederkleen',
-            rating: 5
-        },
         projektAnzahl: 32,
 
         faqItems: [
@@ -180,12 +162,6 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         ctaPrimary: 'Premium-Garten Butzbach planen',
         ctaSecondary: 'Designlinien ansehen',
-        testimonialLocal: {
-            text: 'Für unser neues Architektenhaus brauchten wir eine Außenanlage, die das reduzierte Design des Hauses fortführt. Memo-BauT hat mit riesigen Betonplatten und exakten Splittbeeten ein Meisterwerk geschaffen.',
-            author: 'Katharina H.',
-            location: 'Butzbach Kernstadt',
-            rating: 5
-        },
         projektAnzahl: 55,
 
         faqItems: [
@@ -230,12 +206,6 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         ctaPrimary: 'Villen-Garten in Bad Nauheim planen',
         ctaSecondary: 'Premium-Leistungen',
-        testimonialLocal: {
-            text: 'Der Anspruch an unseren Garten nahe dem Kurpark war enorm. Memo-BauT hat ein Licht- und Natursteinkonzept umgesetzt, das die Architektur unserer Jugendstil-Villa nachts wie ein Museum anstrahlt. Ein Meisterwerk.',
-            author: 'Dr. von A.',
-            location: 'Bad Nauheim',
-            rating: 5
-        },
         projektAnzahl: 61,
 
         faqItems: [

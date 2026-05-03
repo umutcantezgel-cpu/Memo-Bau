@@ -7,7 +7,7 @@ import { LocationSectionRenderer } from '../components/locations/LocationSection
 import { InteractiveMap } from '../components/features/InteractiveMap';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
-import { Star, MapPin, ArrowRight, Phone, CheckCircle } from 'lucide-react';
+import { MapPin, ArrowRight, Phone, CheckCircle } from 'lucide-react';
 import { Breadcrumbs } from '../components/common/Breadcrumbs';
 
 export const LocationPage: React.FC = () => {
@@ -82,29 +82,6 @@ export const LocationPage: React.FC = () => {
                 })
             }} />
 
-            {/* ═══ 3. REVIEW SCHEMA (if testimonial exists) ═══ */}
-            {locationConfig.testimonialLocal && (
-                <script type="application/ld+json" dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "Review",
-                        "reviewRating": {
-                            "@type": "Rating",
-                            "ratingValue": locationConfig.testimonialLocal.rating || 5,
-                            "bestRating": 5
-                        },
-                        "author": {
-                            "@type": "Person",
-                            "name": locationConfig.testimonialLocal.author
-                        },
-                        "reviewBody": locationConfig.testimonialLocal.text,
-                        "itemReviewed": {
-                            "@type": "LocalBusiness",
-                            "name": `${COMPANY_INFO.name} – ${locationConfig.name}`
-                        }
-                    })
-                }} />
-            )}
 
             {/* ═══ 4. VISIBLE BREADCRUMBS ═══ */}
             <Breadcrumbs items={[
@@ -114,31 +91,6 @@ export const LocationPage: React.FC = () => {
 
             {/* ═══ 5. MAIN CONTENT ENGINE ═══ */}
             <LocationSectionRenderer config={locationConfig} />
-
-            {/* ═══ 6. LOCAL TESTIMONIAL ═══ */}
-            {locationConfig.testimonialLocal && (
-                <Section bgVariant="white" className="py-16 md:py-24">
-                    <Reveal animation="fade-in-up">
-                        <div className="max-w-3xl mx-auto text-center">
-                            <div className="flex justify-center gap-1 mb-space-6">
-                                {[...Array(locationConfig.testimonialLocal.rating || 5)].map((_, i) => (
-                                    <Star key={i} className="w-5 h-5 text-accent-base fill-accent-base" />
-                                ))}
-                            </div>
-                            <blockquote className="text-lg md:text-xl font-medium text-neutral-darkgray leading-relaxed italic mb-space-6">
-                                „{locationConfig.testimonialLocal.text}"
-                            </blockquote>
-                            <div className="flex items-center justify-center gap-2 text-sm text-neutral-midgray">
-                                <MapPin className="w-4 h-4 text-accent-base" />
-                                <span className="font-semibold">{locationConfig.testimonialLocal.author}</span>
-                                {locationConfig.testimonialLocal.location && (
-                                    <span>- {locationConfig.testimonialLocal.location}</span>
-                                )}
-                            </div>
-                        </div>
-                    </Reveal>
-                </Section>
-            )}
 
             {/* ═══ 7. LOKALER BEZUG & TRUST SIGNALS ═══ */}
             <Section bgVariant="offwhite" className="py-16 md:py-20">

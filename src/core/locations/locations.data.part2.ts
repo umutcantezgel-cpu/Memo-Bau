@@ -30,12 +30,6 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         ctaPrimary: 'Projekt in Haiger anfragen',
         ctaSecondary: 'Bisherige Garten-Kreationen',
-        testimonialLocal: {
-            text: 'Unser Garten in Haiger-Seelbach war ein steiles Grundstück ohne echten Nutzen. Memo-BauT hat in unglaublicher Geschwindigkeit eine massive, dreistufige Stützmauer gezogen. Perfektes Handwerk – und sie haben die Baustelle jeden Tag sauber hinterlassen.',
-            author: 'Familie E.',
-            location: 'Haiger-Seelbach',
-            rating: 5
-        },
         projektAnzahl: 42,
 
         faqItems: [
@@ -80,12 +74,6 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         ctaPrimary: 'Gartenberatung in Ehringshausen',
         ctaSecondary: 'Zufriedene Nachbarn ansehen',
-        testimonialLocal: {
-            text: 'Ein Riesenvorteil, dass Memo-BauT aus Aßlar kommt. Wenn morgens Material fehlte, waren die Jungs in 10 Minuten wieder beim Bauhof in Aßlar und zurück in Ehringshausen. Das hat das Terrassen-Projekt immens beschleunigt. Top Ergebnis!',
-            author: 'Marcus P.',
-            location: 'Katzenfurt',
-            rating: 5
-        },
         projektAnzahl: 112,
 
         faqItems: [
@@ -130,12 +118,6 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         ctaPrimary: 'Kostenlosen Leun-Termin vereinbaren',
         ctaSecondary: 'Leistungen durchsuchen',
-        testimonialLocal: {
-            text: 'Ein schwieriges Grundstück in Biskirchen mit teils felsigem Boden wurde in 5 Tagen in eine fantastische, dreistufige Naturstein-Terrasse mit schwerem Schieferstein verwandelt. Chapeau an das Aßlarer Team!',
-            author: 'Stefan F.',
-            location: 'Leun-Biskirchen',
-            rating: 5
-        },
         projektAnzahl: 38,
 
         faqItems: [
@@ -180,12 +162,6 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         ctaPrimary: 'Termin in Solms vereinbaren',
         ctaSecondary: 'Natursteinauswahl',
-        testimonialLocal: {
-            text: 'Memo-BauT hat uns einen absoluten Traum erfüllt. 40 Meter Doppelstabmattenzaun inklsusive moderner Gabionensichtschutzwände, und dazu eine Terrasse aus tollen Travertin-Platten.',
-            author: 'Julia v. K.',
-            location: 'Burgsolms',
-            rating: 5
-        },
         projektAnzahl: 79,
 
         faqItems: [
@@ -230,12 +206,6 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         ctaPrimary: 'Kostenlosen Braunfels-Termin buchen',
         ctaSecondary: 'Portfolio Braunfels',
-        testimonialLocal: {
-            text: 'Memo-BauT hat die riesige, absackende Einfahrt vor unserer Villa in Braunfels nicht nur fundamentiert und mit herrlichem Grorform-Pflaster versehen, sondern gleich die komplette Grün-Architektur des Vorgartens mit Beleuchtung neu strukturiert. Exzellent.',
-            author: 'Professor Dr. W.',
-            location: 'Braunfels (Schlossnähe)',
-            rating: 5
-        },
         projektAnzahl: 31,
 
         faqItems: [

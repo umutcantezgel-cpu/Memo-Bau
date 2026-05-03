@@ -30,12 +30,6 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         ctaPrimary: 'Projekt in Werdorf starten',
         ctaSecondary: 'Unsere Referenzen',
-        testimonialLocal: {
-            text: 'Ein Team aus dem eigenen Ort, das mit unglaublicher Präzision arbeitet. Unser Garten am Hang wurde durch die Terrassierung zu einem echten Wohnraum im Freien.',
-            author: 'Familie S.',
-            location: 'Werdorf',
-            rating: 5
-        },
         projektAnzahl: 142,
 
         faqItems: [
@@ -80,12 +74,6 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         ctaPrimary: 'Gartenprojekt in Aßlar planen',
         ctaSecondary: 'Bisherige Aßlar-Projekte',
-        testimonialLocal: {
-            text: 'Die Nähe von Werdorf nach Aßlar war ein riesiger Vorteil. Das Team war jeden Morgen pünktlich an der Baustelle und die Abstimmung war extrem unkompliziert. Das Ergebnis: Ein Traum von einem Naturstein-Sitzplatz.',
-            author: 'Eheleute M.',
-            location: 'Aßlar-Kernstadt',
-            rating: 5
-        },
         projektAnzahl: 87,
 
         faqItems: [
@@ -130,12 +118,6 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         ctaPrimary: 'Stadtgarten in Wetzlar anfragen',
         ctaSecondary: 'Designlinien entdecken',
-        testimonialLocal: {
-            text: 'Unser Garten in Wetzlar-Stoppelberg war eine echte Herausforderung durch das abfallende Gelände. Memo-BauT hat ein mehrstufiges Terrassenkonzept erschaffen, das wie aus einem Architekturmagazin wirkt. Absolute Premium-Arbeit!',
-            author: 'Dr. von T.',
-            location: 'Wetzlar',
-            rating: 5
-        },
         projektAnzahl: 115,
 
         faqItems: [
@@ -180,12 +162,6 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         ctaPrimary: 'Garten in Dillenburg anfragen',
         ctaSecondary: 'Natursteingärten ansehen',
-        testimonialLocal: {
-            text: 'Unser rutschender Hang in Dillenburg-Manderbach wurde von Memo-BauT nicht nur gesichert, sondern durch wunderschöne, massive Natursteinmauern in drei nutzbare Ebenen verwandelt.',
-            author: 'Andreas K.',
-            location: 'Dillenburg',
-            rating: 5
-        },
         projektAnzahl: 64,
 
         faqItems: [
@@ -230,12 +206,6 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         ctaPrimary: 'Herborner Gartenprojekt starten',
         ctaSecondary: 'Leistungsportfolio',
-        testimonialLocal: {
-            text: 'Unser Grundstück im Herborner Umland wurde durch Memo-BauT komplett umgekrempelt. Aus einer unebenen Rasenfläche wurde ein gegliederter Naturgarten mit Bruchsteinmauer und einer atemberaubenden Terrasse.',
-            author: 'Fam. K.',
-            location: 'Herborn',
-            rating: 5
-        },
         projektAnzahl: 79,
 
         faqItems: [
