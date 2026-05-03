@@ -19,9 +19,9 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         headline: 'Gartenarchitektur in Werdorf – Wo unsere Wurzeln liegen',
         subheadline: 'An unserem Stammsitz verschmelzen meisterliche Handwerkstradition und visionäres Gartendesign.',
-        metaTitle: 'Premium Garten- & Landschaftsbau Werdorf | Memo BauT',
+        metaTitle: 'Premium Garten- & Landschaftsbau Werdorf | Memo-BauT',
         metaDescription: 'Ihr Experte für exklusiven Landschaftsbau direkt in Werdorf (35614). Von der 3D-Gartenplanung über Natursteinmauern bis zur Pflege. Kostenlose Erstberatung.',
-        story: 'Werdorf ist historisch unser Ursprung und ein Herzstück von Memo BauT. Aus diesem historischen Ort im Dilltal heraus haben wir uns der Transformation hessischer Gärten verschrieben. Die dörfliche Struktur mit ihren tiefen Gärten und dem direkten Bezug zur umgebenden Natur prägt unser Verständnis von Landschaftsbau: echt, beständig und im Einklang mit der Region.',
+        story: 'Werdorf ist historisch unser Ursprung und ein Herzstück von Memo-BauT. Aus diesem historischen Ort im Dilltal heraus haben wir uns der Transformation hessischer Gärten verschrieben. Die dörfliche Struktur mit ihren tiefen Gärten und dem direkten Bezug zur umgebenden Natur prägt unser Verständnis von Landschaftsbau: echt, beständig und im Einklang mit der Region.',
         topografie: 'Eingebettet in das sanfte Tal der Dill bietet Werdorf mit seinen leichten Hanglagen ideale Voraussetzungen für terrassierte Gartenkonzepte und Trockenmauern.',
         gartenStil: 'Moderne Landhausgärten, großzügige Familienparadiese und robuste Naturstein-Ensembles prägen das Bild der hochwertigen Werdorfer Außenanlagen.',
         wohnstruktur: 'Großzügige Einfamilienhäuser mit tiefen Grundstücken, oft am Hang gelegen.',
@@ -69,9 +69,9 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         headline: 'Exklusiver Landschaftsbau in Aßlar – Direkte Nachbarschaft, höchste Qualität',
         subheadline: 'Nur fünf Minuten von unserem Bauhof entfernt, realisieren wir in Aßlar Gartenträume mit maximaler Effizienz und lokaler Expertise.',
-        metaTitle: 'Gartengestaltung & Landschaftsbau Aßlar | Memo BauT',
+        metaTitle: 'Gartengestaltung & Landschaftsbau Aßlar | Memo-BauT',
         metaDescription: 'Ihr Premium-Partner für Gartengestaltung in Aßlar (35614). Terrassenbau, Pflasterarbeiten & Neuanlagen von Ihrem Experten direkt aus der Nachbarschaft.',
-        story: 'Für Memo BauT ist Aßlar mehr als nur das benachbarte Stadtgebiet – es ist unser tägliches Einsatzgebiet. Die direkte geographische Nähe ermöglicht uns eine unfassbare Reaktionsgeschwindigkeit und logistische Perfektion, die bei aufwendigen Landschaftsbau-Projekten den entscheidenden Unterschied macht. In Aßlar kennt man unsere anthrazitfarbenen Fahrzeuge.',
+        story: 'Für Memo-BauT ist Aßlar mehr als nur das benachbarte Stadtgebiet – es ist unser tägliches Einsatzgebiet. Die direkte geographische Nähe ermöglicht uns eine unfassbare Reaktionsgeschwindigkeit und logistische Perfektion, die bei aufwendigen Landschaftsbau-Projekten den entscheidenden Unterschied macht. In Aßlar kennt man unsere anthrazitfarbenen Fahrzeuge.',
         topografie: 'Die abwechslungsreiche Topografie Aßlars, geprägt von den bewaldeten Hängen des Dilltals und den urbaneren Tallagen, erfordert smarte Entwässerungs- und Stützkonzepte.',
         gartenStil: 'Aßlar zeigt einen spannenden Mix aus gepflegten Stadtgärten im Zentrum und ausgedehnten, naturnahen Familienresidenzen in den Höhenlagen wie Werdorf oder Berghausen.',
         wohnstruktur: 'Heterogene Bebauung mit Fokus auf Einfamilienhäusern und Doppelhaushälften in Hanglage.',
@@ -119,9 +119,9 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         headline: 'Urbane Gartenikonen in der Goethe-Stadt Wetzlar',
         subheadline: 'Wo historische Bedeutung auf zeitgenössisches Premium-Gartendesign trifft. Wir schaffen exklusive Rückzugsorte im Lahn-Dill-Kreis-Zentrum.',
-        metaTitle: 'Garten- & Landschaftsbau Wetzlar | Premium Design | Memo BauT',
+        metaTitle: 'Garten- & Landschaftsbau Wetzlar | Premium Design | Memo-BauT',
         metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Wetzlar (35578). Smart-Gardens, Dachterrassen & Exklusive Anlagen. Vereinbaren Sie jetzt Ihre Premium-Beratung.',
-        story: 'Wetzlar pulsiert. Als wirtschaftliches und kulturelles Zentrum der Region treffen hier moderne Architektur, historische Bausubstanz und urbanes Leben aufeinander. Ein Garten in Wetzlar muss heute oft mehr sein als eine Rasenfläche: Er ist erweiterter Wohnraum, repräsentative Lounge und grüner Ausgleich zum Stadtleben. Memo BauT bringt genau diese Symbiose aus städtischem Luxus und Naturerleben in die Wetzlarer Grundstücke.',
+        story: 'Wetzlar pulsiert. Als wirtschaftliches und kulturelles Zentrum der Region treffen hier moderne Architektur, historische Bausubstanz und urbanes Leben aufeinander. Ein Garten in Wetzlar muss heute oft mehr sein als eine Rasenfläche: Er ist erweiterter Wohnraum, repräsentative Lounge und grüner Ausgleich zum Stadtleben. Memo-BauT bringt genau diese Symbiose aus städtischem Luxus und Naturerleben in die Wetzlarer Grundstücke.',
         topografie: 'Die Tallage an der Lahn umgeben von teils steilen Höhenrücken (wie Kalsmunt) schafft mikroklimatisch interessante und bautechnisch anspruchsvolle Gartengrundstücke.',
         gartenStil: 'Der Fokus liegt auf repräsentativen, oft reduzierten Architektur-Gärten mit starken Kontrasten: Beton, Cortenstahl, glattes Wasser und gezielte Premium-Bepflanzung.',
         wohnstruktur: 'Von Stadtvillen am Stoppelberg bis hin zu modernen Penthouse-Wohnungen mit weitreichenden Dachterrassen in Dalheim oder an der Lahn.',
@@ -131,7 +131,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         ctaPrimary: 'Stadtgarten in Wetzlar anfragen',
         ctaSecondary: 'Designlinien entdecken',
         testimonialLocal: {
-            text: 'Unser Garten in Wetzlar-Stoppelberg war eine echte Herausforderung durch das abfallende Gelände. Memo BauT hat ein mehrstufiges Terrassenkonzept erschaffen, das wie aus einem Architekturmagazin wirkt. Absolute Premium-Arbeit!',
+            text: 'Unser Garten in Wetzlar-Stoppelberg war eine echte Herausforderung durch das abfallende Gelände. Memo-BauT hat ein mehrstufiges Terrassenkonzept erschaffen, das wie aus einem Architekturmagazin wirkt. Absolute Premium-Arbeit!',
             author: 'Dr. von T.',
             location: 'Wetzlar',
             rating: 5
@@ -169,9 +169,9 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         headline: 'Gartenkunst mit Charakter in der Oranierstadt Dillenburg',
         subheadline: 'Ob historisches Umfeld oder moderne Neubausiedlung: Wir übersetzen den Dillenburger Landschaftscharakter in private Gartenresidenzen.',
-        metaTitle: 'Gartengestaltung & Landschaftsbau Dillenburg | Memo BauT',
+        metaTitle: 'Gartengestaltung & Landschaftsbau Dillenburg | Memo-BauT',
         metaDescription: 'Hochwertiger Garten- und Landschaftsbau für Dillenburg (35683). Natursteinarbeiten, Hanggärten und Pflasterbau in Premium-Qualität aus Hessen.',
-        story: 'Dillenburg ist geprägt von seiner stolzen Geschichte und der umgebenden Naturlandschaft. Ein Garten hier muss Charakter haben. Er muss sich behaupten gegen die bewaldeten Hänge, sich einfügen in die teils historische Bausubstanz und dabei modernen Wohnkomfort im Freien bieten. Memo BauT versteht diesen Spagat und kreiert Außenanlagen, die beständig sind wie das Oranier-Schloss, aber luxuriös wie ein modernes Boutique-Hotel.',
+        story: 'Dillenburg ist geprägt von seiner stolzen Geschichte und der umgebenden Naturlandschaft. Ein Garten hier muss Charakter haben. Er muss sich behaupten gegen die bewaldeten Hänge, sich einfügen in die teils historische Bausubstanz und dabei modernen Wohnkomfort im Freien bieten. Memo-BauT versteht diesen Spagat und kreiert Außenanlagen, die beständig sind wie das Oranier-Schloss, aber luxuriös wie ein modernes Boutique-Hotel.',
         topografie: 'Starke Steigungen, tiefe Täler und oft feste, felsige Untergründe definieren den Dillenburger Landschaftsbau. Trockenmauern sind hier oft technische Notwendigkeit.',
         gartenStil: 'Rustikale Eleganz ist gefragt. Viel schwerer Naturstein, kombiniert mit weicher, üppiger Bepflanzung (Stauden, Gräser) und warmen Holzterrassen.',
         wohnstruktur: 'Traditionsreiche Wohnstraßen treffen auf hochgelegene, modern strukturierte Neubauquartiere mit Panoramablick.',
@@ -181,7 +181,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         ctaPrimary: 'Garten in Dillenburg anfragen',
         ctaSecondary: 'Natursteingärten ansehen',
         testimonialLocal: {
-            text: 'Unser rutschender Hang in Dillenburg-Manderbach wurde von Memo BauT nicht nur gesichert, sondern durch wunderschöne, massive Natursteinmauern in drei nutzbare Ebenen verwandelt.',
+            text: 'Unser rutschender Hang in Dillenburg-Manderbach wurde von Memo-BauT nicht nur gesichert, sondern durch wunderschöne, massive Natursteinmauern in drei nutzbare Ebenen verwandelt.',
             author: 'Andreas K.',
             location: 'Dillenburg',
             rating: 5
@@ -219,9 +219,9 @@ export const LOCATIONS_PART1: CityConfig[] = [
 
         headline: 'Gartengestaltung im Einklang mit Herborns Fachwerk-Erbe',
         subheadline: 'Moderne Landschaftsarchitektur, die den historischen und naturnahen Charakter von Herborn respektiert und auf ein Premium-Level anhebt.',
-        metaTitle: 'Gartengestaltung Herborn | Premium Landschaftsbau | Memo BauT',
+        metaTitle: 'Gartengestaltung Herborn | Premium Landschaftsbau | Memo-BauT',
         metaDescription: 'Hochwertiger Garten- & Landschaftsbau in Herborn (35745). Wir verbinden traditionelles Natursteinhandwerk mit modernem Garten-Design. Erstberatung sichern.',
-        story: 'Herborns Altstadt ist berühmt für ihr geschlossenes Fachwerk-Ensemble, umrahmt vom Westerwald. Gärten in Herborn und den umliegenden Tälern fordern Sensibilität für das Gewachsene. Bei Memo BauT verstehen wir es, präzise, geometrische Linienführungen und moderne Lifestyle-Terrassen so zu inszenieren, dass sie harmonisch mit den traditionellen Bauten oder den ausladenden Naturgrundstücken in der Herborner Peripherie interagieren.',
+        story: 'Herborns Altstadt ist berühmt für ihr geschlossenes Fachwerk-Ensemble, umrahmt vom Westerwald. Gärten in Herborn und den umliegenden Tälern fordern Sensibilität für das Gewachsene. Bei Memo-BauT verstehen wir es, präzise, geometrische Linienführungen und moderne Lifestyle-Terrassen so zu inszenieren, dass sie harmonisch mit den traditionellen Bauten oder den ausladenden Naturgrundstücken in der Herborner Peripherie interagieren.',
         topografie: 'Eine grüne Kesselanlage im Dilltal. Sanfte bis moderate Steigungen fordern oft terrassierte Gartenebenen.',
         gartenStil: 'Ein eleganter Mix aus Modern-Country, viel heimischem Holz, Natursteinmauern zur Terrassierung und weichen, insektenfreundlichen Pflanzungen.',
         wohnstruktur: 'Historischer Kern umrandet von gewachsenen, grünen Vorstädten und familienfreundlichen Neubau-Arealen.',
@@ -231,7 +231,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         ctaPrimary: 'Herborner Gartenprojekt starten',
         ctaSecondary: 'Leistungsportfolio',
         testimonialLocal: {
-            text: 'Unser Grundstück im Herborner Umland wurde durch Memo BauT komplett umgekrempelt. Aus einer unebenen Rasenfläche wurde ein gegliederter Naturgarten mit Bruchsteinmauer und einer atemberaubenden Terrasse.',
+            text: 'Unser Grundstück im Herborner Umland wurde durch Memo-BauT komplett umgekrempelt. Aus einer unebenen Rasenfläche wurde ein gegliederter Naturgarten mit Bruchsteinmauer und einer atemberaubenden Terrasse.',
             author: 'Fam. K.',
             location: 'Herborn',
             rating: 5

@@ -1,5 +1,5 @@
 /**
- * Memo BauT Products Page
+ * Memo-BauT Products Page
  * Product catalog with filtering and segment-adapted display
  */
 

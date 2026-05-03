@@ -193,9 +193,9 @@ export const FAQS: FaqItem[] = [
     },
 ];
 
-// Memo BauT GaLaBau company info
+// Memo-BauT GaLaBau company info
 export const COMPANY_INFO = {
-    name: 'Memo BauT',
+    name: 'Memo-BauT',
     owner: 'Inhaber: Mehmet Tezgel',
     tagline: 'Exklusive Gartenkunst',
     slogan: 'Räume für die Sinne. Gärten für die Ewigkeit.',

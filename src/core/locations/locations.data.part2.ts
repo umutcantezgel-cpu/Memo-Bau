@@ -19,9 +19,9 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         headline: 'Garten- und Landschaftsbau Haiger – Entschleunigte Oasen',
         subheadline: 'Im malerischen Dreiländereck Hessen, NRW und RLP gestalten wir weitläufige Gartenträume am Fuße des Rothaargebirges.',
-        metaTitle: 'Gartenbau & Landschaftsarchitektur Haiger | Memo BauT',
+        metaTitle: 'Gartenbau & Landschaftsarchitektur Haiger | Memo-BauT',
         metaDescription: 'Hochwertiger Garten- & Landschaftsbau in Haiger (35708). Von modernen Vorgärten bis hin zu großflächigen Natursteinanlagen im Lahn-Dill-Kreis.',
-        story: 'Haiger und seine Ortsteile zeichnen sich durch ländliche Weite und unmittelbare Nähe zur Natur aus. Gärten hier dürfen großzügiger atmen. Bei Memo BauT verstehen wir es, diese Freiräume zu strukturieren, ohne sie einzuschnüren. Wir schaffen fließende Übergänge zwischen privatem Luxus – wie großformatigen Terrassen – und der natürlichen Kulisse des Rothaargebirges.',
+        story: 'Haiger und seine Ortsteile zeichnen sich durch ländliche Weite und unmittelbare Nähe zur Natur aus. Gärten hier dürfen großzügiger atmen. Bei Memo-BauT verstehen wir es, diese Freiräume zu strukturieren, ohne sie einzuschnüren. Wir schaffen fließende Übergänge zwischen privatem Luxus – wie großformatigen Terrassen – und der natürlichen Kulisse des Rothaargebirges.',
         topografie: 'Weitläufige Tallagen entlang der Dill, die in felsige und waldreiche Erhebungen übergehen. Großzügige Grundstücke sind hier die Regel.',
         gartenStil: 'Moderne Interpretationen des Landhausstils dominieren. Vielfältige Bepflanzung, weitläufige Rasenflächen und organisch geformte Naturstein-Arrangements.',
         wohnstruktur: 'Traditionelle Fachwerkkulissen in den Ortskernen, umgeben von großzügigen Familienanwesen und Neubaugebieten in ruhiger Randlage.',
@@ -31,7 +31,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         ctaPrimary: 'Projekt in Haiger anfragen',
         ctaSecondary: 'Bisherige Garten-Kreationen',
         testimonialLocal: {
-            text: 'Unser Garten in Haiger-Seelbach war ein steiles Grundstück ohne echten Nutzen. Memo BauT hat in unglaublicher Geschwindigkeit eine massive, dreistufige Stützmauer gezogen. Perfektes Handwerk – und sie haben die Baustelle jeden Tag sauber hinterlassen.',
+            text: 'Unser Garten in Haiger-Seelbach war ein steiles Grundstück ohne echten Nutzen. Memo-BauT hat in unglaublicher Geschwindigkeit eine massive, dreistufige Stützmauer gezogen. Perfektes Handwerk – und sie haben die Baustelle jeden Tag sauber hinterlassen.',
             author: 'Familie E.',
             location: 'Haiger-Seelbach',
             rating: 5
@@ -69,7 +69,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         headline: 'Exklusive Gärten in Ehringshausen – Qualität aus der Nachbarschaft',
         subheadline: 'Nur einen Steinwurf von unserem Hauptsitz in Aßlar entfernt, verwandeln wir Gärten im gesamten Dilltal in repräsentative Erholungsorte.',
-        metaTitle: 'Garten- & Landschaftsbau Ehringshausen | Termintreue | Memo BauT',
+        metaTitle: 'Garten- & Landschaftsbau Ehringshausen | Termintreue | Memo-BauT',
         metaDescription: 'Ihr naheliegender Experte für Gartengestaltung in Ehringshausen (35630). Mauern, Pflasterarbeiten & Terrassen direkt aus der Region. Kostenlose Planung.',
         story: 'Ehringshausen und das Dilltal sind unsere unmittelbare Heimat. Als direktes Nachbarstädtchen profitieren unsere Kunden hier von maximaler Präsenz. Wir kennen das Terrain, die Böden und die Lichtverhältnisse im Dilltal so gut wie unseren eigenen Garten. Die logistischen Vorteile durch die extrem kurze Anfahrt ermöglichen unseren Ehringshäuser Kunden höchste Wirtschaftlichkeit und Reaktionsschnelligkeit bei Premium-Projekten.',
         topografie: 'Dicht bebauter Ortskern im Dilltal mit angrenzenden, stetig ansteigenden, waldnahen Vororten, die ein smartes Hang-Management erfordern.',
@@ -81,7 +81,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         ctaPrimary: 'Gartenberatung in Ehringshausen',
         ctaSecondary: 'Zufriedene Nachbarn ansehen',
         testimonialLocal: {
-            text: 'Ein Riesenvorteil, dass Memo BauT aus Aßlar kommt. Wenn morgens Material fehlte, waren die Jungs in 10 Minuten wieder beim Bauhof in Aßlar und zurück in Ehringshausen. Das hat das Terrassen-Projekt immens beschleunigt. Top Ergebnis!',
+            text: 'Ein Riesenvorteil, dass Memo-BauT aus Aßlar kommt. Wenn morgens Material fehlte, waren die Jungs in 10 Minuten wieder beim Bauhof in Aßlar und zurück in Ehringshausen. Das hat das Terrassen-Projekt immens beschleunigt. Top Ergebnis!',
             author: 'Marcus P.',
             location: 'Katzenfurt',
             rating: 5
@@ -119,8 +119,8 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         headline: 'Landschafts-Architektur am Ufer Lahn – Willkommen in Leun',
         subheadline: 'Im "Tor zum Westerwald" entwickeln wir maßgeschneiderte Gärten, die Natürlichkeit mit absoluter Premium-Verarbeitung vereinen.',
-        metaTitle: 'Landschaftsbau Leun | Premium Gartengestaltung | Memo BauT',
-        metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Leun an der Lahn (35638). Memo BauT erschafft Ihre Garten-Oase mit Erfahrung, modernen Baustoffen und Präzision.',
+        metaTitle: 'Landschaftsbau Leun | Premium Gartengestaltung | Memo-BauT',
+        metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Leun an der Lahn (35638). Memo-BauT erschafft Ihre Garten-Oase mit Erfahrung, modernen Baustoffen und Präzision.',
         story: 'Directly an den Ufern der Lahn eingebettet und umrahmt von den dunkleren Ausläufern des Westerwalds, besitzt Leun einen ganz eigenen charmanten Mikrokosmos. Grundstücke hier fordern oft eine Auseinandersetzung mit der Nähe zum Wasser oder der Topografie der angrenzenden Hänge (wie in Biskirchen). Unsere Mission: Gartenanlagen schaffen, die diese naturnahe Atmosphäre von Leun respektieren, dabei aber modernste, langlebige Materialien integrieren.',
         topografie: 'Flache Areale im engen Lahntal, rasant ansteigende Wohngebiete in den angrenzenden Leuner Ortsteilen Biskirchen, Bissenberg und Lahnbahnhof.',
         gartenStil: 'Organische, naturbetonte Designs. Kurvige Beeteinfassungen, viel Bruchstein, harmonische Übergänge von Holzterrassen in lockere, naturnahe Bepflanzungen.',
@@ -169,7 +169,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
 
         headline: 'Exklusives Garten-Design im Herzen von Solms',
         subheadline: 'Zwischen Lahn und Kloster Altenberg realisieren wir in Solms repräsentative Außenanlagen, private Wellness-Gärten und präzise Pflasterarbeiten.',
-        metaTitle: 'Gartenbau & Landschaftsarchitektur Solms | Memo BauT',
+        metaTitle: 'Gartenbau & Landschaftsarchitektur Solms | Memo-BauT',
         metaDescription: 'Hochwertiger Garten- & Landschaftsbau in Solms (35606). Von modernen Vorgärten bis hin zu großflächigen Natursteinanlagen. Ihr Experte für Burgsolms & Oberbiel.',
         story: 'Solms profitiert von einer unschlagbaren Lagevielfalt: Idyllische Flussnähe (Lahn) trifft auf anspruchsvolle Hanggebiete und familienfreundliche Bebauungsstrukturen. Ein Solmser Garten vereint heute das Bedürfnis nach Privatsphäre mit dem Wunsch nach einer ganzjährigen Outdoor-Wohnlandschaft. Wir konzipieren und bauen Anlagen, die sich wertsteigernd in das Solmser Umland (z.B. Burgsolms oder Oberbiel) einfügen und gleichzeitig individuelle, hochmoderne Akzente setzen.',
         topografie: 'Weite Ebenen an der Lahn wechseln sich in den Ortsteilen mit stark terrassierten Wohnlagen, vorwiegend Sand- und Lehmböden ab.',
@@ -181,7 +181,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         ctaPrimary: 'Termin in Solms vereinbaren',
         ctaSecondary: 'Natursteinauswahl',
         testimonialLocal: {
-            text: 'Memo BauT hat uns einen absoluten Traum erfüllt. 40 Meter Doppelstabmattenzaun inklsusive moderner Gabionensichtschutzwände, und dazu eine Terrasse aus tollen Travertin-Platten.',
+            text: 'Memo-BauT hat uns einen absoluten Traum erfüllt. 40 Meter Doppelstabmattenzaun inklsusive moderner Gabionensichtschutzwände, und dazu eine Terrasse aus tollen Travertin-Platten.',
             author: 'Julia v. K.',
             location: 'Burgsolms',
             rating: 5
@@ -231,7 +231,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         ctaPrimary: 'Kostenlosen Braunfels-Termin buchen',
         ctaSecondary: 'Portfolio Braunfels',
         testimonialLocal: {
-            text: 'Memo BauT hat die riesige, absackende Einfahrt vor unserer Villa in Braunfels nicht nur fundamentiert und mit herrlichem Grorform-Pflaster versehen, sondern gleich die komplette Grün-Architektur des Vorgartens mit Beleuchtung neu strukturiert. Exzellent.',
+            text: 'Memo-BauT hat die riesige, absackende Einfahrt vor unserer Villa in Braunfels nicht nur fundamentiert und mit herrlichem Grorform-Pflaster versehen, sondern gleich die komplette Grün-Architektur des Vorgartens mit Beleuchtung neu strukturiert. Exzellent.',
             author: 'Professor Dr. W.',
             location: 'Braunfels (Schlossnähe)',
             rating: 5

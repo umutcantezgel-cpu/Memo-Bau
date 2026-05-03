@@ -1,5 +1,5 @@
 /**
- * Memo BauT Product Catalog Data
+ * Memo-BauT Product Catalog Data
  * Construction materials, tools, and services
  */
 

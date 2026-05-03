@@ -59,18 +59,7 @@ const getDefaultData = (): CMSData => ({
             createdAt: new Date().toISOString(),
             updatedAt: new Date().toISOString(),
         },
-        {
-            id: 4,
-            title: 'Exklusive Bepflanzung',
-            description: 'Botanische Expertise für lebendige Gärten. Solitärgehölze und Staudenkompositionen.',
-            iconName: 'TreePine',
-            features: ['Premium Rollrasen', 'Solitärbaum-Pflanzung', 'Sichtschutz', 'Ganzjahres-Blüten'],
-            imageUrl: '/images/final/service-planting.webp',
-            isActive: true,
-            order: 4,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-        },
+
         {
             id: 5,
             title: 'Smart Garden & Wasser',
@@ -188,9 +177,9 @@ const getDefaultData = (): CMSData => ({
         },
     ],
     businessInfo: {
-        companyName: 'Memo BauT',
+        companyName: 'Memo-BauT',
         tagline: 'Exklusive Gartenkunst',
-        description: 'Memo-BauT ist Ihr erfahrener Fachbetrieb für Garten- und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat- und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk, Bepflanzung und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
+        description: 'Memo-BauT ist Ihr erfahrener Fachbetrieb für Garten- und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat- und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
         missionStatement: 'Räume für die Sinne. Gärten für die Ewigkeit.',
         foundedYear: 2019,
         hours: [
@@ -233,7 +222,7 @@ const getDefaultData = (): CMSData => ({
         updatedAt: new Date().toISOString(),
     },
     settings: {
-        siteName: 'Memo BauT | Exklusive Gartenkunst',
+        siteName: 'Memo-BauT | Exklusive Gartenkunst',
         siteDescription: 'Premium Garten- und Landschaftsbau für anspruchsvolle Kunden.',
         primaryColor: '#57534e', // Stone-600
         accentColor: '#d97706', // Amber-600

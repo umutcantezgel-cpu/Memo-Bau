@@ -1,9 +1,9 @@
-import { Leaf, Hammer, Droplets, PenTool, TreePine, Fence } from 'lucide-react';
+import { Leaf, Hammer, Droplets, PenTool, Fence } from 'lucide-react';
 import { NavigationItem, ServiceItem, PortfolioItem, Testimonial, FaqItem } from '../types';
 import React from 'react';
 
 /**
- * Main navigation structure for Memo BauT GaLaBau website.
+ * Main navigation structure for Memo-BauT GaLaBau website.
  */
 export const NAVIGATION: NavigationItem[] = [
   { name: 'Startseite', id: 'home' },
@@ -47,14 +47,7 @@ export const SERVICES: ServiceItem[] = [
     features: ['Natursteinpflaster', 'Betonstein', 'Holzterrassen', 'Poolumrandungen'],
     imageUrl: '/images/final/service-paving.webp',
   },
-  {
-    id: 4,
-    title: 'Bepflanzung & Rollrasen',
-    description: 'Professionelle Bepflanzung und Rollrasenverlegung.',
-    icon: React.createElement(TreePine, { className: 'w-8 h-8' }),
-    features: ['Rollrasen', 'Staudenbeete', 'Hecken', 'Obstbäume'],
-    imageUrl: '/images/final/service-planting.webp',
-  },
+
   {
     id: 5,
     title: 'Bewässerungssysteme',
@@ -68,7 +61,7 @@ export const SERVICES: ServiceItem[] = [
     title: 'Gartenpflege & Wartung',
     description: 'Regelmäßige Gartenpflege, damit Ihr Garten immer in Bestform bleibt.',
     icon: React.createElement(Leaf, { className: 'w-8 h-8' }),
-    features: ['Rasenpflege', 'Heckenschnitt', 'Winterservice', 'Saisonbepflanzung'],
+    features: ['Rasenpflege', 'Heckenschnitt', 'Winterservice'],
     imageUrl: '/images/final/products-tools.webp',
   },
 ];
@@ -149,8 +142,8 @@ export const FAQS: FaqItem[] = [
 
 // Company info
 export const COMPANY_INFO = {
-  name: 'Memo BauT',
-  tagline: 'Garten- & Landschaftsbau',
+  name: 'Memo-BauT',
+  tagline: 'Garten- und Landschaftsbau',
   slogan: 'Ihr Traumgarten wird Wirklichkeit',
   founded: 2019,
   employees: '15+',

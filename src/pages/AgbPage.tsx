@@ -12,7 +12,7 @@ export const AgbPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="AGB & Widerruf | Allgemeine Geschäftsbedingungen | Memo BauT"
+                title="AGB & Widerruf | Allgemeine Geschäftsbedingungen | Memo-BauT"
                 description={`Allgemeine Geschäftsbedingungen und Widerrufsbelehrung der ${COMPANY_INFO.name}. Vertragsgrundlagen, Zahlungskonditionen und Widerrufsrecht für Premium-Landschaftsbau.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },

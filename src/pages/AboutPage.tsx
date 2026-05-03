@@ -13,7 +13,7 @@ export const AboutPage: React.FC = () => (
     <main className="bg-neutral-white min-h-screen">
         <SEO
             title="Über Uns | Handwerkstradition & Vision"
-            description="Lernen Sie das Team hinter Memo BauT kennen. Ihr erfahrener Partner für exklusiven Landschaftsbau und langlebige Außenanlagen."
+            description="Lernen Sie das Team hinter Memo-BauT kennen. Ihr erfahrener Partner für exklusiven Landschaftsbau und langlebige Außenanlagen."
             breadcrumbs={[
                 { name: 'Home', url: '/' },
                 { name: 'Über Uns', url: '/about' }
@@ -24,7 +24,7 @@ export const AboutPage: React.FC = () => (
 
         <PageHero
             title="Leidenschaft für Gärten"
-            subtitle="Über Memo BauT"
+            subtitle="Über Memo-BauT"
             description={`Seit ${new Date().getFullYear() - COMPANY_INFO.founded} Jahren gestalten wir exklusive Gärten und Außenanlagen in der Region Wetzlar-Gießen.`}
             backgroundImage="/images/final/about-hero.webp"
         />
@@ -61,13 +61,13 @@ export const AboutPage: React.FC = () => (
                     <div className="absolute top-0 right-0 w-2/3 h-full bg-accent-base/10 rounded-full -z-10 transform translate-x-10 translate-y-10"></div>
                     <img
                         src="/images/final/service-landscaping.webp"
-                        alt="Memo BauT Team bei der Arbeit"
+                        alt="Memo-BauT Team bei der Arbeit"
                         className="rounded-[var(--radius-xl)] shadow-elevation-4 relative z-10 w-full object-cover aspect-[4/5]"
                         loading="lazy"
                         decoding="async"
                     />
                     <div className="absolute -bottom-6 -right-6 bg-accent-base text-neutral-white p-6 rounded-[var(--radius-lg)] z-20 shadow-elevation-3 hidden md:block">
-                        <p className="font-sans font-bold text-lg">Memo BauT</p>
+                        <p className="font-sans font-bold text-lg">Memo-BauT</p>
                         <p className="text-xs uppercase tracking-widest font-semibold">Seit {COMPANY_INFO.founded}</p>
                     </div>
                 </Reveal>
@@ -144,7 +144,7 @@ export const AboutPage: React.FC = () => (
                         <div className="mt-8 flex justify-center items-center">
                             <div className="w-12 h-1 bg-accent-base mr-4"></div>
                             <span className="font-semibold text-neutral-white tracking-widest uppercase">
-                                Das Memo BauT Team
+                                Das Memo-BauT Team
                             </span>
                             <div className="w-12 h-1 bg-accent-base ml-4"></div>
                         </div>
@@ -153,7 +153,7 @@ export const AboutPage: React.FC = () => (
             </Reveal>
 
             {/* Strengths */}
-            <SectionTitle subtitle="Unsere Stärken" title="Warum Memo BauT?" />
+            <SectionTitle subtitle="Unsere Stärken" title="Warum Memo-BauT?" />
             <StaggeredList className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8" baseDelay={0} staggerDelay={100}>
                 {[
                     { icon: Award, title: `${new Date().getFullYear() - COMPANY_INFO.founded}+ Jahre Erfahrung`, description: 'Kompetenz aus dutzenden exklusiven Projekten in der Region.' },
@@ -179,14 +179,14 @@ export const AboutPage: React.FC = () => (
                 <Reveal animation="fade-in-up">
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
-                            Unser Team — Handwerker mit Herzblut
+                            Unser Team - Handwerker mit Herzblut
                         </h2>
                         <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
                             <p>
-                                Hinter Memo BauT steht ein eingespieltes Team aus erfahrenen Landschaftsgärtnern, Pflasterlegern und Grünpflegespezialisten. Jeder bei uns hat eine abgeschlossene Berufsausbildung im Garten- und Landschaftsbau — keine Quereinsteiger, keine Leiharbeiter. Das macht sich in der Qualität jedes einzelnen Projekts bemerkbar.
+                                Hinter Memo-BauT steht ein eingespieltes Team aus erfahrenen Landschaftsgärtnern, Pflasterlegern und Grünpflegespezialisten. Jeder bei uns hat eine abgeschlossene Berufsausbildung im Garten- und Landschaftsbau - keine Quereinsteiger, keine Leiharbeiter. Das macht sich in der Qualität jedes einzelnen Projekts bemerkbar.
                             </p>
                             <p>
-                                Unser Gründer Mehmet Tezgel bringt über 7 Jahre Berufserfahrung im GaLaBau mit. Was 2019 mit einem Minibagger und einer klaren Vision begann, ist heute ein Fachbetrieb mit eigenem Maschinenpark — Bagger, Radlader, Rüttelplatten, Bewässerungsbohrer, Pflanzmaschinen — alles, was man für professionellen Gartenbau braucht. Keine gemieteten Geräte von der Baumaschinen-Börse. Eigene Maschinen, die wir kennen und die zuverlässig funktionieren.
+                                Unser Gründer Mehmet Tezgel bringt über 7 Jahre Berufserfahrung im GaLaBau mit. Was 2019 mit einem Minibagger und einer klaren Vision begann, ist heute ein Fachbetrieb mit eigenem Maschinenpark - Bagger, Radlader, Rüttelplatten, Bewässerungsbohrer, Pflanzmaschinen - alles, was man für professionellen Gartenbau braucht. Keine gemieteten Geräte von der Baumaschinen-Börse. Eigene Maschinen, die wir kennen und die zuverlässig funktionieren.
                             </p>
                             <p>
                                 Wir arbeiten grundsätzlich nach dem Prinzip: ein Projekt, ein Team, volle Aufmerksamkeit. Das heißt, wir haben keine fünf Baustellen gleichzeitig laufen, bei denen die Mitarbeiter hin- und hergeschickt werden. Wenn wir bei Ihnen anfangen, bleiben wir, bis alles fertig ist. Das spart Zeit, vermeidet Fehler und gibt Ihnen die Sicherheit, dass Ihr Garten nicht zur Dauerbaustelle wird.
@@ -201,11 +201,11 @@ export const AboutPage: React.FC = () => (
                 <Reveal animation="fade-in-up">
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
-                            Wie wir arbeiten — transparent und verbindlich
+                            Wie wir arbeiten - transparent und verbindlich
                         </h2>
                         <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
                             <p>
-                                Planung ist bei uns nicht nur ein Prospekt mit hübschen Bildern. Wir erstellen echte Ausführungspläne mit Maßen, Schichtangaben, Materiallisten und einer detaillierten Kostenkalkulation. Sie wissen vorher, was es kostet — und es gibt keine bösen Überraschungen auf der Rechnung. Das unterscheidet uns von vielen Mitbewerbern, die erst mal anfangen und dann nachrechnen.
+                                Planung ist bei uns nicht nur ein Prospekt mit hübschen Bildern. Wir erstellen echte Ausführungspläne mit Maßen, Schichtangaben, Materiallisten und einer detaillierten Kostenkalkulation. Sie wissen vorher, was es kostet - und es gibt keine bösen Überraschungen auf der Rechnung. Das unterscheidet uns von vielen Mitbewerbern, die erst mal anfangen und dann nachrechnen.
                             </p>
                             <p>
                                 Unsere Materialien beziehen wir von regionalen Baustoffhändlern und direkt von Herstellern, mit denen wir seit Jahren zusammenarbeiten. Naturstein aus dem Westerwald, Keramikplatten aus italienischer Produktion, Rollrasen von einer Gärtnerei bei Gießen, Stauden und Gehölze von lokalen Baumschulen. Wir wissen, woher jedes Material kommt und können für die Qualität bürgen.
@@ -223,14 +223,14 @@ export const AboutPage: React.FC = () => (
                 <Reveal animation="fade-in-up">
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
-                            Regional verwurzelt — von Wetzlar bis Gießen
+                            Regional verwurzelt - von Wetzlar bis Gießen
                         </h2>
                         <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
                             <p>
-                                Der Lahn-Dill-Kreis und der nördliche Gießener Raum sind unser Revier. Wir kennen die Böden hier — den schweren Lehm im Dilltal, den steinigen Untergrund an den Hängen bei Braunfels, den sandigen Boden in der Wetterau. Dieses lokale Wissen fließt in jede unserer Planungen ein. Denn der schönste Bepflanzungsplan nützt nichts, wenn er nicht zum Standort passt.
+                                Der Lahn-Dill-Kreis und der nördliche Gießener Raum sind unser Revier. Wir kennen die Böden hier - den schweren Lehm im Dilltal, den steinigen Untergrund an den Hängen bei Braunfels, den sandigen Boden in der Wetterau. Dieses lokale Wissen fließt in jede unserer Planungen ein. Denn der schönste Bepflanzungsplan nützt nichts, wenn er nicht zum Standort passt.
                             </p>
                             <p>
-                                Viele unserer Kunden empfehlen uns im Freundes- und Bekanntenkreis weiter. Das ist für uns das größte Kompliment und der beste Beweis dafür, dass unsere Arbeit überzeugt. In Aßlar, Wetzlar und Lahnau kennt man uns mittlerweile — nicht, weil wir die lauteste Werbung machen, sondern weil die Gärten für sich sprechen.
+                                Viele unserer Kunden empfehlen uns im Freundes- und Bekanntenkreis weiter. Das ist für uns das größte Kompliment und der beste Beweis dafür, dass unsere Arbeit überzeugt. In Aßlar, Wetzlar und Lahnau kennt man uns mittlerweile - nicht, weil wir die lauteste Werbung machen, sondern weil die Gärten für sich sprechen.
                             </p>
                         </div>
                     </div>

@@ -61,7 +61,7 @@ export const LocationOverviewPage: React.FC = () => {
         <main className="bg-neutral-white min-h-screen">
             <SEO
                 title="Unsere Standorte | Hessenweit für Sie im Einsatz"
-                description="Egal ob Wetzlar, Gießen, Bad Homburg oder Frankfurt: Memo BauT gestaltet Traumgärten in ganz Hessen. Premium-Landschaftsbau in Ihrer Nähe."
+                description="Egal ob Wetzlar, Gießen, Bad Homburg oder Frankfurt: Memo-BauT gestaltet Traumgärten in ganz Hessen. Premium-Landschaftsbau in Ihrer Nähe."
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
                     { name: 'Standorte', url: '/standorte' }
@@ -123,7 +123,7 @@ export const LocationOverviewPage: React.FC = () => {
                                 Unser Einzugsgebiet erstreckt sich vom Lahn-Dill-Kreis über den Landkreis Gießen bis in die Wetterau und den Kreis Limburg-Weilburg. In jedem dieser Gebiete haben wir über die Jahre echte Erfahrung aufgebaut. Wir kennen die Besonderheiten jeder Lage: Die Hangsituationen in Braunfels und Solms brauchen andere Lösungen als die flachen Grundstücke in der Lahnaue bei Lahnau oder Wetzlar. In Dillenburg und Herborn arbeiten wir häufig mit den regionaltypischen Grauwacke-Natursteinen, während in der Wetterau bei Butzbach und Bad Nauheim Sandstein und Basalt dominieren.
                             </p>
                             <p>
-                                Die Entfernungen in unserem Einsatzgebiet sind überschaubar — kein Standort ist mehr als 35 Kilometer von unserem Bauhof in Aßlar entfernt. Das bedeutet: Kurze Anfahrten, keine überhöhten Fahrtkosten, und im Notfall sind wir innerhalb von 30 Minuten bei Ihnen. Für Projekte außerhalb unseres Kerngebiets sprechen Sie uns bitte direkt an — bei entsprechender Projektgröße fahren wir auch gerne weiter.
+                                Die Entfernungen in unserem Einsatzgebiet sind überschaubar - kein Standort ist mehr als 35 Kilometer von unserem Bauhof in Aßlar entfernt. Das bedeutet: Kurze Anfahrten, keine überhöhten Fahrtkosten, und im Notfall sind wir innerhalb von 30 Minuten bei Ihnen. Für Projekte außerhalb unseres Kerngebiets sprechen Sie uns bitte direkt an - bei entsprechender Projektgröße fahren wir auch gerne weiter.
                             </p>
                             <p>
                                 Auf den Standortseiten finden Sie zu jeder Stadt konkrete Informationen: Welche Leistungen wir dort anbieten, wie viele Projekte wir bereits realisiert haben, und Erfahrungsberichte von zufriedenen Kunden direkt aus der Nachbarschaft. So bekommen Sie einen ehrlichen Eindruck davon, was wir in Ihrer Gemeinde bereits umgesetzt haben.

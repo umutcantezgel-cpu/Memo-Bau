@@ -91,7 +91,7 @@ export const ServiceAreaMap: React.FC = () => {
 
         const popupContent = `
             <div class="text-center p-2 font-sans min-w-[200px]">
-                <h3 class="font-bold text-slate-900 mb-0 text-base">Memo BauT</h3>
+                <h3 class="font-bold text-slate-900 mb-0 text-base">Memo-BauT</h3>
                 <p class="text-xs text-slate-500 font-medium uppercase tracking-wide m-0 mb-2">Garten- & Landschaftsbau</p>
                 <div class="text-sm text-slate-700 mb-3 bg-slate-50 p-2 rounded border border-slate-100">
                     Manufakturstraße 1<br>35578 Wetzlar

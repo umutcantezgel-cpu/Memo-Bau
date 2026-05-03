@@ -1,5 +1,5 @@
 /**
- * Memo BauT ProductCard Component
+ * Memo-BauT ProductCard Component
  * Displays product with segment-adapted pricing and actions
  */
 

@@ -1,5 +1,5 @@
 /**
- * Memo BauT User Profile & Segmentation Types
+ * Memo-BauT User Profile & Segmentation Types
  * Enables personalized user experiences based on customer type
  */
 

@@ -1,5 +1,5 @@
 /**
- * Memo BauT User Profile Service
+ * Memo-BauT User Profile Service
  * Manages user profile persistence, retrieval, and updates
  * GDPR-compliant with consent-based data collection
  */

@@ -132,7 +132,7 @@ export const LocationPage: React.FC = () => {
                                 <MapPin className="w-4 h-4 text-accent-base" />
                                 <span className="font-semibold">{locationConfig.testimonialLocal.author}</span>
                                 {locationConfig.testimonialLocal.location && (
-                                    <span>— {locationConfig.testimonialLocal.location}</span>
+                                    <span>- {locationConfig.testimonialLocal.location}</span>
                                 )}
                             </div>
                         </div>
@@ -166,7 +166,7 @@ export const LocationPage: React.FC = () => {
                             {/* Trust Signals */}
                             <div>
                                 <h3 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6">
-                                    Warum Memo BauT in {locationConfig.name}?
+                                    Warum Memo-BauT in {locationConfig.name}?
                                 </h3>
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-3 text-sm text-neutral-darkgray">

@@ -14,7 +14,6 @@ const SERVICE_DETAILS: Record<number, string> = {
     1: 'Von der ersten Idee bis zum fertigen Konzept begleiten wir Sie durch jeden Schritt. Unsere 3D-Visualisierungen geben Ihnen bereits vor dem ersten Spatenstich einen realistischen Eindruck Ihres zukünftigen Gartens. Wir berücksichtigen dabei Bodenbeschaffenheit, Sonnenverlauf und Ihre persönlichen Wünsche – für ein stimmiges Gesamtkonzept, das Architektur und Natur harmonisch verbindet.',
     2: 'Ob Hanglage, Senke oder unebenes Terrain – wir modellieren Ihr Grundstück nach Maß. Mit modernem Gerät und jahrelanger Erfahrung schaffen wir die perfekte Basis für alle weiteren Arbeiten. Professionelle Drainage-Systeme sorgen für optimale Entwässerung, während unsere Hangsicherungen mit Naturstein oder Gabionen auch schwierige Geländestrukturen dauerhaft stabilisieren.',
     3: 'Jede Fläche verdient das passende Material. Ob eleganter Naturstein aus Portugal, robuster Granit aus der Region oder warme Holzdielen für die Terrasse – wir verarbeiten ausschließlich erstklassige Materialien mit höchsten Qualitätsstandards. Unsere Pflastermeister stehen für präzise Verlegung und fachgerechten Unterbau nach bewährten Richtlinien.',
-    4: 'Die richtige Pflanze am richtigen Ort: Wir wählen Gehölze, Stauden und Gräser, die zu Ihrem Standort und Ihren Pflegewünschen passen. Von imposanten Solitärbäumen über blühende Staudenbeete bis zu dichten Hecken für maximale Privatsphäre. Unser Premium-Rollrasen verwandelt kahle Flächen innerhalb eines Tages in saftige Grünflächen – inklusive professioneller Pflegeberatung.',
     5: 'Moderne Bewässerungstechnik spart Zeit, Wasser und Geld. Wir installieren vollautomatische Systeme mit Bodenfeuchtesensoren und App-Steuerung, die Ihren Garten auch während Ihres Urlaubs optimal versorgen. Zusätzlich integrieren wir auf Wunsch Zisternen zur Regenwassernutzung – nachhaltig und kosteneffizient für die kommenden Jahre.',
     6: 'Ein Garten ist niemals fertig, er entwickelt sich stetig weiter. Mit unseren Wartungsverträgen bleiben Ihre Pflanzen vital, der Rasen dicht und die Beete gepflegt. Von der Frühjahrskur über den sommerlichen Formschnitt bis zur Wintervorbereitung – wir kümmern uns um alle saisonalen Arbeiten, damit Sie Ihren Garten einfach nur genießen können.',
 };
@@ -24,7 +23,6 @@ const SERVICE_SLUG_MAP: Record<number, string> = {
     1: 'gartendesign',
     2: 'landschaftsbau',
     3: 'pflasterarbeiten',
-    4: 'bepflanzung',
     5: 'bewaesserung',
     6: 'gartenpflege',
 };
@@ -63,7 +61,7 @@ export const ServicesPage: React.FC = () => {
                         <h1 className="text-h2 md:text-h1 font-sans font-bold text-neutral-darkgray mb-space-6 tracking-h2 text-balance">Gärten mit Charakter</h1>
                         <p className="text-body text-neutral-midgray leading-body font-normal">
                             Jeder Garten ist ein Unikat. Unser Anspruch ist es, die Architektur Ihres Hauses mit der Natur zu verbinden.
-                            Dabei setzen wir auf langlebige Materialien, bewährte Bautechniken und kreative Bepflanzungskonzepte.
+                            Dabei setzen wir auf langlebige Materialien und bewährte Bautechniken.
                         </p>
                     </div>
                 </Reveal>

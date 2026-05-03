@@ -1,12 +1,12 @@
 # KFT Design System Documentation
 
-## Memo BauT Design System
+## Memo-BauT Design System
 
 ---
 
 ## Overview
 
-This is a token-based design system with the `--kft-*` prefix for "Memo BauT". All design decisions are systematically organized using CSS custom properties for consistent, maintainable styling.
+This is a token-based design system with the `--kft-*` prefix for "Memo-BauT". All design decisions are systematically organized using CSS custom properties for consistent, maintainable styling.
 
 **Key Principles:**
 
@@ -246,7 +246,7 @@ Large:   1200px+
 - Schema markup (to be implemented in meta tags)
 
 ```
-Memo BauT
+Memo-BauT
 Geschäftsführer: Mehmet Tezgel
 Manufakturstraße 1
 35578 Wetzlar
@@ -264,7 +264,7 @@ Aßlar, Wetzlar, Gießen und Umgebung (50 km Radius)
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": "Memo BauT",
+  "name": "Memo-BauT",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Manufakturstraße 1",

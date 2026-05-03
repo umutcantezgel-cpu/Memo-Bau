@@ -30,7 +30,7 @@ export const ServiceDetailPage: React.FC = () => {
         <main className="bg-neutral-white min-h-screen">
             {/* ═══ SEO HEAD ═══ */}
             <SEO
-                title={service.metaTitle.replace(' | Memo BauT', '')}
+                title={service.metaTitle.replace(' | Memo-BauT', '')}
                 description={service.metaDescription}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },

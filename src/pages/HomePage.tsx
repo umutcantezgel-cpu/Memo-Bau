@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, ChevronDown, Leaf, PenTool, Sprout, Shield, Award, CheckCircle, Plus, Minus } from 'lucide-react';
+import { ArrowRight, ChevronDown, Leaf, PenTool, Shield, Award, CheckCircle, Plus, Minus } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { SERVICES, COMPANY_INFO } from '../core/constants';
 import { Button } from '../components/common/Button';
@@ -51,7 +51,7 @@ export const HomePage: React.FC = () => {
         <div className="bg-neutral-white text-neutral-darkgray selection:bg-primary-base selection:text-neutral-white">
             <SEO
                 title="Exklusive Gartengestaltung & Landschaftsarchitektur Wetzlar"
-                description="Memo BauT verwandelt Außenbereiche in luxuriöse Lebensräume. Ihre Experten für gehobene Gartengestaltung, Landschaftsbau und Architektur in Wetzlar."
+                description="Memo-BauT verwandelt Außenbereiche in luxuriöse Lebensräume. Ihre Experten für gehobene Gartengestaltung, Landschaftsbau und Architektur in Wetzlar."
                 isHomePage={true}
                 aggregateRating={{ ratingValue: 5.0, reviewCount: 2 }}
             />
@@ -61,7 +61,7 @@ export const HomePage: React.FC = () => {
                 __html: JSON.stringify({
                     "@context": "https://schema.org",
                     "@type": "VideoObject",
-                    "name": "Memo BauT – Exklusive Gartengestaltung in Wetzlar",
+                    "name": "Memo-BauT – Exklusive Gartengestaltung in Wetzlar",
                     "description": "Einblick in unsere Premium-Garten- und Landschaftsbauprojekte im Raum Wetzlar, Gießen und Mittelhessen.",
                     "thumbnailUrl": "https://memobaut.de/images/final/hero-home.webp",
                     "contentUrl": "https://memobaut.de/videos/hero-garden-latest.mp4",
@@ -88,7 +88,7 @@ export const HomePage: React.FC = () => {
                         {/* Fallback image if video is not supported or taking long to load */}
                         <img
                             src="/images/final/hero-home.webp"
-                            alt="Exklusive Gartengestaltung von Memo BauT – Premium Pool-Garten in Wetzlar"
+                            alt="Exklusive Gartengestaltung von Memo-BauT – Premium Pool-Garten in Wetzlar"
                             className="w-full h-full object-cover object-center"
                             width={1920}
                             height={1080}
@@ -180,7 +180,6 @@ export const HomePage: React.FC = () => {
                             <StaggeredList className="space-y-space-8 mt-space-12" baseDelay={100} staggerDelay={100}>
                                 {[
                                     { icon: PenTool, title: "Ganzheitliche Planung", text: "Von der ersten Skizze bis zum Beleuchtungskonzept." },
-                                    { icon: Sprout, title: "Exquisite Bepflanzung", text: "Sorgfältig kuratierte Pflanzenauswahl für jede Jahreszeit." },
                                     { icon: Leaf, title: "Nachhaltige Materialien", text: "Naturstein, Hölzer und Keramik höchster Qualität." }
                                 ].map((item, i) => (
                                     <div key={i} className="flex gap-6 group">
@@ -299,16 +298,16 @@ export const HomePage: React.FC = () => {
 
                     <div className="space-y-4">
                         {[
-                            { q: "Wie läuft ein Projekt mit Memo BauT ab?", a: "Nach einer ersten Kontaktaufnahme vereinbaren wir einen Vor-Ort-Termin zur Bestandsaufnahme und Besprechung Ihrer Wünsche. Daraufhin erstellen wir ein detailliertes Konzept inklusive 3D-Visualisierung und transparentem Kostenvoranschlag. Nach Ihrer Freigabe beginnen wir mit der fachgerechten Umsetzung — bei einem typischen Einfamilienhausgarten dauert die Realisierung etwa 2-4 Wochen." },
+                            { q: "Wie läuft ein Projekt mit Memo-BauT ab?", a: "Nach einer ersten Kontaktaufnahme vereinbaren wir einen Vor-Ort-Termin zur Bestandsaufnahme und Besprechung Ihrer Wünsche. Daraufhin erstellen wir ein detailliertes Konzept inklusive 3D-Visualisierung und transparentem Kostenvoranschlag. Nach Ihrer Freigabe beginnen wir mit der fachgerechten Umsetzung - bei einem typischen Einfamilienhausgarten dauert die Realisierung etwa 2-4 Wochen." },
                             { q: "Bieten Sie auch regelmäßige Gartenpflege an?", a: "Ja, wir bieten umfassende Pflegekonzepte für private und gewerbliche Anlagen an. Von saisonalen Rückschnitten über Rasenpflege bis zur ganzjährigen Betreuung inklusive Bewässerungscheck und Düngung schnüren wir ein Paket, das genau auf die Bedürfnisse Ihres Gartens abgestimmt ist. Die meisten unserer Kunden nutzen unseren Premium-Pflegevertrag mit monatlicher Betreuung." },
                             { q: "In welchem Umkreis sind Sie tätig?", a: "Unser Kerngebiet ist die Region Wetzlar, Gießen, Dillenburg und der gesamte Lahn-Dill-Kreis. Wir sind regelmäßig in Aßlar, Lahnau, Braunfels, Solms, Herborn und bis nach Butzbach und Bad Nauheim unterwegs. Bei größeren Projekten sind wir nach Absprache auch überregional in ganz Mittelhessen für Sie im Einsatz." },
-                            { q: "Verwenden Sie nachhaltige Materialien?", a: "Nachhaltigkeit ist ein Grundpfeiler unserer Philosophie. Wir bevorzugen regionale Materialien wie Grauwacke aus dem Westerwald und Basalt aus der Eifel, langlebige Natursteine und FSC-zertifizierte Hölzer. Zudem integrieren wir ressourcenschonende Bewässerungssysteme mit Bodenfeuchtesensoren und insektenfreundliche Bepflanzungen in unsere Konzepte." },
-                            { q: "Was kostet eine professionelle Gartengestaltung?", a: "Eine seriöse Preisangabe ohne Ortsbesichtigung ist schwierig. Als Richtwert: Eine komplette Neugestaltung eines durchschnittlichen Einfamilienhausgartens (150-200m²) liegt in unserer Region zwischen 15.000 und 35.000 Euro — je nach Materialwahl und Umfang. Terrassen allein kosten je nach Material (Beton, Naturstein, Keramik) zwischen 80-250€ pro Quadratmeter inklusive Unterbau. Wir erstellen Ihnen ein transparentes Festpreisangebot nach der Erstberatung." },
-                            { q: "Wie lange dauert es, bis mein Garten fertig ist?", a: "Die Planungsphase dauert in der Regel 2-3 Wochen, die Umsetzung je nach Projektgröße 2-6 Wochen. Eine einfache Terrasse mit 30m² ist in einer guten Woche verlegt. Eine Komplett-Neugestaltung mit Pflasterarbeiten, Bepflanzung und Bewässerung braucht 3-4 Wochen. Wir arbeiten grundsätzlich ein Projekt nach dem anderen ab — keine Parallelbaustellen, volle Aufmerksamkeit für Ihr Projekt." },
-                            { q: "Kann ich mir vorher Referenzprojekte ansehen?", a: "Selbstverständlich. Wir können Ihnen nach Absprache fertige Gärten in der Region zeigen. Viele unserer Kunden freuen sich, wenn wir Interessenten einmal durchführen. Außerdem finden Sie in unserem Portfolio eine Auswahl unserer realisierten Projekte — vom kleinen Reihenhausgarten bis zur repräsentativen Gewerbeanlage." },
-                            { q: "Arbeiten Sie auch im Winter?", a: "Pflasterarbeiten und Erdarbeiten führen wir witterungsabhängig auch im Winter durch — solange der Boden nicht gefroren ist. Die Wintermonate nutzen wir außerdem intensiv für Planung und Konzeption. Eine Anfrage im Herbst für ein Frühjahrsprojekt sichert Ihnen einen der begehrten Frühstartplätze." },
-                            { q: "Muss ich den alten Garten selbst abreißen?", a: "Nein, das übernehmen wir komplett. Rückbau, Entsorgung und Erdarbeiten gehören zu unserem Leistungsumfang. Wir kümmern uns um alles — vom Entfernen alter Betonplatten bis zum fachgerechten Baumschnitt oder der Rodung von Sträuchern. Sie müssen sich um nichts kümmern." },
-                            { q: "Bieten Sie eine Gewährleistung auf Ihre Arbeiten?", a: "Ja, auf alle Leistungen geben wir die gesetzliche Gewährleistung von 5 Jahren auf Bauleistungen. Auf Pflanzarbeiten gewähren wir eine Anwachsgarantie von 12 Monaten — vorausgesetzt, die vereinbarte Pflege wird eingehalten. Darüber hinaus sind wir auch nach Jahren noch Ansprechpartner für Fragen und Anpassungen." }
+                            { q: "Verwenden Sie nachhaltige Materialien?", a: "Nachhaltigkeit ist ein Grundpfeiler unserer Philosophie. Wir bevorzugen regionale Materialien wie Grauwacke aus dem Westerwald und Basalt aus der Eifel, langlebige Natursteine und FSC-zertifizierte Hölzer. Zudem integrieren wir ressourcenschonende Bewässerungssysteme mit Bodenfeuchtesensoren in unsere Konzepte." },
+                            { q: "Was kostet eine professionelle Gartengestaltung?", a: "Eine seriöse Preisangabe ohne Ortsbesichtigung ist schwierig. Als Richtwert: Eine komplette Neugestaltung eines durchschnittlichen Einfamilienhausgartens (150-200m²) liegt in unserer Region zwischen 15.000 und 35.000 Euro - je nach Materialwahl und Umfang. Terrassen allein kosten je nach Material (Beton, Naturstein, Keramik) zwischen 80-250€ pro Quadratmeter inklusive Unterbau. Wir erstellen Ihnen ein transparentes Festpreisangebot nach der Erstberatung." },
+                            { q: "Wie lange dauert es, bis mein Garten fertig ist?", a: "Die Planungsphase dauert in der Regel 2-3 Wochen, die Umsetzung je nach Projektgröße 2-6 Wochen. Eine einfache Terrasse mit 30m² ist in einer guten Woche verlegt. Eine Komplett-Neugestaltung mit Pflasterarbeiten und Bewässerung braucht 3-4 Wochen. Wir arbeiten grundsätzlich ein Projekt nach dem anderen ab - keine Parallelbaustellen, volle Aufmerksamkeit für Ihr Projekt." },
+                            { q: "Kann ich mir vorher Referenzprojekte ansehen?", a: "Selbstverständlich. Wir können Ihnen nach Absprache fertige Gärten in der Region zeigen. Viele unserer Kunden freuen sich, wenn wir Interessenten einmal durchführen. Außerdem finden Sie in unserem Portfolio eine Auswahl unserer realisierten Projekte - vom kleinen Reihenhausgarten bis zur repräsentativen Gewerbeanlage." },
+                            { q: "Arbeiten Sie auch im Winter?", a: "Pflasterarbeiten und Erdarbeiten führen wir witterungsabhängig auch im Winter durch - solange der Boden nicht gefroren ist. Die Wintermonate nutzen wir außerdem intensiv für Planung und Konzeption. Eine Anfrage im Herbst für ein Frühjahrsprojekt sichert Ihnen einen der begehrten Frühstartplätze." },
+                            { q: "Muss ich den alten Garten selbst abreißen?", a: "Nein, das übernehmen wir komplett. Rückbau, Entsorgung und Erdarbeiten gehören zu unserem Leistungsumfang. Wir kümmern uns um alles - vom Entfernen alter Betonplatten bis zum fachgerechten Baumschnitt oder der Rodung von Sträuchern. Sie müssen sich um nichts kümmern." },
+                            { q: "Bieten Sie eine Gewährleistung auf Ihre Arbeiten?", a: "Ja, auf alle Leistungen geben wir die gesetzliche Gewährleistung von 5 Jahren auf Bauleistungen. Auf Pflanzarbeiten gewähren wir eine Anwachsgarantie von 12 Monaten - vorausgesetzt, die vereinbarte Pflege wird eingehalten. Darüber hinaus sind wir auch nach Jahren noch Ansprechpartner für Fragen und Anpassungen." }
                         ].map((faq, idx) => (
                             <FaqItem key={idx} faq={faq} idx={idx} />
                         ))}
@@ -325,13 +324,13 @@ export const HomePage: React.FC = () => {
                         </h2>
                         <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
                             <p>
-                                Als regional verwurzelter Fachbetrieb für Garten- und Landschaftsbau sind wir in der gesamten Region Wetzlar, Gießen und dem Lahn-Dill-Kreis tätig. Unser Firmensitz in Aßlar liegt zentral in der Region Wetzlar — ideale Ausgangslage, um Projekte in der gesamten Lahnaue und dem angrenzenden Dilltal effizient und termingerecht umzusetzen.
+                                Als regional verwurzelter Fachbetrieb für Garten- und Landschaftsbau sind wir in der gesamten Region Wetzlar, Gießen und dem Lahn-Dill-Kreis tätig. Unser Firmensitz in Aßlar liegt zentral in der Region Wetzlar - ideale Ausgangslage, um Projekte in der gesamten Lahnaue und dem angrenzenden Dilltal effizient und termingerecht umzusetzen.
                             </p>
                             <p>
-                                Unsere Kunden kommen aus Wetzlar, Aßlar, Dillenburg, Herborn, Haiger, Ehringshausen, Leun, Solms, Braunfels, Gießen, Linden, Langgöns, Butzbach, Bad Nauheim, Lahnau, Hüttenberg, Weilburg, Schöffengrund und Pohlheim. In jeder dieser Gemeinden haben wir bereits Projekte realisiert — von der kleinen Terrasse bis zur kompletten Außenanlage mit Pool und Bewässerungssystem.
+                                Unsere Kunden kommen aus Wetzlar, Aßlar, Dillenburg, Herborn, Haiger, Ehringshausen, Leun, Solms, Braunfels, Gießen, Linden, Langgöns, Butzbach, Bad Nauheim, Lahnau, Hüttenberg, Weilburg, Schöffengrund und Pohlheim. In jeder dieser Gemeinden haben wir bereits Projekte realisiert - von der kleinen Terrasse bis zur kompletten Außenanlage mit Pool und Bewässerungssystem.
                             </p>
                             <p>
-                                Was uns von anderen GaLaBau-Betrieben in der Region unterscheidet? Wir behandeln jeden Garten als Unikat. Standardlösungen aus dem Katalog gibt es bei uns nicht. Stattdessen planen wir jedes Projekt individuell — unter Berücksichtigung der lokalen Bodenverhältnisse (im Dilltal oft lehmig, in der Wetterau eher sandig), des Sonnenverlaufs und natürlich Ihrer persönlichen Vorstellungen. Dazu kommt: Wir arbeiten ausschließlich mit eigenen Teams, keine Subunternehmer. Der Meister, der Ihren Garten plant, ist auch auf der Baustelle.
+                                Was uns von anderen GaLaBau-Betrieben in der Region unterscheidet? Wir behandeln jeden Garten als Unikat. Standardlösungen aus dem Katalog gibt es bei uns nicht. Stattdessen planen wir jedes Projekt individuell - unter Berücksichtigung der lokalen Bodenverhältnisse (im Dilltal oft lehmig, in der Wetterau eher sandig), des Sonnenverlaufs und natürlich Ihrer persönlichen Vorstellungen. Dazu kommt: Wir arbeiten ausschließlich mit eigenen Teams, keine Subunternehmer. Der Meister, der Ihren Garten plant, ist auch auf der Baustelle.
                             </p>
                         </div>
                     </Reveal>
@@ -354,7 +353,7 @@ export const HomePage: React.FC = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-space-6">
                             {[
                                 { title: 'Was kostet Gartengestaltung wirklich?', desc: 'Ehrliche Preise und ein echtes Rechenbeispiel aus unserer Kalkulation.', slug: 'gartengestaltung-kosten', category: 'Kosten' },
-                                { title: 'Pflasterarbeiten: Preise pro m²', desc: 'Naturstein, Betonstein, Keramik — was kostet was? Komplettpreise im Vergleich.', slug: 'pflasterarbeiten-preise', category: 'Kosten' },
+                                { title: 'Pflasterarbeiten: Preise pro m²', desc: 'Naturstein, Betonstein, Keramik - was kostet was? Komplettpreise im Vergleich.', slug: 'pflasterarbeiten-preise', category: 'Kosten' },
                                 { title: 'Garten winterfest machen', desc: 'Die wichtigsten Schritte für den Herbst. Bewässerung, Rasen, Pflanzen.', slug: 'garten-winterfest-machen', category: 'Pflege' },
                             ].map((article, i) => (
                                 <div key={i} className="group cursor-pointer p-space-6 bg-neutral-offwhite rounded-[var(--radius-lg)] border border-neutral-lightgray/50 hover:border-accent-base/30 hover:shadow-elevation-1 transition-all duration-300" onClick={() => navigate(`/ratgeber/${article.slug}`)}>
@@ -378,7 +377,7 @@ export const HomePage: React.FC = () => {
                         </h2>
                         <p className="text-lead text-neutral-midgray mb-space-12 max-w-2xl mx-auto font-normal leading-lead">
                             Jedes große Projekt beginnt mit einem Gespräch. Lassen Sie uns gemeinsam herausfinden, was möglich ist.
-                            Rufen Sie an, schreiben Sie uns oder nutzen Sie unser Kontaktformular — die Erstberatung ist immer kostenlos.
+                            Rufen Sie an, schreiben Sie uns oder nutzen Sie unser Kontaktformular - die Erstberatung ist immer kostenlos.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
                             <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/contact')} className="min-w-[240px] text-lg py-5 shadow-elevation-2">

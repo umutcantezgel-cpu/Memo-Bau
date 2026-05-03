@@ -18,7 +18,7 @@ export const locationLahnau: CityConfig = {
 
     headline: 'Exklusiver Landschaftsbau in Lahnau',
     subheadline: 'Natürliche Eleganz für Ihr Zuhause an der Lahn.',
-    metaTitle: 'Garten- und Landschaftsbau Lahnau | Memo BauT',
+    metaTitle: 'Garten- und Landschaftsbau Lahnau | Memo-BauT',
     metaDescription: 'Ihr Premium-Berater für exklusive Gartengestaltung in Lahnau. Maßgeschneiderte Konzepte und meisterhafte Umsetzung für Gärten, die begeistern.',
 
     story: 'Eingebettet in das romantische Lahntal vereint Lahnau naturverbundenes Wohnen mit hoher Lebensqualität. Unsere Gartengestaltungen greifen diese Harmonie auf und schaffen fließende Übergänge zwischen Architektur und umgebender Naturlandschaft.',
@@ -77,7 +77,7 @@ export const locationHuettenberg: CityConfig = {
 
     headline: 'Premium Gartengestaltung in Hüttenberg',
     subheadline: 'Handwerkliche Perfektion für Ihr Grundstück.',
-    metaTitle: 'Gartenbau Hüttenberg | Memo BauT',
+    metaTitle: 'Gartenbau Hüttenberg | Memo-BauT',
     metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Hüttenberg. Wir realisieren repräsentative Einfahrten, Terrassen und Gärten auf Meister-Niveau.',
 
     story: 'Hüttenberg zeichnet sich durch seine ruhige, familienfreundliche Lage zwischen Wetzlar und Gießen aus. Wir formen hier Gärten, die zum perfekten Rückzugsort für die ganze Familie werden – mit klaren Linien, hochwertigen Materialien und intelligenter Bepflanzung.',
@@ -136,7 +136,7 @@ export const locationWeilburg: CityConfig = {
 
     headline: 'Exklusive Gärten in der Residenzstadt Weilburg',
     subheadline: 'Landschaftsbau, der Geschichte und Moderne vereint.',
-    metaTitle: 'Garten- und Landschaftsbau Weilburg | Memo BauT',
+    metaTitle: 'Garten- und Landschaftsbau Weilburg | Memo-BauT',
     metaDescription: 'Ihr Partner für anspruchsvollen Gartenbau in Weilburg. Von der historischen Villa bis zum modernen Einfamilienhaus - wir gestalten Traumgärten im Lahntal.',
 
     story: 'Als ehemalige Residenzstadt strahlt Weilburg eine besondere historische Würde aus. Unsere Landschaftsarchitektur respektiert diesen Charakter und verbindet ihn mit zeitgemäßem, luxuriösem Komfort. Ob an den steilen Hängen der Lahn oder in den charmanten Vororten.',
@@ -149,7 +149,7 @@ export const locationWeilburg: CityConfig = {
     ctaPrimary: 'Projekt in Weilburg starten',
     ctaSecondary: 'Portfolio ansehen',
     testimonialLocal: {
-        text: 'Die Herausforderung unseres steilen Grundstücks an der Lahn wurde von Memo BauT meisterhaft gelöst. Die Natursteinmauern sind ein echter Blickfang.',
+        text: 'Die Herausforderung unseres steilen Grundstücks an der Lahn wurde von Memo-BauT meisterhaft gelöst. Die Natursteinmauern sind ein echter Blickfang.',
         author: 'Familie E.',
         location: 'Weilburg (Lahnhang)'
     },
@@ -195,7 +195,7 @@ export const locationSchoeffengrund: CityConfig = {
 
     headline: 'Traumgärten im Schöffengrund',
     subheadline: 'Landschaftsbau für naturnahes, entspanntes Wohnen.',
-    metaTitle: 'Gartengestaltung Schöffengrund | Memo BauT',
+    metaTitle: 'Gartengestaltung Schöffengrund | Memo-BauT',
     metaDescription: 'Hochwertige Gartengestaltung im Schöffengrund. Wir realisieren individuelle Gartenkonzepte, Rollrasen und Terrassen für Ihr Eigenheim.',
 
     story: 'Die weiten Wiesen und Wälder des Schöffengrunds bieten die perfekte Kulisse für naturnahes, ruhiges Wohnen. Wir kreieren Gartenräume, die nahtlos in diese idyllische Landschaft übergehen und sie als erweiterten Wohnraum nutzbar machen.',
@@ -254,7 +254,7 @@ export const locationPohlheim: CityConfig = {
 
     headline: 'Ihr Experte für Gartenbau in Pohlheim',
     subheadline: 'Repräsentative Außenanlagen in den Ausläufern der Wetterau.',
-    metaTitle: 'Garten- und Landschaftsbau Pohlheim | Memo BauT',
+    metaTitle: 'Garten- und Landschaftsbau Pohlheim | Memo-BauT',
     metaDescription: 'Ihr Premium-Berater für exklusive Gartengestaltung in Pohlheim. Von Watzenborn-Steinberg bis Grüningen - wir gestalten Ihre Außenanlagen.',
 
     story: 'Pohlheim verbindet eine hervorragende Anbindung mit hoher Wohnqualität. An der Nahtstelle zwischen Gießen und Wetterau realisieren wir hier Gartenprojekte, die urbane Eleganz mit familiengerechtem Freiraum verschmelzen lassen.',

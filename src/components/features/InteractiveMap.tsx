@@ -8,7 +8,7 @@ import { Navigation, X, Target, Search, Maximize, Minus, Plus, MapPin } from 'lu
 import { LOCATIONS, LegacyLocationData } from '../../core/locations';
 import { CookieBlocker } from '../common/CookieBlocker';
 
-// Memo BauT HQ Coordinates (Aßlar)
+// Memo-BauT HQ Coordinates (Aßlar)
 const HQ_COORDS: [number, number] = [50.605, 8.441]; // Aßlar Hauptsitz
 const RADIUS_METERS = 35000; // 35km Einzugsgebiet
 
@@ -259,11 +259,11 @@ export const InteractiveMap: React.FC = () => {
 
                         <img
                             src="/images/final/about-hero.webp"
-                            alt="Memo BauT HQ"
+                            alt="Memo-BauT HQ"
                             className="w-full h-40 object-cover rounded-[var(--radius-md)] mb-space-6 shadow-elevation-1 shrink-0"
                         />
 
-                        <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-2">Memo BauT</h3>
+                        <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-2">Memo-BauT</h3>
                         <p className="text-sm text-neutral-midgray leading-body mb-space-6">
                             Ihr Premium-Partner für Garten- und Landschaftsbau. Unser Hauptstandort in Wetzlar steuert alle Projekte der gesamten Region.
                         </p>

@@ -1,5 +1,5 @@
 /**
- * Memo BauT User Profile Hook
+ * Memo-BauT User Profile Hook
  * React hook for accessing and managing user profile state
  */
 

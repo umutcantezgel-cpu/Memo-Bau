@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from 'react';
-import { MapPin, Phone, Mail, Check, TreePine, Hammer, Fence, Droplets, Leaf, PenTool, ArrowRight } from 'lucide-react';
+import { MapPin, Phone, Mail, Check, Hammer, Fence, Droplets, Leaf, PenTool, ArrowRight } from 'lucide-react';
 import { ContactFormData, FormStatus } from '../types';
 import { FAQS, COMPANY_INFO } from '../core/constants';
 import { Button } from '../components/common/Button';
@@ -16,7 +16,6 @@ const PROJECT_TYPES = [
     { id: 'garden-design', label: 'Gartengestaltung', icon: PenTool },
     { id: 'landscaping', label: 'Landschaftsbau', icon: Hammer },
     { id: 'paving', label: 'Pflasterarbeiten', icon: Fence },
-    { id: 'planting', label: 'Bepflanzung', icon: TreePine },
     { id: 'irrigation', label: 'Bewässerung', icon: Droplets },
     { id: 'maintenance', label: 'Pflege', icon: Leaf },
 ];
@@ -77,7 +76,7 @@ export const ContactPage: React.FC = () => {
         <main className="bg-neutral-white min-h-screen">
             <SEO
                 title="Kontakt & Anfrage"
-                description="Starten Sie Ihre Garten-Transformation. Kontaktieren Sie Memo BauT in Wetzlar für eine unverbindliche Erstberatung und Exzellenz im Landschaftsbau."
+                description="Starten Sie Ihre Garten-Transformation. Kontaktieren Sie Memo-BauT in Wetzlar für eine unverbindliche Erstberatung und Exzellenz im Landschaftsbau."
                 faqs={FAQS.slice(0, 3)}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },

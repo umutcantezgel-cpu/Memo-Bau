@@ -7,7 +7,7 @@ export const MaintenancePage: React.FC = () => {
     return (
         <main className="min-h-screen flex flex-col items-center justify-center bg-neutral-white relative overflow-hidden font-sans">
             <SEO
-                title="Wartungsarbeiten | Memo BauT"
+                title="Wartungsarbeiten | Memo-BauT"
                 description="Unsere Webseite wird derzeit überarbeitet. Wir sind bald wieder für Sie da."
                 noindex={true}
             />
@@ -48,7 +48,7 @@ export const MaintenancePage: React.FC = () => {
                 </div>
 
                 <div className="mt-16 sm:mt-24 space-y-2">
-                    <p className="font-sans font-bold text-lg text-neutral-darkgray">Memo BauT</p>
+                    <p className="font-sans font-bold text-lg text-neutral-darkgray">Memo-BauT</p>
                     <p className="text-xs text-neutral-midgray/60 uppercase tracking-widest font-semibold">
                         &copy; {new Date().getFullYear()} Alle Rechte vorbehalten.
                     </p>

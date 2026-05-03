@@ -42,7 +42,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         slug: 'gartendesign',
         serviceId: 1,
         title: 'Gartendesign & Architektur',
-        metaTitle: 'Gartenplanung & 3D-Design Wetzlar | Memo BauT',
+        metaTitle: 'Gartenplanung & 3D-Design Wetzlar | Memo-BauT',
         metaDescription: 'Professionelle Gartenplanung mit 3D-Visualisierung in Wetzlar. Wir entwerfen Ihren Traumgarten – von der Skizze bis zum fertigen Pflanzplan. Jetzt Erstberatung.',
         heroImage: '/images/final/service-planning.webp',
         breadcrumbLabel: 'Gartendesign',
@@ -99,7 +99,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         slug: 'landschaftsbau',
         serviceId: 2,
         title: 'Landschaftsbau & Geländemodellierung',
-        metaTitle: 'Landschaftsbau & Erdarbeiten Wetzlar | Memo BauT',
+        metaTitle: 'Landschaftsbau & Erdarbeiten Wetzlar | Memo-BauT',
         metaDescription: 'Professioneller Landschaftsbau im Lahn-Dill-Kreis. Erdarbeiten, Hangsicherung, Drainage und Geländemodellierung. Eigener Fuhrpark, eigenes Team.',
         heroImage: '/images/final/service-landscaping.webp',
         breadcrumbLabel: 'Landschaftsbau',
@@ -152,7 +152,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         slug: 'pflasterarbeiten',
         serviceId: 3,
         title: 'Pflasterarbeiten & Terrassenbau',
-        metaTitle: 'Pflasterarbeiten & Terrassenbau Wetzlar | Memo BauT',
+        metaTitle: 'Pflasterarbeiten & Terrassenbau Wetzlar | Memo-BauT',
         metaDescription: 'Pflasterarbeiten in Profi-Qualität: Einfahrten, Terrassen, Gehwege aus Naturstein, Betonstein oder Keramik. Fachbetrieb aus Aßlar. Festpreisgarantie.',
         heroImage: '/images/final/service-paving.webp',
         breadcrumbLabel: 'Pflasterarbeiten',
@@ -161,8 +161,8 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
 
         detailBlocks: [
             {
-                heading: 'Naturstein, Betonstein oder Keramik — was passt wohin?',
-                text: `Die Materialwahl hängt von der Nutzung, dem Budget und dem gewünschten Look ab. Kurz zusammengefasst: Naturstein (Granit, Basalt, Grauwacke) ist unverwüstlich, wird mit den Jahren schöner und passt perfekt zu den Dillenburger und Wetzlarer Häusern. Betonstein ist die wirtschaftliche Alternative — modern, vielfältig und in Großformaten erhältlich. Keramikplatten sind der Premium-Standard: kratzfest, frostbeständig, fleckenunempfindlich und in riesigen 80×80 oder 120×60 Formaten verfügbar. Wir beraten Sie, welches Material für Ihr Projekt das richtige ist — ohne Ihnen das Teuerste aufzuschwatzen.`,
+                heading: 'Naturstein, Betonstein oder Keramik - was passt wohin?',
+                text: `Die Materialwahl hängt von der Nutzung, dem Budget und dem gewünschten Look ab. Kurz zusammengefasst: Naturstein (Granit, Basalt, Grauwacke) ist unverwüstlich, wird mit den Jahren schöner und passt perfekt zu den Dillenburger und Wetzlarer Häusern. Betonstein ist die wirtschaftliche Alternative - modern, vielfältig und in Großformaten erhältlich. Keramikplatten sind der Premium-Standard: kratzfest, frostbeständig, fleckenunempfindlich und in riesigen 80×80 oder 120×60 Formaten verfügbar. Wir beraten Sie, welches Material für Ihr Projekt das richtige ist - ohne Ihnen das Teuerste aufzuschwatzen.`,
             },
             {
                 heading: 'Der Unterbau entscheidet alles',
@@ -177,8 +177,8 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
                 ],
             },
             {
-                heading: 'Einfahrten — belastbar und repräsentativ',
-                text: `Eine Einfahrt muss mehr aushalten als eine Terrasse. Hier fahren Autos drüber, manchmal auch der Lieferwagen von Hermes. Der Unterbau muss entsprechend dimensioniert sein — Tragschichtdicke, Verbandverlegung und Randeinfassung entscheiden darüber, ob die Einfahrt nach ein paar Jahren Spurrillen bekommt oder nicht. Wir dimensionieren den Aufbau nach der tatsächlichen Belastung und verwenden für befahrene Flächen ausschließlich Materialien, die dafür zugelassen sind. Das klingt selbstverständlich, ist es aber leider nicht bei jedem Anbieter.`,
+                heading: 'Einfahrten - belastbar und repräsentativ',
+                text: `Eine Einfahrt muss mehr aushalten als eine Terrasse. Hier fahren Autos drüber, manchmal auch der Lieferwagen von Hermes. Der Unterbau muss entsprechend dimensioniert sein - Tragschichtdicke, Verbandverlegung und Randeinfassung entscheiden darüber, ob die Einfahrt nach ein paar Jahren Spurrillen bekommt oder nicht. Wir dimensionieren den Aufbau nach der tatsächlichen Belastung und verwenden für befahrene Flächen ausschließlich Materialien, die dafür zugelassen sind. Das klingt selbstverständlich, ist es aber leider nicht bei jedem Anbieter.`,
             },
         ],
 
@@ -191,16 +191,16 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         ],
 
         ablauf: [
-            { schritt: 'Materialberatung', beschreibung: 'Wir bringen Muster mit zu Ihnen nach Hause. Sie können die Steine direkt neben Ihrem Haus und Ihrer Fassade sehen — das ist was anderes als im Baumarkt.' },
+            { schritt: 'Materialberatung', beschreibung: 'Wir bringen Muster mit zu Ihnen nach Hause. Sie können die Steine direkt neben Ihrem Haus und Ihrer Fassade sehen - das ist was anderes als im Baumarkt.' },
             { schritt: 'Aufmaß & Angebot', beschreibung: 'Exakte Flächenberechnung, Materialbestellung und Festpreisangebot. Was im Angebot steht, gilt.' },
             { schritt: 'Aushub & Unterbau', beschreibung: 'Altes Pflaster raus, Boden verdichten, Tragschichten aufbauen. Das dauert in der Regel 2-3 Tage.' },
-            { schritt: 'Verlegung', beschreibung: 'Unser Pflasterteam verlegt je nach Fläche 15-30m² pro Tag — sauber, im Verband, mit kontrolliertem Gefälle.' },
+            { schritt: 'Verlegung', beschreibung: 'Unser Pflasterteam verlegt je nach Fläche 15-30m² pro Tag - sauber, im Verband, mit kontrolliertem Gefälle.' },
             { schritt: 'Verfugung & Abnahme', beschreibung: 'Gemeinsame Abnahme, Pflegehinweise und Gewährleistungsübergabe. Fertig.' },
         ],
 
         faqs: [
             { q: 'Was kosten Pflasterarbeiten pro Quadratmeter?', a: 'Inklusive Unterbau und Material liegen wir bei Betonpflaster bei 80-120€/m², bei Naturstein bei 120-200€/m² und bei Premium-Keramik bei 150-250€/m². Die Spanne hängt vor allem vom Material und den örtlichen Gegebenheiten ab.' },
-            { q: 'Können Sie auch nur die Terrasse machen, oder muss es ein Komplettpaket sein?', a: 'Natürlich machen wir auch einzelne Leistungen. Ob nur eine Terrasse, nur eine Einfahrt oder ein ganzer Gartenweg — wir kommen genauso gerne für Teilprojekte.' },
+            { q: 'Können Sie auch nur die Terrasse machen, oder muss es ein Komplettpaket sein?', a: 'Natürlich machen wir auch einzelne Leistungen. Ob nur eine Terrasse, nur eine Einfahrt oder ein ganzer Gartenweg - wir kommen genauso gerne für Teilprojekte.' },
             { q: 'Wie lange dauert eine durchschnittliche Terrassenverlegung?', a: 'Eine Terrasse mit 25-35m² dauert mit Unterbau und Verlegung etwa 4-6 Arbeitstage. Bei einer Einfahrt mit 40-60m² rechnen wir mit 6-8 Tagen. Wir arbeiten durchgehend, keine halben Tage.' },
             { q: 'Was machen Sie mit dem alten Pflaster?', a: 'Wir entfernen das alte Material komplett, inklusive Unterbau. Der Bauschutt wird fachgerecht entsorgt. Die Kosten dafür sind im Angebot enthalten.' },
             { q: 'Haben Sie Pflaster zum Anfassen oder nur Kataloge?', a: 'Wir haben eine große Musterauswahl an unserem Standort in Aßlar. Zusätzlich bringen wir zu jedem Beratungstermin passende Materialproben direkt zu Ihnen mit.' },
@@ -209,52 +209,6 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         ctaText: 'Pflasterprojekt anfragen',
     },
 
-    // ──────────────────────────────────────────────────────────
-    // 4. EXKLUSIVE BEPFLANZUNG
-    // ──────────────────────────────────────────────────────────
-    {
-        slug: 'bepflanzung',
-        serviceId: 4,
-        title: 'Bepflanzung & Pflanzplanung',
-        metaTitle: 'Bepflanzung & Rollrasen Wetzlar | Memo BauT',
-        metaDescription: 'Professionelle Bepflanzung für Ihren Garten in Wetzlar: Rollrasen, Heckenpflanzung, Staudenbeete und Solitärgehölze. Pflanzplanung vom Profi.',
-        heroImage: '/images/final/service-planting.webp',
-        breadcrumbLabel: 'Bepflanzung',
-
-        intro: `Pflanzen sind das, was einen Garten zum Leben erweckt. Klingt wie ein Kalenderspruch, ist aber wahr. Wir haben schon viele Gärten gesehen, in denen der Landschaftsbau top war — und die Bepflanzung dann vom Baumarkt-Wochenende stammte: alles zum selben Zeitpunkt gesetzt, alles gleich hoch, alles gleich grün. Das funktioniert nicht. Ein guter Pflanzplan berücksichtigt Jahreszeiten, Wuchshöhen, Blütenzeiten, Standortansprüche und natürlich Ihren persönlichen Geschmack. Wir machen das seit Jahren und beziehen unsere Pflanzen von regionalen Baumschulen, nicht vom Großhandel mit Lkw-Lieferung aus den Niederlanden.`,
-
-        detailBlocks: [
-            {
-                heading: 'Rollrasen — sofort grün, sofort begehbar',
-                text: `Rollrasen ist einer unserer Bestseller. Verständlich: Morgens braune Erde, abends satter grüner Rasen. Wir verlegen ausschließlich Premiumqualität aus regionaler Produktion. Der Rasen wird morgens geschält, mittags bei Ihnen angeliefert und am selben Tag verlegt. Kein Zwischenlager, kein Austrocknen. Voraussetzung ist ein sauber vorbereiteter Untergrund — und genau das machen wir vorher: Feinplanum, Startdüngung und bei Bedarf Bodenverbesserung mit Sand auf schweren Böden.`,
-            },
-            {
-                heading: 'Hecken und Sichtschutz',
-                text: `Der Klassiker im Lahn-Dill-Kreis: Thujahecke, 1,80m hoch, blickdicht. Funktioniert, sieht aber nach nichts aus. Wir empfehlen unseren Kunden meistens Alternativen: Hainbuche (laubabwerfend, aber im Winter mit braunem Laub noch immer blickdicht), Rotbuche (kupferfarben im Winter, wunderschön), oder gemischte Hecken mit Liguster und Eibe. Für schnellen Sichtschutz setzen wir auch gerne Fertighecken-Elemente ein — die sind sofort 1,80m hoch und brauchen keine drei Jahre Wachstumszeit.`,
-            },
-            {
-                heading: 'Staudenbeete — Farbe für jede Jahreszeit',
-                text: `Ein gut geplantes Staudenbeet blüht von März bis November. Das klingt nach Magie, ist aber einfach gute Pflanzplanung. Wir kombinieren Frühblüher (Steinbrech, Polsterphlox), Sommerblüher (Lavendel, Salbei, Sonnenhut) und Herbststauden (Astern, Fetthenne) so, dass immer etwas in der Blüte steht. Dazwischen setzen wir Gräser wie Lampenputzergras oder Chinaschilf — die bringen Höhe, Bewegung und sehen auch im Winter noch gut aus. Wir verwenden fast ausschließlich mehrjährige Stauden. Einmal gepflanzt, kommen die jedes Jahr wieder.`,
-            },
-        ],
-
-        ablauf: [
-            { schritt: 'Standortanalyse', beschreibung: 'Sonne, Schatten, Boden, Wind — wir klären, was an welcher Stelle wachsen kann und was nicht.' },
-            { schritt: 'Pflanzplan', beschreibung: 'Maßstabsgetreuer Plan mit Artenliste, Stückzahlen, Pflanzabständen und Blühzeitenkalender.' },
-            { schritt: 'Bodenvorbereitung', beschreibung: 'Bodenverbesserung, Substrat-Einarbeitung und Unkrautentfernung. Die Basis für gesundes Wachstum.' },
-            { schritt: 'Pflanzung', beschreibung: 'Fachgerechtes Setzen durch unser Team. Jede Pflanze wird einzeln gewässert und bei Bedarf angebunden.' },
-            { schritt: 'Erstpflege', beschreibung: 'In den ersten 4 Wochen nach Pflanzung übernehmen wir das Wässern, wenn Sie das wünschen.' },
-        ],
-
-        faqs: [
-            { q: 'Wann ist die beste Pflanzzeit?', a: 'Für die meisten Gehölze und Stauden ist das Frühjahr (März-Mai) und der Herbst (September-November) ideal. Rollrasen verlegen wir von April bis Oktober. Containerware kann grundsätzlich das ganze Jahr über gepflanzt werden — außer bei Frost.' },
-            { q: 'Was kostet Rollrasen pro Quadratmeter?', a: 'Inklusive Bodenvorbereitung, Feinplanum, Startdüngung und Verlegung liegen wir bei 12-18€/m² — je nach Zustand des bestehenden Untergrunds. Der reine Rollrasen ohne Verlegung liegt bei etwa 5-7€/m².' },
-            { q: 'Überleben die Pflanzen auch ohne grünen Daumen?', a: 'Ja. Wir wählen bewusst robuste, standortgerechte Pflanzen aus. Wenn Sie wenig Zeit haben, planen wir einen pflegeleichten Garten mit Gräsern, Bodendeckern und trockenheitsverträglichen Stauden.' },
-            { q: 'Liefern Sie auch große Bäume?', a: 'Wir arbeiten mit Baumschulen zusammen, die Solitärgehölze bis 8m Höhe liefern. Der Transport erfolgt mit Spezialkran. Diese Bäume kosten ab ca. 1.500€ aufwärts — je nach Art, Größe und Stammumfang.' },
-        ],
-
-        ctaText: 'Bepflanzung planen',
-    },
 
     // ──────────────────────────────────────────────────────────
     // 5. SMART GARDEN & WASSER
@@ -263,25 +217,25 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         slug: 'bewaesserung',
         serviceId: 5,
         title: 'Bewässerungssysteme & Smart Garden',
-        metaTitle: 'Automatische Bewässerung Wetzlar | Smart Garden | Memo BauT',
+        metaTitle: 'Automatische Bewässerung Wetzlar | Smart Garden | Memo-BauT',
         metaDescription: 'Automatische Gartenbewässerung mit App-Steuerung, Bodensensoren und Zisternen. Installation vom Fachbetrieb in Wetzlar. Wasser sparen, Garten genießen.',
         heroImage: '/images/final/service-water.webp',
         breadcrumbLabel: 'Bewässerung',
 
-        intro: `Hand aufs Herz: Wer hat schon Lust, jeden Abend im Sommer mit dem Gartenschlauch durch den Garten zu laufen? Und im Urlaub den Nachbarn bitten, mal eben die 47 Pflanzen zu gießen? Automatische Bewässerung löst das Problem ein für alle Mal. Und nein, das ist kein Luxus nur für Villenbesitzer. Ein vernünftiges Bewässerungssystem für einen 200m²-Garten kostet weniger als ein guter Rasenmähroboter. Seit ein paar Jahren verbauen wir fast nur noch smarte Systeme mit App-Steuerung und Bodenfeuchtesensoren. Die gießen genau dann, wenn es nötig ist — und nicht nach Stauplan.`,
+        intro: `Hand aufs Herz: Wer hat schon Lust, jeden Abend im Sommer mit dem Gartenschlauch durch den Garten zu laufen? Und im Urlaub den Nachbarn bitten, mal eben die 47 Pflanzen zu gießen? Automatische Bewässerung löst das Problem ein für alle Mal. Und nein, das ist kein Luxus nur für Villenbesitzer. Ein vernünftiges Bewässerungssystem für einen 200m²-Garten kostet weniger als ein guter Rasenmähroboter. Seit ein paar Jahren verbauen wir fast nur noch smarte Systeme mit App-Steuerung und Bodenfeuchtesensoren. Die gießen genau dann, wenn es nötig ist - und nicht nach Stauplan.`,
 
         detailBlocks: [
             {
                 heading: 'Versenkregner, Tropfschläuche und Micro-Drip',
-                text: `Je nach Bereich im Garten setzen wir unterschiedliche Bewässerungstechniken ein. Rasenflächen bekommen Versenkregner — die verschwinden bei Nichtgebrauch unter der Erde und stören weder optisch noch beim Mähen. Beete und Heckenpflanzungen werden über Tropfschläuche bewässert — langsam, direkt an der Wurzel, mit minimalem Wasserverlust. Für Kübelpflanzen auf der Terrasse gibt es Micro-Drip-Systeme mit einzeln einstellbaren Tropfern. Alles wird unterirdisch verlegt, nichts sieht man.`,
+                text: `Je nach Bereich im Garten setzen wir unterschiedliche Bewässerungstechniken ein. Rasenflächen bekommen Versenkregner - die verschwinden bei Nichtgebrauch unter der Erde und stören weder optisch noch beim Mähen. Beete und Heckenpflanzungen werden über Tropfschläuche bewässert - langsam, direkt an der Wurzel, mit minimalem Wasserverlust. Für Kübelpflanzen auf der Terrasse gibt es Micro-Drip-Systeme mit einzeln einstellbaren Tropfern. Alles wird unterirdisch verlegt, nichts sieht man.`,
             },
             {
                 heading: 'Steuerung per App',
-                text: `Die modernen Controller verbinden sich über WLAN mit Ihrem Smartphone. Sie können Bewässerungszeiten einstellen, einzelne Zonen steuern und sehen genau, wie viel Wasser verbraucht wurde. Die besten Systeme beziehen sogar lokale Wetterdaten ein und passen die Bewässerung automatisch an. Wenn es morgen regnet, wird heute nicht gegossen. So einfach ist das. Wir installieren überwiegend Systeme von Hunter und Rain Bird — bewährte Profi-Marken, die auch im professionellen Sportplatzbau eingesetzt werden.`,
+                text: `Die modernen Controller verbinden sich über WLAN mit Ihrem Smartphone. Sie können Bewässerungszeiten einstellen, einzelne Zonen steuern und sehen genau, wie viel Wasser verbraucht wurde. Die besten Systeme beziehen sogar lokale Wetterdaten ein und passen die Bewässerung automatisch an. Wenn es morgen regnet, wird heute nicht gegossen. So einfach ist das. Wir installieren überwiegend Systeme von Hunter und Rain Bird - bewährte Profi-Marken, die auch im professionellen Sportplatzbau eingesetzt werden.`,
             },
             {
                 heading: 'Regenwasser nutzen mit Zisternen',
-                text: `In Hessen regnet es genug — warum also teures Trinkwasser zum Gießen verwenden? Eine unterirdische Zisterne sammelt das Regenwasser vom Dach und speichert es für trockene Phasen. Typische Größen für Einfamilienhäuser: 3.000 bis 6.000 Liter. Die Zisterne wird in den Garten gesetzt (häufig im Rahmen einer Neugestaltung gleich mit erledigt), an die Fallrohre angeschlossen und mit einer kleinen Pumpe versehen. Zusammen mit der automatischen Bewässerung ergibt das ein System, das fast zum Nulltarif Ihren Garten grün hält.`,
+                text: `In Hessen regnet es genug - warum also teures Trinkwasser zum Gießen verwenden? Eine unterirdische Zisterne sammelt das Regenwasser vom Dach und speichert es für trockene Phasen. Typische Größen für Einfamilienhäuser: 3.000 bis 6.000 Liter. Die Zisterne wird in den Garten gesetzt (häufig im Rahmen einer Neugestaltung gleich mit erledigt), an die Fallrohre angeschlossen und mit einer kleinen Pumpe versehen. Zusammen mit der automatischen Bewässerung ergibt das ein System, das fast zum Nulltarif Ihren Garten grün hält.`,
             },
         ],
 
@@ -310,7 +264,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         slug: 'gartenpflege',
         serviceId: 6,
         title: 'Gartenpflege & Wartung',
-        metaTitle: 'Gartenpflege & Wartung Wetzlar | Pflegevertrag | Memo BauT',
+        metaTitle: 'Gartenpflege & Wartung Wetzlar | Pflegevertrag | Memo-BauT',
         metaDescription: 'Professionelle Gartenpflege im Lahn-Dill-Kreis: Rasenmähen, Heckenschnitt, Staudenpflege und Winterdienst. Individuelle Pflegeverträge ab 150€/Monat.',
         heroImage: '/images/final/service-maintenance.webp',
         breadcrumbLabel: 'Gartenpflege',
@@ -333,22 +287,22 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
             },
             {
                 heading: 'Saisonale Schwerpunkte',
-                text: `Jede Jahreszeit hat ihre eigenen Aufgaben. Im Frühjahr geht es um Rückschnitt, Düngung und die Startpflege nach dem Winter. Im Sommer stehen Rasenpflege, Bewässerungskontrolle und der Sommerflor im Vordergrund. Der Herbst ist die Zeit für Laubbeseitigung, Pflanzenschnitt und die Wintervorbereitung. Im Winter kümmern wir uns auf Wunsch auch um Winterdienst auf Ihren Wegen und der Einfahrt — Räumen und Streuen inklusive.`,
+                text: `Jede Jahreszeit hat ihre eigenen Aufgaben. Im Frühjahr geht es um Rückschnitt, Düngung und die Startpflege nach dem Winter. Im Sommer stehen Rasenpflege, Bewässerungskontrolle und der Sommerflor im Vordergrund. Der Herbst ist die Zeit für Laubbeseitigung, Pflanzenschnitt und die Wintervorbereitung. Im Winter kümmern wir uns auf Wunsch auch um Winterdienst auf Ihren Wegen und der Einfahrt - Räumen und Streuen inklusive.`,
             },
         ],
 
         ablauf: [
             { schritt: 'Gartenbegehung', beschreibung: 'Wir schauen uns Ihren Garten an und besprechen, was regelmäßig gemacht werden soll.' },
             { schritt: 'Individuelles Pflegekonzept', beschreibung: 'Sie erhalten einen Jahrespflegeplan mit konkreten Terminen und Leistungen.' },
-            { schritt: 'Regelmäßige Einsätze', beschreibung: 'Unser Team kommt nach Plan — in der Regel alle 2-4 Wochen. Sie müssen nicht mal zu Hause sein.' },
-            { schritt: 'Saisonale Sonderleistungen', beschreibung: 'Vertikutieren im Frühjahr, Winterdienst, Nachpflanzungen — alles ist planbar und kalkulierbar.' },
+            { schritt: 'Regelmäßige Einsätze', beschreibung: 'Unser Team kommt nach Plan - in der Regel alle 2-4 Wochen. Sie müssen nicht mal zu Hause sein.' },
+            { schritt: 'Saisonale Sonderleistungen', beschreibung: 'Vertikutieren im Frühjahr, Winterdienst, Nachpflanzungen - alles ist planbar und kalkulierbar.' },
         ],
 
         faqs: [
-            { q: 'Ab welcher Gartengröße lohnt sich ein Pflegevertrag?', a: 'Eigentlich immer — aber besonders ab 200m² aufwärts wird es spürbar. Viele unserer Kunden haben Grundstücke zwischen 300-800m² und schätzen es einfach, sich am Wochenende nicht um den Garten kümmern zu müssen.' },
+            { q: 'Ab welcher Gartengröße lohnt sich ein Pflegevertrag?', a: 'Eigentlich immer - aber besonders ab 200m² aufwärts wird es spürbar. Viele unserer Kunden haben Grundstücke zwischen 300-800m² und schätzen es einfach, sich am Wochenende nicht um den Garten kümmern zu müssen.' },
             { q: 'Sind Pflegeverträge monatlich kündbar?', a: 'Wir bieten Jahresverträge mit 3 Monaten Kündigungsfrist. Der Vorteil: Sie bekommen einen gleichbleibenden Monatsbetrag, auch wenn wir im Frühjahr deutlich mehr tun als im Winter.' },
             { q: 'Muss ich zu Hause sein, wenn Ihr Team kommt?', a: 'Nein. Die meisten unserer Pflegekunden sind bei den Einsätzen nicht zu Hause. Wir brauchen lediglich Zugang zum Garten und teilen Ihnen per Nachricht mit, wenn wir fertig sind.' },
-            { q: 'Deckt der Pflegevertrag auch Nachpflanzungen ab?', a: 'Kleine Nachpflanzungen (Stauden ersetzen, Lücken schließen) sind in der Regel inklusive. Für größere Neupflanzungen erstellen wir ein separates Angebot — mit Pflegekunden-Rabatt.' },
+            { q: 'Deckt der Pflegevertrag auch Nachpflanzungen ab?', a: 'Kleine Nachpflanzungen (Stauden ersetzen, Lücken schließen) sind in der Regel inklusive. Für größere Neupflanzungen erstellen wir ein separates Angebot - mit Pflegekunden-Rabatt.' },
         ],
 
         ctaText: 'Pflegevertrag anfragen',

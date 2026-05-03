@@ -1,5 +1,5 @@
 /**
- * Memo BauT Personalization Context
+ * Memo-BauT Personalization Context
  * React context for managing personalization state across the application
  */
 

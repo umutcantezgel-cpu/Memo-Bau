@@ -19,9 +19,9 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         headline: 'Urbane Freiräume und Premium-Gärten in der Residenzstadt Gießen',
         subheadline: 'Von der kompakten Dachterrasse bis zur universitätsnahen Villa: Wir transformieren Gießener Grundstücke in atemberaubende Lebensräume.',
-        metaTitle: 'Premium Garten- & Landschaftsbau Gießen | Memo BauT',
+        metaTitle: 'Premium Garten- & Landschaftsbau Gießen | Memo-BauT',
         metaDescription: 'Hochwertige Gartengestaltung in Gießen (35390). Spezialist für Dachterrassen, Smart Gardens, Poolanlagen und exklusive Stadtgärten. Jetzt Beratung anfordern.',
-        story: 'Als Universitäts- und pulsierende Einkaufsstadt bietet Gießen ein extrem dichtes, urbanes Umfeld. Gärten hier sind Rückzugsorte par excellence – grüne Lungen im städtischen Trubel. Memo BauT entwirft für Gießener Kunden Anlagen, die das Konzept "Drinnen und Draußen" auflösen. Wir verlängern den Wohnraum durch exklusive Outdoor-Küchen, smarte Beleuchtungskonzepte und architektonische Wasserbecken, die selbst auf begrenztem Stadt-Raum maximale Wirkung entfalten.',
+        story: 'Als Universitäts- und pulsierende Einkaufsstadt bietet Gießen ein extrem dichtes, urbanes Umfeld. Gärten hier sind Rückzugsorte par excellence – grüne Lungen im städtischen Trubel. Memo-BauT entwirft für Gießener Kunden Anlagen, die das Konzept "Drinnen und Draußen" auflösen. Wir verlängern den Wohnraum durch exklusive Outdoor-Küchen, smarte Beleuchtungskonzepte und architektonische Wasserbecken, die selbst auf begrenztem Stadt-Raum maximale Wirkung entfalten.',
         topografie: 'Weitgehend flach im Lahntal gelegen, an den Stadträndern (z.B. Schiffenberg) und in den Vororten teils hügelig.',
         gartenStil: 'Progressiv und urban. Klare Strukturen, großformatige Beton- oder Keramikplatten, Sichtbeton-Wände gepaart mit vertikalen Gärten oder formalen Hecken.',
         wohnstruktur: 'Wachsende Stadt mit verdichteten Neubaugebieten, modernen Penthouses in Bahnhofsnähe und klassischen Villenvierteln (Philosophenwald).',
@@ -31,7 +31,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
         ctaPrimary: 'Stadtgarten in Gießen anfragen',
         ctaSecondary: 'Designlinien entdecken',
         testimonialLocal: {
-            text: 'Unser Garten im Gießener Mühlenviertel war winzig und unansehnlich. Memo BauT hat jeden Zentimeter genutzt: Mit maßgefertigten Cortenstahl-Pflanztrögen und hellen Keramikplatten wirkt die Terrasse jetzt dreimal so groß.',
+            text: 'Unser Garten im Gießener Mühlenviertel war winzig und unansehnlich. Memo-BauT hat jeden Zentimeter genutzt: Mit maßgefertigten Cortenstahl-Pflanztrögen und hellen Keramikplatten wirkt die Terrasse jetzt dreimal so groß.',
             author: 'Sara & Tim W.',
             location: 'Gießen Zentrum',
             rating: 5
@@ -69,7 +69,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         headline: 'Garten-Exzellenz in Linden – modern, wertbeständig, präzise',
         subheadline: 'Vor den Toren Gießens realisieren wir in Großen-Linden und Leihgestern anspruchsvolle Premium-Außenanlagen für junge Familien und Genießer.',
-        metaTitle: 'Landschaftsbau & Gartengestaltung Linden | Memo BauT',
+        metaTitle: 'Landschaftsbau & Gartengestaltung Linden | Memo-BauT',
         metaDescription: 'Ihr Partner für Garten- & Landschaftsbau in Linden (35440). Terrassen, Pflasterarbeiten, Rollrasen & Vorgartengestaltung. Direkt aus der Region.',
         story: 'Linden liegt an der Nahtstelle zwischen der Betriebsamkeit Gießens und ruhigerer, dörflicher Struktur. Hier treffen gewachsene Wohnviertel auf neue Familiensiedlungen. Unsere Gartenkonzepte für Linden verbinden beide Welten: Wir bauen pflegeleichte, kindgerechte und dennoch absolut hochklassige Wohlfühloasen. Eine breite Holzterrasse für lange Sommerabende, eingefasst von klaren Mauerabschlüssen, die den Wert der Immobilie langfristig steigern.',
         topografie: 'Leicht hügelig bis flach, eingebettet zwischen dem Gleiberger Land und der fruchtbaren Wetterau.',
@@ -81,7 +81,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
         ctaPrimary: 'Projekt in Linden besprechen',
         ctaSecondary: 'Terrassen-Beispiele ansehen',
         testimonialLocal: {
-            text: 'Für unseren Neubau in Leihgestern brauchten wir quasi einmal "alles". Memo BauT hat vom groben Erdaushub über die 80qm Edelpflaster-Einfahrt bis zum Rollrasen fantastisch und zügig abgeliefert.',
+            text: 'Für unseren Neubau in Leihgestern brauchten wir quasi einmal "alles". Memo-BauT hat vom groben Erdaushub über die 80qm Edelpflaster-Einfahrt bis zum Rollrasen fantastisch und zügig abgeliefert.',
             author: 'Familie D.',
             location: 'Linden-Leihgestern',
             rating: 5
@@ -119,9 +119,9 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         headline: 'Natürliche Premiumgärten am Rande der Wetterau',
         subheadline: 'Zwischen Taunusausläufern und Gießener Becken erschaffen wir für Langgöns und seine Ortsteile hochwertige Außenanlagen, die mit der Landschaft harmonieren.',
-        metaTitle: 'Gartengestaltung & Landschaftsbau Langgöns | Memo BauT',
+        metaTitle: 'Gartengestaltung & Landschaftsbau Langgöns | Memo-BauT',
         metaDescription: 'Maßgeschneiderter Garten- & Landschaftsbau in Langgöns (35428). Natursteinarbeiten, Hanggärten und Premium-Terrassen für Dornholzhausen, Niederkleen & Co.',
-        story: 'Langgöns markiert geografisch das südliche Tor des Landkreises Gießen zur Wetterau. Die weitläufigere, landwirtschaftlich geprägte Struktur verlangt nach Gärten, die auf atmen können. Hier dominieren nicht enge Mauern, sondern großzügige Naturstein-Arrangements, weite Rasenflächen und organische Terrassen, die den Blick ins Grüne (Richtung Taunus oder Kleebachtal) nicht versperren. Memo BauT inszeniert das ländliche Premium-Lebensgefühl.',
+        story: 'Langgöns markiert geografisch das südliche Tor des Landkreises Gießen zur Wetterau. Die weitläufigere, landwirtschaftlich geprägte Struktur verlangt nach Gärten, die auf atmen können. Hier dominieren nicht enge Mauern, sondern großzügige Naturstein-Arrangements, weite Rasenflächen und organische Terrassen, die den Blick ins Grüne (Richtung Taunus oder Kleebachtal) nicht versperren. Memo-BauT inszeniert das ländliche Premium-Lebensgefühl.',
         topografie: 'Weite Senken und sanfte Steigungen, besonders in den Ortsteilen (z.B. Espa, Cleeberg), die teils schon Taunus-Charakteristik aufweisen.',
         gartenStil: 'Moderner Country-Style. Viele geschwungene Linien, grober Naturstein, weiche Beete mit prächtigen Solitärgehölzen und warme, wetterbeständige WPC- oder Lärchen-Terrassen.',
         wohnstruktur: 'Große Familien-Anwesen, sanierte landwirtschaftliche Höfe und naturnahe Neubaugebiete.',
@@ -131,7 +131,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
         ctaPrimary: 'Gartenwunsch in Langgöns äußern',
         ctaSecondary: 'Natursteingärten entdecken',
         testimonialLocal: {
-            text: 'Unser abfallendes Grundstück in Niederkleen war schwer nutzbar. Memo BauT hat in zwei Wochen wunderschöne, geschwungene Trockenmauern aus Basalt gezogen. Der Garten ist nun auf drei Ebenen ein absolutes Highlight.',
+            text: 'Unser abfallendes Grundstück in Niederkleen war schwer nutzbar. Memo-BauT hat in zwei Wochen wunderschöne, geschwungene Trockenmauern aus Basalt gezogen. Der Garten ist nun auf drei Ebenen ein absolutes Highlight.',
             author: 'Heinrich M.',
             location: 'Langgöns-Niederkleen',
             rating: 5
@@ -169,9 +169,9 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         headline: 'Premium-Gartenarchitektur in der Perle der Wetterau',
         subheadline: 'Wo historisches Fachwerk auf moderne Wohnkultur trifft. Wir erschaffen in Butzbach exklusive Gartenlandschaften und repräsentative Hofeinfahrten.',
-        metaTitle: 'Gartengestaltung & Landschaftsbau Butzbach | Memo BauT',
+        metaTitle: 'Gartengestaltung & Landschaftsbau Butzbach | Memo-BauT',
         metaDescription: 'Exklusiver Garten- und Landschaftsbau in Butzbach (35510). Terrassen, Pflasterarbeiten und Vorgärten auf höchstem Niveau für die gesamte Wetterau.',
-        story: 'Butzbachs historischer Marktplatz und die Fachwerk-Herrlichkeit sind weit über die Wetterau hinaus bekannt. Wer hier baut oder saniert, legt Wert auf Qualität und Ästhetik. Ein Garten von Memo BauT in Butzbach ist nicht nur eine Grünfläche, er ist das Outdoor-Statement eines kultivierten Lebensstils. Von edel gepflasterten Zufahrten bis hin zu minimalistischen Pool-Umrandungen im Butzbacher Umland – wir verbinden traditionelles Handwerk mit ultramodernem Design.',
+        story: 'Butzbachs historischer Marktplatz und die Fachwerk-Herrlichkeit sind weit über die Wetterau hinaus bekannt. Wer hier baut oder saniert, legt Wert auf Qualität und Ästhetik. Ein Garten von Memo-BauT in Butzbach ist nicht nur eine Grünfläche, er ist das Outdoor-Statement eines kultivierten Lebensstils. Von edel gepflasterten Zufahrten bis hin zu minimalistischen Pool-Umrandungen im Butzbacher Umland – wir verbinden traditionelles Handwerk mit ultramodernem Design.',
         topografie: 'Übergang zwischen dem fruchtbaren, flacheren Wetterauer Land und den bewaldeten, ansteigenden Ausläufern des Taunus (Richtung Hoch-Weisel).',
         gartenStil: 'Eine elegante Liaison aus klassisch-formalen Elementen (wie architektonischen Wasserbecken) und üppigen, modernen Staudenpflanzungen. Großformat-Keramik dominiert bei Terrassen.',
         wohnstruktur: 'Traditionsreiche Altbau-Quartiere wechseln mit ausgedehnten, sehr hochwertigen Neubaugebieten (z.B. Limespark).',
@@ -181,7 +181,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
         ctaPrimary: 'Premium-Garten Butzbach planen',
         ctaSecondary: 'Designlinien ansehen',
         testimonialLocal: {
-            text: 'Für unser neues Architektenhaus brauchten wir eine Außenanlage, die das reduzierte Design des Hauses fortführt. Memo BauT hat mit riesigen Betonplatten und exakten Splittbeeten ein Meisterwerk geschaffen.',
+            text: 'Für unser neues Architektenhaus brauchten wir eine Außenanlage, die das reduzierte Design des Hauses fortführt. Memo-BauT hat mit riesigen Betonplatten und exakten Splittbeeten ein Meisterwerk geschaffen.',
             author: 'Katharina H.',
             location: 'Butzbach Kernstadt',
             rating: 5
@@ -219,9 +219,9 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         headline: 'Jugendstil, Kurparks & private Gartenpaläste in Bad Nauheim',
         subheadline: 'Der hohe Anspruch der Gesundheitsstadt verlangt exklusive Maßstäbe. Wir kreieren Gartenlandschaften von aristokratischer Eleganz bis hin zur modernen Smart-Lounge.',
-        metaTitle: 'Premium Gartengestaltung & Landschaftsbau Bad Nauheim | Memo BauT',
-        metaDescription: 'Memo BauT bringt exklusiven Landschaftsbau in die Kurstadt Bad Nauheim (61231). Dachterrassen, Natursteinmauern und Smart-Home-Gärten in Premium-Qualität.',
-        story: 'Bad Nauheim atmet Geschichte – vom Sprudelhof bis zur prachtvollen Jugendstil-Architektur. Das Bewusstsein für Ästhetik, Parkanlagen und Erholung ist in der DNA der Stadt verankert. Die privaten Gärten Bad Nauheimer Kunden zeichnen sich durch den Wunsch nach exklusiven Rückzugsorten, formvollendeter Linienführung und dem Einsatz teuerster Baumaterialien aus (z.B. heller Travertin, Quarzit, Maßanfertigungen in Cortenstahl). Memo BauT liefert diese Premium-Exzellenz.',
+        metaTitle: 'Premium Gartengestaltung & Landschaftsbau Bad Nauheim | Memo-BauT',
+        metaDescription: 'Memo-BauT bringt exklusiven Landschaftsbau in die Kurstadt Bad Nauheim (61231). Dachterrassen, Natursteinmauern und Smart-Home-Gärten in Premium-Qualität.',
+        story: 'Bad Nauheim atmet Geschichte – vom Sprudelhof bis zur prachtvollen Jugendstil-Architektur. Das Bewusstsein für Ästhetik, Parkanlagen und Erholung ist in der DNA der Stadt verankert. Die privaten Gärten Bad Nauheimer Kunden zeichnen sich durch den Wunsch nach exklusiven Rückzugsorten, formvollendeter Linienführung und dem Einsatz teuerster Baumaterialien aus (z.B. heller Travertin, Quarzit, Maßanfertigungen in Cortenstahl). Memo-BauT liefert diese Premium-Exzellenz.',
         topografie: 'Umgeben von Ausläufern des Taunus im Westen, öffnet sich Bad Nauheim sanft zur Wetterau-Ebene im Osten. Herrliche Hanglagen (z.B. Johannisberg-Nähe).',
         gartenStil: 'Von klassischen "Neo-Barocken" Gartenformen bei den Villen im Kurgebiet bis hin zu minimalistischen "Zen"-Gärten vor hochmodernen Penthouses.',
         wohnstruktur: 'Hohe Dichte an kernsanierten Altbau-Villen, großbürgerlichen Anwesen und sehr hochwertigen, modernen Wohnkomplexen am Stadtrand.',
@@ -231,7 +231,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
         ctaPrimary: 'Villen-Garten in Bad Nauheim planen',
         ctaSecondary: 'Premium-Leistungen',
         testimonialLocal: {
-            text: 'Der Anspruch an unseren Garten nahe dem Kurpark war enorm. Memo BauT hat ein Licht- und Natursteinkonzept umgesetzt, das die Architektur unserer Jugendstil-Villa nachts wie ein Museum anstrahlt. Ein Meisterwerk.',
+            text: 'Der Anspruch an unseren Garten nahe dem Kurpark war enorm. Memo-BauT hat ein Licht- und Natursteinkonzept umgesetzt, das die Architektur unserer Jugendstil-Villa nachts wie ein Museum anstrahlt. Ein Meisterwerk.',
             author: 'Dr. von A.',
             location: 'Bad Nauheim',
             rating: 5
@@ -243,7 +243,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
             { q: 'Verlegen Sie Travertin oder Marmor für Bad Nauheimer Terrassen?', a: 'Ja, helle, südeuropäische Natursteine wie Travertin passen stilistisch hervorragend nach Bad Nauheim. Wir wählen stets absolut frostbeständige Selektionen für unsere Projekte.' },
             { q: 'Konzipieren Sie Bewässerung und Pflege direkt so, dass der Garten autark sein kann?', a: 'Ein "Smart Garden" ist der Standard im Premium-Segment Bad Nauheims. Unterflur-Bewässerungen von Hunter oder Gardena werden per App gesteuert und arbeiten mit lokalen Wetterdaten.' },
             { q: 'Können Sie den Denkmalschutz bei historischen Bad Nauheimer Gärten berücksichtigen?', a: 'Wir haben ein hohes Gespür für die Historie des Ortes und passen Sichtschutz- oder Mauerwerke (oft mit historischem Klinker oder Naturstein) gefühlvoll an das Gesamtbild an, ohne modernste Baustandards zu missachten.' },
-            { q: 'Deckt Memo BauT auch die Ortsteile wie Schwalheim oder Nieder-Mörlen ab?', a: 'Absolut. Wir betreuen exklusive Gartenprojekte im gesamten Bad Nauheimer Stadtgebiet und den umliegenden Wetterau-Gemeinden.' }
+            { q: 'Deckt Memo-BauT auch die Ortsteile wie Schwalheim oder Nieder-Mörlen ab?', a: 'Absolut. Wir betreuen exklusive Gartenprojekte im gesamten Bad Nauheimer Stadtgebiet und den umliegenden Wetterau-Gemeinden.' }
         ],
         schemaServiceArea: {
             type: 'GeoCircle',

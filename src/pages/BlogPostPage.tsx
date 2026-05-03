@@ -32,7 +32,7 @@ export const BlogPostPage: React.FC = () => {
         <main className="bg-neutral-white min-h-screen">
             {/* ═══ SEO HEAD ═══ */}
             <SEO
-                title={post.metaTitle.replace(' | Memo BauT', '')}
+                title={post.metaTitle.replace(' | Memo-BauT', '')}
                 description={post.metaDescription}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
@@ -54,12 +54,12 @@ export const BlogPostPage: React.FC = () => {
                     "dateModified": post.updatedDate || post.publishedDate,
                     "author": {
                         "@type": "Organization",
-                        "name": "Memo BauT",
+                        "name": "Memo-BauT",
                         "url": "https://memobaut.de"
                     },
                     "publisher": {
                         "@type": "Organization",
-                        "name": "Memo BauT",
+                        "name": "Memo-BauT",
                         "logo": { "@type": "ImageObject", "url": "https://memobaut.de/logo.png" }
                     },
                     "mainEntityOfPage": `https://memobaut.de/ratgeber/${post.slug}`

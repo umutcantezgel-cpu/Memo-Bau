@@ -11,11 +11,11 @@ export const Footer: React.FC = () => (
           <div className="flex items-center gap-3 mb-6">
             <img
               src="/images/logo-memobaut.jpg"
-              alt="Memo BauT"
+              alt="Memo-BauT"
               className="h-16 w-auto rounded-md"
             />
             <span className="ml-3 text-xl font-bold tracking-tight text-neutral-white">
-              Memo BauT<span className="text-accent-base">.</span>
+              Memo-BauT<span className="text-accent-base">.</span>
             </span>
           </div>
           <p className="text-neutral-white/60 text-sm leading-relaxed mb-6">
