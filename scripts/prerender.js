@@ -53,10 +53,17 @@ async function run() {
         console.log(`🌐 Local server running on http://localhost:${PORT}`);
 
         // 3. Launch Puppeteer
-        const browser = await puppeteer.launch({
-            headless: 'new',
-            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
-        });
+        let browser;
+        try {
+            browser = await puppeteer.launch({
+                headless: 'new',
+                args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+            });
+        } catch (error) {
+            console.warn('⚠️ Warning: Could not launch Puppeteer (missing system libraries in CI/Vercel?). Skipping SSG prerendering. Deploying as standard SPA.');
+            server.close();
+            process.exit(0);
+        }
 
         const page = await browser.newPage();
         
