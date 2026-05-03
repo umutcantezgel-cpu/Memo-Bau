@@ -188,7 +188,7 @@ export const BLOG_POSTS: BlogPost[] = [
         category: 'pflege',
         categoryLabel: 'Gartenpflege',
         readingTime: '5 Min.',
-        heroImage: '/images/final/service-maintenance.webp',
+        heroImage: '/images/final/service-planting.webp',
 
         intro: `Jedes Jahr dasselbe Spiel: Die Temperaturen fallen, und plötzlich fällt einem ein, dass man den Garten noch winterfest machen muss. Wann genau? Meistens Mitte Oktober bis Anfang November, je nach Wetterlage. Im Lahn-Dill-Kreis kann der erste Frost schon Ende Oktober kommen, in milden Jahren hält es bis Mitte November. Hier die Dinge, die wirklich gemacht werden müssen — ohne übertriebenen Perfektionismus.`,
 
