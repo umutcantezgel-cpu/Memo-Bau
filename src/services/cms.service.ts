@@ -28,7 +28,7 @@ const getDefaultData = (): CMSData => ({
             title: 'Gartendesign & Architektur',
             description: 'Visionäre Gartenplanung, die Ästhetik und Funktionalität vereint. Wir konzipieren Außenräume als Erweiterung Ihrer Wohnkultur.',
             iconName: 'PenTool',
-            features: ['3D-Visualisierung', 'Pflanzdesign', 'Lichtkonzepte', 'Wasserspiele'],
+            features: ['3D-Visualisierung', 'Materialdesign', 'Lichtkonzepte', 'Wasserspiele'],
             imageUrl: '/images/final/service-planning.webp',
             isActive: true,
             order: 1,

@@ -34,7 +34,7 @@ export const BLOG_POSTS: BlogPost[] = [
         slug: 'gartengestaltung-kosten',
         title: 'Was kostet Gartengestaltung wirklich? Ein ehrlicher Überblick',
         metaTitle: 'Gartengestaltung Kosten 2026 - Preise, Beispiele & Spartipps',
-        metaDescription: 'Was kostet eine professionelle Gartengestaltung? Realistische Preise für Terrassen, Pflaster, Bepflanzung und Planung. Mit Rechenbeispielen aus der Praxis.',
+        metaDescription: 'Was kostet eine professionelle Gartengestaltung? Realistische Preise für Terrassen, Pflaster und Planung. Mit Rechenbeispielen aus der Praxis.',
         publishedDate: '2025-06-15',
         updatedDate: '2026-03-10',
         category: 'kosten',
@@ -47,7 +47,7 @@ export const BLOG_POSTS: BlogPost[] = [
         sections: [
             {
                 heading: 'Die große Spanne: Warum "ab 50€ pro Quadratmeter" nichts aussagt',
-                content: `Im Internet finden Sie Angaben wie "Gartengestaltung ab 50€/m²". Das stimmt - wenn Sie Rollrasen auf eine ebene Fläche legen. Aber sobald Pflaster, Terrassen, Mauern, Bepflanzung und vielleicht noch eine Bewässerung dazukommen, sind wir in einer ganz anderen Liga. Ein realistischer Durchschnittswert für eine komplette Neugestaltung eines Einfamilienhausgartens mit Terrasse, Wegen, Bepflanzung und Rasen liegt in unserer Region bei 150-300€ pro Quadratmeter Gartenanfläche. Das klingt erst mal viel, aber da steckt auch alles drin: Planung, Erdarbeiten, Material, Arbeitslohn, Entsorgung, Maschinen.`,
+                content: `Im Internet finden Sie Angaben wie "Gartengestaltung ab 50€/m²". Das stimmt - wenn Sie Rollrasen auf eine ebene Fläche legen. Aber sobald Pflaster, Terrassen, Mauern und vielleicht noch eine Bewässerung dazukommen, sind wir in einer ganz anderen Liga. Ein realistischer Durchschnittswert für eine komplette Neugestaltung eines Einfamilienhausgartens mit Terrasse, Wegen, Sichtschutz und Rasen liegt in unserer Region bei 150-300€ pro Quadratmeter Gartenanfläche. Das klingt erst mal viel, aber da steckt auch alles drin: Planung, Erdarbeiten, Material, Arbeitslohn, Entsorgung, Maschinen.`,
             },
             {
                 heading: 'Kostentreiber Nr. 1: Der Unterbau',
@@ -59,7 +59,7 @@ export const BLOG_POSTS: BlogPost[] = [
                 listItems: [
                     'Terrasse 30m² Keramik (Großformat 80x80): ca. 6.000-7.500€',
                     'Gartenweg 15m² Naturstein: ca. 2.500-3.500€',
-                    'Pflanzflächen 40m² mit Stauden und Gräsern: ca. 2.500-4.000€',
+                    'Sichtschutzelemente und Einfriedung: ca. 2.500-4.000€',
                     'Rollrasen 80m² inkl. Bodenvorbereitung: ca. 1.200-1.600€',
                     'Sichtschutzzaun 12 lfm Aluminium: ca. 3.000-4.500€',
                     'Erdarbeiten und Entsorgung: ca. 2.500-4.000€',
@@ -69,14 +69,14 @@ export const BLOG_POSTS: BlogPost[] = [
             },
             {
                 heading: 'Wo Sie sparen können - und wo besser nicht',
-                content: `Eigenleistung bei Pflanzarbeiten: Ja, das spart. Wir erstellen den Pflanzplan, Sie pflanzen selbst. Bei einem 40m²-Beet sparen Sie damit ca. 600-1.000€ an Arbeitslohn. Eigenleistung beim Erdaushub: Nur wenn Sie wissen, was Sie tun und eigene Maschinen haben. Sonst wird es teurer als es beim Profi gewesen wäre. Keinesfalls sparen beim Unterbau, bei der Entwässerung und bei der Materialqualität. Ein günstiger Betonstein für 18€/m² sieht nach drei Jahren anders aus als einer für 35€/m². Die Arbeitskosten sind identisch - also lohnt sich das bessere Material fast immer.`,
+                content: `Eigenleistung bei Gartenarbeiten: Ja, das spart. Sie übernehmen einfache Arbeiten selbst und sparen damit ca. 600-1.000€ an Arbeitslohn. Eigenleistung beim Erdaushub: Nur wenn Sie wissen, was Sie tun und eigene Maschinen haben. Sonst wird es teurer als es beim Profi gewesen wäre. Keinesfalls sparen beim Unterbau, bei der Entwässerung und bei der Materialqualität. Ein günstiger Betonstein für 18€/m² sieht nach drei Jahren anders aus als einer für 35€/m². Die Arbeitskosten sind identisch - also lohnt sich das bessere Material fast immer.`,
             },
         ],
 
         fazit: `Rechnen Sie für eine professionelle Gartengestaltung mit einem Komplettpreis von 15.000-35.000€ für einen durchschnittlichen Einfamilienhausgarten. Das ist eine Investition, die den Wert Ihrer Immobilie steigert und Ihnen jahrzehntelang Freude macht. Holen Sie sich mindestens zwei Angebote ein - aber vergleichen Sie nicht nur den Preis, sondern auch den Leistungsumfang. Der günstigste Anbieter ist selten der beste.`,
 
         faqs: [
-            { q: 'Kann ich die Gartengestaltung auch in Etappen machen lassen?', a: 'Absolut. Viele Kunden teilen das Projekt in Phasen auf: Erst Terrasse und Rasen, im nächsten Jahr die Bepflanzung, dann Bewässerung. Das geht - man muss es nur von Anfang an so planen, damit die Phasen zusammenpassen.' },
+            { q: 'Kann ich die Gartengestaltung auch in Etappen machen lassen?', a: 'Absolut. Viele Kunden teilen das Projekt in Phasen auf: Erst Terrasse und Rasen, im nächsten Jahr den Sichtschutz, dann Bewässerung. Das geht - man muss es nur von Anfang an so planen, damit die Phasen zusammenpassen.' },
             { q: 'Sind die Preise im Winter günstiger?', a: 'Die Materialpreise sind ganzjährig relativ stabil. Aber im Winter (November-Februar) haben viele Betriebe weniger zu tun. Eine Anfrage im Herbst für ein Frühjahrsprojekt kann sich also durchaus lohnen.' },
             { q: 'Was kostet eine reine Planungsleistung ohne Umsetzung?', a: 'Eine vollständige 3D-Gartenplanung liegt bei uns zwischen 800-2.000€, abhängig von der Größe und Komplexität. Bei Auftragserteilung wird dieser Betrag vollständig angerechnet.' },
         ],
@@ -183,7 +183,7 @@ export const BLOG_POSTS: BlogPost[] = [
         slug: 'garten-winterfest-machen',
         title: 'Garten winterfest machen: Die komplette Checkliste',
         metaTitle: 'Garten winterfest machen - Checkliste vom Gärtner (2026)',
-        metaDescription: 'Garten winterfest machen: Was muss im Herbst erledigt werden? Rasen, Pflanzen, Bewässerung, Gartenmöbel. Praxis-Checkliste vom Fachbetrieb.',
+        metaDescription: 'Garten winterfest machen: Was muss im Herbst erledigt werden? Rasen, Bewässerung, Gartenmöbel. Praxis-Checkliste vom Fachbetrieb.',
         publishedDate: '2025-09-28',
         category: 'pflege',
         categoryLabel: 'Gartenpflege',
@@ -202,19 +202,19 @@ export const BLOG_POSTS: BlogPost[] = [
                 content: `Das ist der wichtigste Punkt auf der Liste. Wasser in Leitungen gefriert, dehnt sich aus und sprengt die Rohre. Kosten für die Reparatur: 500-2.000€. Kosten für das Entleeren: 30 Minuten Arbeit oder 80-120€ vom Fachbetrieb. Alle Außenwasserhähne aufdrehen und das Absperrventil im Keller schließen. Bei automatischen Bewässerungsanlagen die Leitungen mit Druckluft ausblasen - das können wir für Sie übernehmen.`,
             },
             {
-                heading: 'Pflanzen schützen',
-                content: `Heimische Stauden und Gehölze brauchen in der Regel keinen Winterschutz. Was geschützt werden muss:`,
+                heading: 'Terrassen und Außenanlagen schützen',
+                content: `Auch Ihre Hartflächen verdienen Vorbereitung auf den Winter:`,
                 listItems: [
-                    'Rosen: Erde anhäufeln, Reisig drauflegen',
-                    'Kübelpflanzen: Rein ins Haus oder an die Hauswand stellen und einwickeln',
-                    'Immergrüne (Kirschlorbeer, Rhododendron): An frostfreien Tagen gießen! Vertrocknen ist das größte Risiko',
-                    'Gräser: Zusammenbinden, nicht schneiden. Der Schnitt kommt erst im Frühjahr',
-                    'Empfindliche Stauden: Laub als Mulchschicht drauflegen',
+                    'Terrassenmöbel: Einlagern oder mit wetterfester Abdeckung schützen',
+                    'Holzterrassen: Letztes Mal reinigen und ölen vor dem Frost',
+                    'Naturstein-Fugen: Auf Beschädigungen prüfen, ggf. nachverfugen',
+                    'Gräser im Beet: Zusammenbinden, nicht schneiden. Der Schnitt kommt erst im Frühjahr',
+                    'Regenrinnen und Abläufe: Laub entfernen, Durchfluss sicherstellen',
                 ],
             },
         ],
 
-        fazit: `Machen Sie sich keinen Stress. Die meisten Pflanzen im Garten sind robuster als man denkt. Die zwei wirklich kritischen Punkte sind: Bewässerungsleitungen leeren und Kübelpflanzen schützen. Alles andere überlebt einen Hessischen Winter problemlos.`,
+        fazit: `Machen Sie sich keinen Stress. Die zwei wirklich kritischen Punkte sind: Bewässerungsleitungen leeren und Außenmöbel schützen. Alles andere überlebt einen Hessischen Winter problemlos.`,
 
         faqs: [
             { q: 'Muss ich den Rasen im Winter betreten vermeiden?', a: 'Idealerweise ja, besonders bei Frost. Gefrorene Grashalme brechen und hinterlassen braune Stellen. Aber keine Panik: Der Rasen erholt sich im Frühjahr.' },

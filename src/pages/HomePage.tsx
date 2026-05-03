@@ -307,7 +307,7 @@ export const HomePage: React.FC = () => {
                             { q: "Kann ich mir vorher Referenzprojekte ansehen?", a: "Selbstverständlich. Wir können Ihnen nach Absprache fertige Gärten in der Region zeigen. Viele unserer Kunden freuen sich, wenn wir Interessenten einmal durchführen." },
                             { q: "Arbeiten Sie auch im Winter?", a: "Pflasterarbeiten und Erdarbeiten führen wir witterungsabhängig auch im Winter durch - solange der Boden nicht gefroren ist. Die Wintermonate nutzen wir außerdem intensiv für Planung und Konzeption. Eine Anfrage im Herbst für ein Frühjahrsprojekt sichert Ihnen einen der begehrten Frühstartplätze." },
                             { q: "Muss ich den alten Garten selbst abreißen?", a: "Nein, das übernehmen wir komplett. Rückbau, Entsorgung und Erdarbeiten gehören zu unserem Leistungsumfang. Wir kümmern uns um alles - vom Entfernen alter Betonplatten bis zum fachgerechten Baumschnitt oder der Rodung von Sträuchern. Sie müssen sich um nichts kümmern." },
-                            { q: "Bieten Sie eine Gewährleistung auf Ihre Arbeiten?", a: "Ja, auf alle Leistungen geben wir die gesetzliche Gewährleistung von 5 Jahren auf Bauleistungen. Auf Pflanzarbeiten gewähren wir eine Anwachsgarantie von 12 Monaten - vorausgesetzt, die vereinbarte Pflege wird eingehalten. Darüber hinaus sind wir auch nach Jahren noch Ansprechpartner für Fragen und Anpassungen." }
+                            { q: "Bieten Sie eine Gewährleistung auf Ihre Arbeiten?", a: "Ja, auf alle Leistungen geben wir die gesetzliche Gewährleistung von 5 Jahren auf Bauleistungen. Darüber hinaus sind wir auch nach Jahren noch Ansprechpartner für Fragen und Anpassungen." }
                         ].map((faq, idx) => (
                             <FaqItem key={idx} faq={faq} idx={idx} />
                         ))}
@@ -354,7 +354,7 @@ export const HomePage: React.FC = () => {
                             {[
                                 { title: 'Was kostet Gartengestaltung wirklich?', desc: 'Ehrliche Preise und ein echtes Rechenbeispiel aus unserer Kalkulation.', slug: 'gartengestaltung-kosten', category: 'Kosten' },
                                 { title: 'Pflasterarbeiten: Preise pro m²', desc: 'Naturstein, Betonstein, Keramik - was kostet was? Komplettpreise im Vergleich.', slug: 'pflasterarbeiten-preise', category: 'Kosten' },
-                                { title: 'Garten winterfest machen', desc: 'Die wichtigsten Schritte für den Herbst. Bewässerung, Rasen, Pflanzen.', slug: 'garten-winterfest-machen', category: 'Pflege' },
+                                { title: 'Garten winterfest machen', desc: 'Die wichtigsten Schritte für den Herbst. Bewässerung, Rasen, Terrassen.', slug: 'garten-winterfest-machen', category: 'Pflege' },
                             ].map((article, i) => (
                                 <div key={i} className="group cursor-pointer p-space-6 bg-neutral-offwhite rounded-[var(--radius-lg)] border border-neutral-lightgray/50 hover:border-accent-base/30 hover:shadow-elevation-1 transition-all duration-300" onClick={() => navigate(`/ratgeber/${article.slug}`)}>
                                     <span className="text-[10px] font-bold uppercase tracking-widest text-accent-base">{article.category}</span>

@@ -53,7 +53,7 @@ export const AgbPage: React.FC = () => {
                     <strong>2.2.</strong> Ein Vertrag kommt erst durch die schriftliche Auftragsbestätigung oder durch beiderseitige Unterzeichnung eines Bauvertrages zustande. Die bloße Übermittlung von Bauplänen oder Kostenvoranschlägen stellt keinen Vertragsschluss dar.
                 </p>
                 <p>
-                    <strong>2.3.</strong> An von uns erstellten Entwürfen, Pflanzplänen, 3D-Visualisierungen und Kostenvoranschlägen behält sich die {COMPANY_INFO.name} das <strong>Urheber- und Eigentumsrecht</strong> vor. Sie dürfen Dritten ohne ausdrückliche schriftliche Zustimmung nicht zugänglich gemacht werden. Bei Nichtzustandekommen des Vertrags sind überlassene Unterlagen unverzüglich zurückzugeben.
+                    <strong>2.3.</strong> An von uns erstellten Entwürfen, 3D-Visualisierungen und Kostenvoranschlägen behält sich die {COMPANY_INFO.name} das <strong>Urheber- und Eigentumsrecht</strong> vor. Sie dürfen Dritten ohne ausdrückliche schriftliche Zustimmung nicht zugänglich gemacht werden. Bei Nichtzustandekommen des Vertrags sind überlassene Unterlagen unverzüglich zurückzugeben.
                 </p>
 
                 {/* ─── §3 BAUAUSFÜHRUNG ─── */}
@@ -119,16 +119,13 @@ export const AgbPage: React.FC = () => {
                     <strong>7.1.</strong> Die Gewährleistung richtet sich nach den jeweils geltenden gesetzlichen Bestimmungen. Bei Verbrauchern gelten die Regelungen des BGB, bei Einbeziehung der VOB/B die dort vorgesehenen Fristen.
                 </p>
                 <p>
-                    <strong>7.2.</strong> Bei lebenden Baustoffen (Pflanzen, Rollrasen, Saatgut) leistet der Auftragnehmer Gewähr für art- und fachgerechte Lieferung und Pflanzung.
-                </p>
-                <p>
-                    <strong>7.3.</strong> Für das Anwachsen und die Entwicklung von Pflanzen wird keine gesonderte Gewährleistung übernommen, da diese von zahlreichen externen Faktoren abhängen (Witterung, Bodenbeschaffenheit, Pflege durch den Auftraggeber). Wir empfehlen den Abschluss eines separaten Pflegevertrags.
+                    <strong>7.2.</strong> Bei Rollrasen und Saatgut leistet der Auftragnehmer Gewähr für art- und fachgerechte Lieferung und Verlegung.
                 </p>
 
                 {/* ─── §8 EIGENTUMSVORBEHALT ─── */}
                 <h2>§ 8 Eigentumsvorbehalt</h2>
                 <p>
-                    Bis zur vollständigen Begleichung aller Forderungen bleiben sämtliche gelieferten Materialien, Pflanzen und Ausstattungselemente, soweit sie nicht fest mit dem Grundstück verbunden wurden
+                    Bis zur vollständigen Begleichung aller Forderungen bleiben sämtliche gelieferten Materialien und Ausstattungselemente, soweit sie nicht fest mit dem Grundstück verbunden wurden
                     (wesentliche Bestandteile), im Eigentum der {COMPANY_INFO.name}.
                 </p>
 

@@ -22,7 +22,7 @@ export const SERVICES: ServiceItem[] = [
     description:
       'Professionelle Gartenplanung und -gestaltung. Von der ersten Idee bis zur Umsetzung.',
     icon: React.createElement(PenTool, { className: 'w-8 h-8' }),
-    features: ['3D-Visualisierung', 'Pflanzplanung', 'Beleuchtungskonzepte', 'Wasserelemente'],
+    features: ['3D-Visualisierung', 'Materialplanung', 'Beleuchtungskonzepte', 'Wasserelemente'],
     imageUrl: '/images/final/service-planning.webp',
   },
   {

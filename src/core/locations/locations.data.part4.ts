@@ -44,7 +44,7 @@ export const locationLahnau: CityConfig = {
         },
         {
             q: 'Sind naturnahe Gartendesigns möglich?',
-            a: 'Absolut. In Lahnau setzen wir häufig auf organische Formen und regionale Pflanzen, die zur Umgebung passen.'
+            a: 'Absolut. In Lahnau setzen wir häufig auf organische Formen und regionale Materialien, die zur Umgebung passen.'
         },
         {
             q: 'Wie lange dauert eine Beratung?',
@@ -80,7 +80,7 @@ export const locationHuettenberg: CityConfig = {
     metaTitle: 'Gartenbau Hüttenberg | Memo-BauT',
     metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Hüttenberg. Wir realisieren repräsentative Einfahrten, Terrassen und Gärten auf Meister-Niveau.',
 
-    story: 'Hüttenberg zeichnet sich durch seine ruhige, familienfreundliche Lage zwischen Wetzlar und Gießen aus. Wir formen hier Gärten, die zum perfekten Rückzugsort für die ganze Familie werden – mit klaren Linien, hochwertigen Materialien und intelligenter Bepflanzung.',
+    story: 'Hüttenberg zeichnet sich durch seine ruhige, familienfreundliche Lage zwischen Wetzlar und Gießen aus. Wir formen hier Gärten, die zum perfekten Rückzugsort für die ganze Familie werden – mit klaren Linien, hochwertigen Materialien und intelligenter Raumgestaltung.',
     topografie: 'Hügeliges Terrain mit weiten Ausblicken',
     gartenStil: 'Modern, strukturiert, familienfreundlich',
     wohnstruktur: 'Dörfliche Strukturen und Neubaugebiete',
@@ -203,7 +203,7 @@ export const locationSchoeffengrund: CityConfig = {
     gartenStil: 'Idyllisch, pflegeleicht, ländlich-modern',
     wohnstruktur: 'Weiträumige Grundstücke, Einfamilienhäuser',
     lokalerBezug: ['Naturpark Taunus (Randgebiet)', 'Solmsbachtal'],
-    fokusLeistungen: ['Rollrasen & Pflanzplanung', 'Sichtschutz', 'Holzterrasssen'],
+    fokusLeistungen: ['Rollrasen \u0026 Gartenplanung', 'Sichtschutz', 'Holzterrasssen'],
 
     ctaPrimary: 'Gartenplanung anfragen',
     ctaSecondary: 'Unsere Leitfäden lesen',
@@ -276,7 +276,7 @@ export const locationPohlheim: CityConfig = {
     faqItems: [
         {
             q: 'Bieten Sie auch komplette Neuanlagen für Neubauten in Pohlheim an?',
-            a: 'Wir sind Spezialisten für komplette Neuanlagen, von Erdarbeiten bis zur finalen Bepflanzung.'
+            a: 'Wir sind Spezialisten für komplette Neuanlagen, von Erdarbeiten bis zur finalen Fertigstellung.'
         },
         {
             q: 'Planen Sie smarte Gartentechnik mit ein?',

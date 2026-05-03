@@ -15,7 +15,7 @@ const SERVICE_DETAILS: Record<number, string> = {
     2: 'Ob Hanglage, Senke oder unebenes Terrain – wir modellieren Ihr Grundstück nach Maß. Mit modernem Gerät und jahrelanger Erfahrung schaffen wir die perfekte Basis für alle weiteren Arbeiten. Professionelle Drainage-Systeme sorgen für optimale Entwässerung, während unsere Hangsicherungen mit Naturstein oder Gabionen auch schwierige Geländestrukturen dauerhaft stabilisieren.',
     3: 'Jede Fläche verdient das passende Material. Ob eleganter Naturstein aus Portugal, robuster Granit aus der Region oder warme Holzdielen für die Terrasse – wir verarbeiten ausschließlich erstklassige Materialien mit höchsten Qualitätsstandards. Unsere Pflastermeister stehen für präzise Verlegung und fachgerechten Unterbau nach bewährten Richtlinien.',
     5: 'Moderne Bewässerungstechnik spart Zeit, Wasser und Geld. Wir installieren vollautomatische Systeme mit Bodenfeuchtesensoren und App-Steuerung, die Ihren Garten auch während Ihres Urlaubs optimal versorgen. Zusätzlich integrieren wir auf Wunsch Zisternen zur Regenwassernutzung – nachhaltig und kosteneffizient für die kommenden Jahre.',
-    6: 'Ein Garten ist niemals fertig, er entwickelt sich stetig weiter. Mit unseren Wartungsverträgen bleiben Ihre Pflanzen vital, der Rasen dicht und die Beete gepflegt. Von der Frühjahrskur über den sommerlichen Formschnitt bis zur Wintervorbereitung – wir kümmern uns um alle saisonalen Arbeiten, damit Sie Ihren Garten einfach nur genießen können.',
+    6: 'Ein Garten ist niemals fertig, er entwickelt sich stetig weiter. Mit unseren Wartungsverträgen bleibt Ihr Rasen dicht, die Beete gepflegt und die Anlage in Bestform. Von der Frühjahrskur über den sommerlichen Formschnitt bis zur Wintervorbereitung – wir kümmern uns um alle saisonalen Arbeiten, damit Sie Ihren Garten einfach nur genießen können.',
 };
 
 // Map service IDs to detail page slugs
@@ -162,7 +162,7 @@ export const ServicesPage: React.FC = () => {
                             {[
                                 { icon: Ruler, title: "Präzise Planung", text: "Detailgenaue Ausführungspläne und transparente Kostenkalkulation." },
                                 { icon: ShieldCheck, title: "Qualitätsstandards", text: "Fachgerechte Ausführung nach anerkannten Regeln der Technik und DIN-Normen." },
-                                { icon: Sprout, title: "Pflegeberatung", text: "Individuelle Pflege- und Bewässerungstipps für langfristig gesunde Pflanzen." }
+                                { icon: Sprout, title: "Pflegeberatung", text: "Individuelle Pflege- und Bewässerungstipps für eine langfristig gepflegte Gartenanlage." }
                             ].map((item, i) => (
                                 <div key={i} className="flex flex-col items-center">
                                     <div className="w-16 h-16 rounded-full bg-neutral-offwhite border border-neutral-lightgray flex items-center justify-center text-primary-base mb-6">

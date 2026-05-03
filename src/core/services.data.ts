@@ -43,7 +43,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         serviceId: 1,
         title: 'Gartendesign & Architektur',
         metaTitle: 'Gartenplanung & 3D-Design Wetzlar | Memo-BauT',
-        metaDescription: 'Professionelle Gartenplanung mit 3D-Visualisierung in Wetzlar. Wir entwerfen Ihren Traumgarten – von der Skizze bis zum fertigen Pflanzplan. Jetzt Erstberatung.',
+        metaDescription: 'Professionelle Gartenplanung mit 3D-Visualisierung in Wetzlar. Wir entwerfen Ihren Traumgarten – von der Skizze bis zum fertigen Ausführungsplan. Jetzt Erstberatung.',
         heroImage: '/images/final/service-planning.webp',
         breadcrumbLabel: 'Gartendesign',
 
@@ -52,7 +52,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         detailBlocks: [
             {
                 heading: 'Warum eine professionelle Gartenplanung den Unterschied macht',
-                text: `Mal ehrlich: Jeder kann ein paar Platten verlegen und eine Hecke setzen. Aber dann stehen die Platten nach zwei Wintern schief, weil der Unterbau nicht gepasst hat, und die Hecke wächst in die falsche Richtung, weil niemand den Sonnenverlauf berücksichtigt hat. Eine saubere Planung spart am Ende Geld — weil man nicht zweimal baut. Wir planen in 3D. Das heißt, Sie sehen Ihren Garten auf dem Bildschirm, bevor wir den ersten Bagger bestellen. Sie können die Terrasse verschieben, den Sichtschutz höher machen, die Bepflanzung ändern. Alles ohne dass auch nur ein Euro für Material ausgegeben wurde.`,
+                text: `Mal ehrlich: Jeder kann ein paar Platten verlegen und eine Hecke setzen. Aber dann stehen die Platten nach zwei Wintern schief, weil der Unterbau nicht gepasst hat, und die Hecke wächst in die falsche Richtung, weil niemand den Sonnenverlauf berücksichtigt hat. Eine saubere Planung spart am Ende Geld — weil man nicht zweimal baut. Wir planen in 3D. Das heißt, Sie sehen Ihren Garten auf dem Bildschirm, bevor wir den ersten Bagger bestellen. Sie können die Terrasse verschieben, den Sichtschutz höher machen, das Layout ändern. Alles ohne dass auch nur ein Euro für Material ausgegeben wurde.`,
             },
             {
                 heading: 'Was wir uns bei der Erstbegehung anschauen',
@@ -61,7 +61,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
                     'Sonnenverlauf und Schattenfall über den gesamten Tag',
                     'Bodenbeschaffenheit — Lehm, Sand, Fels oder Mischboden',
                     'Gefälle und Entwässerungssituation',
-                    'Bestehende Bepflanzung, die erhalten werden soll',
+                    'Bestehende Gartenelemente, die erhalten werden sollen',
                     'Sichtachsen zum Nachbarn und zur Straße',
                     'Zugangsmöglichkeiten für schweres Gerät',
                     'Lage von Versorgungsleitungen (Wasser, Strom, Gas)',
@@ -69,7 +69,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
             },
             {
                 heading: 'Von der Skizze zum fertigen Konzept',
-                text: `Nach der Begehung erarbeiten wir zunächst eine Handskizze — ja, wirklich mit Bleistift und Papier. Das geht schneller als jede Software und gibt Ihnen sofort ein Gefühl für die Raumaufteilung. Erst wenn die Grundstruktur stimmt, gehen wir in die digitale 3D-Planung. Dort arbeiten wir mit realistischen Texturen und Pflanzenmodellen. Sie können virtuell durch Ihren zukünftigen Garten spazieren, bevor auch nur ein Spatenstich gesetzt wurde. Das bedeutet für Sie: keine teuren Überraschungen auf der Baustelle.`,
+                text: `Nach der Begehung erarbeiten wir zunächst eine Handskizze — ja, wirklich mit Bleistift und Papier. Das geht schneller als jede Software und gibt Ihnen sofort ein Gefühl für die Raumaufteilung. Erst wenn die Grundstruktur stimmt, gehen wir in die digitale 3D-Planung. Dort arbeiten wir mit realistischen Texturen und Materialmodellen. Sie können virtuell durch Ihren zukünftigen Garten spazieren, bevor auch nur ein Spatenstich gesetzt wurde. Das bedeutet für Sie: keine teuren Überraschungen auf der Baustelle.`,
             },
         ],
 
@@ -77,16 +77,15 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
             { schritt: 'Erstgespräch vor Ort', beschreibung: 'Wir kommen zu Ihnen, schauen uns alles an und hören vor allem zu. Was wünschen Sie sich? Was stört Sie am aktuellen Zustand? Wie nutzen Sie Ihren Garten?' },
             { schritt: 'Entwurf & Konzept', beschreibung: 'Innerhalb von 7-14 Tagen erhalten Sie einen ersten Entwurf mit Handskizze und Beschreibung unserer Idee. Kostenlos und unverbindlich.' },
             { schritt: '3D-Visualisierung', beschreibung: 'Nach Freigabe des Grundkonzepts erstellen wir eine fotorealistische 3D-Ansicht Ihres Gartens. Änderungen sind jederzeit möglich.' },
-            { schritt: 'Detailplanung & Angebot', beschreibung: 'Pflanzplan, Materialspezifikation, Unterbaudetails — alles wird festgelegt. Sie erhalten ein transparentes Festpreisangebot.' },
+            { schritt: 'Detailplanung & Angebot', beschreibung: 'Materialspezifikation, Unterbaudetails — alles wird festgelegt. Sie erhalten ein transparentes Festpreisangebot.' },
             { schritt: 'Umsetzung', beschreibung: 'Unser eigenes Team setzt den Plan um. Keine Subunternehmer, keine Überraschungen. Der Bauleiter ist jeden Tag vor Ort.' },
         ],
 
         faqs: [
-            { q: 'Was kostet eine professionelle Gartenplanung?', a: 'Die Erstberatung vor Ort ist kostenlos. Eine vollständige 3D-Planung mit Pflanzplan beginnt bei ca. 800€ und wird bei Auftragserteilung zu 100% mit den Baukosten verrechnet. Sie zahlen also die Planung effektiv nicht extra.' },
+            { q: 'Was kostet eine professionelle Gartenplanung?', a: 'Die Erstberatung vor Ort ist kostenlos. Eine vollständige 3D-Planung mit Ausführungsplan beginnt bei ca. 800€ und wird bei Auftragserteilung zu 100% mit den Baukosten verrechnet. Sie zahlen also die Planung effektiv nicht extra.' },
             { q: 'Wie lange dauert die Planungsphase?', a: 'Vom ersten Termin bis zum fertigen Konzept rechnen wir mit 2-4 Wochen. Die reine 3D-Visualisierung dauert etwa 5-7 Arbeitstage nach Freigabe des Entwurfs.' },
             { q: 'Planen Sie auch kleine Gärten unter 100m²?', a: 'Gerade kleine Flächen profitieren enorm von professioneller Planung. Wir gestalten auch Reihenhausgärten ab 30m² — dort ist jeder Zentimeter entscheidend.' },
-            { q: 'Kann ich die Bepflanzung auch selbst übernehmen?', a: 'Klar. Wir planen gerne den gesamten Garten und Sie übernehmen die Pflanzarbeiten in Eigenleistung. Dafür erstellen wir einen detaillierten Pflanzplan mit Artenliste, Pflanzabständen und Pflegeanleitung.' },
-            { q: 'Berücksichtigen Sie das Thema Nachhaltigkeit?', a: 'Immer. Wir arbeiten grundsätzlich mit heimischen Pflanzenarten, versickerungsfähigen Belägen und wassersparenden Bewässerungslösungen. Schottergärten machen wir nicht — das ist auch in vielen hessischen Kommunen mittlerweile verboten.' },
+            { q: 'Berücksichtigen Sie das Thema Nachhaltigkeit?', a: 'Immer. Wir arbeiten grundsätzlich mit versickerungsfähigen Belägen und wassersparenden Bewässerungslösungen. Schottergärten machen wir nicht — das ist auch in vielen hessischen Kommunen mittlerweile verboten.' },
         ],
 
         ctaText: 'Gartenplanung starten',
@@ -138,7 +137,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         faqs: [
             { q: 'Was kostet eine Geländemodellierung ungefähr?', a: 'Das hängt stark von der Menge des zu bewegenden Erdreichs ab. Als grobe Orientierung: Eine komplette Neumodellierung eines 200m²-Grundstücks inklusive Abtransport liegt zwischen 3.000€ und 8.000€. Wir machen Ihnen gerne ein konkretes Angebot nach Erstbegehung.' },
             { q: 'Können Sie auch im Winter Erdarbeiten durchführen?', a: 'Bei Frost arbeiten wir nicht im Erdbau — das wäre technisch unsauber. In milden Wintermonaten können wir aber durchaus tätig sein. Die beste Zeit für Erdarbeiten ist März bis November.' },
-            { q: 'Was passiert mit dem vorhandenen Mutterboden?', a: 'Guter Mutterboden ist wertvoll. Wir lagern ihn separat auf Ihrem Grundstück und verwenden ihn nach den Bauarbeiten wieder für Pflanzflächen und Rasenansaat — das spart Ihnen Kosten und Transportwege.' },
+            { q: 'Was passiert mit dem vorhandenen Mutterboden?', a: 'Guter Mutterboden ist wertvoll. Wir lagern ihn separat auf Ihrem Grundstück und verwenden ihn nach den Bauarbeiten wieder für Grünflächen und Rasenansaat — das spart Ihnen Kosten und Transportwege.' },
             { q: 'Brauche ich eine Genehmigung für Stützmauern?', a: 'Je nach Höhe und Gemeinde kann eine Baugenehmigung erforderlich sein. In der Regel sind Stützmauern bis 1,50m genehmigungsfrei. Wir klären das für Sie mit der zuständigen Baubehörde im Lahn-Dill-Kreis.' },
         ],
 
@@ -222,12 +221,12 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         heroImage: '/images/final/service-water.webp',
         breadcrumbLabel: 'Bewässerung',
 
-        intro: `Hand aufs Herz: Wer hat schon Lust, jeden Abend im Sommer mit dem Gartenschlauch durch den Garten zu laufen? Und im Urlaub den Nachbarn bitten, mal eben die 47 Pflanzen zu gießen? Automatische Bewässerung löst das Problem ein für alle Mal. Und nein, das ist kein Luxus nur für Villenbesitzer. Ein vernünftiges Bewässerungssystem für einen 200m²-Garten kostet weniger als ein guter Rasenmähroboter. Seit ein paar Jahren verbauen wir fast nur noch smarte Systeme mit App-Steuerung und Bodenfeuchtesensoren. Die gießen genau dann, wenn es nötig ist - und nicht nach Stauplan.`,
+        intro: `Hand aufs Herz: Wer hat schon Lust, jeden Abend im Sommer mit dem Gartenschlauch durch den Garten zu laufen? Und im Urlaub den Nachbarn bitten, mal eben den Garten zu gießen? Automatische Bewässerung löst das Problem ein für alle Mal. Und nein, das ist kein Luxus nur für Villenbesitzer. Ein vernünftiges Bewässerungssystem für einen 200m²-Garten kostet weniger als ein guter Rasenmähroboter. Seit ein paar Jahren verbauen wir fast nur noch smarte Systeme mit App-Steuerung und Bodenfeuchtesensoren. Die gießen genau dann, wenn es nötig ist - und nicht nach Zeitplan.`,
 
         detailBlocks: [
             {
                 heading: 'Versenkregner, Tropfschläuche und Micro-Drip',
-                text: `Je nach Bereich im Garten setzen wir unterschiedliche Bewässerungstechniken ein. Rasenflächen bekommen Versenkregner - die verschwinden bei Nichtgebrauch unter der Erde und stören weder optisch noch beim Mähen. Beete und Heckenpflanzungen werden über Tropfschläuche bewässert - langsam, direkt an der Wurzel, mit minimalem Wasserverlust. Für Kübelpflanzen auf der Terrasse gibt es Micro-Drip-Systeme mit einzeln einstellbaren Tropfern. Alles wird unterirdisch verlegt, nichts sieht man.`,
+                text: `Je nach Bereich im Garten setzen wir unterschiedliche Bewässerungstechniken ein. Rasenflächen bekommen Versenkregner - die verschwinden bei Nichtgebrauch unter der Erde und stören weder optisch noch beim Mähen. Beete und Hecken werden über Tropfschläuche bewässert - langsam, direkt an der Wurzel, mit minimalem Wasserverlust. Für Kübel auf der Terrasse gibt es Micro-Drip-Systeme mit einzeln einstellbaren Tropfern. Alles wird unterirdisch verlegt, nichts sieht man.`,
             },
             {
                 heading: 'Steuerung per App',
@@ -265,11 +264,11 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         serviceId: 6,
         title: 'Gartenpflege & Wartung',
         metaTitle: 'Gartenpflege & Wartung Wetzlar | Pflegevertrag | Memo-BauT',
-        metaDescription: 'Professionelle Gartenpflege im Lahn-Dill-Kreis: Rasenmähen, Heckenschnitt, Staudenpflege und Winterdienst. Individuelle Pflegeverträge ab 150€/Monat.',
+        metaDescription: 'Professionelle Gartenpflege im Lahn-Dill-Kreis: Rasenmähen, Heckenschnitt, Beetpflege und Winterdienst. Individuelle Pflegeverträge ab 150€/Monat.',
         heroImage: '/images/final/service-maintenance.webp',
         breadcrumbLabel: 'Gartenpflege',
 
-        intro: `Einen Garten anzulegen ist das eine. Ihn über Jahre in Form zu halten, ist das andere. Wir sehen das oft: Der Garten wurde für viel Geld angelegt, und nach zwei Jahren sieht er aus wie... naja, wie ein Garten ohne Pflege eben aussieht. Die Hecke wuchert über den Gehweg, die Stauden haben sich gegenseitig verdrängt, der Rasen hat mehr Moos als Gras. Das muss nicht sein. Unsere Pflegeverträge starten bei 150€ im Monat, und dafür kommt unser Team regelmäßig und kümmert sich um alles. Sie müssen nur noch den Garten genießen.`,
+        intro: `Einen Garten anzulegen ist das eine. Ihn über Jahre in Form zu halten, ist das andere. Wir sehen das oft: Der Garten wurde für viel Geld angelegt, und nach zwei Jahren sieht er aus wie... naja, wie ein Garten ohne Pflege eben aussieht. Die Hecke wuchert über den Gehweg, die Beete sind zugewachsen, der Rasen hat mehr Moos als Gras. Das muss nicht sein. Unsere Pflegeverträge starten bei 150€ im Monat, und dafür kommt unser Team regelmäßig und kümmert sich um alles. Sie müssen nur noch den Garten genießen.`,
 
         detailBlocks: [
             {
@@ -278,7 +277,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
                 listItems: [
                     'Rasenmähen (2-4× monatlich in der Saison)',
                     'Heckenschnitt (2× jährlich: Juni und September)',
-                    'Staudenpflege und Unkrautkontrolle (monatlich)',
+                    'Beetpflege und Unkrautkontrolle (monatlich)',
                     'Strauchschnitt und Formgehölzpflege',
                     'Laub entfernen im Herbst',
                     'Düngung (3× jährlich: Frühjahr, Sommer, Herbst)',
@@ -287,7 +286,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
             },
             {
                 heading: 'Saisonale Schwerpunkte',
-                text: `Jede Jahreszeit hat ihre eigenen Aufgaben. Im Frühjahr geht es um Rückschnitt, Düngung und die Startpflege nach dem Winter. Im Sommer stehen Rasenpflege, Bewässerungskontrolle und der Sommerflor im Vordergrund. Der Herbst ist die Zeit für Laubbeseitigung, Pflanzenschnitt und die Wintervorbereitung. Im Winter kümmern wir uns auf Wunsch auch um Winterdienst auf Ihren Wegen und der Einfahrt - Räumen und Streuen inklusive.`,
+                text: `Jede Jahreszeit hat ihre eigenen Aufgaben. Im Frühjahr geht es um Rückschnitt, Düngung und die Startpflege nach dem Winter. Im Sommer stehen Rasenpflege, Bewässerungskontrolle und Formschnitt im Vordergrund. Der Herbst ist die Zeit für Laubbeseitigung, Heckenschnitt und die Wintervorbereitung. Im Winter kümmern wir uns auf Wunsch auch um Winterdienst auf Ihren Wegen und der Einfahrt - Räumen und Streuen inklusive.`,
             },
         ],
 
@@ -295,14 +294,14 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
             { schritt: 'Gartenbegehung', beschreibung: 'Wir schauen uns Ihren Garten an und besprechen, was regelmäßig gemacht werden soll.' },
             { schritt: 'Individuelles Pflegekonzept', beschreibung: 'Sie erhalten einen Jahrespflegeplan mit konkreten Terminen und Leistungen.' },
             { schritt: 'Regelmäßige Einsätze', beschreibung: 'Unser Team kommt nach Plan - in der Regel alle 2-4 Wochen. Sie müssen nicht mal zu Hause sein.' },
-            { schritt: 'Saisonale Sonderleistungen', beschreibung: 'Vertikutieren im Frühjahr, Winterdienst, Nachpflanzungen - alles ist planbar und kalkulierbar.' },
+            { schritt: 'Saisonale Sonderleistungen', beschreibung: 'Vertikutieren im Frühjahr, Winterdienst, Ergänzungen - alles ist planbar und kalkulierbar.' },
         ],
 
         faqs: [
             { q: 'Ab welcher Gartengröße lohnt sich ein Pflegevertrag?', a: 'Eigentlich immer - aber besonders ab 200m² aufwärts wird es spürbar. Viele unserer Kunden haben Grundstücke zwischen 300-800m² und schätzen es einfach, sich am Wochenende nicht um den Garten kümmern zu müssen.' },
             { q: 'Sind Pflegeverträge monatlich kündbar?', a: 'Wir bieten Jahresverträge mit 3 Monaten Kündigungsfrist. Der Vorteil: Sie bekommen einen gleichbleibenden Monatsbetrag, auch wenn wir im Frühjahr deutlich mehr tun als im Winter.' },
             { q: 'Muss ich zu Hause sein, wenn Ihr Team kommt?', a: 'Nein. Die meisten unserer Pflegekunden sind bei den Einsätzen nicht zu Hause. Wir brauchen lediglich Zugang zum Garten und teilen Ihnen per Nachricht mit, wenn wir fertig sind.' },
-            { q: 'Deckt der Pflegevertrag auch Nachpflanzungen ab?', a: 'Kleine Nachpflanzungen (Stauden ersetzen, Lücken schließen) sind in der Regel inklusive. Für größere Neupflanzungen erstellen wir ein separates Angebot - mit Pflegekunden-Rabatt.' },
+            { q: 'Bieten Sie auch Einzelleistungen ohne Vertrag an?', a: 'Ja, wir übernehmen auch Einzeleinsätze wie Heckenschnitt, Frühjahrspflege oder Winterservice. Allerdings sind unsere Vertragskunden bei der Terminvergabe bevorzugt.' },
         ],
 
         ctaText: 'Pflegevertrag anfragen',

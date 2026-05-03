@@ -31,7 +31,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
         ctaPrimary: 'Stadtgarten in Gießen anfragen',
         ctaSecondary: 'Designlinien entdecken',
         testimonialLocal: {
-            text: 'Unser Garten im Gießener Mühlenviertel war winzig und unansehnlich. Memo-BauT hat jeden Zentimeter genutzt: Mit maßgefertigten Cortenstahl-Pflanztrögen und hellen Keramikplatten wirkt die Terrasse jetzt dreimal so groß.',
+            text: 'Unser Garten im Gießener Mühlenviertel war winzig und unansehnlich. Memo-BauT hat jeden Zentimeter genutzt: Mit maßgefertigten Cortenstahl-Hochbeeten und hellen Keramikplatten wirkt die Terrasse jetzt dreimal so groß.',
             author: 'Sara & Tim W.',
             location: 'Gießen Zentrum',
             rating: 5
@@ -40,7 +40,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         faqItems: [
             { q: 'Ist es möglich, in engen Gießener Straßen Baumaterial für den Garten anzuliefern?', a: 'Die Logistik im urbanen Gießen beherrschen wir. Wir koordinieren Straßensperrungen oder arbeiten mit kleinen, wendigen Maschinen, um auch in Hinterhofgärten effizient zu bauen.' },
-            { q: 'Begrünen Sie auch Dachterrassen in Gießener Neubauten?', a: 'Dachbegrünungen und die Ausstattung luxuriöser Penthouse-Terrassen mit automatischen Bewässerungssystemen und Pflanzgefäßen sind unser Spezialgebiet.' },
+            { q: 'Gestalten Sie auch Dachterrassen in Gießener Neubauten?', a: 'Dachterrassengestaltung und die Ausstattung luxuriöser Penthouse-Terrassen mit automatischen Bewässerungssystemen und hochwertigen Gefäßen sind unser Spezialgebiet.' },
             { q: 'Bieten Sie für Gießener Kunden Smart-Garden-Systeme an?', a: 'Ja, Mähroboter, app-gesteuerte Premium-Beleuchtung und smarte Bewässerungssysteme integrieren wir nahtlos in unsere urbanen Gartenkonzepte.' },
             { q: 'Gestalten Sie auch Vorgärten an dicht befahrenen Gießener Straßen um?', a: 'Wir schaffen repräsentative, aber pflegeleichte Vorgärten, die durch moderne Mülltonnenhäuschen (oft Aluminium oder Holz) und smarte Beleuchtung die Straßenseite stark aufwerten.' },
             { q: 'Wie lange beträgt die Wartezeit auf ein Projekt in Gießen?', a: 'Für Erstberatungen in Gießen sind wir meist in derselben Woche vor Ort. Der Baubeginn richtet sich nach dem Material und liegt meist bei 4 bis 8 Wochen.' }
@@ -90,10 +90,10 @@ export const LOCATIONS_PART3: CityConfig[] = [
 
         faqItems: [
             { q: 'Bauen Sie in Linden auch Gabionenwände zur Grundstücksabgrenzung?', a: 'Ja, als schneller und extrem pflegeleichter Sichtschutz sind Gabionen (Natursteinkörbe), gemischt mit Holzelementen, in Lindener Wohngebieten sehr gefragt.' },
-            { q: 'Verwenden Sie kindgerechte, ungiftige Pflanzen?', a: 'Absolut. Bei Projekten für Familien in Linden steht Sicherheit an oberster Stelle. Wir verzichten auf stark giftige Pflanzen (wie Eibe oder Oleander) zugunsten blühender Stauden und Gräser.' },
+            { q: 'Achten Sie auf kindgerechte Gartengestaltung?', a: 'Absolut. Bei Projekten für Familien in Linden steht Sicherheit an oberster Stelle. Wir gestalten robuste, pflegeleichte Außenanlagen mit abgerundeten Kanten und rutschfesten Oberflächen.' },
             { q: 'Pflastern Sie auch die komplett neuen Zuwegungen für Wohnbauprojekte in Linden?', a: 'Unser Leistungsspektrum umfasst die volle Infrastruktur des Grundstücks: Randsteine, Regenrinnen, Hauszugänge und Parkplätze in professioneller Ausführung.' },
-            { q: 'Lassen Sie nach Abschluss des Rasenlegens eine Anleitung da?', a: 'Jeder Kunde in Linden, dem wir Rollrasen oder Premium-Gewächse setzen, erhält von uns konkrete Pflege- und Bewässerungstipps für die erste Anwachsphase.' },
-            { q: 'Bearbeiten Sie in Linden auch kleinere Vorgärten?', a: 'Selbstverständlich. Ein repräsentativer Vorgarten wertet eine Immobilie in Linden enorm auf, oft helfen schon moderne Briefkastenanlagen und clevere Pflanzkonzepte.' }
+            { q: 'Lassen Sie nach Abschluss des Rasenlegens eine Anleitung da?', a: 'Jeder Kunde in Linden, dem wir Rollrasen verlegen, erhält von uns konkrete Pflege- und Bewässerungstipps für die erste Phase.' },
+            { q: 'Bearbeiten Sie in Linden auch kleinere Vorgärten?', a: 'Selbstverständlich. Ein repräsentativer Vorgarten wertet eine Immobilie in Linden enorm auf, oft helfen schon moderne Briefkastenanlagen und clevere Gestaltungskonzepte.' }
         ],
         schemaServiceArea: {
             type: 'GeoCircle',
@@ -143,7 +143,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
             { q: 'Haben Sie Erfahrung mit Hangabsicherungen in Waldnähe (wie in Espa)?', a: 'Die Topografie Richtung Taunus erfordert solide Expertise. Wir stützen Hänge langfristig sicher mit Schwergewichtsmauern (L-Steinen) oder mehrstufigen Natursteinwällen ab.' },
             { q: 'Pflastern Sie in den Langgönser Dörfern auch weitläufige Hofeinfahren?', a: 'Absolut. Das ländlichere Umfeld erfordert oft sehr große befestigte Flächen. Wir kalkulieren und verbauen Großformatpflaster mit professionellem Unterbau für hohe Belastungen.' },
             { q: 'Wie schnell ist das Team von Aßlar/Wetzlar aus in Langgöns?', a: 'Über die A45 und B3 sind unsere Teams in knapp 20 Minuten auf den Baustellen in Langgöns, wodurch wir sehr wirtschaftlich und flexibel agieren können.' },
-            { q: 'Gestalten Sie auch Vorgärten zu bestehenden Altbauten?', a: 'Ein sensibler Umgang mit dem Bestand ist uns wichtig. Wir werten alte Hofeinfahrten oder Vorgärten durch moderne, pflegeleichte Pflanzbeete maßgeblich auf, ohne den Charme des Hauses zu zerstören.' }
+            { q: 'Gestalten Sie auch Vorgärten zu bestehenden Altbauten?', a: 'Ein sensibler Umgang mit dem Bestand ist uns wichtig. Wir werten alte Hofeinfahrten oder Vorgärten durch moderne, pflegeleichte Beete maßgeblich auf, ohne den Charme des Hauses zu zerstören.' }
         ],
         schemaServiceArea: {
             type: 'GeoCircle',
@@ -173,7 +173,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
         metaDescription: 'Exklusiver Garten- und Landschaftsbau in Butzbach (35510). Terrassen, Pflasterarbeiten und Vorgärten auf höchstem Niveau für die gesamte Wetterau.',
         story: 'Butzbachs historischer Marktplatz und die Fachwerk-Herrlichkeit sind weit über die Wetterau hinaus bekannt. Wer hier baut oder saniert, legt Wert auf Qualität und Ästhetik. Ein Garten von Memo-BauT in Butzbach ist nicht nur eine Grünfläche, er ist das Outdoor-Statement eines kultivierten Lebensstils. Von edel gepflasterten Zufahrten bis hin zu minimalistischen Pool-Umrandungen im Butzbacher Umland – wir verbinden traditionelles Handwerk mit ultramodernem Design.',
         topografie: 'Übergang zwischen dem fruchtbaren, flacheren Wetterauer Land und den bewaldeten, ansteigenden Ausläufern des Taunus (Richtung Hoch-Weisel).',
-        gartenStil: 'Eine elegante Liaison aus klassisch-formalen Elementen (wie architektonischen Wasserbecken) und üppigen, modernen Staudenpflanzungen. Großformat-Keramik dominiert bei Terrassen.',
+        gartenStil: 'Eine elegante Liaison aus klassisch-formalen Elementen (wie architektonischen Wasserbecken) und üppigen, modernen Gräsergestaltungen. Großformat-Keramik dominiert bei Terrassen.',
         wohnstruktur: 'Traditionsreiche Altbau-Quartiere wechseln mit ausgedehnten, sehr hochwertigen Neubaugebieten (z.B. Limespark).',
         lokalerBezug: ['Historischer Marktplatz', 'Landgräfliches Schloss', 'Limes-Verlauf', 'Taunus-Waldrand'],
         fokusLeistungen: ['Premium Pflasterung', 'Pool- & Loungebereiche', 'Regenwassermanagement'],
@@ -193,7 +193,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
             { q: 'Kann ich in Butzbach auch eine Keramik-Terrasse in Holzoptik bekommen?', a: 'Das ist derzeit einer der größten Trends. Wir verbauen in Butzbach regelmäßig hochwertige 2cm-Keramikplatten in extrem realistischer Holzdekor-Optik – massiv witterungsbeständig und splitterfrei.' },
             { q: 'Gestalten Sie auch komplett umfriedete Hofinnenanlagen im Butzbacher Altstadtkern?', a: 'Hinterhofgärten in historischen Strukturen verlangen Maßarbeit. Mit kleinen Baggern und smarter Logistik verwandeln wir auch versteckte Butzbacher Innenhöfe in grüne Lounges.' },
             { q: 'Lassen sich große Grundstücke in den Butzbacher Randorten (Griedel, Pohl-Göns) günstig einfrieden?', a: 'Wir berechnen individuell. Für weite Strecken bieten hochwertige Doppelstabmatten-Systeme – auf Wunsch mit efeuberanktem Sichtschutz – die eleganteste und sicherste Lösung.' },
-            { q: 'Verwenden Sie regionale Pflanzen, die das Wetterauer Klima vertragen?', a: 'Butzbach ist sehr sonnenverwöhnt. Wir wählen für Butzbacher Gärten klimaresiliente Gehölze (oft südeuropäischen Ursprungs) oder extrem robuste Gräser, die den Hitzesommern trotzen.' }
+            { q: 'Wählen Sie Materialien, die das Wetterauer Klima vertragen?', a: 'Butzbach ist sehr sonnenverwöhnt. Wir wählen für Butzbacher Gärten klimaresiliente Materialien und extrem robuste Gräser, die den Hitzesommern trotzen.' }
         ],
         schemaServiceArea: {
             type: 'GeoCircle',

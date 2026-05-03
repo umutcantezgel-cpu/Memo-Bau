@@ -51,7 +51,7 @@ export const Footer: React.FC = () => (
                 { label: 'Gartendesign', slug: 'gartendesign' },
                 { label: 'Landschaftsbau', slug: 'landschaftsbau' },
                 { label: 'Pflasterarbeiten', slug: 'pflasterarbeiten' },
-                { label: 'Bepflanzung', slug: 'bepflanzung' },
+
                 { label: 'Bewässerung', slug: 'bewaesserung' },
                 { label: 'Gartenpflege', slug: 'gartenpflege' },
               ].map((item) => (

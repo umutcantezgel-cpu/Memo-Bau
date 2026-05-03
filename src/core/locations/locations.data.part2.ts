@@ -23,7 +23,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         metaDescription: 'Hochwertiger Garten- & Landschaftsbau in Haiger (35708). Von modernen Vorgärten bis hin zu großflächigen Natursteinanlagen im Lahn-Dill-Kreis.',
         story: 'Haiger und seine Ortsteile zeichnen sich durch ländliche Weite und unmittelbare Nähe zur Natur aus. Gärten hier dürfen großzügiger atmen. Bei Memo-BauT verstehen wir es, diese Freiräume zu strukturieren, ohne sie einzuschnüren. Wir schaffen fließende Übergänge zwischen privatem Luxus – wie großformatigen Terrassen – und der natürlichen Kulisse des Rothaargebirges.',
         topografie: 'Weitläufige Tallagen entlang der Dill, die in felsige und waldreiche Erhebungen übergehen. Großzügige Grundstücke sind hier die Regel.',
-        gartenStil: 'Moderne Interpretationen des Landhausstils dominieren. Vielfältige Bepflanzung, weitläufige Rasenflächen und organisch geformte Naturstein-Arrangements.',
+        gartenStil: 'Moderne Interpretationen des Landhausstils dominieren. Vielfältige Grüngestaltung, weitläufige Rasenflächen und organisch geformte Naturstein-Arrangements.',
         wohnstruktur: 'Traditionelle Fachwerkkulissen in den Ortskernen, umgeben von großzügigen Familienanwesen und Neubaugebieten in ruhiger Randlage.',
         lokalerBezug: ['Aubachtal', 'Eduardsturm', 'Rothaargebirge-Ausläufer', 'Dillquelle'],
         fokusLeistungen: ['Wegebau & Pflasterung', 'Naturnahe Gartenkonzepte', 'L-Steine & Hangsicherung'],
@@ -123,7 +123,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Leun an der Lahn (35638). Memo-BauT erschafft Ihre Garten-Oase mit Erfahrung, modernen Baustoffen und Präzision.',
         story: 'Directly an den Ufern der Lahn eingebettet und umrahmt von den dunkleren Ausläufern des Westerwalds, besitzt Leun einen ganz eigenen charmanten Mikrokosmos. Grundstücke hier fordern oft eine Auseinandersetzung mit der Nähe zum Wasser oder der Topografie der angrenzenden Hänge (wie in Biskirchen). Unsere Mission: Gartenanlagen schaffen, die diese naturnahe Atmosphäre von Leun respektieren, dabei aber modernste, langlebige Materialien integrieren.',
         topografie: 'Flache Areale im engen Lahntal, rasant ansteigende Wohngebiete in den angrenzenden Leuner Ortsteilen Biskirchen, Bissenberg und Lahnbahnhof.',
-        gartenStil: 'Organische, naturbetonte Designs. Kurvige Beeteinfassungen, viel Bruchstein, harmonische Übergänge von Holzterrassen in lockere, naturnahe Bepflanzungen.',
+        gartenStil: 'Organische, naturbetonte Designs. Kurvige Beeteinfassungen, viel Bruchstein, harmonische Übergänge von Holzterrassen in lockere, naturnahe Grünflächen.',
         wohnstruktur: 'Traditionelle Bebauung in Ortskernen sowie großflächige ländliche Anwesen oberhalb des Flusstals.',
         lokalerBezug: ['Lahntal', 'Biskirchen', 'Heilquellen', 'Westerwald-Ausläufer'],
         fokusLeistungen: ['Natursteinarbeiten', 'Loungebereiche am Wasser', 'Erdbau & Baggerarbeiten'],
@@ -131,7 +131,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         ctaPrimary: 'Kostenlosen Leun-Termin vereinbaren',
         ctaSecondary: 'Leistungen durchsuchen',
         testimonialLocal: {
-            text: 'Ein schwieriges Grundstück in Biskirchen mit teils felsigem Boden wurde in 5 Tagen in eine fantastische, dreistufige Stauden-Terrasse mit schwerem Schieferstein verwandelt. Chapeau an das Aßlarer Team!',
+            text: 'Ein schwieriges Grundstück in Biskirchen mit teils felsigem Boden wurde in 5 Tagen in eine fantastische, dreistufige Naturstein-Terrasse mit schwerem Schieferstein verwandelt. Chapeau an das Aßlarer Team!',
             author: 'Stefan F.',
             location: 'Leun-Biskirchen',
             rating: 5
@@ -139,7 +139,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         projektAnzahl: 38,
 
         faqItems: [
-            { q: 'Planen Sie für Gärten in der Lahn-Nähe spezielle Bepflanzung?', a: 'Gartengrundstücke, die im Feuchtigkeits-Einflussbereich der Lahn liegen, bedürfen robuster Staunässe-Toleranz. Wir drainieren Böden präzise und setzen auf eine entsprechende Pflanzenwahl vor Ort in Leun.' },
+            { q: 'Planen Sie für Gärten in der Lahn-Nähe spezielle Konzepte?', a: 'Gartengrundstücke, die im Feuchtigkeits-Einflussbereich der Lahn liegen, bedürfen robuster Staunässe-Toleranz. Wir drainieren Böden präzise und setzen auf entsprechende Materialien und Konstruktionen vor Ort in Leun.' },
             { q: 'Decken Sie in Leun auch Biskirchen und Bissenberg ab?', a: 'Absolut. Biskirchen liegt oft direkt auf unserem täglichen Anfahrtsweg für süd-westliche Projekte. Termine in den gesamten Ortsteilen von Leun sind immer kostenfrei.' },
             { q: 'Übernehmen Sie Aushub und Erdarbeiten am Hang?', a: 'Durch unseren starken firmeneigenen Maschinenpark sind großflächige Erdarbeiten, Aufschüttungen und die Modulierung von Hang-Grundstücken eine Standardleistung für Leuner Kunden.' },
             { q: 'Was ist der langlebigste Terrassenbelag in Wäldernähe?', a: 'Für Grundstücke nahe am Westerwald raten wir auf schattigen Terrassen oft von naturbelassenem Holz ab (Rutsch/Moos-Gefahr) und empfehlen hochwertige Granit-Vollformate oder WPC-Dielen.' },

@@ -1,4 +1,4 @@
-import { Leaf, Hammer, Droplets, PenTool, TreePine, Fence } from 'lucide-react';
+import { Leaf, Hammer, Droplets, PenTool, Fence } from 'lucide-react';
 import { NavigationItem, ServiceItem, PortfolioItem, Testimonial, FaqItem } from '../types';
 import React from 'react';
 
@@ -25,7 +25,7 @@ export const SERVICES: ServiceItem[] = [
         description:
             'Visionäre Gartenplanung, die Ästhetik und Funktionalität vereint. Wir konzipieren Außenräume als Erweiterung Ihrer Wohnkultur – von der ersten Skizze bis zur finalen Inszenierung.',
         icon: React.createElement(PenTool, { className: 'w-8 h-8' }),
-        features: ['High-End 3D-Visualisierung', 'Kuratiertes Pflanzdesign', 'Atmosphärische Lichtkonzepte', 'Exklusive Wasserspiele'],
+        features: ['High-End 3D-Visualisierung', 'Individuelles Gartendesign', 'Atmosphärische Lichtkonzepte', 'Exklusive Wasserspiele'],
         imageUrl: '/images/final/service-planning.webp',
     },
     {
@@ -50,20 +50,7 @@ export const SERVICES: ServiceItem[] = [
         features: ['Naturstein-Unikate', 'Großformat-Keramik', 'Edle Holzdecks', 'Lounge-Areale'],
         imageUrl: '/images/final/service-paving.webp',
     },
-    {
-        id: 4,
-        title: 'Exklusive Bepflanzung',
-        description:
-            'Botanische Expertise für lebendige Gärten. Wir selektieren Solitärgehölze und Staudenkompositionen, die zu jeder Jahreszeit faszinieren.',
-        icon: React.createElement(TreePine, { className: 'w-8 h-8' }),
-        features: [
-            'Premium Rollrasen',
-            'Solitärbaum-Pflanzung',
-            'Sichtschutz-Architektur',
-            'Ganzjahres-Blütenkonzepte',
-        ],
-        imageUrl: '/images/final/service-planting.webp',
-    },
+
     {
         id: 5,
         title: 'Smart Garden & Wasser',
@@ -212,7 +199,7 @@ export const COMPANY_INFO = {
         country: 'Deutschland',
     },
     openingHours: 'Mo-Fr 07:30 - 18:00', // Assuming typical hours, or just 'Öffnet Mo um 07:30'
-    description: 'Memo-BauT ist Ihr erfahrener Fachbetrieb für Garten- und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat- und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk, Bepflanzung und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
+    description: 'Memo-BauT ist Ihr erfahrener Fachbetrieb für Garten- und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat- und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
 };
 
 export const STATS = [

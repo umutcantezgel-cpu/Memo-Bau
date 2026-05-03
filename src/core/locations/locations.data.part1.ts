@@ -123,7 +123,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Wetzlar (35578). Smart-Gardens, Dachterrassen & Exklusive Anlagen. Vereinbaren Sie jetzt Ihre Premium-Beratung.',
         story: 'Wetzlar pulsiert. Als wirtschaftliches und kulturelles Zentrum der Region treffen hier moderne Architektur, historische Bausubstanz und urbanes Leben aufeinander. Ein Garten in Wetzlar muss heute oft mehr sein als eine Rasenfläche: Er ist erweiterter Wohnraum, repräsentative Lounge und grüner Ausgleich zum Stadtleben. Memo-BauT bringt genau diese Symbiose aus städtischem Luxus und Naturerleben in die Wetzlarer Grundstücke.',
         topografie: 'Die Tallage an der Lahn umgeben von teils steilen Höhenrücken (wie Kalsmunt) schafft mikroklimatisch interessante und bautechnisch anspruchsvolle Gartengrundstücke.',
-        gartenStil: 'Der Fokus liegt auf repräsentativen, oft reduzierten Architektur-Gärten mit starken Kontrasten: Beton, Cortenstahl, glattes Wasser und gezielte Premium-Bepflanzung.',
+        gartenStil: 'Der Fokus liegt auf repräsentativen, oft reduzierten Architektur-Gärten mit starken Kontrasten: Beton, Cortenstahl, glattes Wasser und gezielte Premium-Akzente.',
         wohnstruktur: 'Von Stadtvillen am Stoppelberg bis hin zu modernen Penthouse-Wohnungen mit weitreichenden Dachterrassen in Dalheim oder an der Lahn.',
         lokalerBezug: ['Lahnpark', 'Kalsmunt', 'Dom zu Wetzlar', 'Stoppelberg'],
         fokusLeistungen: ['Smart Home Gärten', 'Dachterrassen & Lounges', 'Sichtschutz & Zäune'],
@@ -142,7 +142,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
             { q: 'Planen Sie in Wetzlar auch kleine, städtische Gartenflächen?', a: 'Gerade die Begrenzung des Raums macht städtische Gärten in Wetzlar spannend. Wir maximieren die Wirkung auf kleinen Grundstücken durch vertikales Grün, smarte Raumaufteilung und hochwertige Materialien.' },
             { q: 'Können Baumaterialien auch in enge Straßen der Wetzlarer Altstadt geliefert werden?', a: 'Logistik ist unsere Stärke. Wir verfügen über einen modernen Fuhrpark, der auch in schwierigen Zufahrtssituationen in Wetzlar (z.B. Hanglagen oder engere Gassen) Material präzise anliefern und Bagger setzen kann.' },
             { q: 'Integrieren Sie Beleuchtung direkt in das Gartenkonzept für Wetzlar?', a: 'Ja, Premium-Gärten zeichnen sich durch Lichtkonzepte aus. Wir installieren smarte, app-gesteuerte LED-Systeme (Smart Garden), die Ihren Wetzlarer Garten nachts in Szene setzen.' },
-            { q: 'Bieten Sie auch die Bepflanzung von Dachterrassen in Wetzlar an?', a: 'Zunehmend. Hochwertige Pflanzgefäße, automatische Bewässerung und windresistente Bepflanzungskonzepte gehören zu unserer Expertise für Wetzlarer Penthouses.' },
+            { q: 'Bieten Sie auch die Gestaltung von Dachterrassen in Wetzlar an?', a: 'Zunehmend. Hochwertige Designgefäße, automatische Bewässerung und windresistente Gestaltungskonzepte gehören zu unserer Expertise für Wetzlarer Penthouses.' },
             { q: 'Übernehmen Sie bei Baumfällungen in Wetzlar die Genehmigungsverfahren?', a: 'Sollten für notwendige Fällungen in Ihrem Wetzlarer Garten städtische Genehmigungen nötig sein, beraten wir Sie gerne zum lokalen Baumschutz-Protokoll der Stadt Wetzlar.' }
         ],
         schemaServiceArea: {
@@ -173,7 +173,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         metaDescription: 'Hochwertiger Garten- und Landschaftsbau für Dillenburg (35683). Natursteinarbeiten, Hanggärten und Pflasterbau in Premium-Qualität aus Hessen.',
         story: 'Dillenburg ist geprägt von seiner stolzen Geschichte und der umgebenden Naturlandschaft. Ein Garten hier muss Charakter haben. Er muss sich behaupten gegen die bewaldeten Hänge, sich einfügen in die teils historische Bausubstanz und dabei modernen Wohnkomfort im Freien bieten. Memo-BauT versteht diesen Spagat und kreiert Außenanlagen, die beständig sind wie das Oranier-Schloss, aber luxuriös wie ein modernes Boutique-Hotel.',
         topografie: 'Starke Steigungen, tiefe Täler und oft feste, felsige Untergründe definieren den Dillenburger Landschaftsbau. Trockenmauern sind hier oft technische Notwendigkeit.',
-        gartenStil: 'Rustikale Eleganz ist gefragt. Viel schwerer Naturstein, kombiniert mit weicher, üppiger Bepflanzung (Stauden, Gräser) und warmen Holzterrassen.',
+        gartenStil: 'Rustikale Eleganz ist gefragt. Viel schwerer Naturstein, kombiniert mit weicher Grüngestaltung (Gräser, Hecken) und warmen Holzterrassen.',
         wohnstruktur: 'Traditionsreiche Wohnstraßen treffen auf hochgelegene, modern strukturierte Neubauquartiere mit Panoramablick.',
         lokalerBezug: ['Wilhelmsturm', 'Schlossberg', 'Hofgarten', 'Dill'],
         fokusLeistungen: ['Natursteinmauern & Hangsicherung', 'Großflächige Pflasterungen', 'Gartensanierung'],
@@ -192,7 +192,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
             { q: 'Haben Sie Erfahrung mit der Abstützung steiler Grundstücke in Dillenburg?', a: 'Absolut. Das Dillenburger Umland verlangt oft nach massiver Geländemodulation. Wir sind Experten für L-Steine, Gabionen und massive Naturstein-Trockenmauern zur Hangabstützung.' },
             { q: 'Verbauen Sie auch regionale Steinsorten?', a: 'Um den Dillenburger Charakter zu treffen, arbeiten wir gerne mit Grauwacke oder heimischem Basalt, importieren auf Wunsch aber auch exklusive Keramik für Terrassen.' },
             { q: 'Fahren Sie für Erstberatungen bis nach Dillenburg oder in die Ortsteile?', a: 'Ja, Dillenburg, Eibach, Frohnhausen Manderbach und Nanzenbach gehören zu unserem nordwestlichen Kerngebiet. Termine vor Ort in der gesamten Dillenburger Gemarkung sind kostenlos.' },
-            { q: 'Bieten Sie auch Bepflanzungskonzepte an, die im winterkalten Dillenburger Umland überleben?', a: 'Wir achten bei der Pflanzenwahl strikt auf die klimatischen Besonderheiten (+ Winterhärtezonen) des Westerwald-Randes, an dem Dillenburg liegt.' },
+            { q: 'Bieten Sie auch Gestaltungskonzepte an, die im winterkalten Dillenburger Umland bestehen?', a: 'Wir achten bei der Materialwahl und Gartenplanung strikt auf die klimatischen Besonderheiten (+ Winterhärtezonen) des Westerwald-Randes, an dem Dillenburg liegt.' },
             { q: 'Übernehmen Sie in Dillenburg auch Pflasterarbeiten für lange Auffahrten?', a: 'Ja, wir betonieren und pflastern großflächige Einfahrten präzise und tragfähig, oft notwendig bei weiter in den Hang gebauten Häusern in Dillenburg.' }
         ],
         schemaServiceArea: {
@@ -223,10 +223,10 @@ export const LOCATIONS_PART1: CityConfig[] = [
         metaDescription: 'Hochwertiger Garten- & Landschaftsbau in Herborn (35745). Wir verbinden traditionelles Natursteinhandwerk mit modernem Garten-Design. Erstberatung sichern.',
         story: 'Herborns Altstadt ist berühmt für ihr geschlossenes Fachwerk-Ensemble, umrahmt vom Westerwald. Gärten in Herborn und den umliegenden Tälern fordern Sensibilität für das Gewachsene. Bei Memo-BauT verstehen wir es, präzise, geometrische Linienführungen und moderne Lifestyle-Terrassen so zu inszenieren, dass sie harmonisch mit den traditionellen Bauten oder den ausladenden Naturgrundstücken in der Herborner Peripherie interagieren.',
         topografie: 'Eine grüne Kesselanlage im Dilltal. Sanfte bis moderate Steigungen fordern oft terrassierte Gartenebenen.',
-        gartenStil: 'Ein eleganter Mix aus Modern-Country, viel heimischem Holz, Natursteinmauern zur Terrassierung und weichen, insektenfreundlichen Pflanzungen.',
+        gartenStil: 'Ein eleganter Mix aus Modern-Country, viel heimischem Holz, Natursteinmauern zur Terrassierung und insektenfreundlichen Grünflächen.',
         wohnstruktur: 'Historischer Kern umrandet von gewachsenen, grünen Vorstädten und familienfreundlichen Neubau-Arealen.',
         lokalerBezug: ['Herborner Schloss', 'Aartalsee-Nähe', 'Historische Altstadt', 'Wildgehege'],
-        fokusLeistungen: ['Vorgartengestaltung', 'Nachhaltige Bepflanzung', 'Pool- & Teich-Landschaften'],
+        fokusLeistungen: ['Vorgartengestaltung', 'Nachhaltige Gartenkonzepte', 'Pool- & Teich-Landschaften'],
 
         ctaPrimary: 'Herborner Gartenprojekt starten',
         ctaSecondary: 'Leistungsportfolio',
