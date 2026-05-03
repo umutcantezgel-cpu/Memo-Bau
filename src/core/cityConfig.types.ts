@@ -22,8 +22,8 @@ export interface GeoShape {
 
 export interface CityConfig {
     // ── IDENTITÄT ──
-    slug: string;                    // "werdorf", "wetzlar", etc.
-    name: string;                    // "Werdorf", "Wetzlar", etc.
+    slug: string;                    // "asslar", "wetzlar", etc.
+    name: string;                    // "Aßlar", "Wetzlar", etc.
     plz: string;                     // "35614", "35578", etc.
     region: string;                  // "Lahn-Dill-Kreis"
     einwohner: string;               // "ca. 5.200"

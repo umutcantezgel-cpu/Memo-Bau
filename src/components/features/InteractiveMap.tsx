@@ -8,8 +8,8 @@ import { Navigation, X, Target, Search, Maximize, Minus, Plus, MapPin } from 'lu
 import { LOCATIONS, LegacyLocationData } from '../../core/locations';
 import { CookieBlocker } from '../common/CookieBlocker';
 
-// Memo BauT HQ Coordinates (Werdorf)
-const HQ_COORDS: [number, number] = [50.605, 8.441]; // Werdorf Hauptsitz
+// Memo BauT HQ Coordinates (Aßlar)
+const HQ_COORDS: [number, number] = [50.605, 8.441]; // Aßlar Hauptsitz
 const RADIUS_METERS = 35000; // 35km Einzugsgebiet
 
 const hqIcon = L.divIcon({

@@ -80,7 +80,7 @@ export const TestimonialCarousel: React.FC = () => {
                                         <Quote className="absolute top-8 left-8 w-12 h-12 text-accent-base/10" />
                                         <div className="relative z-10 flex flex-col items-center text-center">
                                             <StarRating rating={testimonial.rating || 5} />
-                                            <p className="text-lg md:text-xl text-neutral-darkgray font-serif italic leading-relaxed my-space-8 font-normal text-balance max-w-4xl mx-auto">
+                                            <p className="text-lg md:text-xl text-neutral-darkgray font-serif italic leading-relaxed my-space-8 font-normal text-balance max-w-4xl mx-auto whitespace-pre-wrap">
                                                 "{testimonial.text}"
                                             </p>
                                             <div className="w-12 h-px bg-accent-base mb-space-6"></div>

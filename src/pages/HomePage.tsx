@@ -53,7 +53,7 @@ export const HomePage: React.FC = () => {
                 title="Exklusive Gartengestaltung & Landschaftsarchitektur Wetzlar"
                 description="Memo BauT verwandelt Außenbereiche in luxuriöse Lebensräume. Ihre Experten für gehobene Gartengestaltung, Landschaftsbau und Architektur in Wetzlar."
                 isHomePage={true}
-                aggregateRating={{ ratingValue: 4.9, reviewCount: 47 }}
+                aggregateRating={{ ratingValue: 5.0, reviewCount: 2 }}
             />
 
             {/* VideoObject Schema for Hero */}
@@ -120,9 +120,6 @@ export const HomePage: React.FC = () => {
                         <div className="flex flex-col md:flex-row gap-6">
                             <Button variant="gold" icon={ArrowRight} onClick={() => navigate('/contact')} className="min-w-[200px]">
                                 Erstberatung vereinbaren
-                            </Button>
-                            <Button variant="outline" onClick={() => navigate('/gallery')} className="min-w-[200px] border-white/50 text-white hover:bg-white/10">
-                                Portfolio entdecken
                             </Button>
                         </div>
                         <TrustSignals className="mt-6 text-white/90" showStars={true} showGuarantee={true} />
@@ -328,7 +325,7 @@ export const HomePage: React.FC = () => {
                         </h2>
                         <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
                             <p>
-                                Als regional verwurzelter Fachbetrieb für Garten- und Landschaftsbau sind wir in der gesamten Region Wetzlar, Gießen und dem Lahn-Dill-Kreis tätig. Unser Firmensitz in Werdorf liegt zentral zwischen Wetzlar und Aßlar — ideale Ausgangslage, um Projekte in der gesamten Lahnaue und dem angrenzenden Dilltal effizient und termingerecht umzusetzen.
+                                Als regional verwurzelter Fachbetrieb für Garten- und Landschaftsbau sind wir in der gesamten Region Wetzlar, Gießen und dem Lahn-Dill-Kreis tätig. Unser Firmensitz in Aßlar liegt zentral in der Region Wetzlar — ideale Ausgangslage, um Projekte in der gesamten Lahnaue und dem angrenzenden Dilltal effizient und termingerecht umzusetzen.
                             </p>
                             <p>
                                 Unsere Kunden kommen aus Wetzlar, Aßlar, Dillenburg, Herborn, Haiger, Ehringshausen, Leun, Solms, Braunfels, Gießen, Linden, Langgöns, Butzbach, Bad Nauheim, Lahnau, Hüttenberg, Weilburg, Schöffengrund und Pohlheim. In jeder dieser Gemeinden haben wir bereits Projekte realisiert — von der kleinen Terrasse bis zur kompletten Außenanlage mit Pool und Bewässerungssystem.

@@ -15,8 +15,8 @@ export const TrustSignals: React.FC<TrustSignalsProps> = ({
     className = '',
     showStars = true,
     showGuarantee = true,
-    rating = 4.9,
-    reviewCount = 47,
+    rating = 5.0,
+    reviewCount = 2,
     guaranteeText = 'Kostenlose Erstberatung'
 }) => {
     return (

@@ -153,7 +153,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
         serviceId: 3,
         title: 'Pflasterarbeiten & Terrassenbau',
         metaTitle: 'Pflasterarbeiten & Terrassenbau Wetzlar | Memo BauT',
-        metaDescription: 'Pflasterarbeiten in Profi-Qualität: Einfahrten, Terrassen, Gehwege aus Naturstein, Betonstein oder Keramik. Fachbetrieb aus Werdorf. Festpreisgarantie.',
+        metaDescription: 'Pflasterarbeiten in Profi-Qualität: Einfahrten, Terrassen, Gehwege aus Naturstein, Betonstein oder Keramik. Fachbetrieb aus Aßlar. Festpreisgarantie.',
         heroImage: '/images/final/service-paving.webp',
         breadcrumbLabel: 'Pflasterarbeiten',
 
@@ -203,7 +203,7 @@ export const SERVICE_DETAILS: ServiceDetail[] = [
             { q: 'Können Sie auch nur die Terrasse machen, oder muss es ein Komplettpaket sein?', a: 'Natürlich machen wir auch einzelne Leistungen. Ob nur eine Terrasse, nur eine Einfahrt oder ein ganzer Gartenweg — wir kommen genauso gerne für Teilprojekte.' },
             { q: 'Wie lange dauert eine durchschnittliche Terrassenverlegung?', a: 'Eine Terrasse mit 25-35m² dauert mit Unterbau und Verlegung etwa 4-6 Arbeitstage. Bei einer Einfahrt mit 40-60m² rechnen wir mit 6-8 Tagen. Wir arbeiten durchgehend, keine halben Tage.' },
             { q: 'Was machen Sie mit dem alten Pflaster?', a: 'Wir entfernen das alte Material komplett, inklusive Unterbau. Der Bauschutt wird fachgerecht entsorgt. Die Kosten dafür sind im Angebot enthalten.' },
-            { q: 'Haben Sie Pflaster zum Anfassen oder nur Kataloge?', a: 'Wir haben eine große Musterauswahl an unserem Standort in Werdorf. Zusätzlich bringen wir zu jedem Beratungstermin passende Materialproben direkt zu Ihnen mit.' },
+            { q: 'Haben Sie Pflaster zum Anfassen oder nur Kataloge?', a: 'Wir haben eine große Musterauswahl an unserem Standort in Aßlar. Zusätzlich bringen wir zu jedem Beratungstermin passende Materialproben direkt zu Ihnen mit.' },
         ],
 
         ctaText: 'Pflasterprojekt anfragen',

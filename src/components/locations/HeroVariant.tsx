@@ -18,7 +18,7 @@ export const HeroVariant: React.FC<HeroVariantProps> = ({ config, variant }) => 
     // Perspektivisch können hier z.B. 6 komplett unterschiedliche Return-Trees stehen.
 
     switch (variant) {
-        case 1: // Klassisch Elegant (z.B. Werdorf, Braunfels)
+        case 1: // Klassisch Elegant (z.B. Aßlar, Braunfels)
             return (
                 <div style={{ '--local-accent': customAccentColor } as React.CSSProperties}>
                     <PageHero

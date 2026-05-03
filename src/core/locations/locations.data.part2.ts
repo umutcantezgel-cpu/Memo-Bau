@@ -68,7 +68,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         imageStyle: 'grid',
 
         headline: 'Exklusive Gärten in Ehringshausen – Qualität aus der Nachbarschaft',
-        subheadline: 'Nur einen Steinwurf von unserem Hauptsitz in Werdorf entfernt, verwandeln wir Gärten im gesamten Dilltal in repräsentative Erholungsorte.',
+        subheadline: 'Nur einen Steinwurf von unserem Hauptsitz in Aßlar entfernt, verwandeln wir Gärten im gesamten Dilltal in repräsentative Erholungsorte.',
         metaTitle: 'Garten- & Landschaftsbau Ehringshausen | Termintreue | Memo BauT',
         metaDescription: 'Ihr naheliegender Experte für Gartengestaltung in Ehringshausen (35630). Mauern, Pflasterarbeiten & Terrassen direkt aus der Region. Kostenlose Planung.',
         story: 'Ehringshausen und das Dilltal sind unsere unmittelbare Heimat. Als direktes Nachbarstädtchen profitieren unsere Kunden hier von maximaler Präsenz. Wir kennen das Terrain, die Böden und die Lichtverhältnisse im Dilltal so gut wie unseren eigenen Garten. Die logistischen Vorteile durch die extrem kurze Anfahrt ermöglichen unseren Ehringshäuser Kunden höchste Wirtschaftlichkeit und Reaktionsschnelligkeit bei Premium-Projekten.',
@@ -81,7 +81,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         ctaPrimary: 'Gartenberatung in Ehringshausen',
         ctaSecondary: 'Zufriedene Nachbarn ansehen',
         testimonialLocal: {
-            text: 'Ein Riesenvorteil, dass Memo BauT aus Werdorf kommt. Wenn morgens Material fehlte, waren die Jungs in 10 Minuten wieder beim Bauhof in Werdorf und zurück in Ehringshausen. Das hat das Terrassen-Projekt immens beschleunigt. Top Ergebnis!',
+            text: 'Ein Riesenvorteil, dass Memo BauT aus Aßlar kommt. Wenn morgens Material fehlte, waren die Jungs in 10 Minuten wieder beim Bauhof in Aßlar und zurück in Ehringshausen. Das hat das Terrassen-Projekt immens beschleunigt. Top Ergebnis!',
             author: 'Marcus P.',
             location: 'Katzenfurt',
             rating: 5
@@ -131,7 +131,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         ctaPrimary: 'Kostenlosen Leun-Termin vereinbaren',
         ctaSecondary: 'Leistungen durchsuchen',
         testimonialLocal: {
-            text: 'Ein schwieriges Grundstück in Biskirchen mit teils felsigem Boden wurde in 5 Tagen in eine fantastische, dreistufige Stauden-Terrasse mit schwerem Schieferstein verwandelt. Chapeau an das Werdorfer Team!',
+            text: 'Ein schwieriges Grundstück in Biskirchen mit teils felsigem Boden wurde in 5 Tagen in eine fantastische, dreistufige Stauden-Terrasse mit schwerem Schieferstein verwandelt. Chapeau an das Aßlarer Team!',
             author: 'Stefan F.',
             location: 'Leun-Biskirchen',
             rating: 5
@@ -192,7 +192,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
             { q: 'Empfehlen Sie für Gärten in der Lahn-Nähe in Solms spezielle Materialien?', a: 'Aufgrund der hohen Luftfeuchtigkeit am Gewässer empfehlen wir zur Terrasseneinfassung auf verrottungsresistente, frostbeständige Natursteine (bspw. Basalt oder frostsicheren Muschelkalk) statt ungeschütztem Holz.' },
             { q: 'Errichten Sie auch großflächige Sichtschutzwände in engbebauten Solmser Wohngebieten?', a: 'Ja, Sichtschutz ist eines der Kernthemen in Solms. Wir bauen edle Holzzäune (z.B. Lärche), moderne HPL-Sichtschutzwände oder minimalistische Aluminium-Lamellen unter Einhaltung der Solmser Bebauungsgrenzen.' },
             { q: 'Unterstützen Sie bei den Erdarbeiten an schwierigen Hanglagen in Oberbiel?', a: 'Mit unserem Fuhrpark meistern wir komplexe Erdarbeiten. Aushub, Abtransport, Planierung und Verdichtung in Vorbereitung auf Terrassen oder Mauerbau sind unser Standard auf Solmser Baustellen.' },
-            { q: 'Decken Sie in Solms alle Ortsteile wie Burgsolms, Oberbiel und Niederbiel ab?', a: 'Ja, das Stadtgebiet Solms inkl. Burgsolms liegt nur 10 Minuten von unserem Bauhof in Werdorf/Aßlar entfernt. Wir betreuen Projekte in allen Solmser Ortsteilen ohne Anfahrtskosten.' },
+            { q: 'Decken Sie in Solms alle Ortsteile wie Burgsolms, Oberbiel und Niederbiel ab?', a: 'Ja, das Stadtgebiet Solms inkl. Burgsolms liegt nur 10 Minuten von unserem Bauhof in Aßlar entfernt. Wir betreuen Projekte in allen Solmser Ortsteilen ohne Anfahrtskosten.' },
             { q: 'Werden Zufahrten zu Solmser Grundstücken in Pflaster oder Asphalt ausgeführt?', a: 'Im privaten Premium-Segment dominiert hochwertiges Großformat-Pflaster oder robustes Natursteinpflaster aus Design-Gründen. Asphaltierungen führen wir im Wohnbereich weniger durch.' }
         ],
         schemaServiceArea: {
@@ -241,7 +241,7 @@ export const LOCATIONS_PART2: CityConfig[] = [
         faqItems: [
             { q: 'Planen Sie in Braunfels auch Gärten in steil abfallender extremer Hanglage?', a: 'Gerade die topografischen Extreme um den Braunfelser Schlossberg fordern Meisterleistungen im Bau von Böschungssicherungen und Trockenmauern (teils in mehreren Ebenen), was uns besonders reizt.' },
             { q: 'Bieten Sie passendes Natursteinpflaster für historische Anwesen in der Braunfelser Altstadt?', a: 'Wir greifen bei Projekten nahe des Schlossareals häufig auf rustikale Materialien wie handgeschlagenes Basalt-Kleinpflaster oder Porphyr zurück, was der historischen Kulisse Rechnung trägt.' },
-            { q: 'Wie lange muss ich in Braunfels auf einen Vor-Ort-Termin für meinen Garten warten?', a: 'Dank der großen Nähe zu unserem Standort in Werdorf erfolgen Erstbesichtigungen oder Vermessungen im gesamten Kurstadtgebiet Braunfels in der Regel noch in der gleichen Woche der Anfrage.' },
+            { q: 'Wie lange muss ich in Braunfels auf einen Vor-Ort-Termin für meinen Garten warten?', a: 'Dank der großen Nähe zu unserem Standort in Aßlar erfolgen Erstbesichtigungen oder Vermessungen im gesamten Kurstadtgebiet Braunfels in der Regel noch in der gleichen Woche der Anfrage.' },
             { q: 'Setzen Sie in Braunfels auf automatische Bewässerungssysteme?', a: 'Für die meist großflächigen und repräsentativen Gartenanlagen in Braunfels gehört eine smarte Unterflur-Bewässerung (Bspw. Hunter oder Gardena SmartSystem) bei Neubauten fast zum Standard bei Memo-Bau.' },
             { q: 'Werden auch in Tiefenbach oder Altenkirchen Grundstücke betreut?', a: 'Ja, unser Einsatzgebiet erstreckt sich lückenlos auf alle Eingemeindungen und Vororte von Braunfels.' }
         ],

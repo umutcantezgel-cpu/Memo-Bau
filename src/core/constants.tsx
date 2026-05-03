@@ -9,7 +9,6 @@ import React from 'react';
 export const NAVIGATION: NavigationItem[] = [
     { name: 'Startseite', id: 'home' },
     { name: 'Leistungen', id: 'services' },
-    { name: 'Projekte', id: 'gallery' },
     { name: 'Standorte', id: 'standorte' },
     { name: 'Ratgeber', id: 'ratgeber' },
     { name: 'Über Uns', id: 'about' },
@@ -161,23 +160,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
     {
         id: 1,
-        name: 'Familie von Schneider',
-        role: 'Privatier',
-        text: 'Memo BauT hat nicht nur einen Garten gebaut, sondern einen echten Rückzugsort geschaffen. Die Balance zwischen Architektur und Natur ist meisterhaft gelungen.',
+        name: 'Yücel Deniz',
+        role: 'Kunde',
+        text: 'Sehr zuverlässige und professionelle Baufirma! Die Arbeiten wurden pünktlich und in hoher Qualität ausgeführt. Die Kommunikation war jederzeit klar und freundlich, und auf Wünsche wurde sofort eingegangen. Das Team arbeitet sauber, organisiert und mit viel Fachwissen. Absolut empfehlenswert.',
         rating: 5,
     },
     {
         id: 2,
-        name: 'Dr. Michael Weber',
-        role: 'Architekt BDA',
-        text: 'Als Architekt lege ich Wert auf Präzision. Das Team von Memo BauT hat meine hohen Ansprüche an Detailgenauigkeit und Materialqualität übertroffen.',
-        rating: 5,
-    },
-    {
-        id: 3,
-        name: 'Geschäftsleitung Müller Automotive',
-        role: 'Corporate Real Estate',
-        text: 'Unsere neue Außenanlage repräsentiert nun endlich die Qualität unserer Marke. Exzellente Abwicklung, absolut termintreu und diskret.',
+        name: 'Angelina P',
+        role: 'Kunde',
+        text: 'Ich bin wirklich froh, mich für Memo-BauT Garten- und Landschaftsbau entschieden zu haben. Von Anfang an war die Kommunikation super angenehm, ehrlich und unkompliziert. Man merkt sofort, dass hier jemand mit echter Erfahrung und Leidenschaft arbeitet.\n\nDie Arbeit wurde schnell, zuverlässig und sehr sauber ausgeführt. Jetzt fühle ich mich in meinem Garten richtig wohl und schaue mir das Ergebnis jedes Mal gerne an. Alles wurde genauso umgesetzt, wie ich es mir vorgestellt habe, und die Absprachen waren jederzeit klar und zuverlässig.\n\nFür mich steht fest: Wenn ich wieder etwas im Garten machen lasse, dann definitiv wieder hier. Eine klare Empfehlung und ein großes Dankeschön für die tolle Arbeit!',
         rating: 5,
     },
 ];
@@ -211,14 +203,16 @@ export const COMPANY_INFO = {
     employees: '15+',
     projects: '50+',
     region: 'Wetzlar • Gießen • Frankfurt',
-    phone: '+49 176 70162293',
+    phone: '0176 70162293',
     email: 'info@memo-baut.de',
     address: {
         street: 'Falkenstraße 9',
-        city: 'Werdorf',
+        city: 'Aßlar',
         zip: '35614',
         country: 'Deutschland',
     },
+    openingHours: 'Mo-Fr 07:30 - 18:00', // Assuming typical hours, or just 'Öffnet Mo um 07:30'
+    description: 'Memo-BauT ist Ihr erfahrener Fachbetrieb für Garten- und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat- und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk, Bepflanzung und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
 };
 
 export const STATS = [

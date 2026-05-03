@@ -95,7 +95,7 @@ export const SEO: React.FC<SEOProps> = ({
             }
         ],
         "priceRange": "€€",
-        "areaServed": localBusiness ? localBusiness.city : "Wetzlar, Werdorf, Lahn-Dill-Kreis, Gießen",
+        "areaServed": localBusiness ? localBusiness.city : "Wetzlar, Aßlar, Lahn-Dill-Kreis, Gießen",
         "knowsAbout": [
             "Gartengestaltung", "Landschaftsbau", "Pflasterarbeiten",
             "Terrassenbau", "Zaunbau", "Natursteinarbeiten",
@@ -137,7 +137,7 @@ export const SEO: React.FC<SEOProps> = ({
         "foundingDate": `${COMPANY_INFO.founded}`,
         "foundingLocation": {
             "@type": "Place",
-            "name": "Werdorf, Hessen"
+            "name": "Aßlar, Hessen"
         },
         "contactPoint": {
             "@type": "ContactPoint",

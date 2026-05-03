@@ -32,9 +32,6 @@ const HomePage = lazy(() =>
 const ServicesPage = lazy(() =>
   import('./pages/ServicesPage').then((module) => ({ default: module.ServicesPage })),
 );
-const GalleryPage = lazy(() =>
-  import('./pages/GalleryPage').then((module) => ({ default: module.GalleryPage })),
-);
 const ContactPage = lazy(() =>
   import('./pages/ContactPage').then((module) => ({ default: module.ContactPage })),
 );
@@ -212,7 +209,6 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
                 <Route path="/leistungen/:serviceSlug" element={<ServiceDetailPage />} />
                 <Route path="/ratgeber" element={<BlogPage />} />
                 <Route path="/ratgeber/:postSlug" element={<BlogPostPage />} />
-                <Route path="/gallery" element={<GalleryPage />} />
                 <Route path="/standorte" element={<LocationOverviewPage />} />
                 <Route path="/standorte/:cityId" element={<LocationPage />} />
                 <Route path="/contact" element={<ContactPage />} />

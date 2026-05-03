@@ -21,7 +21,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         subheadline: 'An unserem Stammsitz verschmelzen meisterliche Handwerkstradition und visionäres Gartendesign.',
         metaTitle: 'Premium Garten- & Landschaftsbau Werdorf | Memo BauT',
         metaDescription: 'Ihr Experte für exklusiven Landschaftsbau direkt in Werdorf (35614). Von der 3D-Gartenplanung über Natursteinmauern bis zur Pflege. Kostenlose Erstberatung.',
-        story: 'Werdorf ist nicht nur unser Hauptsitz, es ist das Herzstück von Memo BauT. Aus diesem historischen Ort im Dilltal heraus haben wir uns der Transformation hessischer Gärten verschrieben. Die dörfliche Struktur mit ihren tiefen Gärten und dem direkten Bezug zur umgebenden Natur prägt unser Verständnis von Landschaftsbau: echt, beständig und im Einklang mit der Region.',
+        story: 'Werdorf ist historisch unser Ursprung und ein Herzstück von Memo BauT. Aus diesem historischen Ort im Dilltal heraus haben wir uns der Transformation hessischer Gärten verschrieben. Die dörfliche Struktur mit ihren tiefen Gärten und dem direkten Bezug zur umgebenden Natur prägt unser Verständnis von Landschaftsbau: echt, beständig und im Einklang mit der Region.',
         topografie: 'Eingebettet in das sanfte Tal der Dill bietet Werdorf mit seinen leichten Hanglagen ideale Voraussetzungen für terrassierte Gartenkonzepte und Trockenmauern.',
         gartenStil: 'Moderne Landhausgärten, großzügige Familienparadiese und robuste Naturstein-Ensembles prägen das Bild der hochwertigen Werdorfer Außenanlagen.',
         wohnstruktur: 'Großzügige Einfamilienhäuser mit tiefen Grundstücken, oft am Hang gelegen.',
@@ -39,7 +39,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         projektAnzahl: 142,
 
         faqItems: [
-            { q: 'Sind Sie als Werdorfer Unternehmen auch überregional tätig?', a: 'Ja, unser Hauptsitz ist in Werdorf, aber wir betreuen exklusive Gartenprojekte im gesamten Lahn-Dill-Kreis sowie dem Rhein-Main-Gebiet.' },
+            { q: 'Sind Sie als lokales Unternehmen auch überregional tätig?', a: 'Ja, unser Hauptsitz ist im nahen Aßlar, aber wir betreuen exklusive Gartenprojekte im gesamten Lahn-Dill-Kreis sowie dem Rhein-Main-Gebiet.' },
             { q: 'Welche Materialien empfehlen Sie für Werdorfer Gärten?', a: 'Aufgrund der Bodenbeschaffenheit und der Hanglagen in Werdorf setzen wir häufig auf Grauwacke oder regionalen Basalt für langlebige Stützmauern.' },
             { q: 'Wie schnell können Sie ein Projekt in Werdorf starten?', a: 'Durch die unmittelbare Nähe unseres Bauhofs können wir Bauprojekte in Werdorf oft besonders flexibel und zeitnah einsteuern.' },
             { q: 'Bieten Sie auch die Pflege bestehender Gärten in Werdorf an?', a: 'Selbstverständlich. Für unsere Werdorfer Kunden bieten wir maßgeschneiderte Pflegekonzepte für einen dauerhaft perfekten Garten.' },
@@ -89,7 +89,7 @@ export const LOCATIONS_PART1: CityConfig[] = [
         projektAnzahl: 87,
 
         faqItems: [
-            { q: 'Fallen für Projekte in Aßlar Anfahrtskosten an?', a: 'Aufgrund der direkten Nachbarschaft zu unserem Sitz in Werdorf entfallen bei Projekten in Aßlar die Anfahrtskosten vollständig.' },
+            { q: 'Fallen für Projekte in Aßlar Anfahrtskosten an?', a: 'Als lokales Unternehmen aus Aßlar entfallen bei Projekten in unserem Stadtgebiet die Anfahrtskosten vollständig.' },
             { q: 'Übernehmen Sie in Aßlar auch kleine Pflasterarbeiten?', a: 'Ja, als lokaler Partner in der Stadt Aßlar übernehmen wir neben komplett neuen Gartenanlagen auch gezielte Sanierungen von Einfahrten oder Gehwegen.' },
             { q: 'Haben Sie Erfahrung mit der Bodenbeschaffenheit in den Aßlarer Höhenlagen?', a: 'Absolut. Der teils lehmige und felsige Untergrund in Berghausen oder Aßlar-Nord ist uns bestens vertraut. Entsprechende Drainagen planen wir standardmäßig ein.' },
             { q: 'Gibt es Referenzgärten in Aßlar, die ich ansehen kann?', a: 'Wir haben bereits zahlreiche Projekte in Aßlar realisiert. Nach Absprache können wir Ihnen diskrete Straßenansichten unserer Arbeiten in Ihrer direkten Nachbarschaft nennen.' },

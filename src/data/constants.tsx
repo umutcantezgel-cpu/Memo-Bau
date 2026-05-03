@@ -8,7 +8,6 @@ import React from 'react';
 export const NAVIGATION: NavigationItem[] = [
   { name: 'Startseite', id: 'home' },
   { name: 'Leistungen', id: 'services' },
-  { name: 'Projekte', id: 'gallery' },
   { name: 'Über Uns', id: 'about' },
   { name: 'Kontakt', id: 'contact' },
 ];
@@ -115,23 +114,16 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
-    name: 'Familie Schneider',
-    role: 'Privatgarten, Wetzlar',
-    text: 'Memo BauT hat unseren Garten komplett verwandelt. Von der Planung bis zur Umsetzung war alles perfekt!',
+    name: 'Yücel Deniz',
+    role: 'Privatkunde',
+    text: 'Sehr zuverlässige und professionelle Baufirma! Die Arbeiten wurden pünktlich und in hoher Qualität ausgeführt. Die Kommunikation war jederzeit klar und freundlich, und auf Wünsche wurde sofort eingegangen. Das Team arbeitet sauber, organisiert und mit viel Fachwissen. Absolut empfehlenswert.',
     rating: 5,
   },
   {
     id: 2,
-    name: 'Dr. Michael Weber',
-    role: 'Poollandschaft, Gießen',
-    text: 'Professionelle Arbeit vom ersten Gespräch bis zur Fertigstellung. Die Poolumrandung ist ein Traum!',
-    rating: 5,
-  },
-  {
-    id: 3,
-    name: 'Autohaus Müller GmbH',
-    role: 'Gewerbliche Außenanlage',
-    text: 'Zuverlässig, termintreu und saubere Arbeit. Klare Empfehlung!',
+    name: 'Angelina P',
+    role: 'Privatkunde',
+    text: 'Ich bin wirklich froh, mich für Memo-BauT Garten- und Landschaftsbau entschieden zu haben. Von Anfang an war die Kommunikation super angenehm, ehrlich und unkompliziert. Man merkt sofort, dass hier jemand mit echter Erfahrung und Leidenschaft arbeitet.',
     rating: 5,
   },
 ];
@@ -166,7 +158,7 @@ export const COMPANY_INFO = {
   phone: '+49 176 70162293',
   address: {
     street: 'Falkenstraße 9',
-    city: 'Werdorf',
+    city: 'Aßlar',
     zip: '35614',
     country: 'Deutschland',
   },

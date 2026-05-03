@@ -137,9 +137,9 @@ const getDefaultData = (): CMSData => ({
     testimonials: [
         {
             id: 1,
-            name: 'Familie von Schneider',
-            role: 'Privatier',
-            text: 'Memo BauT hat nicht nur einen Garten gebaut, sondern einen echten Rückzugsort geschaffen. Die Balance zwischen Architektur und Natur ist meisterhaft gelungen.',
+            name: 'Yücel Deniz',
+            role: 'Privatkunde',
+            text: 'Sehr zuverlässige und professionelle Baufirma! Die Arbeiten wurden pünktlich und in hoher Qualität ausgeführt. Die Kommunikation war jederzeit klar und freundlich, und auf Wünsche wurde sofort eingegangen. Das Team arbeitet sauber, organisiert und mit viel Fachwissen. Absolut empfehlenswert.',
             rating: 5,
             isActive: true,
             order: 1,
@@ -148,23 +148,12 @@ const getDefaultData = (): CMSData => ({
         },
         {
             id: 2,
-            name: 'Dr. Michael Weber',
-            role: 'Architekt BDA',
-            text: 'Als Architekt lege ich Wert auf Präzision. Das Team von Memo BauT hat meine hohen Ansprüche an Detailgenauigkeit und Materialqualität übertroffen.',
+            name: 'Angelina P',
+            role: 'Privatkunde',
+            text: 'Ich bin wirklich froh, mich für Memo-BauT Garten- und Landschaftsbau entschieden zu haben. Von Anfang an war die Kommunikation super angenehm, ehrlich und unkompliziert. Man merkt sofort, dass hier jemand mit echter Erfahrung und Leidenschaft arbeitet.',
             rating: 5,
             isActive: true,
             order: 2,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-        },
-        {
-            id: 3,
-            name: 'Müller Automotive',
-            role: 'Corporate Real Estate',
-            text: 'Unsere neue Außenanlage repräsentiert nun endlich die Qualität unserer Marke. Exzellente Abwicklung, absolut termintreu und diskret.',
-            rating: 5,
-            isActive: true,
-            order: 3,
             createdAt: new Date().toISOString(),
             updatedAt: new Date().toISOString(),
         },
@@ -201,7 +190,7 @@ const getDefaultData = (): CMSData => ({
     businessInfo: {
         companyName: 'Memo BauT',
         tagline: 'Exklusive Gartenkunst',
-        description: 'Ihr zuverlässiger Partner für hochwertige Baustoffe, Werkzeuge und professionellen Service in der Region Wetzlar-Gießen.',
+        description: 'Memo-BauT ist Ihr erfahrener Fachbetrieb für Garten- und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat- und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk, Bepflanzung und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
         missionStatement: 'Räume für die Sinne. Gärten für die Ewigkeit.',
         foundedYear: 2019,
         hours: [
@@ -218,7 +207,7 @@ const getDefaultData = (): CMSData => ({
             email: 'info@memo-baut.de',
             address: {
                 street: 'Falkenstraße 9',
-                city: 'Werdorf',
+                city: 'Aßlar',
                 postalCode: '35614',
                 country: 'Deutschland',
             },

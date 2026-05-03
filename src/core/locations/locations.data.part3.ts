@@ -142,7 +142,7 @@ export const LOCATIONS_PART3: CityConfig[] = [
             { q: 'Arbeiten Sie in allen Langgönser Ortsteilen (wie Cleeberg oder Espa)?', a: 'Ja, Langgöns mitsamt aller Ortsteile (Oberkleen, Niederkleen, Dornholzhausen, Cleeberg, Espa) gehört zu unserer regulären Service-Region. Es gibt keine versteckten Anfahrtskosten.' },
             { q: 'Haben Sie Erfahrung mit Hangabsicherungen in Waldnähe (wie in Espa)?', a: 'Die Topografie Richtung Taunus erfordert solide Expertise. Wir stützen Hänge langfristig sicher mit Schwergewichtsmauern (L-Steinen) oder mehrstufigen Natursteinwällen ab.' },
             { q: 'Pflastern Sie in den Langgönser Dörfern auch weitläufige Hofeinfahren?', a: 'Absolut. Das ländlichere Umfeld erfordert oft sehr große befestigte Flächen. Wir kalkulieren und verbauen Großformatpflaster mit professionellem Unterbau für hohe Belastungen.' },
-            { q: 'Wie schnell ist das Team von Werdorf/Wetzlar aus in Langgöns?', a: 'Über die A45 und B3 sind unsere Teams in knapp 20 Minuten auf den Baustellen in Langgöns, wodurch wir sehr wirtschaftlich und flexibel agieren können.' },
+            { q: 'Wie schnell ist das Team von Aßlar/Wetzlar aus in Langgöns?', a: 'Über die A45 und B3 sind unsere Teams in knapp 20 Minuten auf den Baustellen in Langgöns, wodurch wir sehr wirtschaftlich und flexibel agieren können.' },
             { q: 'Gestalten Sie auch Vorgärten zu bestehenden Altbauten?', a: 'Ein sensibler Umgang mit dem Bestand ist uns wichtig. Wir werten alte Hofeinfahrten oder Vorgärten durch moderne, pflegeleichte Pflanzbeete maßgeblich auf, ohne den Charme des Hauses zu zerstören.' }
         ],
         schemaServiceArea: {

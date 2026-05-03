@@ -12,7 +12,7 @@ export const ImprintPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Impressum | Memo BauT – Garten- & Landschaftsbau Werdorf"
+                title="Impressum | Memo BauT – Garten- & Landschaftsbau Aßlar"
                 description={`Impressum der ${COMPANY_INFO.name}. Angaben gemäß § 5 DDG, Kontaktdaten, Steuerdaten, berufsrechtliche Angaben und Haftungshinweise.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },

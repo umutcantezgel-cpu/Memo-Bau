@@ -121,7 +121,7 @@ export const Footer: React.FC = () => (
           </Link>
           <button
             type="button"
-            onClick={() => window.dispatchEvent(new Event('show_cookie_settings'))}
+            data-cc="show-preferencesModal"
             className="hover:text-white transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] cursor-pointer"
           >
             Cookie-Einstellungen
