@@ -115,8 +115,7 @@ const ScrollToTop = () => {
 
 const App: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
-  const hostname = window.location.hostname;
-  const isMaintenanceMode = hostname.includes('memobaut.de') || hostname.includes('vercel.app');
+  const isMaintenanceMode = false; // Maintenance mode deactivated
 
   if (isMaintenanceMode) {
     return (
