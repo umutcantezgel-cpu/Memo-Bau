@@ -12,7 +12,7 @@ export const PrivacyPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Datenschutzerklärung | Memo-BauT – Sicherheit & Transparenz"
+                title="Datenschutzerklärung | Memo BauT – Sicherheit & Transparenz"
                 description={`Umfassende Informationen zum Datenschutz (DSGVO) und zur Verarbeitung Ihrer personenbezogenen Daten bei der ${COMPANY_INFO.name}. Ihre Rechte, unsere Drittanbieter und Löschkonzepte.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
@@ -65,7 +65,7 @@ export const PrivacyPage: React.FC = () => {
                         {COMPANY_INFO.address.street}<br />
                         {COMPANY_INFO.address.zip} {COMPANY_INFO.address.city}<br />
                         Telefon: <a href={`tel:${COMPANY_INFO.phone?.replace(/\s/g, '')}`}>{COMPANY_INFO.phone}</a><br />
-                        E-Mail: <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a>
+                        E Mail: <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a>
                     </p>
                 </LegalInfoBox>
 
@@ -91,7 +91,7 @@ export const PrivacyPage: React.FC = () => {
                 <h3>Widerruf Ihrer Einwilligung</h3>
                 <LegalInfoBox variant="wichtig" title="Ihr Widerrufsrecht">
                     <p>
-                        Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung <strong>jederzeit formlos</strong> (z.B. per E-Mail an {COMPANY_INFO.email}) widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.
+                        Viele Datenverarbeitungsvorgänge sind nur mit Ihrer ausdrücklichen Einwilligung möglich. Sie können eine bereits erteilte Einwilligung <strong>jederzeit formlos</strong> (z.B. per E Mail an {COMPANY_INFO.email}) widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.
                     </p>
                 </LegalInfoBox>
 
@@ -106,7 +106,7 @@ export const PrivacyPage: React.FC = () => {
                         Sie haben das Recht, jederzeit unentgeltlich Auskunft über die bei uns gespeicherten personenbezogenen Daten zu verlangen. Dies umfasst Informationen über die Verarbeitungszwecke, die Kategorien der Daten, die Empfänger, die geplante Speicherdauer sowie die Herkunft der Daten.
                     </p>
                     <p>
-                        <strong>So üben Sie dieses Recht aus:</strong> Senden Sie eine E-Mail an <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a> mit dem Betreff „Auskunftsersuchen nach Art. 15 DSGVO".
+                        <strong>So üben Sie dieses Recht aus:</strong> Senden Sie eine E Mail an <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a> mit dem Betreff „Auskunftsersuchen nach Art. 15 DSGVO".
                     </p>
                 </LegalAccordion>
 
@@ -152,7 +152,7 @@ export const PrivacyPage: React.FC = () => {
                     <LegalInfoBox variant="kontakt" title="Zuständige Aufsichtsbehörde">
                         <p>
                             <strong>Der Hessische Beauftragte für Datenschutz und Informationsfreiheit</strong><br />
-                            Gustav-Stresemann-Ring 1<br />
+                            Gustav Stresemann Ring 1<br />
                             65189 Wiesbaden<br />
                             <a href="https://datenschutz.hessen.de" target="_blank" rel="noopener noreferrer">datenschutz.hessen.de</a>
                         </p>
@@ -160,24 +160,24 @@ export const PrivacyPage: React.FC = () => {
                 </LegalAccordion>
 
                 {/* ─── KAPITEL 5 ─── */}
-                <h2>5. SSL- bzw. TLS-Verschlüsselung</h2>
+                <h2>5. SSL  bzw. TLS Verschlüsselung</h2>
                 <p>
-                    Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte nutzt diese Website eine <LegalDefinition term="TLS-Verschlüsselung" definition="Transport Layer Security – kryptographisches Protokoll zur sicheren Datenübertragung im Internet, erkennbar am 'https://' in der Adresszeile." />. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss-Symbol.
+                    Aus Sicherheitsgründen und zum Schutz der Übertragung vertraulicher Inhalte nutzt diese Website eine <LegalDefinition term="TLS-Verschlüsselung" definition="Transport Layer Security – kryptographisches Protokoll zur sicheren Datenübertragung im Internet, erkennbar am 'https://' in der Adresszeile." />. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers von „http://" auf „https://" wechselt und an dem Schloss Symbol.
                 </p>
 
                 {/* ─── KAPITEL 6 ─── */}
-                <h2>6. Hosting & Server-Logfiles</h2>
+                <h2>6. Hosting & Server Logfiles</h2>
                 <h3>Externes Hosting</h3>
                 <p>
-                    Diese Website wird bei der Vercel Inc. (440 N Barranca Ave #4133, Covina, CA 91723, USA) gehostet. Die Domainregistrierung erfolgt über die STRATO AG (Pascalstraße 10, 10587 Berlin). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf Servern des Hosters gespeichert. Vercel ist nach dem EU-US Data Privacy Framework zertifiziert. Der Einsatz erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherer Bereitstellung).
+                    Diese Website wird bei der Vercel Inc. (440 N Barranca Ave #4133, Covina, CA 91723, USA) gehostet. Die Domainregistrierung erfolgt über die STRATO AG (Pascalstraße 10, 10587 Berlin). Die personenbezogenen Daten, die auf dieser Website erfasst werden, werden auf Servern des Hosters gespeichert. Vercel ist nach dem EU US Data Privacy Framework zertifiziert. Der Einsatz erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) und Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherer Bereitstellung).
                 </p>
                 <p>
-                    Wir haben einen Vertrag über <LegalDefinition term="Auftragsverarbeitung (AVV)" definition="Vertrag gemäß Art. 28 DSGVO, der sicherstellt, dass ein externer Dienstleister weisungsgebunden und datenschutzkonform personenbezogene Daten verarbeitet." /> mit unserem Hosting-Anbieter geschlossen.
+                    Wir haben einen Vertrag über <LegalDefinition term="Auftragsverarbeitung (AVV)" definition="Vertrag gemäß Art. 28 DSGVO, der sicherstellt, dass ein externer Dienstleister weisungsgebunden und datenschutzkonform personenbezogene Daten verarbeitet." /> mit unserem Hosting Anbieter geschlossen.
                 </p>
 
-                <h3>Server-Log-Dateien</h3>
+                <h3>Server Log Dateien</h3>
                 <p>
-                    Der Provider erhebt und speichert automatisch Informationen in Server-Log-Dateien. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Erfasst werden:
+                    Der Provider erhebt und speichert automatisch Informationen in Server Log Dateien. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Erfasst werden:
                 </p>
                 <ul>
                     <li>Browsertyp und Browserversion</li>
@@ -199,29 +199,29 @@ export const PrivacyPage: React.FC = () => {
                     Cookies, die zur Bereitstellung bestimmter Funktionen zwingend erforderlich sind (<LegalDefinition term="technisch notwendige Cookies" definition="Cookies, ohne die die Website nicht wie vorgesehen funktionieren würde (z.B. Consent-Status, Spracheinstellungen). Erfordern keine Einwilligung." />), werden auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO sowie dem <LegalDefinition term="TDDDG" definition="Telekommunikation-Digitale-Dienste-Datenschutz-Gesetz – seit 2024 die offizielle Bezeichnung des vormaligen TTDSG." /> gespeichert.
                 </p>
                 <p>
-                    Andere Cookies (z.B. für Analytics) werden nur mit Ihrer ausdrücklichen Zustimmung gesetzt (Art. 6 Abs. 1 lit. a DSGVO). Diese Zustimmung können Sie über die Cookie-Einstellungen im Footer jederzeit widerrufen oder anpassen.
+                    Andere Cookies (z.B. für Analytics) werden nur mit Ihrer ausdrücklichen Zustimmung gesetzt (Art. 6 Abs. 1 lit. a DSGVO). Diese Zustimmung können Sie über die Cookie Einstellungen im Footer jederzeit widerrufen oder anpassen.
                 </p>
 
                 <LegalInfoBox variant="hinweis">
                     <p>
-                        Detaillierte Informationen über die auf dieser Website verwendeten Cookies, deren Zweck, Anbieter und Lebensdauer finden Sie in unserer <a href="/cookie-richtlinie">Cookie-Richtlinie</a>.
+                        Detaillierte Informationen über die auf dieser Website verwendeten Cookies, deren Zweck, Anbieter und Lebensdauer finden Sie in unserer <a href="/cookie-richtlinie">Cookie Richtlinie</a>.
                     </p>
                 </LegalInfoBox>
 
                 {/* ─── KAPITEL 8 ─── */}
-                <h2>8. Kontaktformular & E-Mail-Anfragen</h2>
+                <h2>8. Kontaktformular & E Mail Anfragen</h2>
                 <p>
-                    Wenn Sie uns per Kontaktformular oder E-Mail Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen).
+                    Wenn Sie uns per Kontaktformular oder E Mail Anfragen zukommen lassen, werden Ihre Angaben zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert. Rechtsgrundlage: Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen).
                 </p>
 
                 <LegalInfoBox variant="pflicht" title="Verarbeitete Daten">
-                    <p>Name, E-Mail-Adresse, Telefonnummer (optional), Nachrichteninhalt, IP-Adresse und Zeitstempel der Anfrage.</p>
+                    <p>Name, E Mail Adresse, Telefonnummer (optional), Nachrichteninhalt, IP Adresse und Zeitstempel der Anfrage.</p>
                 </LegalInfoBox>
 
                 {/* ─── KAPITEL 9 ─── */}
                 <h2>9. Terminbuchung (Calendly)</h2>
                 <p>
-                    Für die Online-Terminbuchung nutzen wir das Tool „Calendly" (Calendly LLC, Atlanta, GA, USA). Die eingegebenen Daten werden an Server von Calendly übertragen (teilweise in die USA).
+                    Für die Online Terminbuchung nutzen wir das Tool „Calendly" (Calendly LLC, Atlanta, GA, USA). Die eingegebenen Daten werden an Server von Calendly übertragen (teilweise in die USA).
                 </p>
 
                 <LegalInfoBox variant="wichtig" title="Drittlandübermittlung USA">
@@ -233,13 +233,13 @@ export const PrivacyPage: React.FC = () => {
                 {/* ─── KAPITEL 10 ─── */}
                 <h2>10. Karteneinbindung (OpenStreetMap / Leaflet)</h2>
                 <p>
-                    Für die Darstellung interaktiver Karten verwenden wir OpenStreetMap-Kartenkacheln über die Leaflet-Bibliothek. Beim Laden der Karte wird Ihre IP-Adresse an die Server der OpenStreetMap Foundation (OSMF) übertragen. Die Einbindung erfolgt auf Grundlage Ihrer ausdrücklichen Einwilligung über unseren Cookie-Banner (2-Klick-Lösung) gemäß Art. 6 Abs. 1 lit. a DSGVO. Sie können diese Einwilligung jederzeit widerrufen.
+                    Für die Darstellung interaktiver Karten verwenden wir OpenStreetMap Kartenkacheln über die Leaflet Bibliothek. Beim Laden der Karte wird Ihre IP Adresse an die Server der OpenStreetMap Foundation (OSMF) übertragen. Die Einbindung erfolgt auf Grundlage Ihrer ausdrücklichen Einwilligung über unseren Cookie Banner (2 Klick Lösung) gemäß Art. 6 Abs. 1 lit. a DSGVO. Sie können diese Einwilligung jederzeit widerrufen.
                 </p>
 
                 {/* ─── KAPITEL 11 ─── */}
                 <h2>11. Schriftarten (lokal gehostet)</h2>
                 <p>
-                    Diese Website verwendet die Schriftart „Inter", die <strong>lokal auf unserem Server gehostet</strong> wird. Beim Aufruf der Website werden keine Anfragen an externe Schriftarten-Server (z.B. Google Fonts) gesendet. Es findet kein Datentransfer an Google oder andere Drittanbieter für die Schriftarten-Bereitstellung statt.
+                    Diese Website verwendet die Schriftart „Inter", die <strong>lokal auf unserem Server gehostet</strong> wird. Beim Aufruf der Website werden keine Anfragen an externe Schriftarten Server (z.B. Google Fonts) gesendet. Es findet kein Datentransfer an Google oder andere Drittanbieter für die Schriftarten Bereitstellung statt.
                 </p>
 
                 {/* ─── KAPITEL 12 ─── */}

@@ -41,7 +41,7 @@ export const ValuePropositionSection: React.FC<ValuePropositionSectionProps> = (
             <div className="max-w-4xl mx-auto text-center">
                 <Reveal animation="fade-in-up">
                     <h2 className="text-h2 font-sans font-bold text-neutral-darkgray mb-space-8">
-                        Warum Memo-BauT in {config.name}?
+                        Warum Memo BauT in {config.name}?
                     </h2>
                     <p className="text-neutral-midgray text-lg leading-relaxed mb-space-12 max-w-3xl mx-auto">
                         Wir vereinen jahrzehntelange handwerkliche Perfektion mit modernster Gartenarchitektur.

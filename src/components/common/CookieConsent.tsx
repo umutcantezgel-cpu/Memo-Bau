@@ -112,7 +112,7 @@ export const CookieConsent: React.FC = () => {
         return (
             <div className={`fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
                 <div className="bg-neutral-white p-6 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-                    <h2 className="text-2xl font-bold mb-4 font-display text-primary">Ihre Cookie-Einstellungen</h2>
+                    <h2 className="text-2xl font-bold mb-4 font-display text-primary">Ihre Cookie Einstellungen</h2>
                     <p className="text-neutral-darkgray mb-6 text-sm">
                         Wir verwenden Cookies, um Ihre Erfahrung auf unserer Website zu verbessern. Sie können Ihre Einstellungen hier anpassen. Weitere Informationen finden Sie in unserer <Link to="/datenschutz" className="text-accent underline">Datenschutzerklärung</Link>.
                     </p>
@@ -150,7 +150,7 @@ export const CookieConsent: React.FC = () => {
                         <div className="flex items-start justify-between p-4 border border-neutral-lightgray">
                             <label htmlFor="cookie-marketing" className="cursor-pointer flex-1">
                                 <h3 className="font-semibold mb-1">Externe Medien & Marketing</h3>
-                                <p className="text-sm text-neutral-darkgray">Werden verwendet, um externe Dienste wie die dynamische Online-Terminbuchung (Calendly) freizuschalten und auszuführen.</p>
+                                <p className="text-sm text-neutral-darkgray">Werden verwendet, um externe Dienste wie die dynamische Online Terminbuchung (Calendly) freizuschalten und auszuführen.</p>
                             </label>
                             <div className="ml-4 pt-1">
                                 <input 
@@ -186,7 +186,7 @@ export const CookieConsent: React.FC = () => {
                 <div className="text-sm text-neutral-darkgray text-center md:text-left">
                     <p>
                         Wir nutzen Cookies, um Ihnen die bestmögliche Erfahrung auf unserer Website zu bieten.
-                        Dazu gehören Analyse-Cookies und personalisierte Inhalte.
+                        Dazu gehören Analyse Cookies und personalisierte Inhalte.
                         <Link to="/datenschutz" className="text-accent hover:text-accent-hover ml-1 font-medium underline">
                             Datenschutz
                         </Link>

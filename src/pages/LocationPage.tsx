@@ -118,7 +118,7 @@ export const LocationPage: React.FC = () => {
                             {/* Trust Signals */}
                             <div>
                                 <h3 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6">
-                                    Warum Memo-BauT in {locationConfig.name}?
+                                    Warum Memo BauT in {locationConfig.name}?
                                 </h3>
                                 <ul className="space-y-3">
 
@@ -132,7 +132,7 @@ export const LocationPage: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3 text-sm text-neutral-darkgray">
                                         <CheckCircle className="w-5 h-5 text-primary-base shrink-0 mt-0.5" />
-                                        <span>Fokus-Leistungen: {locationConfig.fokusLeistungen.join(', ')}</span>
+                                        <span>Fokus Leistungen: {locationConfig.fokusLeistungen.join(', ')}</span>
                                     </li>
                                 </ul>
                                 <div className="mt-space-8">

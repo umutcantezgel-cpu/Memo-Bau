@@ -12,7 +12,7 @@ export const ImprintPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Impressum | Memo-BauT – Garten- & Landschaftsbau Aßlar"
+                title="Impressum | Memo BauT – Garten  & Landschaftsbau Aßlar"
                 description={`Impressum der ${COMPANY_INFO.name}. Angaben gemäß § 5 DDG, Kontaktdaten, Steuerdaten, berufsrechtliche Angaben und Haftungshinweise.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
@@ -29,7 +29,7 @@ export const ImprintPage: React.FC = () => {
 
             <LegalLayout lastUpdated="März 2026">
                 <p className="lead text-lg font-medium text-neutral-darkgray border-l-4 border-accent-base pl-4 italic">
-                    Dieses Impressum gilt für die Website der {COMPANY_INFO.name} sowie für alle verknüpften Social-Media-Profile und externen Plattformen. Es enthält die gesetzlich vorgeschriebenen Angaben zur Anbieterkennzeichnung gemäß dem Digitale-Dienste-Gesetz (DDG).
+                    Dieses Impressum gilt für die Website der {COMPANY_INFO.name} sowie für alle verknüpften Social Media Profile und externen Plattformen. Es enthält die gesetzlich vorgeschriebenen Angaben zur Anbieterkennzeichnung gemäß dem Digitale Dienste Gesetz (DDG).
                 </p>
 
                 {/* ─── SEKTION 1: DIENSTEANBIETER ─── */}
@@ -56,14 +56,14 @@ export const ImprintPage: React.FC = () => {
                     <LegalInfoBox variant="kontakt" title="Kontakt">
                         <p>
                             Telefon: <a href={`tel:${COMPANY_INFO.phone?.replace(/\s/g, '')}`}>{COMPANY_INFO.phone}</a><br />
-                            E-Mail: <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a>
+                            E Mail: <a href={`mailto:${COMPANY_INFO.email}`}>{COMPANY_INFO.email}</a>
                         </p>
                     </LegalInfoBox>
                 </div>
 
                 <LegalInfoBox variant="hinweis">
                     <p>
-                        Für eine schnelle und effiziente Kommunikation empfehlen wir die Kontaktaufnahme per E-Mail. Wir bemühen uns, Ihre Anfrage innerhalb von 24 Stunden zu beantworten.
+                        Für eine schnelle und effiziente Kommunikation empfehlen wir die Kontaktaufnahme per E Mail. Wir bemühen uns, Ihre Anfrage innerhalb von 24 Stunden zu beantworten.
                     </p>
                 </LegalInfoBox>
 
@@ -75,8 +75,8 @@ export const ImprintPage: React.FC = () => {
                     039/874/03159 (Finanzamt Wetzlar)
                 </p>
                 <p>
-                    <strong>Umsatzsteuer-Identifikationsnummer (USt-IdNr.):</strong><br />
-                    Gemäß § 19 UStG wird keine Umsatzsteuer erhoben (Kleinunternehmerregelung). Eine USt-IdNr. ist daher nicht vorhanden.
+                    <strong>Umsatzsteuer Identifikationsnummer (USt IdNr.):</strong><br />
+                    Gemäß § 19 UStG wird keine Umsatzsteuer erhoben (Kleinunternehmerregelung). Eine USt IdNr. ist daher nicht vorhanden.
                 </p>
 
                 {/* ─── SEKTION 3: BERUFSRECHT ─── */}
@@ -88,10 +88,10 @@ export const ImprintPage: React.FC = () => {
                 <LegalInfoBox variant="pflicht" title="Kammer & Berufsbezeichnung">
                     <p>
                         <strong>Zuständige Kammer:</strong> Handwerkskammer Wiesbaden, Bierstadter Str. 45, 65189 Wiesbaden<br />
-                        <strong>Berufsbezeichnung:</strong> Garten- und Landschaftsbauer<br />
+                        <strong>Berufsbezeichnung:</strong> Garten  und Landschaftsbauer<br />
                         <strong>Handwerksrollennummer:</strong> 2011/0847<br />
                         <strong>Staat der Verleihung:</strong> Bundesrepublik Deutschland<br />
-                        <strong>Berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO) – einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer">gesetze-im-internet.de/hwo</a>
+                        <strong>Berufsrechtliche Regelungen:</strong> Handwerksordnung (HwO) – einsehbar unter <a href="https://www.gesetze-im-internet.de/hwo/" target="_blank" rel="noopener noreferrer">gesetze im internet.de/hwo</a>
                     </p>
                 </LegalInfoBox>
 
@@ -115,7 +115,7 @@ export const ImprintPage: React.FC = () => {
 
                 <LegalInfoBox variant="wichtig" title="Hinweis zur Verbraucherschlichtung">
                     <p>
-                        Die Europäische Kommission hat die Plattform zur Online-Streitbeilegung (OS-Plattform) zum <strong>20. Juli 2025 eingestellt</strong>. Ein Verweis auf diese Plattform entfällt daher.
+                        Die Europäische Kommission hat die Plattform zur Online Streitbeilegung (OS Plattform) zum <strong>20. Juli 2025 eingestellt</strong>. Ein Verweis auf diese Plattform entfällt daher.
                     </p>
                 </LegalInfoBox>
 
@@ -157,7 +157,7 @@ export const ImprintPage: React.FC = () => {
 
                 <div className="mb-8">
                     <p>
-                        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten (insbesondere Fotos, 3D-Renderings, Texte und Logos) unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+                        Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten (insbesondere Fotos, 3D Renderings, Texte und Logos) unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
                     </p>
                     <p>
                         Downloads und Kopien dieser Seite sind strengstens untersagt, es sei denn, sie geschehen für den ausschließlich privaten, nicht kommerziellen Gebrauch.

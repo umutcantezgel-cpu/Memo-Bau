@@ -205,7 +205,7 @@ export const ServiceDetailPage: React.FC = () => {
                             {service.ctaText}
                         </h2>
                         <p className="text-neutral-white/80 text-sm mb-space-8 relative z-10">
-                            Kostenlose Erstberatung. Festpreisangebot. Keine versteckten Kosten.
+                            Unverbindliche Erstberatung. Individuelles Angebot.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                             <Link

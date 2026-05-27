@@ -54,12 +54,12 @@ export const BlogPostPage: React.FC = () => {
                     "dateModified": post.updatedDate || post.publishedDate,
                     "author": {
                         "@type": "Organization",
-                        "name": "Memo-BauT",
+                        "name": "Memo BauT",
                         "url": "https://memobaut.de"
                     },
                     "publisher": {
                         "@type": "Organization",
-                        "name": "Memo-BauT",
+                        "name": "Memo BauT",
                         "logo": { "@type": "ImageObject", "url": "https://memobaut.de/logo.png" }
                     },
                     "mainEntityOfPage": `https://memobaut.de/ratgeber/${post.slug}`
@@ -229,7 +229,7 @@ export const BlogPostPage: React.FC = () => {
                 <div className="max-w-3xl mx-auto px-6">
                     <Link to="/ratgeber" className="inline-flex items-center gap-2 text-sm text-neutral-midgray hover:text-accent-base transition-colors">
                         <ArrowLeft className="w-4 h-4" />
-                        Alle Ratgeber-Artikel
+                        Alle Ratgeber Artikel
                     </Link>
                 </div>
             </div>

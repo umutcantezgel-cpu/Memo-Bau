@@ -16,6 +16,7 @@ import { AnimatePresence } from 'framer-motion';
 import { StickyMobileCta } from './components/features/StickyMobileCta';
 import { useFocusManagement } from './hooks/useFocusManagement';
 import { OfflineBanner } from './components/common/OfflineBanner';
+import { FloatingCookieButton } from './components/common/FloatingCookieButton';
 
 import { usePageTracking, useScrollDepth } from './hooks/useTrackingHooks';
 
@@ -230,6 +231,7 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
       <GlobalTracker />
       <GlobalCalendlyWidget />
       <CookieConsentProvider />
+      <FloatingCookieButton />
       <GoogleAnalytics />
     </div>
   );

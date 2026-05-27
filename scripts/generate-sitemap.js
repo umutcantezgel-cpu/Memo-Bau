@@ -18,8 +18,8 @@ const LOCATION_SLUGS = [
 
 // ── All 6 service detail slugs (synced with src/core/services.data.ts) ──
 const SERVICE_SLUGS = [
-    'gartendesign', 'landschaftsbau', 'pflasterarbeiten',
-    'bepflanzung', 'bewaesserung', 'gartenpflege'
+    'landschaftsbau', 'pflasterarbeiten',
+    'bepflanzung'
 ];
 
 const generateSitemap = () => {
@@ -55,14 +55,13 @@ const generateSitemap = () => {
     }));
 
     // ── Blog/Ratgeber slugs (synced with src/core/blog.data.ts) ──
-    const BLOG_SLUGS = [
-        'gartengestaltung-kosten', 'pflasterarbeiten-preise',
+    const blogSlugs = [
         'terrassenplatten-vergleich', 'garten-winterfest-machen'
     ];
 
     const blogPages = [
         { route: '/ratgeber', priority: '0.8', changefreq: 'weekly' },
-        ...BLOG_SLUGS.map(slug => ({
+        ...blogSlugs.map(slug => ({
             route: `/ratgeber/${slug}`,
             priority: '0.7',
             changefreq: 'monthly'

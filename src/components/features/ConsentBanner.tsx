@@ -62,7 +62,7 @@ export const ConsentBanner: React.FC = () => {
                 Datenschutz & Privatsphäre
               </h3>
               <p className="text-sm text-slate-400 leading-relaxed max-w-3xl">
-                Wir nutzen Cookies und ähnliche Technologien, um Ihnen ein optimales Web-Erlebnis zu
+                Wir nutzen Cookies und ähnliche Technologien, um Ihnen ein optimales Web Erlebnis zu
                 bieten. Dazu zählen technisch notwendige Dienste sowie Tools für Analyse und
                 Marketing, die uns helfen, unsere Website für Sie zu verbessern.
               </p>
@@ -90,7 +90,7 @@ export const ConsentBanner: React.FC = () => {
         ) : (
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-300">
             <div className="flex justify-between items-center mb-6 border-b border-slate-800 pb-4">
-              <h3 className="text-white font-serif font-bold text-lg">Cookie-Einstellungen</h3>
+              <h3 className="text-white font-serif font-bold text-lg">Cookie Einstellungen</h3>
               <button
                 onClick={() => setShowDetails(false)}
                 className="text-slate-400 hover:text-white"

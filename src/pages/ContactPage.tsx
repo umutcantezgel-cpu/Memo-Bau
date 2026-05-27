@@ -126,7 +126,7 @@ export const ContactPage: React.FC = () => {
                                 <div className="flex gap-6 items-start">
                                     <Mail className="w-6 h-6 text-neutral-darkgray shrink-0" />
                                     <div>
-                                        <p className="font-sans font-bold text-lg text-neutral-darkgray mb-1">E-Mail</p>
+                                        <p className="font-sans font-bold text-lg text-neutral-darkgray mb-1">E Mail</p>
                                         <p className="text-neutral-midgray font-normal text-sm">{COMPANY_INFO.email}</p>
                                     </div>
                                 </div>
@@ -206,7 +206,7 @@ export const ContactPage: React.FC = () => {
                                                 <input required id="email" name="email" type="email" placeholder=" " value={formData.email} onChange={handleInputChange}
                                                     className="peer w-full bg-transparent border-b-2 border-neutral-lightgray focus:border-accent-base py-2 outline-none transition-[border-color,box-shadow] duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] focus:shadow-[0_1px_0_0_var(--color-accent-base)] font-normal text-neutral-darkgray" />
                                                 <label htmlFor="email" className="absolute left-0 top-0 text-xs font-bold uppercase tracking-widest text-neutral-midgray transition-all duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] peer-placeholder-shown:top-7 peer-placeholder-shown:text-base peer-placeholder-shown:normal-case peer-placeholder-shown:font-normal peer-placeholder-shown:tracking-normal peer-focus:top-0 peer-focus:text-xs peer-focus:text-accent-base peer-focus:uppercase peer-focus:font-bold peer-focus:tracking-widest cursor-text pointer-events-none">
-                                                    E-Mail
+                                                    E Mail
                                                 </label>
                                             </div>
                                         </div>
@@ -270,7 +270,7 @@ export const ContactPage: React.FC = () => {
                         <div className="text-center mb-space-12">
                             <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-4 text-balance">Direkt Termin vereinbaren</h3>
                             <p className="text-neutral-midgray font-normal leading-body max-w-2xl mx-auto">
-                                Wählen Sie einfach einen passenden Zeitslot für ein 15-minütiges Erstgespräch – telefonisch oder via Video Call.
+                                Wählen Sie einfach einen passenden Zeitslot für ein 15 minütiges Erstgespräch – telefonisch oder via Video Call.
                             </p>
                         </div>
                         <div className="bg-neutral-white shadow-elevation-2 rounded-[var(--radius-lg)] overflow-hidden border border-neutral-lightgray p-4 md:p-8">

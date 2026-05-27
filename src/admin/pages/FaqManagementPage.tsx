@@ -143,7 +143,7 @@ export const FaqManagementPage: React.FC = () => {
                                     value={formData.category}
                                     onChange={e => setFormData(prev => ({ ...prev, category: e.target.value }))}
                                     className="w-full px-4 py-2 border border-stone-300 rounded-lg focus:ring-2 focus:ring-amber-500"
-                                    placeholder="z.B. Allgemein, Preise, Ablauf"
+                                    placeholder="z.B. Allgemein, Wartung, Ablauf"
                                 />
                             </div>
                             <div className="flex items-end pb-2">

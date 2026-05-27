@@ -11,11 +11,11 @@ export const Footer: React.FC = () => (
           <div className="flex items-center gap-3 mb-6">
             <img
               src="/images/logo-memobaut.jpg"
-              alt="Memo-BauT"
+              alt="Memo BauT"
               className="h-16 w-auto rounded-md"
             />
             <span className="ml-3 text-xl font-bold tracking-tight text-neutral-white">
-              Memo-BauT<span className="text-accent-base">.</span>
+              Memo BauT<span className="text-accent-base">.</span>
             </span>
           </div>
           <p className="text-neutral-white/60 text-sm leading-relaxed mb-6">
@@ -71,8 +71,8 @@ export const Footer: React.FC = () => (
         <div>
           <h2 className="text-lg font-bold mb-6 text-neutral-white/90">Öffnungszeiten</h2>
           <ul className="space-y-3 text-sm text-neutral-white/60">
-            <li>Mo-Fr: 07:00 - 18:00</li>
-            <li>Sa: 08:00 - 14:00</li>
+            <li>Mo Fr: 07:00   18:00</li>
+            <li>Sa: 08:00   14:00</li>
             <li>So: Geschlossen</li>
           </ul>
         </div>
@@ -114,7 +114,7 @@ export const Footer: React.FC = () => (
             AGB & Widerruf
           </Link>
           <Link to="/cookie-richtlinie" className="hover:text-white transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]">
-            Cookie-Richtlinie
+            Cookie Richtlinie
           </Link>
           <Link to="/barrierefreiheit" className="hover:text-white transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]">
             Barrierefreiheit
@@ -124,7 +124,7 @@ export const Footer: React.FC = () => (
             data-cc="show-preferencesModal"
             className="hover:text-white transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] cursor-pointer"
           >
-            Cookie-Einstellungen
+            Cookie Einstellungen
           </button>
         </div>
       </div>

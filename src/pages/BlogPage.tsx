@@ -20,7 +20,7 @@ export const BlogPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Ratgeber - Gartenwissen vom Fachbetrieb"
+                title="Ratgeber   Gartenwissen vom Fachbetrieb"
                 description="Ehrliche Tipps, echte Preise, praktisches Wissen: Unser Ratgeber hilft Ihnen bei der Planung und Pflege Ihres Gartens. Von Handwerkern geschrieben."
                 breadcrumbs={[
                     { name: 'Home', url: '/' },

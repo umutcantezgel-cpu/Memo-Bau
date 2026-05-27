@@ -143,7 +143,7 @@ export const PersonalizationProvider: React.FC<PersonalizationProviderProps> = (
             case 'b2b-partner':
                 return {
                     title: 'Willkommen zurück, Partner',
-                    subtitle: 'Ihre exklusiven B2B-Konditionen',
+                    subtitle: 'Ihre exklusiven B2B Konditionen',
                 };
             case 'retail':
                 return {
@@ -153,7 +153,7 @@ export const PersonalizationProvider: React.FC<PersonalizationProviderProps> = (
             default:
                 return {
                     title: 'Baumaterialien für Profis',
-                    subtitle: 'Ihr Partner in Wetzlar-Gießen',
+                    subtitle: 'Ihr Partner in Wetzlar Gießen',
                 };
         }
     }, [profile.segment]);

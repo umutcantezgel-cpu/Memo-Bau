@@ -12,7 +12,7 @@ export const AgbPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="AGB & Widerruf | Allgemeine Geschäftsbedingungen | Memo-BauT"
+                title="AGB & Widerruf | Allgemeine Geschäftsbedingungen | Memo BauT"
                 description={`Allgemeine Geschäftsbedingungen und Widerrufsbelehrung der ${COMPANY_INFO.name}. Vertragsgrundlagen, Zahlungskonditionen und Widerrufsrecht für Premium-Landschaftsbau.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
@@ -29,7 +29,7 @@ export const AgbPage: React.FC = () => {
 
             <LegalLayout lastUpdated="März 2026">
                 <p className="lead text-lg font-medium text-neutral-darkgray border-l-4 border-accent-base pl-4 italic">
-                    Nachfolgend finden Sie die Allgemeinen Geschäftsbedingungen (AGB) der {COMPANY_INFO.name}. Sie regeln die Vertragsbeziehungen für sämtliche Planungs-, Bau- und Dienstleistungen im Garten- und Landschaftsbau.
+                    Nachfolgend finden Sie die Allgemeinen Geschäftsbedingungen (AGB) der {COMPANY_INFO.name}. Sie regeln die Vertragsbeziehungen für sämtliche Planungs , Bau  und Dienstleistungen im Garten  und Landschaftsbau.
                 </p>
 
                 {/* ─── §1 GELTUNGSBEREICH ─── */}
@@ -53,7 +53,7 @@ export const AgbPage: React.FC = () => {
                     <strong>2.2.</strong> Ein Vertrag kommt erst durch die schriftliche Auftragsbestätigung oder durch beiderseitige Unterzeichnung eines Bauvertrages zustande. Die bloße Übermittlung von Bauplänen oder Kostenvoranschlägen stellt keinen Vertragsschluss dar.
                 </p>
                 <p>
-                    <strong>2.3.</strong> An von uns erstellten Entwürfen, 3D-Visualisierungen und Kostenvoranschlägen behält sich die {COMPANY_INFO.name} das <strong>Urheber- und Eigentumsrecht</strong> vor. Sie dürfen Dritten ohne ausdrückliche schriftliche Zustimmung nicht zugänglich gemacht werden. Bei Nichtzustandekommen des Vertrags sind überlassene Unterlagen unverzüglich zurückzugeben.
+                    <strong>2.3.</strong> An von uns erstellten Entwürfen, 3D Visualisierungen und Kostenvoranschlägen behält sich die {COMPANY_INFO.name} das <strong>Urheber  und Eigentumsrecht</strong> vor. Sie dürfen Dritten ohne ausdrückliche schriftliche Zustimmung nicht zugänglich gemacht werden. Bei Nichtzustandekommen des Vertrags sind überlassene Unterlagen unverzüglich zurückzugeben.
                 </p>
 
                 {/* ─── §3 BAUAUSFÜHRUNG ─── */}
@@ -62,7 +62,7 @@ export const AgbPage: React.FC = () => {
                     <strong>3.1.</strong> Die Ausführung erfolgt nach den anerkannten Regeln der Technik und gemäß dem vereinbarten Leistungsumfang.
                 </p>
                 <p>
-                    <strong>3.2.</strong> Im Garten- und Landschaftsbau sind Ausführungsfristen stark witterungsabhängig. Verbindliche Fristenzusagen müssen ausdrücklich schriftlich als „Fixtermin" vereinbart werden.
+                    <strong>3.2.</strong> Im Garten  und Landschaftsbau sind Ausführungsfristen stark witterungsabhängig. Verbindliche Fristenzusagen müssen ausdrücklich schriftlich als „Fixtermin" vereinbart werden.
                 </p>
                 <p>
                     <strong>3.3.</strong> Bei Witterungseinflüssen (Dauerfrost, Starkregen, Hitze), die eine fachgerechte Ausführung nicht zulassen, verschieben sich die Fristen angemessen um die Dauer der witterungsbedingten Behinderung.
@@ -71,16 +71,13 @@ export const AgbPage: React.FC = () => {
                 {/* ─── §4 VERGÜTUNG ─── */}
                 <h2>§ 4 Vergütung und Zahlungsbedingungen</h2>
                 <p>
-                    <strong>4.1.</strong> Alle Preise verstehen sich in Euro. Für Verbraucher brutto inkl. USt., für Unternehmer netto zzgl. USt.
+                    <strong>4.1.</strong> Die {COMPANY_INFO.name} ist berechtigt, angemessene <LegalDefinition term="Abschlagszahlungen" definition="Teilzahlungen auf die gesamte Vertragssumme, die entsprechend dem Wert der bereits erbrachten Bauleistungen erhoben werden." /> (z.B. nach Bauabschnitten oder Materiallieferung) in Rechnung zu stellen.
                 </p>
                 <p>
-                    <strong>4.2.</strong> Die {COMPANY_INFO.name} ist berechtigt, angemessene <LegalDefinition term="Abschlagszahlungen" definition="Teilzahlungen auf die gesamte Vertragssumme, die entsprechend dem Wert der bereits erbrachten Bauleistungen erhoben werden." /> (z.B. nach Bauabschnitten oder Materiallieferung) in Rechnung zu stellen.
+                    <strong>4.2.</strong> Rechnungen sind <strong>innerhalb von 10 Tagen ohne Abzug</strong> fällig, sofern nicht anders vereinbart.
                 </p>
                 <p>
-                    <strong>4.3.</strong> Rechnungen sind <strong>innerhalb von 10 Tagen ohne Abzug</strong> fällig, sofern nicht anders vereinbart.
-                </p>
-                <p>
-                    <strong>4.4.</strong> Bei Zahlungsverzug: Verbraucher 5 Prozentpunkte, gewerbliche Kunden 9 Prozentpunkte über dem Basiszinssatz.
+                    <strong>4.3.</strong> Bei Zahlungsverzug: Verbraucher 5 Prozentpunkte, gewerbliche Kunden 9 Prozentpunkte über dem Basiszinssatz.
                 </p>
 
                 {/* ─── §5 ABNAHME ─── */}
@@ -101,7 +98,7 @@ export const AgbPage: React.FC = () => {
                     <strong>6.1.</strong> Der Auftraggeber ist verpflichtet, dem Auftragnehmer das Baugrundstück frei und in einem Zustand zur Verfügung zu stellen, der die Ausführung der vereinbarten Arbeiten erlaubt. Bestehende Leitungen, Kabel und Einbauten sind dem Auftragnehmer <strong>vor Arbeitsbeginn</strong> mitzuteilen.
                 </p>
                 <p>
-                    <strong>6.2.</strong> Der Auftraggeber stellt kostenlos Wasser- und Stromanschlüsse in zumutbarer Entfernung zur Baustelle zur Verfügung.
+                    <strong>6.2.</strong> Der Auftraggeber stellt kostenlos Wasser  und Stromanschlüsse in zumutbarer Entfernung zur Baustelle zur Verfügung.
                 </p>
                 <p>
                     <strong>6.3.</strong> Der Auftraggeber sorgt für einen für Baufahrzeuge und Materialtransporte geeigneten <strong>Zugang zur Baustelle</strong>. Eventuelle Zusatzkosten durch erschwerte Zugangsbedingungen gehen zu Lasten des Auftraggebers, sofern sie bei Angebotsabgabe nicht bekannt waren.
@@ -119,7 +116,7 @@ export const AgbPage: React.FC = () => {
                     <strong>7.1.</strong> Die Gewährleistung richtet sich nach den jeweils geltenden gesetzlichen Bestimmungen. Bei Verbrauchern gelten die Regelungen des BGB, bei Einbeziehung der VOB/B die dort vorgesehenen Fristen.
                 </p>
                 <p>
-                    <strong>7.2.</strong> Bei Rollrasen und Saatgut leistet der Auftragnehmer Gewähr für art- und fachgerechte Lieferung und Verlegung.
+                    <strong>7.2.</strong> Bei Rollrasen und Saatgut leistet der Auftragnehmer Gewähr für art  und fachgerechte Lieferung und Verlegung.
                 </p>
 
                 {/* ─── §8 EIGENTUMSVORBEHALT ─── */}
@@ -147,7 +144,7 @@ export const AgbPage: React.FC = () => {
                 {/* ─── §10 WIDERRUFSBELEHRUNG ─── */}
                 <h2>§ 10 Widerrufsbelehrung (für Verbraucher)</h2>
                 <p>
-                    Wenn Sie Verbraucher im Sinne des § 13 BGB sind und der Vertrag unter ausschließlicher Verwendung von Fernkommunikationsmitteln (z.B. E-Mail, Telefon) oder außerhalb von Geschäftsräumen geschlossen wurde, steht Ihnen ein gesetzliches Widerrufsrecht zu.
+                    Wenn Sie Verbraucher im Sinne des § 13 BGB sind und der Vertrag unter ausschließlicher Verwendung von Fernkommunikationsmitteln (z.B. E Mail, Telefon) oder außerhalb von Geschäftsräumen geschlossen wurde, steht Ihnen ein gesetzliches Widerrufsrecht zu.
                 </p>
 
                 <LegalAccordion title="Vollständige Widerrufsbelehrung lesen">
@@ -160,9 +157,9 @@ export const AgbPage: React.FC = () => {
                         <strong>{COMPANY_INFO.name}</strong><br />
                         {COMPANY_INFO.address.street}, {COMPANY_INFO.address.zip} {COMPANY_INFO.address.city}<br />
                         Telefon: {COMPANY_INFO.phone}<br />
-                        E-Mail: {COMPANY_INFO.email}<br />
+                        E Mail: {COMPANY_INFO.email}<br />
                         <br />
-                        mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief oder E-Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster-Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
+                        mittels einer eindeutigen Erklärung (z.B. ein mit der Post versandter Brief oder E Mail) über Ihren Entschluss, diesen Vertrag zu widerrufen, informieren. Sie können dafür das beigefügte Muster Widerrufsformular verwenden, das jedoch nicht vorgeschrieben ist.
                     </p>
                     <p>
                         <strong>Zur Wahrung der Widerrufsfrist reicht es aus, dass Sie die Mitteilung über die Ausübung des Widerrufsrechts vor Ablauf der Widerrufsfrist absenden.</strong>
@@ -182,7 +179,7 @@ export const AgbPage: React.FC = () => {
                     </p>
                 </LegalAccordion>
 
-                <LegalAccordion title="Muster-Widerrufsformular">
+                <LegalAccordion title="Muster Widerrufsformular">
                     <p>
                         (Wenn Sie den Vertrag widerrufen wollen, füllen Sie bitte dieses Formular aus und senden Sie es zurück.)
                     </p>
@@ -191,7 +188,7 @@ export const AgbPage: React.FC = () => {
                         <p>{COMPANY_INFO.name}<br />
                             {COMPANY_INFO.address.street}<br />
                             {COMPANY_INFO.address.zip} {COMPANY_INFO.address.city}<br />
-                            E-Mail: {COMPANY_INFO.email}</p>
+                            E Mail: {COMPANY_INFO.email}</p>
                         <br />
                         <p>Hiermit widerrufe(n) ich/wir (*) den von mir/uns (*) abgeschlossenen Vertrag über die Erbringung der folgenden Dienstleistung (*):</p>
                         <br />
@@ -211,7 +208,7 @@ export const AgbPage: React.FC = () => {
                 {/* ─── §11 DATENSCHUTZ ─── */}
                 <h2>§ 11 Datenschutz</h2>
                 <p>
-                    <strong>11.1.</strong> Personenbezogene Daten, die im Rahmen der Vertragsanbahnung und -abwicklung erhoben werden, verarbeiten wir ausschließlich nach den Bestimmungen der DSGVO und des BDSG.
+                    <strong>11.1.</strong> Personenbezogene Daten, die im Rahmen der Vertragsanbahnung und  abwicklung erhoben werden, verarbeiten wir ausschließlich nach den Bestimmungen der DSGVO und des BDSG.
                 </p>
                 <p>
                     <strong>11.2.</strong> Ausführliche Informationen zur Datenverarbeitung, zu Ihren Rechten als betroffene Person und zur zuständigen Aufsichtsbehörde finden Sie in unserer <a href="/datenschutz">Datenschutzerklärung</a>.
@@ -223,7 +220,7 @@ export const AgbPage: React.FC = () => {
                     <strong>12.1.</strong> Es gilt das Recht der Bundesrepublik Deutschland.
                 </p>
                 <p>
-                    <strong>12.2.</strong> Ist der Auftraggeber Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich-rechtliches Sondervermögen, ist ausschließlicher <strong>Gerichtsstand für alle Streitigkeiten {COMPANY_INFO.address.city}</strong> (AG Wetzlar). Dies gilt auch, wenn der Auftraggeber keinen allgemeinen Gerichtsstand in Deutschland hat.
+                    <strong>12.2.</strong> Ist der Auftraggeber Kaufmann, juristische Person des öffentlichen Rechts oder öffentlich rechtliches Sondervermögen, ist ausschließlicher <strong>Gerichtsstand für alle Streitigkeiten {COMPANY_INFO.address.city}</strong> (AG Wetzlar). Dies gilt auch, wenn der Auftraggeber keinen allgemeinen Gerichtsstand in Deutschland hat.
                 </p>
                 <p>
                     <strong className="text-primary-base">Verbraucherhinweis:</strong> Für Verbraucher i.S.d. § 13 BGB gilt dieser ausschließliche Gerichtsstand nicht; es gelten die gesetzlichen Bestimmungen, insbesondere der Gerichtsstand am Wohnsitz des Verbrauchers (§ 29c ZPO).
@@ -235,7 +232,7 @@ export const AgbPage: React.FC = () => {
                     <strong>12.4.</strong> Änderungen und Ergänzungen des Vertrages bedürfen der Schriftform. Dies gilt auch für die Aufhebung dieser Schriftformklausel.
                 </p>
                 <p>
-                    <strong>12.5.</strong> Die Europäische Kommission hat die Plattform zur Online-Streitbeilegung (OS-Plattform) zum 20. Juli 2025 eingestellt. Ein Verweis entfällt daher. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir weder bereit noch verpflichtet.
+                    <strong>12.5.</strong> Die Europäische Kommission hat die Plattform zur Online Streitbeilegung (OS Plattform) zum 20. Juli 2025 eingestellt. Ein Verweis entfällt daher. Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle sind wir weder bereit noch verpflichtet.
                 </p>
 
                 <br />

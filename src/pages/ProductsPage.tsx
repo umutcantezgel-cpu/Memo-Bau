@@ -27,7 +27,7 @@ export const ProductsPage: React.FC = () => {
         (searchParams.get('category') as ProductCategory) || 'all'
     );
     const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
-    const [sortBy, setSortBy] = useState<'name' | 'price-asc' | 'price-desc'>('name');
+    const [sortBy, setSortBy] = useState<'name'>('name');
 
     // Filter products based on user segment and filters
     const filteredProducts = useMemo(() => {
@@ -57,12 +57,7 @@ export const ProductsPage: React.FC = () => {
 
         // Sort
         switch (sortBy) {
-            case 'price-asc':
-                products.sort((a, b) => a.priceNet - b.priceNet);
-                break;
-            case 'price-desc':
-                products.sort((a, b) => b.priceNet - a.priceNet);
-                break;
+
             default:
                 products.sort((a, b) => a.name.localeCompare(b.name));
         }
@@ -106,7 +101,7 @@ export const ProductsPage: React.FC = () => {
             <PageHero
                 title="Unser Sortiment"
                 subtitle="Produkte"
-                description="Über 10.000 Produkte für Bau, Handwerk und Renovierung. Qualität zu fairen Preisen."
+                description="Über 10.000 Produkte für Bau, Handwerk und Renovierung. Qualität für höchste Ansprüche."
                 backgroundImage="/images/final/products-tools.webp"
             />
 
@@ -133,9 +128,7 @@ export const ProductsPage: React.FC = () => {
                             aria-label="Sortierung auswählen"
                             className="px-4 py-3 rounded-[var(--radius-md)] border border-neutral-lightgray bg-neutral-white text-neutral-darkgray font-normal focus:outline-none focus:ring-2 focus:ring-accent-base cursor-pointer transition-all duration-[var(--default-transition-duration)]"
                         >
-                            <option value="name">Name (A-Z)</option>
-                            <option value="price-asc">Preis (aufsteigend)</option>
-                            <option value="price-desc">Preis (absteigend)</option>
+                            <option value="name">Name (A Z)</option>
                         </select>
 
                         {/* View Mode */}
@@ -202,7 +195,7 @@ export const ProductsPage: React.FC = () => {
                                     <div className="mt-space-6 p-space-4 bg-accent-base/5 rounded-[var(--radius-md)] border border-accent-base/20">
                                         <h4 className="font-sans font-bold text-sm text-neutral-darkgray mb-2">Handwerksbetrieb?</h4>
                                         <p className="text-xs text-neutral-midgray mb-3 font-normal">
-                                            Profitieren Sie von Staffelpreisen und Sonderkonditionen!
+                                            Profitieren Sie von unseren exklusiven Partnerkonditionen!
                                         </p>
                                         <Button
                                             variant="gold"

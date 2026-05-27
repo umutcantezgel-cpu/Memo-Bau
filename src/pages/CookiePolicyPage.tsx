@@ -10,7 +10,7 @@ import { COMPANY_INFO } from '../core/constants';
 const COOKIE_CATEGORIES = [
     {
         name: 'Technisch Notwendig',
-        description: 'Cookies, die für die Grundfunktionen der Website erforderlich sind (z.B. Cookie-Consent-Status).',
+        description: 'Cookies, die für die Grundfunktionen der Website erforderlich sind (z.B. Cookie Consent Status).',
         canDisable: false,
     },
     {
@@ -38,16 +38,16 @@ export const CookiePolicyPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Cookie-Richtlinie | Memo-BauT"
+                title="Cookie Richtlinie | Memo BauT"
                 description={`Detaillierte Informationen über die Verwendung von Cookies auf der Website der ${COMPANY_INFO.name}. Cookie-Kategorien, Zweck und Einstellungsmöglichkeiten.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
-                    { name: 'Cookie-Richtlinie', url: '/cookie-richtlinie' }
+                    { name: 'Cookie Richtlinie', url: '/cookie-richtlinie' }
                 ]}
             />
 
             <PageHero
-                title="Cookie-Richtlinie"
+                title="Cookie Richtlinie"
                 subtitle="Transparenz"
                 description="Welche Cookies wir verwenden und warum."
                 backgroundImage="/images/final/gallery-06.webp"
@@ -55,7 +55,7 @@ export const CookiePolicyPage: React.FC = () => {
 
             <LegalLayout lastUpdated="März 2026">
                 <p className="lead text-lg font-medium text-neutral-darkgray border-l-4 border-accent-base pl-4 italic">
-                    Diese Cookie-Richtlinie ergänzt unsere <a href="/datenschutz">Datenschutzerklärung</a> und erklärt im Detail, welche Cookies und ähnlichen Technologien auf dieser Website eingesetzt werden, zu welchem Zweck und wie Sie Ihre Einstellungen verwalten können.
+                    Diese Cookie Richtlinie ergänzt unsere <a href="/datenschutz">Datenschutzerklärung</a> und erklärt im Detail, welche Cookies und ähnlichen Technologien auf dieser Website eingesetzt werden, zu welchem Zweck und wie Sie Ihre Einstellungen verwalten können.
                 </p>
 
                 {/* ─── Was sind Cookies? ─── */}
@@ -64,11 +64,11 @@ export const CookiePolicyPage: React.FC = () => {
                     <LegalDefinition term="Cookies" definition="Kleine Textdateien, die von einer Website auf Ihrem Computer oder Mobilgerät gespeichert werden. Sie ermöglichen es der Website, sich an Ihre Aktionen und Einstellungen über einen bestimmten Zeitraum zu erinnern." /> sind kleine Textdateien, die Ihr Browser auf Ihrem Endgerät speichert, wenn Sie eine Website besuchen. Sie dienen verschiedenen Zwecken: Manche sind technisch notwendig, damit die Website überhaupt funktioniert. Andere helfen uns, die Website zu verbessern oder Ihnen zusätzliche Funktionen anzubieten.
                 </p>
                 <p>
-                    Cookies können von uns selbst gesetzt werden (<strong>First-Party-Cookies</strong>) oder von Drittanbietern stammen, deren Dienste wir auf unserer Website einbinden (<strong>Third-Party-Cookies</strong>).
+                    Cookies können von uns selbst gesetzt werden (<strong>First Party Cookies</strong>) oder von Drittanbietern stammen, deren Dienste wir auf unserer Website einbinden (<strong>Third Party Cookies</strong>).
                 </p>
 
                 {/* ─── Cookie-Kategorien ─── */}
-                <h2>2. Cookie-Kategorien im Überblick</h2>
+                <h2>2. Cookie Kategorien im Überblick</h2>
                 <p>
                     Wir unterteilen die auf unserer Website verwendeten Cookies in die folgenden Kategorien:
                 </p>
@@ -91,7 +91,7 @@ export const CookiePolicyPage: React.FC = () => {
                 </div>
 
                 {/* ─── Detaillierte Cookie-Auflistung ─── */}
-                <h2>3. Detaillierte Cookie-Auflistung</h2>
+                <h2>3. Detaillierte Cookie Auflistung</h2>
 
                 <h3>Technisch notwendige Cookies</h3>
                 <div className="overflow-x-auto mb-space-8">
@@ -108,14 +108,14 @@ export const CookiePolicyPage: React.FC = () => {
                             <tr className="border-b border-neutral-lightgray/50">
                                 <td className="py-3 pr-4 font-mono text-xs">cookie_consent</td>
                                 <td className="py-3 pr-4">{COMPANY_INFO.name}</td>
-                                <td className="py-3 pr-4">Speichert Ihre Cookie-Einwilligungsentscheidung</td>
+                                <td className="py-3 pr-4">Speichert Ihre Cookie Einwilligungsentscheidung</td>
                                 <td className="py-3">1 Jahr</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <h3>Analyse-Cookies (nur mit Einwilligung)</h3>
+                <h3>Analyse Cookies (nur mit Einwilligung)</h3>
                 <div className="overflow-x-auto mb-space-8">
                     <table className="w-full text-sm border-collapse">
                         <thead>
@@ -166,9 +166,9 @@ export const CookiePolicyPage: React.FC = () => {
                 </div>
 
                 {/* ─── Einstellungen ändern ─── */}
-                <h2>4. Cookie-Einstellungen ändern</h2>
+                <h2>4. Cookie Einstellungen ändern</h2>
                 <p>
-                    Sie können Ihre Cookie-Einstellungen jederzeit über den folgenden Button oder über den Link „Cookie-Einstellungen" im Footer unserer Website anpassen:
+                    Sie können Ihre Cookie Einstellungen jederzeit über den folgenden Button oder über den Link „Cookie Einstellungen" im Footer unserer Website anpassen:
                 </p>
 
                 <div className="my-space-6">
@@ -176,7 +176,7 @@ export const CookiePolicyPage: React.FC = () => {
                         onClick={openCookieSettings}
                         className="inline-flex items-center px-6 py-3 bg-primary-base text-white font-bold rounded-[var(--radius-md)] hover:bg-primary-dark transition-colors duration-300 focus-visible:ring-2 focus-visible:ring-primary-base focus-visible:ring-offset-2"
                     >
-                        Cookie-Einstellungen öffnen
+                        Cookie Einstellungen öffnen
                     </button>
                 </div>
 
@@ -194,7 +194,7 @@ export const CookiePolicyPage: React.FC = () => {
 
                 <br />
                 <p className="text-sm font-bold text-neutral-midgray">
-                    Stand der Cookie-Richtlinie: März 2026.
+                    Stand der Cookie Richtlinie: März 2026.
                 </p>
 
                 <LegalCrossLinks currentPath="/cookie-richtlinie" />

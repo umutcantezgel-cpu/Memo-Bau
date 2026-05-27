@@ -55,7 +55,7 @@ export const SEO: React.FC<SEOProps> = ({
         "@type": "HomeAndConstructionBusiness",
         "@id": `${SITE_URL}/#business`,
         "name": localBusiness ? `${COMPANY_INFO.name} - Standort ${localBusiness.city}` : COMPANY_INFO.name,
-        "alternateName": "Memo-BauT Garten- und Landschaftsbau",
+        "alternateName": "Memo BauT Garten  und Landschaftsbau",
         "url": resolvedCanonical,
         "logo": `${SITE_URL}/logo.png`,
         "image": `${SITE_URL}/images/final/hero-home.webp`,
@@ -121,7 +121,7 @@ export const SEO: React.FC<SEOProps> = ({
         "@type": "Organization",
         "@id": `${SITE_URL}/#organization`,
         "name": COMPANY_INFO.name,
-        "alternateName": "Memo-BauT Garten- und Landschaftsbau",
+        "alternateName": "Memo BauT Garten  und Landschaftsbau",
         "url": SITE_URL,
         "logo": {
             "@type": "ImageObject",

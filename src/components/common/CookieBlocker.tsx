@@ -44,7 +44,7 @@ export const CookieBlocker: React.FC<CookieBlockerProps> = ({ children, type, ti
         };
     }, [type]);
 
-    const handleAccept = () => {
+    const handleOpenSettings = () => {
         CookieConsent.showPreferences();
     };
 
@@ -58,8 +58,8 @@ export const CookieBlocker: React.FC<CookieBlockerProps> = ({ children, type, ti
             <p className="text-sm text-neutral-midgray mb-6 max-w-sm">
                 {description}
             </p>
-            <Button onClick={handleAccept} variant="primary" className="text-sm font-semibold">
-                Cookie-Einstellungen öffnen
+            <Button onClick={handleOpenSettings} variant="primary" className="text-sm font-semibold">
+                Cookie Einstellungen öffnen
             </Button>
             <p className="text-xs text-neutral-midgray mt-4 max-w-xs leading-relaxed">
                 Ihre Einwilligung können Sie jederzeit in unserer <a href="/datenschutz" className="text-accent-base hover:text-primary-base underline underline-offset-2 transition-colors duration-[var(--default-transition-duration)]">Datenschutzerklärung</a> widerrufen.

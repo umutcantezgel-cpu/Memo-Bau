@@ -21,7 +21,7 @@ export const FeatureGridSection: React.FC<FeatureGridSectionProps> = ({ config, 
                         Häufige Anforderungen in {config.name}
                     </h2>
                     <p className="text-neutral-midgray leading-relaxed">
-                        Basierend auf der typischen {config.wohnstruktur.toLowerCase()} und der Topografie in {config.name} realisieren wir besonders häufig folgende Premium-Leistungen:
+                        Basierend auf der typischen {config.wohnstruktur.toLowerCase()} und der Topografie in {config.name} realisieren wir besonders häufig folgende Premium Leistungen:
                     </p>
                 </Reveal>
             </div>

@@ -13,7 +13,7 @@
 - [ ] `npm run build && npm run lint` nach Updates validieren
 - [ ] Google Search Console: Crawl-Fehler, Indexierungsprobleme prüfen
 - [ ] Lighthouse-Audit auf Hauptseiten (Performance ≥ 90, SEO ≥ 95)
-- [ ] Content-Aktualität prüfen (Telefonnummer, Öffnungszeiten, Preise)
+- [ ] Content-Aktualität prüfen (Telefonnummer, Öffnungszeiten, Leistungen)
 
 ## Quartalsweise
 

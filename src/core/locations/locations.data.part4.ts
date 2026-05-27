@@ -18,8 +18,8 @@ export const locationLahnau: CityConfig = {
 
     headline: 'Exklusiver Landschaftsbau in Lahnau',
     subheadline: 'Natürliche Eleganz für Ihr Zuhause an der Lahn.',
-    metaTitle: 'Garten- und Landschaftsbau Lahnau | Memo-BauT',
-    metaDescription: 'Ihr Premium-Berater für exklusive Gartengestaltung in Lahnau. Maßgeschneiderte Konzepte und meisterhafte Umsetzung für Gärten, die begeistern.',
+    metaTitle: 'Garten  und Landschaftsbau Lahnau | Memo BauT',
+    metaDescription: 'Ihr Premium Berater für exklusive Gartengestaltung in Lahnau. Maßgeschneiderte Konzepte und meisterhafte Umsetzung für Gärten, die begeistern.',
 
     story: 'Eingebettet in das romantische Lahntal vereint Lahnau naturverbundenes Wohnen mit hoher Lebensqualität. Unsere Gartengestaltungen greifen diese Harmonie auf und schaffen fließende Übergänge zwischen Architektur und umgebender Naturlandschaft.',
     topografie: 'Flusstal und sanfte Hanglagen',
@@ -38,12 +38,12 @@ export const locationLahnau: CityConfig = {
             a: 'Ja, besonders in den Hanglagen Richtung Lahntal entwickeln wir funktionale und ästhetische Terrassierungen.'
         },
         {
-            q: 'Sind naturnahe Gartendesigns möglich?',
+            q: 'Sind naturnahe Gartenkonzepte möglich?',
             a: 'Absolut. In Lahnau setzen wir häufig auf organische Formen und regionale Materialien, die zur Umgebung passen.'
         },
         {
             q: 'Wie lange dauert eine Beratung?',
-            a: 'Die kostenlose Erstberatung vor Ort in Lahnau nimmt ca. 1-2 Stunden in Anspruch.'
+            a: 'Die kostenlose Erstberatung vor Ort in Lahnau nimmt ca. 1 2 Stunden in Anspruch.'
         }
     ],
 
@@ -72,8 +72,8 @@ export const locationHuettenberg: CityConfig = {
 
     headline: 'Premium Gartengestaltung in Hüttenberg',
     subheadline: 'Handwerkliche Perfektion für Ihr Grundstück.',
-    metaTitle: 'Gartenbau Hüttenberg | Memo-BauT',
-    metaDescription: 'Hochwertiger Garten- und Landschaftsbau in Hüttenberg. Wir realisieren repräsentative Einfahrten, Terrassen und Gärten auf Meister-Niveau.',
+    metaTitle: 'Gartenbau Hüttenberg | Memo BauT',
+    metaDescription: 'Hochwertiger Garten  und Landschaftsbau in Hüttenberg. Wir realisieren repräsentative Einfahrten, Terrassen und Gärten auf Meister Niveau.',
 
     story: 'Hüttenberg zeichnet sich durch seine ruhige, familienfreundliche Lage zwischen Wetzlar und Gießen aus. Wir formen hier Gärten, die zum perfekten Rückzugsort für die ganze Familie werden – mit klaren Linien, hochwertigen Materialien und intelligenter Raumgestaltung.',
     topografie: 'Hügeliges Terrain mit weiten Ausblicken',
@@ -82,14 +82,14 @@ export const locationHuettenberg: CityConfig = {
     lokalerBezug: ['Hüttenberger Land', 'Schwingbachtal'],
     fokusLeistungen: ['Pflasterarbeiten', 'Terrassenbau', 'Gartenbeleuchtung'],
 
-    ctaPrimary: 'Vor-Ort-Termin vereinbaren',
+    ctaPrimary: 'Vor Ort Termin vereinbaren',
     ctaSecondary: 'Leistungen erkunden',
     projektAnzahl: 18,
 
     faqItems: [
         {
-            q: 'Übernehmen Sie auch die Pflege von großen Anlagen in Hüttenberg?',
-            a: 'Ja, wir bieten umfassende Pflegekonzepte für Privatgärten und Gewerbeflächen an.'
+            q: 'Übernehmen Sie auch die Neugestaltung von großen Anlagen in Hüttenberg?',
+            a: 'Ja, wir bieten umfassende Gestaltungskonzepte für Privatgärten und Gewerbeflächen an.'
         },
         {
             q: 'Wie plane ich meine neue Terrasse in Hüttenberg?',
@@ -126,15 +126,15 @@ export const locationWeilburg: CityConfig = {
 
     headline: 'Exklusive Gärten in der Residenzstadt Weilburg',
     subheadline: 'Landschaftsbau, der Geschichte und Moderne vereint.',
-    metaTitle: 'Garten- und Landschaftsbau Weilburg | Memo-BauT',
-    metaDescription: 'Ihr Partner für anspruchsvollen Gartenbau in Weilburg. Von der historischen Villa bis zum modernen Einfamilienhaus - wir gestalten Traumgärten im Lahntal.',
+    metaTitle: 'Garten  und Landschaftsbau Weilburg | Memo BauT',
+    metaDescription: 'Ihr Partner für anspruchsvollen Gartenbau in Weilburg. Von der historischen Villa bis zum modernen Einfamilienhaus   wir gestalten Traumgärten im Lahntal.',
 
     story: 'Als ehemalige Residenzstadt strahlt Weilburg eine besondere historische Würde aus. Unsere Landschaftsarchitektur respektiert diesen Charakter und verbindet ihn mit zeitgemäßem, luxuriösem Komfort. Ob an den steilen Hängen der Lahn oder in den charmanten Vororten.',
-    topografie: 'Tal-Lage an der Flussschleife und starke Hangneigungen',
+    topografie: 'Tal Lage an der Flussschleife und starke Hangneigungen',
     gartenStil: 'Elegant, repräsentativ, terrassiert',
     wohnstruktur: 'Historische Bausubstanz und moderne Wohnanlagen',
     lokalerBezug: ['Schloss Weilburg', 'Lahnschleife'],
-    fokusLeistungen: ['Hangabsicherung', 'Natursteinmauern', 'Premium-Gartendesign'],
+    fokusLeistungen: ['Hangabsicherung', 'Natursteinmauern', 'Premium Landschaftsbau'],
 
     ctaPrimary: 'Projekt in Weilburg starten',
     ctaSecondary: 'Portfolio ansehen',
@@ -146,7 +146,7 @@ export const locationWeilburg: CityConfig = {
             a: 'Ja, Hangsicherungen und Terrassierungen gehören zu unseren Kernkompetenzen, gerade im topografisch anspruchsvollen Weilburg.'
         },
         {
-            q: 'Passen moderne Gartendesigns zu historischen Gebäuden?',
+            q: 'Passen moderne Gartenkonzepte zu historischen Gebäuden?',
             a: 'Wir finden stets eine harmonische Balance, die den historischen Charme Weilburgs unterstreicht und gleichzeitig modernsten Wohnkomfort bietet.'
         },
         {
@@ -180,12 +180,12 @@ export const locationSchoeffengrund: CityConfig = {
 
     headline: 'Traumgärten im Schöffengrund',
     subheadline: 'Landschaftsbau für naturnahes, entspanntes Wohnen.',
-    metaTitle: 'Gartengestaltung Schöffengrund | Memo-BauT',
+    metaTitle: 'Gartengestaltung Schöffengrund | Memo BauT',
     metaDescription: 'Hochwertige Gartengestaltung im Schöffengrund. Wir realisieren individuelle Gartenkonzepte, Rollrasen und Terrassen für Ihr Eigenheim.',
 
     story: 'Die weiten Wiesen und Wälder des Schöffengrunds bieten die perfekte Kulisse für naturnahes, ruhiges Wohnen. Wir kreieren Gartenräume, die nahtlos in diese idyllische Landschaft übergehen und sie als erweiterten Wohnraum nutzbar machen.',
     topografie: 'Weitläufige, hügelige Landschaft',
-    gartenStil: 'Idyllisch, pflegeleicht, ländlich-modern',
+    gartenStil: 'Idyllisch, pflegeleicht, ländlich modern',
     wohnstruktur: 'Weiträumige Grundstücke, Einfamilienhäuser',
     lokalerBezug: ['Naturpark Taunus (Randgebiet)', 'Solmsbachtal'],
     fokusLeistungen: ['Rollrasen \u0026 Gartenplanung', 'Sichtschutz', 'Holzterrasssen'],
@@ -196,12 +196,12 @@ export const locationSchoeffengrund: CityConfig = {
 
     faqItems: [
         {
-            q: 'Installieren Sie auch automatische Bewässerungssysteme im Schöffengrund?',
-            a: 'Ja, smarte Bewässerungslösungen sind ideal für die oft großen Grundstücke in der Region Schöffengrund.'
+            q: 'Bauen Sie auch großflächige Terrassen im Schöffengrund?',
+            a: 'Ja, weitläufige Terrassenanlagen sind ideal für die oft großen Grundstücke in der Region Schöffengrund.'
         },
         {
             q: 'Wie schnell können Sie Rollrasen verlegen?',
-            a: 'Nach der gründlichen Bodenvorbereitung verlegen wir den Premium-Rollrasen meist innerhalb von 1-2 Tagen.'
+            a: 'Nach der gründlichen Bodenvorbereitung verlegen wir den Premium Rollrasen meist innerhalb von 1 2 Tagen.'
         },
         {
             q: 'Kommen Sie für eine Besichtigung nach Laufdorf oder Oberwetz?',
@@ -234,8 +234,8 @@ export const locationPohlheim: CityConfig = {
 
     headline: 'Ihr Experte für Gartenbau in Pohlheim',
     subheadline: 'Repräsentative Außenanlagen in den Ausläufern der Wetterau.',
-    metaTitle: 'Garten- und Landschaftsbau Pohlheim | Memo-BauT',
-    metaDescription: 'Ihr Premium-Berater für exklusive Gartengestaltung in Pohlheim. Von Watzenborn-Steinberg bis Grüningen - wir gestalten Ihre Außenanlagen.',
+    metaTitle: 'Garten  und Landschaftsbau Pohlheim | Memo BauT',
+    metaDescription: 'Ihr Premium Berater für exklusive Gartengestaltung in Pohlheim. Von Watzenborn Steinberg bis Grüningen   wir gestalten Ihre Außenanlagen.',
 
     story: 'Pohlheim verbindet eine hervorragende Anbindung mit hoher Wohnqualität. An der Nahtstelle zwischen Gießen und Wetterau realisieren wir hier Gartenprojekte, die urbane Eleganz mit familiengerechtem Freiraum verschmelzen lassen.',
     topografie: 'Eher flach bis leicht hügelig',
@@ -254,12 +254,12 @@ export const locationPohlheim: CityConfig = {
             a: 'Wir sind Spezialisten für komplette Neuanlagen, von Erdarbeiten bis zur finalen Fertigstellung.'
         },
         {
-            q: 'Planen Sie smarte Gartentechnik mit ein?',
-            a: 'Ja, wir integrieren Mähroboter, intelligente Bewässerung und LED-Lichtkonzepte nahtlos in unser Design.'
+            q: 'Planen Sie moderne Beleuchtung mit ein?',
+            a: 'Ja, wir integrieren hochwertige LED Lichtkonzepte nahtlos in unsere Planung.'
         },
         {
             q: 'In welchen Pohlheimer Stadtteilen sind Sie aktiv?',
-            a: 'Wir betreuen Projekte in allen Ortsteilen: Watzenborn-Steinberg, Garbenteich, Hausen, Holzheim, Dorf-Güll und Grüningen.'
+            a: 'Wir betreuen Projekte in allen Ortsteilen: Watzenborn Steinberg, Garbenteich, Hausen, Holzheim, Dorf Güll und Grüningen.'
         }
     ],
 

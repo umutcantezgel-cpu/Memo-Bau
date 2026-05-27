@@ -161,8 +161,8 @@ export const ServicesPage: React.FC = () => {
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
                             {[
                                 { icon: Ruler, title: "Präzise Planung", text: "Detailgenaue Ausführungspläne und transparente Kostenkalkulation." },
-                                { icon: ShieldCheck, title: "Qualitätsstandards", text: "Fachgerechte Ausführung nach anerkannten Regeln der Technik und DIN-Normen." },
-                                { icon: Sprout, title: "Pflegeberatung", text: "Individuelle Pflege- und Bewässerungstipps für eine langfristig gepflegte Gartenanlage." }
+                                { icon: ShieldCheck, title: "Qualitätsstandards", text: "Fachgerechte Ausführung nach anerkannten Regeln der Technik und DIN Normen." },
+                                { icon: Sprout, title: "Pflegeberatung", text: "Individuelle Pflege  und Bewässerungstipps für eine langfristig gepflegte Gartenanlage." }
                             ].map((item, i) => (
                                 <div key={i} className="flex flex-col items-center">
                                     <div className="w-16 h-16 rounded-full bg-neutral-offwhite border border-neutral-lightgray flex items-center justify-center text-primary-base mb-6">

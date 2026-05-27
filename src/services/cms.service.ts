@@ -23,18 +23,7 @@ const CMS_AUDIT_KEY = 'mb_cms_audit';
 // ===== DEFAULT DATA =====
 const getDefaultData = (): CMSData => ({
     services: [
-        {
-            id: 1,
-            title: 'Gartendesign & Architektur',
-            description: 'Visionäre Gartenplanung, die Ästhetik und Funktionalität vereint. Wir konzipieren Außenräume als Erweiterung Ihrer Wohnkultur.',
-            iconName: 'PenTool',
-            features: ['3D-Visualisierung', 'Materialdesign', 'Lichtkonzepte', 'Wasserspiele'],
-            imageUrl: '/images/final/service-planning.webp',
-            isActive: true,
-            order: 1,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-        },
+
         {
             id: 2,
             title: 'Landschaftsbau & Topographie',
@@ -60,30 +49,7 @@ const getDefaultData = (): CMSData => ({
             updatedAt: new Date().toISOString(),
         },
 
-        {
-            id: 5,
-            title: 'Smart Garden & Wasser',
-            description: 'Automatisierte Bewässerung und intelligente Steuerungssysteme für den pflegeleichten Traumgarten.',
-            iconName: 'Droplets',
-            features: ['Unterflur-Bewässerung', 'App-Steuerung', 'Zisternensysteme', 'Ressourceneffizienz'],
-            imageUrl: '/images/final/service-water.webp',
-            isActive: true,
-            order: 5,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-        },
-        {
-            id: 6,
-            title: 'Garten-Concierge',
-            description: 'Werterhaltende Pflege für Ihre grüne Investition. Damit Ihr Garten immer schöner wird.',
-            iconName: 'Leaf',
-            features: ['Formgehölzschnitt', 'Rasen-Aerifizieren', 'Vital-Düngung', 'Saisonale Pflege'],
-            imageUrl: '/images/final/products-tools.webp',
-            isActive: true,
-            order: 6,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-        },
+
     ],
     portfolio: [
         {
@@ -148,15 +114,7 @@ const getDefaultData = (): CMSData => ({
         },
     ],
     faqs: [
-        {
-            id: 1,
-            question: 'Wie verläuft der Design-Prozess?',
-            answer: 'Jedes Projekt beginnt mit einer persönlichen Vor-Ort-Analyse. Wir hören zu und entwickeln daraufhin ein maßgeschneidertes Konzept mit Materialmustern und 3D-Visualisierung.',
-            isActive: true,
-            order: 1,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-        },
+
         {
             id: 2,
             question: 'Welche Projektgrößen realisieren Sie?',
@@ -166,15 +124,7 @@ const getDefaultData = (): CMSData => ({
             createdAt: new Date().toISOString(),
             updatedAt: new Date().toISOString(),
         },
-        {
-            id: 3,
-            question: 'Bieten Sie Pflegeverträge an?',
-            answer: 'Selbstverständlich. Um den Wert und die Schönheit Ihrer Anlage langfristig zu sichern, bieten wir individuell abgestimmte "Concierge"-Pflegepakete an.',
-            isActive: true,
-            order: 3,
-            createdAt: new Date().toISOString(),
-            updatedAt: new Date().toISOString(),
-        },
+
     ],
     businessInfo: {
         companyName: 'Memo-BauT',

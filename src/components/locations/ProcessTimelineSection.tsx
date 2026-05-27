@@ -18,7 +18,7 @@ export const ProcessTimelineSection: React.FC<ProcessTimelineSectionProps> = ({ 
         },
         {
             num: '02',
-            title: '3D-Planung & Bemusterung',
+            title: '3D Planung & Bemusterung',
             desc: 'Visualisierung Ihres Premium-Gartens und Auswahl exklusiver Materialien in unserem Showroom.'
         },
         {

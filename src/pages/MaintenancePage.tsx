@@ -7,7 +7,7 @@ export const MaintenancePage: React.FC = () => {
     return (
         <main className="min-h-screen flex flex-col items-center justify-center bg-neutral-white relative overflow-hidden font-sans">
             <SEO
-                title="Wartungsarbeiten | Memo-BauT"
+                title="Wartungsarbeiten | Memo BauT"
                 description="Unsere Webseite wird derzeit überarbeitet. Wir sind bald wieder für Sie da."
                 noindex={true}
             />
@@ -23,7 +23,7 @@ export const MaintenancePage: React.FC = () => {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-sans font-bold text-neutral-darkgray mb-6 tracking-tight leading-tight">
-                    Premium-Gärten <br className="hidden sm:block" />im digitalen Aufbau.
+                    Premium Gärten <br className="hidden sm:block" />im digitalen Aufbau.
                 </h1>
 
                 <div className="flex items-center justify-center gap-3 mb-space-8">
@@ -33,7 +33,7 @@ export const MaintenancePage: React.FC = () => {
                 </div>
 
                 <p className="text-lg text-neutral-midgray mb-10 leading-relaxed font-normal text-balance">
-                    Wir überarbeiten aktuell unseren Auftritt, um Ihnen unsere Garten- und Landschaftsbau-Projekte noch exklusiver präsentieren zu können.
+                    Wir überarbeiten aktuell unseren Auftritt, um Ihnen unsere Garten  und Landschaftsbau Projekte noch exklusiver präsentieren zu können.
                     <br /><br />
                     In der Zwischenzeit sind wir natürlich weiterhin persönlich für Ihr Projekt erreichbar.
                 </p>
@@ -48,7 +48,7 @@ export const MaintenancePage: React.FC = () => {
                 </div>
 
                 <div className="mt-16 sm:mt-24 space-y-2">
-                    <p className="font-sans font-bold text-lg text-neutral-darkgray">Memo-BauT</p>
+                    <p className="font-sans font-bold text-lg text-neutral-darkgray">Memo BauT</p>
                     <p className="text-xs text-neutral-midgray/60 uppercase tracking-widest font-semibold">
                         &copy; {new Date().getFullYear()} Alle Rechte vorbehalten.
                     </p>

@@ -77,7 +77,7 @@ export const PRODUCTS: Product[] = [
     {
         id: 'sand-spielsand-25kg',
         name: 'Spielsand gewaschen',
-        description: 'Feiner, gewaschener Sand für Sandkasten und Spielbereiche. TÜV-geprüft und kindersicher.',
+        description: 'Feiner, gewaschener Sand für Sandkasten und Spielbereiche. TÜV geprüft und kindersicher.',
         category: 'building-materials',
         subcategory: 'Sand & Kies',
         imageUrl: '/images/final/service-landscaping.webp',
@@ -97,7 +97,7 @@ export const PRODUCTS: Product[] = [
     {
         id: 'daemmung-mineralwolle-100',
         name: 'Mineralwolle Dämmplatte 100mm',
-        description: 'Hochwertige Mineralwolle-Dämmung für Dach und Wand. Beste Wärmedämmung und Brandschutz.',
+        description: 'Hochwertige Mineralwolle Dämmung für Dach und Wand. Beste Wärmedämmung und Brandschutz.',
         category: 'building-materials',
         subcategory: 'Dämmstoffe',
         imageUrl: '/images/final/service-landscaping.webp',
@@ -122,7 +122,7 @@ export const PRODUCTS: Product[] = [
     {
         id: 'trockenbau-gipskarton-125',
         name: 'Gipskartonplatte 12,5mm',
-        description: 'Standard-Gipskartonplatte für Trockenbau. Einfache Verarbeitung, vielseitig einsetzbar.',
+        description: 'Standard Gipskartonplatte für Trockenbau. Einfache Verarbeitung, vielseitig einsetzbar.',
         category: 'building-materials',
         subcategory: 'Trockenbau',
         imageUrl: '/images/final/service-paving.webp',
@@ -148,8 +148,8 @@ export const PRODUCTS: Product[] = [
     // Tools & Equipment
     {
         id: 'bohrmaschine-akku-18v',
-        name: 'Akku-Bohrschrauber 18V',
-        description: 'Leistungsstarker Akku-Bohrschrauber mit 2 Akkus und Ladegerät. Ideal für Heimwerker und Profis.',
+        name: 'Akku Bohrschrauber 18V',
+        description: 'Leistungsstarker Akku Bohrschrauber mit 2 Akkus und Ladegerät. Ideal für Heimwerker und Profis.',
         category: 'tools-equipment',
         subcategory: 'Elektrowerkzeuge',
         imageUrl: '/images/final/products-tools.webp',
@@ -170,7 +170,7 @@ export const PRODUCTS: Product[] = [
     {
         id: 'flex-winkelschleifer-125',
         name: 'Winkelschleifer 125mm',
-        description: 'Robuster Winkelschleifer für Trenn- und Schleifarbeiten. Mit Sanftanlauf und Überlastschutz.',
+        description: 'Robuster Winkelschleifer für Trenn  und Schleifarbeiten. Mit Sanftanlauf und Überlastschutz.',
         category: 'tools-equipment',
         subcategory: 'Elektrowerkzeuge',
         imageUrl: '/images/final/products-tools.webp',
@@ -190,7 +190,7 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: 'werkzeugkoffer-profi',
-        name: 'Profi-Werkzeugkoffer 156-tlg',
+        name: 'Profi Werkzeugkoffer 156 tlg',
         description: 'Umfangreicher Werkzeugkoffer mit 156 Teilen. Hochwertige Qualität für den täglichen Einsatz.',
         category: 'tools-equipment',
         subcategory: 'Handwerkzeuge',
@@ -213,7 +213,7 @@ export const PRODUCTS: Product[] = [
     // Technical Supplies
     {
         id: 'schrauben-sortiment-1200',
-        name: 'Schrauben-Sortiment 1200-tlg',
+        name: 'Schrauben Sortiment 1200 tlg',
         description: 'Großes Schraubensortiment mit den gängigsten Größen. Perfekt für Werkstatt und Baustelle.',
         category: 'technical-supplies',
         subcategory: 'Befestigung',
@@ -237,8 +237,8 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: 'duebel-universaldubel-100',
-        name: 'Universal-Dübel 6-10mm',
-        description: 'Vielseitig einsetzbare Universal-Dübel für alle Untergründe. 100 Stück in verschiedenen Größen.',
+        name: 'Universal Dübel 6 10mm',
+        description: 'Vielseitig einsetzbare Universal Dübel für alle Untergründe. 100 Stück in verschiedenen Größen.',
         category: 'technical-supplies',
         subcategory: 'Befestigung',
         imageUrl: '/images/final/products-tools.webp',
@@ -260,8 +260,8 @@ export const PRODUCTS: Product[] = [
     // Delivery Services
     {
         id: 'lieferung-standard',
-        name: 'Standard-Lieferung',
-        description: 'Lieferung innerhalb von 2-3 Werktagen in der Region Wetzlar-Gießen.',
+        name: 'Standard Lieferung',
+        description: 'Lieferung innerhalb von 2 3 Werktagen in der Region Wetzlar Gießen.',
         category: 'delivery-services',
         subcategory: 'Lieferung',
         imageUrl: '/images/final/service-landscaping.webp',
@@ -280,8 +280,8 @@ export const PRODUCTS: Product[] = [
     },
     {
         id: 'lieferung-express',
-        name: 'Express-Lieferung (24h)',
-        description: 'Express-Lieferung am nächsten Werktag bis 12 Uhr. Ideal für dringende Baustellenbedarfe.',
+        name: 'Express Lieferung (24h)',
+        description: 'Express Lieferung am nächsten Werktag bis 12 Uhr. Ideal für dringende Baustellenbedarfe.',
         category: 'delivery-services',
         subcategory: 'Lieferung',
         imageUrl: '/images/final/service-landscaping.webp',
@@ -301,7 +301,7 @@ export const PRODUCTS: Product[] = [
     {
         id: 'lieferung-kran',
         name: 'Kranentladung vor Ort',
-        description: 'Lieferung mit LKW-Kran für schwere Materialien. Direkte Entladung auf der Baustelle.',
+        description: 'Lieferung mit LKW Kran für schwere Materialien. Direkte Entladung auf der Baustelle.',
         category: 'delivery-services',
         subcategory: 'Lieferung',
         imageUrl: '/images/final/service-paving.webp',

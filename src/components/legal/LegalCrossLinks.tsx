@@ -17,7 +17,7 @@ const ALL_LEGAL_PAGES: CrossLink[] = [
     { title: 'Impressum', description: 'Anbieterkennung, Kontakt & Haftungshinweise', href: '/impressum' },
     { title: 'Datenschutzerklärung', description: 'Datenverarbeitung, Ihre Rechte & Drittanbieter', href: '/datenschutz' },
     { title: 'AGB & Widerruf', description: 'Vertragsgrundlagen, Zahlungskonditionen & Widerrufsrecht', href: '/agb' },
-    { title: 'Cookie-Richtlinie', description: 'Cookies, Kategorien & Einstellungen', href: '/cookie-richtlinie' },
+    { title: 'Cookie Richtlinie', description: 'Cookies, Kategorien & Einstellungen', href: '/cookie-richtlinie' },
     { title: 'Barrierefreiheit', description: 'Konformitätsstatus, Maßnahmen & Feedback', href: '/barrierefreiheit' },
 ];
 

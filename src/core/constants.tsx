@@ -1,4 +1,4 @@
-import { Leaf, Hammer, Droplets, PenTool, Fence } from 'lucide-react';
+import { Hammer, Fence } from 'lucide-react';
 import { NavigationItem, ServiceItem, PortfolioItem, Testimonial, FaqItem } from '../types';
 import React from 'react';
 
@@ -19,15 +19,7 @@ export const NAVIGATION: NavigationItem[] = [
  * Service offerings for GaLaBau (Garten- und Landschaftsbau)
  */
 export const SERVICES: ServiceItem[] = [
-    {
-        id: 1,
-        title: 'Gartendesign & Architektur',
-        description:
-            'Visionäre Gartenplanung, die Ästhetik und Funktionalität vereint. Wir konzipieren Außenräume als Erweiterung Ihrer Wohnkultur – von der ersten Skizze bis zur finalen Inszenierung.',
-        icon: React.createElement(PenTool, { className: 'w-8 h-8' }),
-        features: ['High-End 3D-Visualisierung', 'Individuelles Gartendesign', 'Atmosphärische Lichtkonzepte', 'Exklusive Wasserspiele'],
-        imageUrl: '/images/final/service-planning.webp',
-    },
+
     {
         id: 2,
         title: 'Landschaftsbau & Topographie',
@@ -51,23 +43,6 @@ export const SERVICES: ServiceItem[] = [
         imageUrl: '/images/final/service-paving.webp',
     },
 
-    {
-        id: 5,
-        title: 'Smart Garden & Wasser',
-        description:
-            'Technologie trifft Natur. Automatisierte Bewässerung und intelligente Steuerungssysteme für den pflegeleichten Traumgarten.',
-        icon: React.createElement(Droplets, { className: 'w-8 h-8' }),
-        features: ['Unterflur-Bewässerung', 'App-Steuerung', 'Zisternensysteme', 'Ressourceneffizienz'],
-        imageUrl: '/images/final/service-water.webp',
-    },
-    {
-        id: 6,
-        title: 'Garten-Concierge',
-        description: 'Werterhaltende Pflege für Ihre grüne Investition. Unser Expertenteam sorgt dafür, dass Ihr Garten mit den Jahren immer schöner wird.',
-        icon: React.createElement(Leaf, { className: 'w-8 h-8' }),
-        features: ['Formgehölzschnitt', 'Rasen-Aerifizieren', 'Vital-Düngung', 'Saisonale Pflegekur'],
-        imageUrl: '/images/final/products-tools.webp',
-    },
 ];
 
 export const PORTFOLIO_ITEMS: PortfolioItem[] = [
@@ -131,7 +106,7 @@ export const PORTFOLIO_ITEMS: PortfolioItem[] = [
     {
         id: 7,
         category: 'privat',
-        title: 'Garten-Neuanlage und Erdarbeiten',
+        title: 'Garten Neuanlage und Erdarbeiten',
         size: 'wide',
         imageUrl: '/images/final/gallery-14.webp',
     },
@@ -156,33 +131,26 @@ export const TESTIMONIALS: Testimonial[] = [
         id: 2,
         name: 'Angelina P',
         role: 'Kunde',
-        text: 'Ich bin wirklich froh, mich für Memo-BauT Garten- und Landschaftsbau entschieden zu haben. Von Anfang an war die Kommunikation super angenehm, ehrlich und unkompliziert. Man merkt sofort, dass hier jemand mit echter Erfahrung und Leidenschaft arbeitet.\n\nDie Arbeit wurde schnell, zuverlässig und sehr sauber ausgeführt. Jetzt fühle ich mich in meinem Garten richtig wohl und schaue mir das Ergebnis jedes Mal gerne an. Alles wurde genauso umgesetzt, wie ich es mir vorgestellt habe, und die Absprachen waren jederzeit klar und zuverlässig.\n\nFür mich steht fest: Wenn ich wieder etwas im Garten machen lasse, dann definitiv wieder hier. Eine klare Empfehlung und ein großes Dankeschön für die tolle Arbeit!',
+        text: `Ich bin wirklich froh, mich für Memo BauT Garten  und Landschaftsbau entschieden zu haben. Von Anfang an war die Kommunikation super angenehm, ehrlich und unkompliziert. Man merkt sofort, dass hier jemand mit echter Erfahrung und Leidenschaft arbeitet.
+
+Die Arbeit wurde schnell, zuverlässig und sehr sauber ausgeführt. Jetzt fühle ich mich in meinem Garten richtig wohl und schaue mir das Ergebnis jedes Mal gerne an. Alles wurde genauso umgesetzt, wie ich es mir vorgestellt habe, und die Absprachen waren jederzeit klar und zuverlässig.
+
+Für mich steht fest: Wenn ich wieder etwas im Garten machen lasse, dann definitiv wieder hier. Eine klare Empfehlung und ein großes Dankeschön für die tolle Arbeit!`,
         rating: 5,
     },
 ];
 
 export const FAQS: FaqItem[] = [
-    {
-        q: 'Wie verläuft der Design-Prozess?',
-        a: 'Jedes Projekt beginnt mit einer persönlichen Vor-Ort-Analyse. Wir hören zu und entwickeln daraufhin ein maßgeschneidertes Konzept mit Materialmustern und 3D-Visualisierung.',
-    },
-    {
-        q: 'Welche Projektgrößen realisieren Sie?',
-        a: 'Unser Fokus liegt auf kompletten Neugestaltungen und hochwertigen Teilbereichen. Wir realisieren Projekte ab einem Investitionsvolumen von ca. 10.000€ bis hin zu Großprojekten.',
-    },
-    {
-        q: 'Bieten Sie Pflegeverträge an?',
-        a: 'Selbstverständlich. Um den Wert und die Schönheit Ihrer Anlage langfristig zu sichern, bieten wir individuell abgestimmte "Concierge"-Pflegepakete an.',
-    },
+
     {
         q: 'Wie stellen Sie Qualität sicher?',
-        a: 'Wir arbeiten ausschließlich mit eigenen Fachkräften und langjährigen Partnern. Alle Arbeiten werden nach anerkannten Regeln der Technik und den geltenden DIN-Normen ausgeführt.',
+        a: 'Wir arbeiten ausschließlich mit eigenen Fachkräften und langjährigen Partnern. Alle Arbeiten werden nach anerkannten Regeln der Technik und den geltenden DIN Normen ausgeführt.',
     },
 ];
 
 // Memo-BauT GaLaBau company info
 export const COMPANY_INFO = {
-    name: 'Memo-BauT',
+    name: 'Memo BauT',
     owner: 'Inhaber: Mehmet Tezgel',
     tagline: 'Exklusive Gartenkunst',
     slogan: 'Räume für die Sinne. Gärten für die Ewigkeit.',
@@ -199,7 +167,7 @@ export const COMPANY_INFO = {
         country: 'Deutschland',
     },
     openingHours: 'Mo-Fr 07:30 - 18:00', // Assuming typical hours, or just 'Öffnet Mo um 07:30'
-    description: 'Memo-BauT ist Ihr erfahrener Fachbetrieb für Garten- und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat- und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
+    description: 'Memo BauT ist Ihr erfahrener Fachbetrieb für Garten  und Landschaftsbau in Aßlar und der Region Wetzlar. Wir planen und gestalten Ihren Traumgarten – von der Terrassenanlage über Pflasterarbeiten bis hin zur kompletten Gartengestaltung. Als gelernter Maurer mit langjähriger Erfahrung bieten wir handwerkliche Präzision und zuverlässige Ausführung für Privat  und Gewerbekunden. Unsere Leistungen umfassen: Pflasterarbeiten, Terrassenbau, Mauerwerk und individuelle Gartengestaltung. Kontaktieren Sie uns für eine kostenlose Erstberatung – wir freuen uns auf Ihr Projekt!',
 };
 
 export const STATS = [
