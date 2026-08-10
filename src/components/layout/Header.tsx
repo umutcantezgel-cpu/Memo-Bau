@@ -41,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({
           : 'bg-transparent border-transparent'
           }`}
       >
-        <div className="max-w-[1200px] mx-auto px-6 lg:px-12">
+        <div className="max-w-[1440px] mx-auto px-6 lg:px-8 xl:px-12">
           <div className="flex justify-between items-center">
             {/* Logo Section */}
             <Link to="/" className="flex items-center cursor-pointer group gap-space-3">
