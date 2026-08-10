@@ -60,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
                   Memo Bau<span className="text-accent-base">T</span>
                 </h1>
                 <span
-                  className={`text-xs uppercase tracking-widest font-medium transition-colors duration-[var(--motion-standard-duration)] ease-[var(--motion-standard-easing)] mt-1 ${scrolled ? 'text-neutral-midgray' : 'text-neutral-white/80'
+                  className={`text-xs uppercase tracking-widest font-medium transition-colors duration-[var(--motion-standard-duration)] ease-[var(--motion-standard-easing)] mt-1 whitespace-nowrap ${scrolled ? 'text-neutral-midgray' : 'text-neutral-white/80'
                     }`}
                 >
                   Garten  & Landschaftsbau
@@ -74,7 +74,7 @@ export const Header: React.FC<HeaderProps> = ({
                 <Link
                   key={item.id}
                   to={item.id === 'home' ? '/' : `/${item.id}`}
-                  className={`text-sm font-semibold tracking-wide transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] relative group py-2 ${activeTab === item.id
+                  className={`text-sm font-semibold tracking-wide whitespace-nowrap transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)] relative group py-2 ${activeTab === item.id
                     ? (scrolled ? 'text-accent-base' : 'text-accent-base')
                     : (scrolled ? 'text-neutral-darkgray hover:text-accent-base' : 'text-neutral-white hover:text-accent-base')
                     }`}
@@ -90,7 +90,7 @@ export const Header: React.FC<HeaderProps> = ({
               {/* CTA Button */}
               <Button
                 variant={scrolled ? 'primary' : 'gold'}
-                className="ml-4 !py-2.5 !px-6 text-sm font-bold"
+                className="ml-4 !py-2.5 !px-6 text-sm font-bold whitespace-nowrap"
                 onClick={() => window.location.href = '/contact'}
               >
                 Projekt anfragen
