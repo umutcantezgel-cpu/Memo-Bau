@@ -28,9 +28,9 @@ const generateSitemap = () => {
     // ── Static pages ──
     const staticPages = [
         { route: '/', priority: '1.0', changefreq: 'weekly' },
-        { route: '/services', priority: '0.9', changefreq: 'monthly' },
-        { route: '/contact', priority: '0.9', changefreq: 'monthly' },
-        { route: '/about', priority: '0.8', changefreq: 'monthly' },
+        { route: '/leistungen', priority: '0.9', changefreq: 'monthly' },
+        { route: '/kontakt', priority: '0.9', changefreq: 'monthly' },
+        { route: '/ueber-uns', priority: '0.8', changefreq: 'monthly' },
         { route: '/produkte', priority: '0.8', changefreq: 'monthly' },
         { route: '/standorte', priority: '0.8', changefreq: 'monthly' },
         { route: '/impressum', priority: '0.3', changefreq: 'yearly' },
@@ -88,6 +88,13 @@ ${allPages.map(item => `    <url>
     }
 
     fs.writeFileSync(path.join(publicDir, 'sitemap.xml'), sitemap.trim());
+    
+    // Also write to build directory if it exists (since Vite already copied the old one)
+    const buildDir = path.join(__dirname, '../build');
+    if (fs.existsSync(buildDir)) {
+        fs.writeFileSync(path.join(buildDir, 'sitemap.xml'), sitemap.trim());
+    }
+
     console.log(`Sitemap generated with ${allPages.length} routes (${staticPages.length} static + ${servicePages.length} services + ${locationPages.length} locations + ${blogPages.length} blog) at ${path.join(publicDir, 'sitemap.xml')}`);
 };
 

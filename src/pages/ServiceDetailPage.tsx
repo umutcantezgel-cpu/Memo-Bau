@@ -22,7 +22,7 @@ export const ServiceDetailPage: React.FC = () => {
     }, [service]);
 
     if (!service) {
-        return <Navigate to="/services" replace />;
+        return <Navigate to="/leistungen" replace />;
     }
 
     return (
@@ -33,7 +33,7 @@ export const ServiceDetailPage: React.FC = () => {
                 description={`Erfahren Sie mehr über unsere Leistungen im Bereich ${service.title}. Wir bieten maßgeschneiderte Lösungen für Ihr Projekt im Garten- und Landschaftsbau.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
-                    { name: 'Leistungen', url: '/services' },
+                    { name: 'Leistungen', url: '/leistungen' },
                     { name: service.breadcrumbLabel, url: `/leistungen/${service.slug}` }
                 ]}
                 services={[{ name: service.title, description: service.metaDescription }]}
@@ -180,7 +180,7 @@ export const ServiceDetailPage: React.FC = () => {
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center relative z-10">
                             <Link
-                                to="/contact"
+                                to="/kontakt"
                                 className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-[var(--radius-md)] bg-accent-base text-neutral-darkgray font-bold text-sm hover:bg-accent-light transition-colors"
                             >
                                 <MessageCircle className="w-4 h-4" />

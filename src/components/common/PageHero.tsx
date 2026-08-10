@@ -32,6 +32,7 @@ export const PageHero: React.FC<PageHeroProps> = ({
                     <img
                         src={backgroundImage}
                         alt="Hero"
+                        // @ts-ignore
                         fetchpriority="high"
                         loading="eager"
                         decoding="sync"

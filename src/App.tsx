@@ -205,14 +205,14 @@ const MainSiteLayout: React.FC<MainSiteLayoutProps> = ({
               <Routes location={location} key={location.pathname}>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/produkte" element={<ProductsPage />} />
-                <Route path="/services" element={<ServicesPage />} />
+                <Route path="/leistungen" element={<ServicesPage />} />
                 <Route path="/leistungen/:serviceSlug" element={<ServiceDetailPage />} />
                 <Route path="/ratgeber" element={<BlogPage />} />
                 <Route path="/ratgeber/:postSlug" element={<BlogPostPage />} />
                 <Route path="/standorte" element={<LocationOverviewPage />} />
                 <Route path="/standorte/:cityId" element={<LocationPage />} />
-                <Route path="/contact" element={<ContactPage />} />
-                <Route path="/about" element={<AboutPage />} />
+                <Route path="/kontakt" element={<ContactPage />} />
+                <Route path="/ueber-uns" element={<AboutPage />} />
                 <Route path="/impressum" element={<ImprintPage />} />
                 <Route path="/datenschutz" element={<PrivacyPage />} />
                 <Route path="/agb" element={<AgbPage />} />

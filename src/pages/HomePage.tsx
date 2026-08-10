@@ -68,6 +68,7 @@ export const HomePage: React.FC = () => {
                             className="w-full h-full object-cover object-center"
                             width={1920}
                             height={1080}
+                            // @ts-ignore
                             fetchpriority="high"
                             loading="eager"
                             decoding="sync"
@@ -192,7 +193,7 @@ export const HomePage: React.FC = () => {
                                 <span className="text-accent-base text-xs font-bold uppercase tracking-widest mb-space-4 block">Expertise</span>
                                 <h2 className="text-h2 md:text-h1 font-heading text-neutral-darkgray font-bold">Unsere Leistungen</h2>
                             </div>
-                            <Button variant="ghost" onClick={() => navigate('/services')} icon={ArrowRight}>
+                            <Button variant="ghost" onClick={() => navigate('/leistungen')} icon={ArrowRight}>
                                 Alle Gartenbau Leistungen
                             </Button>
                         </div>
@@ -200,7 +201,7 @@ export const HomePage: React.FC = () => {
 
                     <StaggeredList className="grid grid-cols-1 md:grid-cols-3 gap-space-8" baseDelay={100} staggerDelay={100}>
                         {SERVICES.slice(0, 3).map((service) => (
-                            <div key={service.id} className="group cursor-pointer" onClick={() => navigate('/services')}>
+                            <div key={service.id} className="group cursor-pointer" onClick={() => navigate('/leistungen')}>
                                 <div className="aspect-[3/4] overflow-hidden mb-space-6 bg-stone-200 relative rounded-[var(--radius-lg)] shadow-elevation-1">
                                     <div className="absolute inset-0 bg-primary-base/20 opacity-0 group-hover:opacity-100 transition-opacity duration-[var(--default-transition-duration)] z-10"></div>
                                     <img
@@ -328,7 +329,7 @@ export const HomePage: React.FC = () => {
                             Rufen Sie an, schreiben Sie uns oder nutzen Sie unser Kontaktformular   die Erstberatung ist immer kostenlos.
                         </p>
                         <div className="flex flex-col sm:flex-row justify-center gap-6">
-                            <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/contact')} className="min-w-[240px] text-lg py-5 shadow-elevation-2">
+                            <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/kontakt')} className="min-w-[240px] text-lg py-5 shadow-elevation-2">
                                 Projekt anfragen
                             </Button>
                             <Button variant="ghost" onClick={() => window.location.href = 'tel:+4917670162293'} className="min-w-[240px] text-lg py-5 text-neutral-darkgray hover:text-primary-base">

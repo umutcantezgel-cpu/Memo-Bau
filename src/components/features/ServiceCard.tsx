@@ -32,7 +32,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => (
       </ul>
 
       <div className="w-full mt-auto z-10 relative">
-        <Link to="/contact" className="w-full">
+        <Link to="/kontakt" className="w-full">
           <Button
             variant="secondary"
             className="w-full justify-center group-hover:bg-primary-base group-hover:text-neutral-white transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]"

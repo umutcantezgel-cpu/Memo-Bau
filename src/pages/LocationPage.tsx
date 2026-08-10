@@ -131,7 +131,7 @@ export const LocationPage: React.FC = () => {
                                     </li>
                                 </ul>
                                 <div className="mt-space-8">
-                                    <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 rounded-[var(--radius-md)] bg-primary-base text-neutral-white font-semibold text-sm hover:bg-primary-dark transition-colors">
+                                    <Link to="/kontakt" className="inline-flex items-center gap-2 px-6 py-3 rounded-[var(--radius-md)] bg-primary-base text-neutral-white font-semibold text-sm hover:bg-primary-dark transition-colors">
                                         <Phone className="w-4 h-4" />
                                         Jetzt Beratung in {locationConfig.name} sichern
                                     </Link>

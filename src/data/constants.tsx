@@ -7,9 +7,11 @@ import React from 'react';
  */
 export const NAVIGATION: NavigationItem[] = [
   { name: 'Startseite', id: 'home' },
-  { name: 'Leistungen', id: 'services' },
-  { name: 'Über Uns', id: 'about' },
-  { name: 'Kontakt', id: 'contact' },
+  { name: 'Leistungen', id: 'leistungen' },
+  { name: 'Standorte', id: 'standorte' },
+  { name: 'Über Uns', id: 'ueber-uns' },
+  { name: 'Ratgeber', id: 'ratgeber' },
+  { name: 'Kontakt', id: 'kontakt' },
 ];
 
 /**

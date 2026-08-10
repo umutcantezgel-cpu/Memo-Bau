@@ -54,7 +54,7 @@ export const StickyMobileCta: React.FC = () => {
                 <Phone className="w-4 h-4 text-accent-base" /> Anrufen
             </a>
             <a 
-                href="/contact" 
+                href="/kontakt" 
                 onClick={() => track('cta_click', { label: 'mobile_sticky_contact' })}
                 className="flex-1 py-3 px-4 rounded-[var(--radius-md)] bg-primary-base text-neutral-white font-bold text-sm text-center flex items-center justify-center gap-2 shadow-elevation-1 active:scale-95 transition-transform"
             >

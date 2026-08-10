@@ -91,7 +91,7 @@ export const Header: React.FC<HeaderProps> = ({
               <Button
                 variant={scrolled ? 'primary' : 'gold'}
                 className="ml-4 !py-2.5 !px-6 text-sm font-bold whitespace-nowrap"
-                onClick={() => window.location.href = '/contact'}
+                onClick={() => window.location.href = '/kontakt'}
               >
                 Projekt anfragen
               </Button>
@@ -138,7 +138,7 @@ export const Header: React.FC<HeaderProps> = ({
               variant="gold"
               className="w-full justify-center py-4 text-base"
               icon={Phone}
-              onClick={() => window.location.href = '/contact'}
+              onClick={() => window.location.href = '/kontakt'}
             >
               Kostenlose Beratung
             </Button>

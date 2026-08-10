@@ -25,7 +25,7 @@ export const MobileQuickContact: React.FC = () => {
 
     const handleConsultationClick = () => {
         setIsOpen(false);
-        navigate('/contact');
+        navigate('/kontakt');
     };
 
     // Hide on legal pages where TOC & scroll-to-top buttons occupy the same corner

@@ -15,7 +15,7 @@ export const AboutPage: React.FC = () => (
             description="Lernen Sie das Team hinter Memo-BauT kennen. Ihr erfahrener Partner für exklusiven Landschaftsbau und langlebige Außenanlagen."
             breadcrumbs={[
                 { name: 'Home', url: '/' },
-                { name: 'Über Uns', url: '/about' }
+                { name: 'Über Uns', url: '/ueber-uns' }
             ]}
         />
 

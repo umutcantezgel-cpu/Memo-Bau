@@ -79,12 +79,12 @@ export const ProductsPage: React.FC = () => {
         // TODO: Implement cart functionality
         console.log('Add to cart:', product.id);
         // For now, navigate to contact
-        navigate(`/contact?product=${product.id}`);
+        navigate(`/kontakt?product=${product.id}`);
     };
 
     const handleViewDetails = (product: Product) => {
         // TODO: Implement product detail page
-        navigate(`/services?product=${product.id}`);
+        navigate(`/leistungen?product=${product.id}`);
     };
 
     return (
@@ -200,7 +200,7 @@ export const ProductsPage: React.FC = () => {
                                         <Button
                                             variant="gold"
                                             className="w-full text-xs"
-                                            onClick={() => navigate('/contact?type=partner')}
+                                            onClick={() => navigate('/kontakt?type=partner')}
                                         >
                                             Partner werden
                                         </Button>

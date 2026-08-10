@@ -80,7 +80,7 @@ export const ContactPage: React.FC = () => {
 
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
-                    { name: 'Kontakt', url: '/contact' }
+                    { name: 'Kontakt', url: '/kontakt' }
                 ]}
             />
 

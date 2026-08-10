@@ -36,7 +36,7 @@ export const ServicesPage: React.FC = () => {
                 description="Entdecken Sie unser Leistungsspektrum: Gartendesign, Landschaftsbau, Pflasterarbeiten und Bewässerung. Handwerkskunst für Ihren Außenbereich."
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
-                    { name: 'Leistungen', url: '/services' }
+                    { name: 'Leistungen', url: '/leistungen' }
                 ]}
                 services={SERVICES.map(s => ({
                     name: s.title,
@@ -133,7 +133,7 @@ export const ServicesPage: React.FC = () => {
                                     </div>
 
                                     <div className="flex items-center gap-3">
-                                        <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/contact')} className="px-8">
+                                        <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/kontakt')} className="px-8">
                                             Beratung zu {service.title} vereinbaren
                                         </Button>
                                         {SERVICE_SLUG_MAP[service.id] && (
