@@ -102,6 +102,16 @@ export const Footer: React.FC = () => (
         <p>
           &copy; {new Date().getFullYear()} {COMPANY_INFO.name}. Alle Rechte
           vorbehalten.
+          <span className="mx-2 hidden md:inline">|</span>
+          <br className="md:hidden" />
+          <a
+            href="https://codayweb.de"
+            target="_blank"
+            rel="noopener"
+            className="hover:text-white transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]"
+          >
+            Webdesign by Coday
+          </a>
         </p>
         <div className="flex space-x-6 mt-4 md:mt-0 items-center">
           <Link to="/impressum" className="hover:text-white transition-colors duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]">

@@ -167,9 +167,29 @@ export const ImprintPage: React.FC = () => {
                     </p>
                 </div>
 
+                {/* ─── SEKTION 8: TECHNISCHE KONZEPTION ─── */}
+                <h2>8. Technische Konzeption &amp; Webdesign</h2>
+
+                <LegalInfoBox variant="kontakt" title="Webdesign & Entwicklung">
+                    <p>
+                        Die technische Konzeption, das Webdesign und die Entwicklung dieser Website wurden realisiert durch:
+                    </p>
+                    <p>
+                        <strong>
+                            <a
+                                href="https://codayweb.de"
+                                target="_blank"
+                                rel="noopener"
+                            >
+                                Coday – Webdesign Wetzlar
+                            </a>
+                        </strong>
+                    </p>
+                </LegalInfoBox>
+
                 <br />
                 <p className="text-sm font-bold text-neutral-midgray">
-                    Stand des Impressums: März 2026.
+                    Stand des Impressums: August 2026.
                 </p>
 
                 {/* ─── QUERVERWEISE ─── */}
