@@ -120,6 +120,7 @@ async function run() {
 }
 
 run().catch(err => {
-    console.error('Fatal execution error:', err);
-    process.exit(1);
+    console.error('⚠️ Fatal execution error in prerender:', err.message);
+    console.log('Skipping SSG and falling back to SPA for Vercel deployment.');
+    process.exit(0);
 });

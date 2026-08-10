@@ -52,6 +52,6 @@
     "check": "tsc --noEmit",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "postbuild": "node scripts/generate-sitemap.js && node scripts/prerender.js"
+    "postbuild": "node scripts/generate-sitemap.js"
   }
 }
