@@ -550,17 +550,17 @@ Phase 1: Token Foundation (Tailwind v4)
   @keyframes pinDrop {
     0% {
       opacity: 0;
-      transform: translateY(-20px) scale(0.9);
+      transform: translateY(-20px);
     }
 
     50% {
       opacity: 1;
-      transform: translateY(0) scale(1);
+      transform: translateY(0);
     }
 
     100% {
       opacity: 1;
-      transform: translateY(0) scale(1);
+      transform: translateY(0);
     }
   }
 
@@ -623,23 +623,23 @@ Phase 1: Token Foundation (Tailwind v4)
 
 
   .animate-fade-in-up {
-    animation: fadeInUp var(--motion-standard-duration) var(--animate-spring-gentle) forwards;
+    animation: fadeInUp 800ms var(--animate-spring-gentle) forwards;
   }
 
   .animate-fade-in-up-dramatic {
-    animation: fadeInUp var(--motion-dramatic-duration) var(--motion-dramatic-easing) forwards;
+    animation: fadeInUp 1200ms var(--motion-dramatic-easing) forwards;
   }
 
   .animate-fade-in {
-    animation: fadeIn 600ms ease-out forwards;
+    animation: fadeIn 800ms ease-out forwards;
   }
 
   .animate-scale-in {
-    animation: scaleIn 700ms var(--animate-spring-standard) forwards;
+    animation: scaleIn 800ms var(--animate-spring-standard) forwards;
   }
 
   .animate-page-enter {
-    animation: pageEnter 600ms var(--animate-spring-gentle) forwards;
+    animation: pageEnter 800ms var(--animate-spring-gentle) forwards;
   }
 
   .animate-float {

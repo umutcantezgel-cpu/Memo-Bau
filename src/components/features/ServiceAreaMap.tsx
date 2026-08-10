@@ -74,8 +74,8 @@ export const ServiceAreaMap: React.FC = () => {
         const customIcon = L.divIcon({
             className: 'custom-map-icon',
             html: `<div class="relative flex items-center justify-center w-12 h-12" style="animation: pinDrop var(--motion-dramatic-duration) var(--motion-dramatic-easing) forwards;">
-                 <div class="absolute w-full h-full bg-amber-500/30 rounded-full animate-ping"></div>
-                 <div class="absolute w-8 h-8 bg-amber-500 rounded-full border-2 border-white shadow-lg flex items-center justify-center text-primary z-20 hover:scale-110 transition-transform duration-[var(--motion-micro-duration)] ease-[var(--motion-micro-easing)]">
+                 <div class="absolute w-full h-full bg-amber-500/30 rounded-full animate-pulse"></div>
+                 <div class="absolute w-8 h-8 bg-amber-500 rounded-full border-2 border-white shadow-lg flex items-center justify-center text-primary z-20 hover:brightness-110 transition-all duration-[var(--motion-standard-duration)] ease-[var(--motion-standard-easing)]">
                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="text-white"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                  </div>
                </div>`,
