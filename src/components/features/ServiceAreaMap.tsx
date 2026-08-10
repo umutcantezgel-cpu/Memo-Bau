@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
@@ -9,9 +9,23 @@ import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 export const ServiceAreaMap: React.FC = () => {
     const mapContainerRef = useRef<HTMLDivElement>(null);
     const mapInstanceRef = useRef<L.Map | null>(null);
+    const [inView, setInView] = useState(false);
+    const wrapperRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        if (!mapContainerRef.current) return;
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                setInView(true);
+                observer.disconnect();
+            }
+        }, { rootMargin: '300px' });
+        
+        if (wrapperRef.current) observer.observe(wrapperRef.current);
+        return () => observer.disconnect();
+    }, []);
+
+    useEffect(() => {
+        if (!inView || !mapContainerRef.current) return;
         if (mapInstanceRef.current) return; // Map already initialized
 
         // Fix Icons
@@ -111,11 +125,12 @@ export const ServiceAreaMap: React.FC = () => {
             map.remove();
             mapInstanceRef.current = null;
         };
-    }, []);
+    }, [inView]);
 
     return (
-        <div className="h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative z-0 group">
-            <div ref={mapContainerRef} className="h-full w-full bg-slate-900" />
+        <div ref={wrapperRef} className="h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl border border-white/10 relative z-0 group">
+            {inView && <div ref={mapContainerRef} className="h-full w-full bg-slate-900" />}
+            {inView && (
             <div className="absolute bottom-4 right-4 z-[1000]">
                 <a href="https://www.google.com/maps/dir/?api=1&destination=Manufakturstraße+1,+35578+Wetzlar" target="_blank" rel="noopener noreferrer"
                     className="flex items-center bg-white text-slate-900 px-4 py-2 rounded-lg shadow-xl font-bold text-sm hover:bg-gray-50 transition-colors border-2 border-amber-500 no-underline">
@@ -123,6 +138,7 @@ export const ServiceAreaMap: React.FC = () => {
                     Auf Google Maps öffnen
                 </a>
             </div>
+            )}
         </div>
     );
 };

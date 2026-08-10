@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Circle, Marker, Popup, Polyline, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -136,6 +136,20 @@ const CustomMapControls: React.FC = () => {
 export const InteractiveMap: React.FC = () => {
     const { resolvedTheme } = useTheme();
     const [hqPanelOpen, setHqPanelOpen] = useState(false);
+    const [inView, setInView] = useState(false);
+    const ref = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                setInView(true);
+                observer.disconnect();
+            }
+        }, { rootMargin: '300px' });
+        
+        if (ref.current) observer.observe(ref.current);
+        return () => observer.disconnect();
+    }, []);
 
     // Select Tiles based on Theme
     const tileUrl = resolvedTheme === 'dark'
@@ -145,7 +159,8 @@ export const InteractiveMap: React.FC = () => {
     const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(COMPANY_INFO.address.street + ', ' + COMPANY_INFO.address.zip + ' ' + COMPANY_INFO.address.city)}`;
 
     return (
-        <div className="w-full h-[600px] rounded-[var(--radius-xl)] overflow-hidden shadow-elevation-2 border border-neutral-lightgray/20 relative z-0 interactive-map-wrapper">
+        <div ref={ref} className="w-full h-[600px] rounded-[var(--radius-xl)] overflow-hidden shadow-elevation-2 border border-neutral-lightgray/20 relative z-0 interactive-map-wrapper">
+            {inView && (
             <CookieBlocker
                 type="marketing"
                 title="Interaktive Karte aktivieren"
@@ -291,6 +306,7 @@ export const InteractiveMap: React.FC = () => {
                     </div>
                 </div>
             </CookieBlocker>
+            )}
         </div>
     );
 };

@@ -33,6 +33,10 @@ export const PageHero: React.FC<PageHeroProps> = ({
                         src={backgroundImage}
                         alt="Hero"
                         fetchPriority="high"
+                        loading="eager"
+                        decoding="sync"
+                        width="1920"
+                        height="1080"
                         className="absolute inset-0 w-full h-full object-cover scale-105 bg-primary-base"
                     />
                 ) : (

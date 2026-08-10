@@ -69,6 +69,8 @@ export const HomePage: React.FC = () => {
                             width={1920}
                             height={1080}
                             fetchPriority="high"
+                            loading="eager"
+                            decoding="sync"
                         />
                     </video>
                     <div className="absolute inset-0 bg-gradient-to-b from-neutral-darkgray/80 via-neutral-darkgray/60 to-neutral-darkgray/90 mix-blend-multiply" />
@@ -128,6 +130,8 @@ export const HomePage: React.FC = () => {
                                     <img
                                         src="/images/final/service-planning.webp"
                                         alt="Detailgenaue Planung"
+                                        width={800}
+                                        height={1000}
                                         className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[700ms] ease-out scale-105"
                                         loading="lazy"
                                         decoding="async"
@@ -202,6 +206,8 @@ export const HomePage: React.FC = () => {
                                     <img
                                         src={service.imageUrl}
                                         alt={service.title}
+                                        width={600}
+                                        height={800}
                                         className="w-full h-full object-cover transition-transform duration-[700ms] group-hover:scale-105"
                                         loading="lazy"
                                         decoding="async"

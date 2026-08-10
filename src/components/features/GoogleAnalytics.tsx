@@ -33,12 +33,13 @@ export const GoogleAnalytics: React.FC = () => {
 
             if (!GA_MEASUREMENT_ID) return;
 
-            // Initialize GA if not already initialized
-            if (!document.getElementById('ga-script')) {
-                const script = document.createElement('script');
-                script.id = 'ga-script';
-                script.async = true;
-                script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
+            const initGA = () => {
+                if (!document.getElementById('ga-script')) {
+                    const script = document.createElement('script');
+                    script.id = 'ga-script';
+                    script.async = true;
+                    script.defer = true;
+                    script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
 
                 document.head.appendChild(script);
 
@@ -58,12 +59,25 @@ export const GoogleAnalytics: React.FC = () => {
                         anonymize_ip: true, // GDPR compliance
                     });
                 };
-            } else if (window.gtag) {
-                // Send pageview on route change
-                window.gtag('consent', 'update', { analytics_storage: 'granted' });
-                window.gtag('config', GA_MEASUREMENT_ID, {
-                    page_path: location.pathname,
-                });
+                } else if (window.gtag) {
+                    // Send pageview on route change
+                    window.gtag('consent', 'update', { analytics_storage: 'granted' });
+                    window.gtag('config', GA_MEASUREMENT_ID, {
+                        page_path: location.pathname,
+                    });
+                }
+            };
+
+            // Lazy load GA on interaction or after 3s delay
+            if (!document.getElementById('ga-script')) {
+                const loadOnInteraction = () => {
+                    initGA();
+                    ['scroll', 'mousemove', 'touchstart'].forEach(e => window.removeEventListener(e, loadOnInteraction));
+                };
+                ['scroll', 'mousemove', 'touchstart'].forEach(e => window.addEventListener(e, loadOnInteraction, { once: true, passive: true }));
+                setTimeout(initGA, 3000);
+            } else {
+                initGA(); // Already loaded, just send route change
             }
         };
 
