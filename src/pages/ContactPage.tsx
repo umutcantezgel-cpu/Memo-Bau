@@ -101,7 +101,7 @@ export const ContactPage: React.FC = () => {
                         <div className="mb-space-16">
                             <h2 className="text-h2 font-sans font-bold text-neutral-darkgray mb-space-6 tracking-h2 text-balance">Ihr Weg zum Traumgarten</h2>
                             <p className="text-body text-neutral-midgray font-normal leading-body">
-                                Jedes Projekt beginnt mit einem Dialog. Wir nehmen uns Zeit, Ihre Wünsche zu verstehen und die Gegebenheiten vor Ort zu analysieren.
+                                Jedes Projekt im Bereich Garten- und Landschaftsbau beginnt mit einem Dialog. Wir nehmen uns Zeit, Ihre Wünsche zu verstehen und die Gegebenheiten vor Ort zu analysieren – sei es für aufwendige Pflasterarbeiten, exklusive Terrassen oder die komplette Neugestaltung Ihrer Außenanlagen.
                             </p>
                         </div>
 

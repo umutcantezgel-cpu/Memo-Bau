@@ -38,7 +38,7 @@ export const HomePage: React.FC = () => {
                     "@context": "https://schema.org",
                     "@type": "VideoObject",
                     "name": "Memo BauT – Exklusive Gartengestaltung in Wetzlar",
-                    "description": "Einblick in unsere Premium Garten  und Landschaftsbauprojekte im Raum Wetzlar, Gießen und Mittelhessen.",
+                    "description": "Einblick in unsere Premium Garten- und Landschaftsbauprojekte im Raum Wetzlar, Gießen und Mittelhessen.",
                     "thumbnailUrl": "https://memobaut.de/images/final/hero-home.webp",
                     "contentUrl": "https://memobaut.de/videos/hero-garden-latest.mp4",
                     "uploadDate": "2025-01-15",
@@ -87,13 +87,13 @@ export const HomePage: React.FC = () => {
                     <Reveal animation="fade-in-up-dramatic" delay={200}>
                         <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-space-12 font-normal leading-relaxed text-balance">
                             Wir schaffen zeitlose Außenanlagen, die Architektur und Natur in perfekten Einklang bringen.
-                            Ihr Partner für anspruchsvollen Garten  und Landschaftsbau.
+                            Ihr professioneller Partner für anspruchsvollen Garten- und Landschaftsbau, präzise Pflasterarbeiten und exklusive Gartengestaltung.
                         </p>
                     </Reveal>
                     <Reveal animation="fade-in-up-dramatic" delay={300}>
                         <div className="flex flex-col md:flex-row gap-6">
                             <Button variant="gold" icon={ArrowRight} onClick={() => navigate('/contact')} className="min-w-[200px]">
-                                Erstberatung vereinbaren
+                                Gartenbau Erstberatung vereinbaren
                             </Button>
                         </div>
                         <TrustSignals className="mt-6 text-white/90" showStars={true} showGuarantee={true} />
@@ -129,7 +129,7 @@ export const HomePage: React.FC = () => {
                                 <div className="aspect-[4/5] bg-stone-200 rounded-[var(--radius-lg)] overflow-hidden relative shadow-elevation-2">
                                     <img
                                         src="/images/final/service-planning.webp"
-                                        alt="Detailgenaue Planung"
+                                        alt="Detailgenaue Planung für Gartengestaltung und Landschaftsbau"
                                         width={800}
                                         height={1000}
                                         className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[700ms] ease-out scale-105"
@@ -213,7 +213,7 @@ export const HomePage: React.FC = () => {
                                         decoding="async"
                                     />
                                     <div className="absolute bottom-6 left-6 z-20 opacity-0 group-hover:opacity-100 transition-all duration-[var(--default-transition-duration)] transform translate-y-4 group-hover:translate-y-0">
-                                        <Button variant="gold" className="!py-2 !px-4 text-xs font-bold text-neutral-darkgray">Service-Details ansehen</Button>
+                                        <Button variant="gold" className="!py-2 !px-4 text-xs font-bold text-neutral-darkgray">Details zu {service.title} ansehen</Button>
                                     </div>
                                 </div>
                                 <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-2 group-hover:text-accent-base transition-colors duration-[var(--default-transition-duration)]">{service.title}</h3>
@@ -270,11 +270,11 @@ export const HomePage: React.FC = () => {
                 <div className="max-w-[800px] mx-auto px-6 lg:px-12">
                     <Reveal animation="fade-in-up">
                         <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-6 text-center">
-                            Garten  und Landschaftsbau in Wetzlar und Mittelhessen
+                            Garten- und Landschaftsbau in Wetzlar und Mittelhessen
                         </h2>
                         <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
                             <p>
-                                Als regional verwurzelter Fachbetrieb für Garten  und Landschaftsbau sind wir in der gesamten Region Wetzlar, Gießen und dem Lahn Dill Kreis tätig. Unser Firmensitz in Aßlar liegt zentral in der Region Wetzlar   ideale Ausgangslage, um Projekte in der gesamten Lahnaue und dem angrenzenden Dilltal effizient und termingerecht umzusetzen.
+                                Als regional verwurzelter Fachbetrieb für Garten- und Landschaftsbau sind wir in der gesamten Region Wetzlar, Gießen und dem Lahn-Dill-Kreis tätig. Unser Firmensitz in Aßlar liegt zentral in der Region Wetzlar – ideale Ausgangslage, um Projekte für Pflasterarbeiten, Natursteinmauern und Terrassendesign in der gesamten Lahnaue und dem angrenzenden Dilltal effizient und termingerecht umzusetzen.
                             </p>
                             <p>
                                 Unsere Kunden kommen aus Wetzlar, Aßlar, Dillenburg, Herborn, Haiger, Ehringshausen, Leun, Solms, Braunfels, Gießen, Linden, Langgöns, Butzbach, Bad Nauheim, Lahnau, Hüttenberg, Weilburg, Schöffengrund und Pohlheim. In jeder dieser Gemeinden haben wir bereits Projekte realisiert   von der kleinen Terrasse bis zur kompletten Außenanlage mit Pool und Bewässerungssystem.

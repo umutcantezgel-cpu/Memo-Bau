@@ -36,12 +36,12 @@ export const AboutPage: React.FC = () => (
                     <div className="w-20 h-1 bg-accent-base mb-8"></div>
                     <p className="text-body text-neutral-midgray font-normal leading-body mb-space-6 max-w-prose">
                         Was 2019 als ambitionierte Vision begann, ist heute ein etabliertes
-                        Unternehmen für Premium Garten  und Landschaftsbau. Wir
-                        haben uns zum führenden Ansprechpartner für anspruchsvolle Außenanlagen in der Region entwickelt.
+                        Unternehmen für Premium Garten- und Landschaftsbau. Wir
+                        haben uns zum führenden Ansprechpartner für anspruchsvolle Außenanlagen, präzise Pflasterarbeiten und Natursteinverlegung in der Region entwickelt.
                     </p>
                     <p className="text-body text-neutral-midgray font-normal leading-body mb-space-6 max-w-prose">
                         Unser Team besteht aus erfahrenen Landschaftsgärtnern, die mit Leidenschaft
-                        und Fachwissen jeden Garten in eine grüne Oase verwandeln.
+                        und Fachwissen jeden Garten in eine grüne Oase verwandeln – von der Konzeption bis zur fachgerechten Gartenpflege.
                     </p>
                     <div className="grid grid-cols-2 gap-6 mt-8">
                         {STATS.slice(0, 2).map((stat, i) => (

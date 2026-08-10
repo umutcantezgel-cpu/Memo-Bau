@@ -44,7 +44,7 @@ export const SEO: React.FC<SEOProps> = ({
     aggregateRating
 }) => {
     const { pathname } = useLocation();
-    const resolvedCanonical = canonical || `${SITE_URL}${pathname === '/' ? '' : pathname}`;
+    const resolvedCanonical = canonical || `${SITE_URL}${pathname === '/' ? '/' : pathname}`;
     const siteTitle = `${title} | ${COMPANY_INFO.name}`;
 
     // ══════════════════════════════════════════════════════════════

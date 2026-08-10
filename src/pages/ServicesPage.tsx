@@ -134,7 +134,7 @@ export const ServicesPage: React.FC = () => {
 
                                     <div className="flex items-center gap-3">
                                         <Button variant="primary" icon={ArrowRight} onClick={() => navigate('/contact')} className="px-8">
-                                            Beratung vereinbaren
+                                            Beratung zu {service.title} vereinbaren
                                         </Button>
                                         {SERVICE_SLUG_MAP[service.id] && (
                                             <Link
