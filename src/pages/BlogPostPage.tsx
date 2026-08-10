@@ -34,7 +34,7 @@ export const BlogPostPage: React.FC = () => {
                 title={post.metaTitle.replace(' | Memo-BauT', '')}
                 description={post.metaDescription}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Ratgeber', url: '/ratgeber' },
                     { name: post.title, url: `/ratgeber/${post.slug}` }
                 ]}

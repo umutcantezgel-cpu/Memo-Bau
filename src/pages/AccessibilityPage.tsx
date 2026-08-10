@@ -13,7 +13,7 @@ export const AccessibilityPage: React.FC = () => {
                 title="Digitale Barrierefreiheit & Inklusion | Memo BauT"
                 description={`Barrierefreiheitserklärung der ${COMPANY_INFO.name}. Informationen zu unserem Engagement für digitale Barrierefreiheit, Konformitätsstatus und Feedback-Möglichkeiten.`}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Barrierefreiheit', url: '/barrierefreiheit' }
                 ]}
             />

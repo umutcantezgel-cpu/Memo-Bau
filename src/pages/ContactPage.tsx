@@ -79,7 +79,7 @@ export const ContactPage: React.FC = () => {
                 description="Starten Sie Ihre Garten-Transformation. Kontaktieren Sie Memo-BauT in Wetzlar für eine unverbindliche Erstberatung und Exzellenz im Landschaftsbau."
 
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Kontakt', url: '/kontakt' }
                 ]}
             />

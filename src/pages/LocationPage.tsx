@@ -37,7 +37,7 @@ export const LocationPage: React.FC = () => {
                 title={`Gartenbau in ${locationConfig.name} | Ihr lokaler Landschaftsbau Experte`}
                 description={`Professioneller Garten- und Landschaftsbau in ${locationConfig.name}. Wir realisieren Ihre Gartenträume mit lokaler Expertise und höchster Qualität.`}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Standorte', url: '/standorte' },
                     { name: locationConfig.name, url: `/standorte/${locationConfig.slug}` }
                 ]}

@@ -93,7 +93,7 @@ export const HomePage: React.FC = () => {
                     </Reveal>
                     <Reveal animation="fade-in-up-dramatic" delay={300}>
                         <div className="flex flex-col md:flex-row gap-6">
-                            <Button variant="gold" icon={ArrowRight} onClick={() => navigate('/contact')} className="min-w-[200px]">
+                            <Button variant="gold" icon={ArrowRight} onClick={() => navigate('/kontakt')} className="min-w-[200px]">
                                 Gartenbau Erstberatung vereinbaren
                             </Button>
                         </div>

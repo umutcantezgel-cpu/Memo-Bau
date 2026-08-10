@@ -10,7 +10,7 @@ export const Footer: React.FC = () => (
         <div>
           <div className="flex items-center gap-3 mb-6">
             <img
-              src="/images/logo-memobaut.jpg"
+              src="/images/firmenlogo.jpg"
               alt="Memo BauT"
               className="h-16 w-auto rounded-md"
             />

@@ -41,7 +41,7 @@ export const CookiePolicyPage: React.FC = () => {
                 title="Cookie Richtlinie & Einstellungen | Memo BauT"
                 description={`Detaillierte Informationen über die Verwendung von Cookies auf der Website der ${COMPANY_INFO.name}. Cookie-Kategorien, Zweck und Einstellungsmöglichkeiten.`}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Cookie Richtlinie', url: '/cookie-richtlinie' }
                 ]}
             />

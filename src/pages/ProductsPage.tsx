@@ -93,7 +93,7 @@ export const ProductsPage: React.FC = () => {
                 title="Hochwertige Baumaterialien & Werkzeuge online entdecken"
                 description="Entdecken Sie unser umfangreiches Sortiment an Baumaterialien, Werkzeugen und technischem Zubehör. Qualitätsprodukte für Profis und Heimwerker."
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Produkte', url: '/products' }
                 ]}
             />

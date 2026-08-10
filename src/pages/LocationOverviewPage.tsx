@@ -63,7 +63,7 @@ export const LocationOverviewPage: React.FC = () => {
                 title="Unsere Standorte für Garten- und Landschaftsbau in Hessen"
                 description="Egal ob Wetzlar, Gießen, Bad Homburg oder Frankfurt: Memo-BauT gestaltet Traumgärten in ganz Hessen. Premium-Landschaftsbau in Ihrer Nähe."
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Standorte', url: '/standorte' }
                 ]}
             />

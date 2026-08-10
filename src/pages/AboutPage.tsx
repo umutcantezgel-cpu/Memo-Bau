@@ -14,7 +14,7 @@ export const AboutPage: React.FC = () => (
             title="Über Uns | Memo-BauT Handwerkstradition & Vision in Wetzlar"
             description="Lernen Sie das Team hinter Memo-BauT kennen. Ihr erfahrener Partner für exklusiven Landschaftsbau und langlebige Außenanlagen."
             breadcrumbs={[
-                { name: 'Home', url: '/' },
+                { name: 'Startseite', url: '/' },
                 { name: 'Über Uns', url: '/ueber-uns' }
             ]}
         />

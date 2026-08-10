@@ -47,7 +47,7 @@ export const Header: React.FC<HeaderProps> = ({
             <Link to="/" className="flex items-center cursor-pointer group gap-space-3">
               {/* Logo Mark */}
               <img
-                src="/images/logo-memobaut.jpg"
+                src="/images/firmenlogo.jpg"
                 alt="Memo BauT"
                 className={`h-12 w-auto object-contain rounded-[var(--radius-sm)] transition-transform duration-[var(--motion-standard-duration)] ease-[var(--motion-standard-easing)] origin-left ${scrolled ? 'scale-90' : 'scale-100'}`}
               />

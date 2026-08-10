@@ -15,7 +15,7 @@ export const AgbPage: React.FC = () => {
                 title="AGB & Widerruf | Allgemeine Geschäftsbedingungen | Memo BauT"
                 description={`Allgemeine Geschäftsbedingungen und Widerrufsbelehrung der ${COMPANY_INFO.name}. Vertragsgrundlagen, Zahlungskonditionen und Widerrufsrecht für Premium-Landschaftsbau.`}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'AGB', url: '/agb' }
                 ]}
             />

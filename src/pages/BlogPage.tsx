@@ -22,7 +22,7 @@ export const BlogPage: React.FC = () => {
                 title="Ratgeber: Gartenwissen vom Fachbetrieb | Memo BauT"
                 description="Ehrliche Tipps, echte Preise, praktisches Wissen: Unser Ratgeber hilft Ihnen bei der Planung und Pflege Ihres Gartens. Von Handwerkern geschrieben."
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Ratgeber', url: '/ratgeber' }
                 ]}
             />

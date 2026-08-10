@@ -32,7 +32,7 @@ export const ServiceDetailPage: React.FC = () => {
                 title={`Professionelle ${service.title} von Ihrem Experten | Memo-BauT`}
                 description={`Erfahren Sie mehr über unsere Leistungen im Bereich ${service.title}. Wir bieten maßgeschneiderte Lösungen für Ihr Projekt im Garten- und Landschaftsbau.`}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Leistungen', url: '/leistungen' },
                     { name: service.breadcrumbLabel, url: `/leistungen/${service.slug}` }
                 ]}

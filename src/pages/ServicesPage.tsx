@@ -35,7 +35,7 @@ export const ServicesPage: React.FC = () => {
                 title="Leistungen im Garten- und Landschaftsbau von Memo-BauT"
                 description="Entdecken Sie unser Leistungsspektrum: Gartendesign, Landschaftsbau, Pflasterarbeiten und Bewässerung. Handwerkskunst für Ihren Außenbereich."
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Leistungen', url: '/leistungen' }
                 ]}
                 services={SERVICES.map(s => ({

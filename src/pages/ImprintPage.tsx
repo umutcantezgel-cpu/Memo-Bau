@@ -15,7 +15,7 @@ export const ImprintPage: React.FC = () => {
                 title="Impressum | Memo BauT – Garten  & Landschaftsbau Aßlar"
                 description={`Impressum der ${COMPANY_INFO.name}. Angaben gemäß § 5 DDG, Kontaktdaten, Steuerdaten, berufsrechtliche Angaben und Haftungshinweise.`}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Impressum', url: '/impressum' }
                 ]}
             />

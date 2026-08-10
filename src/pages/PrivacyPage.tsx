@@ -15,7 +15,7 @@ export const PrivacyPage: React.FC = () => {
                 title="Datenschutzerklärung | Memo BauT – Sicherheit & Transparenz"
                 description={`Umfassende Informationen zum Datenschutz (DSGVO) und zur Verarbeitung Ihrer personenbezogenen Daten bei der ${COMPANY_INFO.name}. Ihre Rechte, unsere Drittanbieter und Löschkonzepte.`}
                 breadcrumbs={[
-                    { name: 'Home', url: '/' },
+                    { name: 'Startseite', url: '/' },
                     { name: 'Datenschutz', url: '/datenschutz' }
                 ]}
             />
