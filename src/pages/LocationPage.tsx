@@ -8,7 +8,7 @@ import { InteractiveMap } from '../components/features/InteractiveMap';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
 import { MapPin, ArrowRight, Phone, CheckCircle } from 'lucide-react';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
+
 
 export const LocationPage: React.FC = () => {
     const { cityId } = useParams<{ cityId: string }>();
@@ -83,11 +83,6 @@ export const LocationPage: React.FC = () => {
             }} />
 
 
-            {/* ═══ 4. VISIBLE BREADCRUMBS ═══ */}
-            <Breadcrumbs items={[
-                { label: 'Standorte', href: '/standorte' },
-                { label: locationConfig.name }
-            ]} />
 
             {/* ═══ 5. MAIN CONTENT ENGINE ═══ */}
             <LocationSectionRenderer config={locationConfig} />

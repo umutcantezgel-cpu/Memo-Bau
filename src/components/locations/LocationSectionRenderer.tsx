@@ -3,8 +3,6 @@ import { CityConfig } from '../../core/cityConfig.types';
 import { HeroVariant } from './HeroVariant';
 import { LocalStorySection } from './LocalStorySection';
 import { FeatureGridSection } from './FeatureGridSection';
-
-import { LocalFAQSection } from './LocalFAQSection';
 import { PremiumContactBanner } from './PremiumContactBanner';
 import { ProcessTimelineSection } from './ProcessTimelineSection';
 import { ValuePropositionSection } from './ValuePropositionSection';
@@ -34,7 +32,7 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
                     <ValuePropositionSection config={config} variant="elegant" />
                     <FeatureGridSection config={config} />
                     <ProcessTimelineSection config={config} />
-                    <LocalFAQSection config={config} />
+
                     <PremiumContactBanner config={config} />
                 </>
             );
@@ -49,7 +47,7 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
                     <ValuePropositionSection config={config} variant="stats-heavy" />
                     <FeatureGridSection config={config} />
                     <LocalStorySection config={config} reversed={true} />
-                    <LocalFAQSection config={config} />
+
                     <PremiumContactBanner config={config} />
                 </>
             );
@@ -64,7 +62,7 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
                     <LocalStorySection config={config} />
                     <FeatureGridSection config={config} highlightFirst={true} />
                     <ValuePropositionSection config={config} variant="minimal" />
-                    <LocalFAQSection config={config} />
+
                     <PremiumContactBanner config={config} />
                 </>
             );
@@ -80,7 +78,7 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
                     <FeatureGridSection config={config} />
                     <ValuePropositionSection config={config} variant="elegant" />
                     <ProcessTimelineSection config={config} />
-                    <LocalFAQSection config={config} />
+
                     <PremiumContactBanner config={config} />
                 </>
             );
@@ -96,7 +94,7 @@ export const LocationSectionRenderer: React.FC<SectionRendererProps> = ({ config
                     <ValuePropositionSection config={config} variant="stats-heavy" />
                     <LocalStorySection config={config} compact={true} />
                     <PremiumContactBanner config={config} highlightCTA={true} />
-                    <LocalFAQSection config={config} />
+
                 </>
             );
 

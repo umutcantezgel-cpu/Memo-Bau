@@ -2,7 +2,6 @@ import React, { useMemo } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../core/blog.data';
 import { SEO } from '../components/common/SEO';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
 import { Clock, Calendar, ArrowLeft, CheckCircle, ChevronDown } from 'lucide-react';
@@ -39,7 +38,6 @@ export const BlogPostPage: React.FC = () => {
                     { name: 'Ratgeber', url: '/ratgeber' },
                     { name: post.title, url: `/ratgeber/${post.slug}` }
                 ]}
-                faqs={post.faqs}
             />
 
             {/* ═══ ARTICLE SCHEMA ═══ */}
@@ -66,11 +64,6 @@ export const BlogPostPage: React.FC = () => {
                 })
             }} />
 
-            {/* ═══ BREADCRUMBS ═══ */}
-            <Breadcrumbs items={[
-                { label: 'Ratgeber', href: '/ratgeber' },
-                { label: post.title.length > 40 ? post.title.substring(0, 40) + '...' : post.title }
-            ]} />
 
             {/* ═══ HERO IMAGE ═══ */}
             <div className="relative aspect-[21/9] md:aspect-[3/1] overflow-hidden bg-neutral-darkgray">
@@ -163,31 +156,7 @@ export const BlogPostPage: React.FC = () => {
                     </Reveal>
                 </Section>
 
-                {/* FAQs */}
-                {post.faqs.length > 0 && (
-                    <Section bgVariant="offwhite" className="py-12 md:py-16">
-                        <Reveal animation="fade-in-up">
-                            <div className="max-w-3xl mx-auto">
-                                <h2 className="text-xl font-sans font-bold text-neutral-darkgray mb-space-8">
-                                    Häufige Fragen
-                                </h2>
-                                <div className="space-y-space-3">
-                                    {post.faqs.map((faq, i) => (
-                                        <details key={i} className="group border border-neutral-lightgray/30 rounded-[var(--radius-md)] bg-neutral-white overflow-hidden">
-                                            <summary className="flex items-center justify-between gap-4 p-space-5 cursor-pointer hover:bg-neutral-offwhite transition-colors">
-                                                <span className="font-semibold text-sm text-neutral-darkgray">{faq.q}</span>
-                                                <ChevronDown className="w-4 h-4 text-neutral-midgray shrink-0 group-open:rotate-180 transition-transform duration-300" />
-                                            </summary>
-                                            <div className="px-space-5 pb-space-5 text-sm text-neutral-midgray leading-relaxed">
-                                                {faq.a}
-                                            </div>
-                                        </details>
-                                    ))}
-                                </div>
-                            </div>
-                        </Reveal>
-                    </Section>
-                )}
+
             </article>
 
             {/* ═══ RELATED POSTS ═══ */}

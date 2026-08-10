@@ -12,30 +12,6 @@ import { ValueProposition } from '../components/common/ValueProposition';
 import { SEO } from '../components/common/SEO';
 import { TestimonialCarousel } from '../components/features/TestimonialCarousel';
 
-const FaqItem: React.FC<{ faq: { q: string, a: string }, idx: number }> = ({ faq, idx }) => {
-    const [isOpen, setIsOpen] = useState(false);
-    return (
-        <Reveal animation="fade-in-up" delay={(idx * 100) as 0 | 100 | 200 | 300 | 400 | 500}>
-            <div className="border border-neutral-lightgray rounded-[var(--radius-md)] overflow-hidden bg-neutral-offwhite transition-all duration-[var(--default-transition-duration)] hover:border-neutral-midgray/30">
-                <button
-                    className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
-                    onClick={() => setIsOpen(!isOpen)}
-                    aria-expanded={isOpen}
-                >
-                    <span className="font-bold text-neutral-darkgray pr-4 font-sans">{faq.q}</span>
-                    <div className={`w-8 h-8 rounded-full bg-neutral-white flex items-center justify-center shrink-0 shadow-elevation-1 transition-transform duration-[var(--default-transition-duration)] ${isOpen ? 'rotate-180 bg-accent-base text-white' : 'text-neutral-darkgray'}`}>
-                        {isOpen ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
-                    </div>
-                </button>
-                <div className={`overflow-hidden transition-[max-height,opacity] duration-[var(--motion-standard-duration)] ease-[var(--motion-standard-easing)] will-change-[max-height,opacity] transform-gpu ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}>
-                    <div className="p-6 pt-0 text-neutral-midgray leading-relaxed font-normal text-sm border-t border-neutral-lightgray/50 mt-2">
-                        {faq.a}
-                    </div>
-                </div>
-            </div>
-        </Reveal>
-    );
-};
 
 export const HomePage: React.FC = () => {
     const navigate = useNavigate();
@@ -282,34 +258,6 @@ export const HomePage: React.FC = () => {
 
             <TestimonialCarousel />
 
-            {/* FAQ SECTION — 10 humanized FAQs for long-tail SEO */}
-            <section className="py-space-20 md:py-space-24 bg-neutral-white">
-                <div className="max-w-[800px] mx-auto px-6 lg:px-12">
-                    <Reveal animation="fade-in-up">
-                        <div className="text-center mb-space-16">
-                            <span className="text-accent-base text-xs font-bold uppercase tracking-widest mb-space-4 block">FAQ</span>
-                            <h2 className="text-h2 md:text-h1 font-heading text-neutral-darkgray font-bold">Häufige Fragen</h2>
-                        </div>
-                    </Reveal>
-
-                    <div className="space-y-4">
-                        {[
-                            { q: "Wie läuft ein Projekt mit Memo BauT ab?", a: "Nach einer ersten Kontaktaufnahme vereinbaren wir einen Vor Ort Termin zur Bestandsaufnahme und Besprechung Ihrer Wünsche. Daraufhin erstellen wir ein detailliertes Konzept inklusive 3D Visualisierung und transparentem Kostenvoranschlag. Nach Ihrer Freigabe beginnen wir mit der fachgerechten Umsetzung   bei einem typischen Einfamilienhausgarten dauert die Realisierung etwa 2 4 Wochen." },
-                            { q: "Bieten Sie auch regelmäßige Gartenpflege an?", a: "Ja, wir bieten umfassende Pflegekonzepte für private und gewerbliche Anlagen an. Von saisonalen Rückschnitten über Rasenpflege bis zur ganzjährigen Betreuung inklusive Bewässerungscheck und Düngung schnüren wir ein Paket, das genau auf die Bedürfnisse Ihres Gartens abgestimmt ist. Die meisten unserer Kunden nutzen unseren Premium Pflegevertrag mit monatlicher Betreuung." },
-                            { q: "In welchem Umkreis sind Sie tätig?", a: "Unser Kerngebiet ist die Region Wetzlar, Gießen, Dillenburg und der gesamte Lahn Dill Kreis. Wir sind regelmäßig in Aßlar, Lahnau, Braunfels, Solms, Herborn und bis nach Butzbach und Bad Nauheim unterwegs. Bei größeren Projekten sind wir nach Absprache auch überregional in ganz Mittelhessen für Sie im Einsatz." },
-                            { q: "Verwenden Sie nachhaltige Materialien?", a: "Nachhaltigkeit ist ein Grundpfeiler unserer Philosophie. Wir bevorzugen regionale Materialien wie Grauwacke aus dem Westerwald und Basalt aus der Eifel, langlebige Natursteine und FSC zertifizierte Hölzer. Zudem integrieren wir ressourcenschonende Bewässerungssysteme mit Bodenfeuchtesensoren in unsere Konzepte." },
-
-                            { q: "Wie lange dauert es, bis mein Garten fertig ist?", a: "Die Planungsphase dauert in der Regel 2 3 Wochen, die Umsetzung je nach Projektgröße 2 6 Wochen. Eine einfache Terrasse mit 30m² ist in einer guten Woche verlegt. Eine Komplett Neugestaltung mit Pflasterarbeiten und Bewässerung braucht 3 4 Wochen. Wir arbeiten grundsätzlich ein Projekt nach dem anderen ab   keine Parallelbaustellen, volle Aufmerksamkeit für Ihr Projekt." },
-                            { q: "Kann ich mir vorher Referenzprojekte ansehen?", a: "Selbstverständlich. Wir können Ihnen nach Absprache fertige Gärten in der Region zeigen. Viele unserer Kunden freuen sich, wenn wir Interessenten einmal durchführen." },
-                            { q: "Arbeiten Sie auch im Winter?", a: "Pflasterarbeiten und Erdarbeiten führen wir witterungsabhängig auch im Winter durch   solange der Boden nicht gefroren ist. Die Wintermonate nutzen wir außerdem intensiv für Planung und Konzeption. Eine Anfrage im Herbst für ein Frühjahrsprojekt sichert Ihnen einen der begehrten Frühstartplätze." },
-                            { q: "Muss ich den alten Garten selbst abreißen?", a: "Nein, das übernehmen wir komplett. Rückbau, Entsorgung und Erdarbeiten gehören zu unserem Leistungsumfang. Wir kümmern uns um alles   vom Entfernen alter Betonplatten bis zum fachgerechten Baumschnitt oder der Rodung von Sträuchern. Sie müssen sich um nichts kümmern." },
-                            { q: "Bieten Sie eine Gewährleistung auf Ihre Arbeiten?", a: "Ja, auf alle Leistungen geben wir die gesetzliche Gewährleistung von 5 Jahren auf Bauleistungen. Darüber hinaus sind wir auch nach Jahren noch Ansprechpartner für Fragen und Anpassungen." }
-                        ].map((faq, idx) => (
-                            <FaqItem key={idx} faq={faq} idx={idx} />
-                        ))}
-                    </div>
-                </div>
-            </section>
 
             {/* EINZUGSGEBIET — Lokaler SEO-Textblock */}
             <section className="py-space-16 md:py-space-20 bg-neutral-offwhite border-t border-neutral-lightgray">

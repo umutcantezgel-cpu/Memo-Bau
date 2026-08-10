@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { BLOG_POSTS } from '../core/blog.data';
 import { SEO } from '../components/common/SEO';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { Section } from '../components/layout/Section';
 import { PageHero } from '../components/common/PageHero';
 import { Reveal } from '../components/common/Reveal';
@@ -27,8 +26,6 @@ export const BlogPage: React.FC = () => {
                     { name: 'Ratgeber', url: '/ratgeber' }
                 ]}
             />
-
-            <Breadcrumbs items={[{ label: 'Ratgeber' }]} />
 
             <PageHero
                 title="Gartenwissen aus der Praxis"

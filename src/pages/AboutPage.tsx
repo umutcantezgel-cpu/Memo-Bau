@@ -6,7 +6,6 @@ import { SectionTitle } from '../components/common/SectionTitle';
 import { Reveal } from '../components/common/Reveal';
 import { StaggeredList } from '../components/common/StaggeredList';
 import { Section } from '../components/layout/Section';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { COMPANY_INFO, STATS } from '../core/constants';
 
 export const AboutPage: React.FC = () => (
@@ -19,8 +18,6 @@ export const AboutPage: React.FC = () => (
                 { name: 'Über Uns', url: '/about' }
             ]}
         />
-
-        <Breadcrumbs items={[{ label: 'Über Uns' }]} />
 
         <PageHero
             title="Leidenschaft für Gärten"
@@ -39,8 +36,8 @@ export const AboutPage: React.FC = () => (
                     <div className="w-20 h-1 bg-accent-base mb-8"></div>
                     <p className="text-body text-neutral-midgray font-normal leading-body mb-space-6 max-w-prose">
                         Was 2019 als ambitionierte Vision begann, ist heute ein etabliertes
-                        Unternehmen für Premium Garten  und Landschaftsbau. Mit über 50 exklusiv realisierten Projekten
-                        haben wir uns zum führenden Ansprechpartner für anspruchsvolle Außenanlagen in der Region entwickelt.
+                        Unternehmen für Premium Garten  und Landschaftsbau. Wir
+                        haben uns zum führenden Ansprechpartner für anspruchsvolle Außenanlagen in der Region entwickelt.
                     </p>
                     <p className="text-body text-neutral-midgray font-normal leading-body mb-space-6 max-w-prose">
                         Unser Team besteht aus erfahrenen Landschaftsgärtnern, die mit Leidenschaft
@@ -183,7 +180,7 @@ export const AboutPage: React.FC = () => (
                         </h2>
                         <div className="text-sm text-neutral-midgray leading-relaxed space-y-4 font-normal">
                             <p>
-                                Hinter Memo BauT steht ein eingespieltes Team aus erfahrenen Landschaftsgärtnern, Pflasterlegern und Gartenbauspezialisten. Jeder bei uns hat eine abgeschlossene Berufsausbildung im Garten  und Landschaftsbau   keine Quereinsteiger, keine Leiharbeiter. Das macht sich in der Qualität jedes einzelnen Projekts bemerkbar.
+                                Hinter Memo BauT steht ein eingespieltes Team aus erfahrenen Landschaftsgärtnern, Pflasterlegern und Gartenbauspezialisten. Das macht sich in der Qualität jedes einzelnen Projekts bemerkbar.
                             </p>
                             <p>
                                 Unser Gründer Mehmet Tezgel bringt über 7 Jahre Berufserfahrung im GaLaBau mit. Was 2019 mit einem Minibagger und einer klaren Vision begann, ist heute ein Fachbetrieb mit eigenem Maschinenpark   Bagger, Radlader, Rüttelplatten, Bewässerungsbohrer, Erdbohrer   alles, was man für professionellen Gartenbau braucht. Keine gemieteten Geräte von der Baumaschinen Börse. Eigene Maschinen, die wir kennen und die zuverlässig funktionieren.

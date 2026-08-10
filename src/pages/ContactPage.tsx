@@ -1,14 +1,14 @@
 import React, { useState, FormEvent } from 'react';
 import { MapPin, Phone, Mail, Check, Hammer, Fence, Droplets, Leaf, PenTool, ArrowRight } from 'lucide-react';
 import { ContactFormData, FormStatus } from '../types';
-import { FAQS, COMPANY_INFO } from '../core/constants';
+import { COMPANY_INFO } from '../core/constants';
 import { Button } from '../components/common/Button';
 import { PageHero } from '../components/common/PageHero';
 import { InteractiveMap } from '../components/features/InteractiveMap';
 import { SEO } from '../components/common/SEO';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
+
 import { InlineWidget } from 'react-calendly';
 import { CookieBlocker } from '../components/common/CookieBlocker';
 
@@ -77,14 +77,13 @@ export const ContactPage: React.FC = () => {
             <SEO
                 title="Kontakt & Anfrage"
                 description="Starten Sie Ihre Garten-Transformation. Kontaktieren Sie Memo-BauT in Wetzlar für eine unverbindliche Erstberatung und Exzellenz im Landschaftsbau."
-                faqs={FAQS.slice(0, 3)}
+
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
                     { name: 'Kontakt', url: '/contact' }
                 ]}
             />
 
-            <Breadcrumbs items={[{ label: 'Kontakt' }]} />
 
             <PageHero
                 title="Kontakt aufnehmen"
@@ -133,18 +132,6 @@ export const ContactPage: React.FC = () => {
                             </div>
                         </div>
 
-                        {/* FAQ Minimal */}
-                        <div className="border-t border-neutral-lightgray pt-space-12">
-                            <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-balance">Häufige Fragen</h3>
-                            <div className="space-y-space-6">
-                                {FAQS.slice(0, 3).map((faq, i) => (
-                                    <div key={i} className="group cursor-pointer">
-                                        <p className="font-bold text-neutral-darkgray group-hover:text-accent-base transition-colors duration-[var(--default-transition-duration)] mb-2">{faq.q}</p>
-                                        <p className="text-sm text-neutral-midgray font-normal leading-body">{faq.a}</p>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
                     </Reveal>
 
                     {/* RIGHT COLUMN: The Luxury Form */}

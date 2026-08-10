@@ -3,7 +3,6 @@ import { useParams, Navigate, Link } from 'react-router-dom';
 import { SERVICE_DETAILS } from '../core/services.data';
 import { COMPANY_INFO } from '../core/constants';
 import { SEO } from '../components/common/SEO';
-import { Breadcrumbs } from '../components/common/Breadcrumbs';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
 import { PageHero } from '../components/common/PageHero';
@@ -37,7 +36,6 @@ export const ServiceDetailPage: React.FC = () => {
                     { name: 'Leistungen', url: '/services' },
                     { name: service.breadcrumbLabel, url: `/leistungen/${service.slug}` }
                 ]}
-                faqs={service.faqs}
                 services={[{ name: service.title, description: service.metaDescription }]}
             />
 
@@ -69,11 +67,6 @@ export const ServiceDetailPage: React.FC = () => {
                 })
             }} />
 
-            {/* ═══ BREADCRUMBS ═══ */}
-            <Breadcrumbs items={[
-                { label: 'Leistungen', href: '/services' },
-                { label: service.breadcrumbLabel }
-            ]} />
 
             {/* ═══ HERO ═══ */}
             <PageHero
@@ -172,29 +165,7 @@ export const ServiceDetailPage: React.FC = () => {
                 </Reveal>
             </Section>
 
-            {/* ═══ FAQS ═══ */}
-            <Section bgVariant="white" className="py-16 md:py-24">
-                <Reveal animation="fade-in-up">
-                    <div className="max-w-3xl mx-auto">
-                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-10 text-center">
-                            Häufige Fragen zu {service.breadcrumbLabel}
-                        </h2>
-                        <div className="space-y-space-4">
-                            {service.faqs.map((faq, i) => (
-                                <details key={i} className="group border border-neutral-lightgray/30 rounded-[var(--radius-md)] overflow-hidden">
-                                    <summary className="flex items-center justify-between gap-4 p-space-6 cursor-pointer hover:bg-neutral-offwhite transition-colors">
-                                        <span className="font-semibold text-sm text-neutral-darkgray pr-4">{faq.q}</span>
-                                        <ChevronDown className="w-5 h-5 text-neutral-midgray shrink-0 group-open:rotate-180 transition-transform duration-300" />
-                                    </summary>
-                                    <div className="px-space-6 pb-space-6 text-sm text-neutral-midgray leading-relaxed">
-                                        {faq.a}
-                                    </div>
-                                </details>
-                            ))}
-                        </div>
-                    </div>
-                </Reveal>
-            </Section>
+
 
             {/* ═══ CTA BANNER ═══ */}
             <Section bgVariant="offwhite" className="py-16 md:py-20">
