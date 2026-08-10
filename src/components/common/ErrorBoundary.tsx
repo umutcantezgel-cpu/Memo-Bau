@@ -28,6 +28,15 @@ export class ErrorBoundary extends Component<Props, State> {
     };
 
     public static getDerivedStateFromError(error: Error): State {
+        // Handle Vite/Webpack ChunkLoadError for seamless updates
+        if (
+            error.name === 'ChunkLoadError' ||
+            error.message.includes('Failed to fetch dynamically imported module') ||
+            error.message.includes('Importing a module script failed')
+        ) {
+            window.location.reload();
+            return { hasError: false, error: null };
+        }
         return { hasError: true, error };
     }
 
