@@ -189,7 +189,7 @@ export const HomePage: React.FC = () => {
                                 <h2 className="text-h2 md:text-h1 font-heading text-neutral-darkgray font-bold">Unsere Leistungen</h2>
                             </div>
                             <Button variant="ghost" onClick={() => navigate('/services')} icon={ArrowRight}>
-                                Alle Leistungen
+                                Alle Gartenbau Leistungen
                             </Button>
                         </div>
                     </Reveal>
@@ -207,7 +207,7 @@ export const HomePage: React.FC = () => {
                                         decoding="async"
                                     />
                                     <div className="absolute bottom-6 left-6 z-20 opacity-0 group-hover:opacity-100 transition-all duration-[var(--default-transition-duration)] transform translate-y-4 group-hover:translate-y-0">
-                                        <Button variant="gold" className="!py-2 !px-4 text-xs font-bold text-neutral-darkgray">Details ansehen</Button>
+                                        <Button variant="gold" className="!py-2 !px-4 text-xs font-bold text-neutral-darkgray">Service-Details ansehen</Button>
                                     </div>
                                 </div>
                                 <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-2 group-hover:text-accent-base transition-colors duration-[var(--default-transition-duration)]">{service.title}</h3>

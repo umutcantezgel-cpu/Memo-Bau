@@ -172,6 +172,8 @@ export const SEO: React.FC<SEOProps> = ({
 
     return (
         <Helmet>
+            <html lang="de" />
+            <meta charSet="utf-8" />
             {/* ─── Standard Meta ─── */}
             <title>{siteTitle}</title>
             <meta name="description" content={description} />

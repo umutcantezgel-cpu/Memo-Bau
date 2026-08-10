@@ -19,7 +19,7 @@ export const BlogPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Ratgeber   Gartenwissen vom Fachbetrieb"
+                title="Ratgeber: Gartenwissen vom Fachbetrieb | Memo BauT"
                 description="Ehrliche Tipps, echte Preise, praktisches Wissen: Unser Ratgeber hilft Ihnen bei der Planung und Pflege Ihres Gartens. Von Handwerkern geschrieben."
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
@@ -81,7 +81,7 @@ export const BlogPage: React.FC = () => {
                                                 {new Date(post.updatedDate || post.publishedDate).toLocaleDateString('de-DE', { year: 'numeric', month: 'long' })}
                                             </span>
                                             <span className="flex items-center gap-1 text-xs font-bold text-accent-base opacity-0 group-hover:opacity-100 transition-opacity">
-                                                Weiterlesen <ArrowRight className="w-3 h-3" />
+                                                Ratgeber lesen: {post.title} <ArrowRight className="w-3 h-3" />
                                             </span>
                                         </div>
                                     </div>

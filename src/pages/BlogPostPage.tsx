@@ -164,9 +164,9 @@ export const BlogPostPage: React.FC = () => {
                 <Section bgVariant="white" className="py-12 md:py-16">
                     <Reveal animation="fade-in-up">
                         <div className="max-w-3xl mx-auto">
-                            <h3 className="text-lg font-sans font-bold text-neutral-darkgray mb-space-6">
+                            <h2 className="text-lg font-sans font-bold text-neutral-darkgray mb-space-6">
                                 Weiterführende Ratgeber
-                            </h3>
+                            </h2>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-space-4">
                                 {relatedPosts.map(related => (
                                     related && (
@@ -179,9 +179,9 @@ export const BlogPostPage: React.FC = () => {
                                                 <img src={related.heroImage} alt={related.title} className="w-full h-full object-cover" loading="lazy" />
                                             </div>
                                             <div className="flex-1 min-w-0">
-                                                <h4 className="font-bold text-sm text-neutral-darkgray group-hover:text-accent-base transition-colors line-clamp-2 leading-snug">
+                                                <h3 className="font-bold text-sm text-neutral-darkgray group-hover:text-accent-base transition-colors line-clamp-2 leading-snug">
                                                     {related.title}
-                                                </h4>
+                                                </h3>
                                                 <span className="text-xs text-neutral-midgray mt-1 block">{related.readingTime}</span>
                                             </div>
                                         </Link>

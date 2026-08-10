@@ -38,7 +38,7 @@ export const CookiePolicyPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Cookie Richtlinie | Memo BauT"
+                title="Cookie Richtlinie & Einstellungen | Memo BauT"
                 description={`Detaillierte Informationen über die Verwendung von Cookies auf der Website der ${COMPANY_INFO.name}. Cookie-Kategorien, Zweck und Einstellungsmöglichkeiten.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },

@@ -32,8 +32,8 @@ export const ServicesPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Leistungen & Expertise"
-                description="Unser Leistungsspektrum: Visionäres Gartendesign, präziser Landschaftsbau, Stonework und intelligente Bewässerung. Handwerkskunst für Ihren Außenbereich."
+                title="Leistungen im Garten- und Landschaftsbau von Memo-BauT"
+                description="Entdecken Sie unser Leistungsspektrum: Gartendesign, Landschaftsbau, Pflasterarbeiten und Bewässerung. Handwerkskunst für Ihren Außenbereich."
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
                     { name: 'Leistungen', url: '/services' }
@@ -56,7 +56,7 @@ export const ServicesPage: React.FC = () => {
                 {/* Introduction Text */}
                 <Reveal animation="fade-in-up">
                     <div className="max-w-3xl mx-auto text-center mb-space-20">
-                        <h1 className="text-h2 md:text-h1 font-sans font-bold text-neutral-darkgray mb-space-6 tracking-h2 text-balance">Gärten mit Charakter</h1>
+                        <h2 className="text-h2 md:text-h1 font-sans font-bold text-neutral-darkgray mb-space-6 tracking-h2 text-balance">Gärten mit Charakter</h2>
                         <p className="text-body text-neutral-midgray leading-body font-normal">
                             Jeder Garten ist ein Unikat. Unser Anspruch ist es, die Architektur Ihres Hauses mit der Natur zu verbinden.
                             Dabei setzen wir auf langlebige Materialien und bewährte Bautechniken.
@@ -80,7 +80,7 @@ export const ServicesPage: React.FC = () => {
                                         <div className="absolute inset-0 bg-primary-base/10 mix-blend-multiply group-hover:opacity-0 transition-opacity duration-[var(--default-transition-duration)] z-20"></div>
                                         <img
                                             src={service.imageUrl}
-                                            alt={service.title}
+                                            alt={`Garten- und Landschaftsbau Service: ${service.title}`}
                                             className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                                             loading="lazy"
                                             decoding="async"
@@ -97,9 +97,9 @@ export const ServicesPage: React.FC = () => {
                                         </span>
                                     </div>
 
-                                    <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-6 leading-tight text-balance">
+                                    <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-6 leading-tight text-balance">
                                         {service.title}
-                                    </h3>
+                                    </h2>
 
                                     <p className="text-neutral-darkgray text-lg leading-body mb-space-4 font-semibold">
                                         {service.description}
@@ -141,7 +141,7 @@ export const ServicesPage: React.FC = () => {
                                                 to={`/leistungen/${SERVICE_SLUG_MAP[service.id]}`}
                                                 className="text-sm font-semibold text-neutral-midgray hover:text-accent-base transition-colors flex items-center gap-1"
                                             >
-                                                Details
+                                                {service.title} Details ansehen
                                                 <ArrowRight className="w-3 h-3" />
                                             </Link>
                                         )}

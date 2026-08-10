@@ -75,7 +75,7 @@ export const ContactPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Kontakt & Anfrage"
+                title="Kontakt aufnehmen | Memo-BauT Garten- & Landschaftsbau"
                 description="Starten Sie Ihre Garten-Transformation. Kontaktieren Sie Memo-BauT in Wetzlar für eine unverbindliche Erstberatung und Exzellenz im Landschaftsbau."
 
                 breadcrumbs={[
@@ -255,7 +255,7 @@ export const ContactPage: React.FC = () => {
                 <Reveal animation="fade-in-up">
                     <div className="mt-space-32 border-t border-neutral-lightgray pt-space-24">
                         <div className="text-center mb-space-12">
-                            <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-4 text-balance">Direkt Termin vereinbaren</h3>
+                            <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-4 text-balance">Direkt Termin vereinbaren</h2>
                             <p className="text-neutral-midgray font-normal leading-body max-w-2xl mx-auto">
                                 Wählen Sie einfach einen passenden Zeitslot für ein 15 minütiges Erstgespräch – telefonisch oder via Video Call.
                             </p>
@@ -275,7 +275,7 @@ export const ContactPage: React.FC = () => {
                 {/* Map Section */}
                 <Reveal animation="fade-in">
                     <div className="mt-space-32">
-                        <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center text-balance">Unser Wirkungskreis</h3>
+                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 text-center text-balance">Unser Wirkungskreis</h2>
                         <div className="h-[400px] w-full rounded-[var(--radius-lg)] overflow-hidden shadow-inner bg-neutral-offwhite border border-neutral-lightgray">
                             <InteractiveMap />
                         </div>

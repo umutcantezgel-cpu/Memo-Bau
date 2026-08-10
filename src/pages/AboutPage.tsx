@@ -11,7 +11,7 @@ import { COMPANY_INFO, STATS } from '../core/constants';
 export const AboutPage: React.FC = () => (
     <main className="bg-neutral-white min-h-screen">
         <SEO
-            title="Über Uns | Handwerkstradition & Vision"
+            title="Über Uns | Memo-BauT Handwerkstradition & Vision in Wetzlar"
             description="Lernen Sie das Team hinter Memo-BauT kennen. Ihr erfahrener Partner für exklusiven Landschaftsbau und langlebige Außenanlagen."
             breadcrumbs={[
                 { name: 'Home', url: '/' },
@@ -165,7 +165,7 @@ export const AboutPage: React.FC = () => (
                         <div className="w-16 h-16 mx-auto mb-6 rounded-[var(--radius-md)] bg-neutral-white flex items-center justify-center group-hover:bg-primary-base transition-colors duration-[var(--default-transition-duration)] border border-neutral-lightgray">
                             <item.icon className="w-8 h-8 text-primary-base group-hover:text-neutral-white transition-colors duration-[var(--default-transition-duration)]" />
                         </div>
-                        <h4 className="text-xl font-bold text-neutral-darkgray mb-2">{item.title}</h4>
+                        <h3 className="text-xl font-bold text-neutral-darkgray mb-2">{item.title}</h3>
                         <p className="text-neutral-midgray font-normal text-sm leading-body">{item.description}</p>
                     </div>
                 ))}

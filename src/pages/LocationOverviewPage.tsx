@@ -60,7 +60,7 @@ export const LocationOverviewPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Unsere Standorte | Hessenweit für Sie im Einsatz"
+                title="Unsere Standorte für Garten- und Landschaftsbau in Hessen"
                 description="Egal ob Wetzlar, Gießen, Bad Homburg oder Frankfurt: Memo-BauT gestaltet Traumgärten in ganz Hessen. Premium-Landschaftsbau in Ihrer Nähe."
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
@@ -88,23 +88,23 @@ export const LocationOverviewPage: React.FC = () => {
                 </Reveal>
 
                 <div className="mb-space-16">
-                    <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 border-b border-neutral-lightgray pb-4">
+                    <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 border-b border-neutral-lightgray pb-4">
                         Lahn Dill Kreis (Kerngebiet)
-                    </h3>
+                    </h2>
                     <LocationGrid locations={lahnDillLocations} />
                 </div>
 
                 <div className="mb-space-12">
-                    <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 border-b border-neutral-lightgray pb-4">
+                    <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-8 border-b border-neutral-lightgray pb-4">
                         Gießen, Wetterau & Limburg Weilburg (Umland)
-                    </h3>
+                    </h2>
                     <LocationGrid locations={surroundingLocations} startIndex={lahnDillLocations.length} />
                 </div>
 
                 <Reveal animation="fade-in-up" delay={200}>
                     <div className="mt-space-24">
                         <div className="text-center mb-space-12">
-                            <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-4">Das Einsatzgebiet auf der Karte</h3>
+                            <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-4">Das Einsatzgebiet auf der Karte</h2>
                             <p className="text-neutral-midgray text-sm">Mit unserem Bauhof in Aßlar decken wir einen hochverdichteten Radius von ca. 35km hocheffizient ab.</p>
                         </div>
                         <InteractiveMap />

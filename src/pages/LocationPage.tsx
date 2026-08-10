@@ -34,8 +34,8 @@ export const LocationPage: React.FC = () => {
         <main className="bg-neutral-white min-h-screen">
             {/* ═══ 1. SEO HEAD INJECTION ═══ */}
             <SEO
-                title={locationConfig.metaTitle}
-                description={locationConfig.metaDescription}
+                title={`Gartenbau in ${locationConfig.name} | Ihr lokaler Landschaftsbau Experte`}
+                description={`Professioneller Garten- und Landschaftsbau in ${locationConfig.name}. Wir realisieren Ihre Gartenträume mit lokaler Expertise und höchster Qualität.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
                     { name: 'Standorte', url: '/standorte' },
@@ -94,9 +94,9 @@ export const LocationPage: React.FC = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-space-12">
                             {/* Lokale Referenzpunkte */}
                             <div>
-                                <h3 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6">
+                                <h2 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6">
                                     Unser Bezug zu {locationConfig.name}
-                                </h3>
+                                </h2>
                                 <p className="text-neutral-midgray text-sm mb-space-4">
                                     Wir kennen {locationConfig.name} ({locationConfig.plz}) im {locationConfig.region} mit seinen rund {locationConfig.einwohner} Einwohnern und den lokalen Gegebenheiten aus erster Hand.
                                 </p>
@@ -112,9 +112,9 @@ export const LocationPage: React.FC = () => {
 
                             {/* Trust Signals */}
                             <div>
-                                <h3 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6">
+                                <h2 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6">
                                     Warum Memo BauT in {locationConfig.name}?
-                                </h3>
+                                </h2>
                                 <ul className="space-y-3">
 
                                     <li className="flex items-start gap-3 text-sm text-neutral-darkgray">
@@ -147,9 +147,9 @@ export const LocationPage: React.FC = () => {
                 <Section bgVariant="white" className="py-12 md:py-16">
                     <Reveal animation="fade-in-up">
                         <div className="max-w-4xl mx-auto">
-                            <h3 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6 text-center">
+                            <h2 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-6 text-center">
                                 Auch in der Nähe von {locationConfig.name} tätig
-                            </h3>
+                            </h2>
                             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-space-4">
                                 {linkedLocations.map((loc) => (
                                     loc && (
@@ -164,7 +164,7 @@ export const LocationPage: React.FC = () => {
                                             </div>
                                             <p className="text-xs text-neutral-midgray">{loc.plz} · {loc.entfernungKm} km</p>
                                             <div className="flex items-center gap-1 mt-2 text-xs text-accent-base opacity-0 group-hover:opacity-100 transition-opacity">
-                                                <span>Mehr erfahren</span>
+                                                <span>Mehr zu {loc.name} erfahren</span>
                                                 <ArrowRight className="w-3 h-3" />
                                             </div>
                                         </Link>
@@ -180,7 +180,7 @@ export const LocationPage: React.FC = () => {
             <Section bgVariant="offwhite" className="py-16 md:py-24">
                 <Reveal animation="fade-in-up">
                     <div className="text-center mb-space-12 max-w-2xl mx-auto">
-                        <h3 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-4">Das gesamte Einsatzgebiet</h3>
+                        <h2 className="text-h3 font-sans font-bold text-neutral-darkgray mb-space-4">Das gesamte Einsatzgebiet</h2>
                         <p className="text-neutral-midgray text-sm">
                             Von {locationConfig.name} bis ins {locationConfig.entfernungKm > 30 ? 'ganze Rhein-Main-Gebiet' : 'gesamte Dilltal'} – wir sind in der Region für Sie stark aufgestellt.
                         </p>

@@ -29,8 +29,8 @@ export const ServiceDetailPage: React.FC = () => {
         <main className="bg-neutral-white min-h-screen">
             {/* ═══ SEO HEAD ═══ */}
             <SEO
-                title={service.metaTitle.replace(' | Memo-BauT', '')}
-                description={service.metaDescription}
+                title={`Professionelle ${service.title} von Ihrem Experten | Memo-BauT`}
+                description={`Erfahren Sie mehr über unsere Leistungen im Bereich ${service.title}. Wir bieten maßgeschneiderte Lösungen für Ihr Projekt im Garten- und Landschaftsbau.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
                     { name: 'Leistungen', url: '/services' },
@@ -184,7 +184,7 @@ export const ServiceDetailPage: React.FC = () => {
                                 className="inline-flex items-center justify-center gap-2 px-8 py-3 rounded-[var(--radius-md)] bg-accent-base text-neutral-darkgray font-bold text-sm hover:bg-accent-light transition-colors"
                             >
                                 <MessageCircle className="w-4 h-4" />
-                                Online anfragen
+                                Online anfragen für {service.title}
                             </Link>
                             <a
                                 href={`tel:${COMPANY_INFO.phone}`}
@@ -202,9 +202,9 @@ export const ServiceDetailPage: React.FC = () => {
             <Section bgVariant="white" className="py-12 md:py-16">
                 <Reveal animation="fade-in-up">
                     <div className="max-w-4xl mx-auto">
-                        <h3 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
+                        <h2 className="text-h4 font-sans font-bold text-neutral-darkgray mb-space-8 text-center">
                             Weitere Leistungen
-                        </h3>
+                        </h2>
                         <div className="grid grid-cols-1 sm:grid-cols-3 gap-space-4">
                             {otherServices.map(other => (
                                 <Link
@@ -212,11 +212,11 @@ export const ServiceDetailPage: React.FC = () => {
                                     to={`/leistungen/${other.slug}`}
                                     className="group p-space-6 rounded-[var(--radius-lg)] border border-neutral-lightgray/30 hover:border-accent-base/40 hover:shadow-elevation-2 transition-all duration-300 bg-neutral-offwhite"
                                 >
-                                    <h4 className="font-bold text-sm text-neutral-darkgray group-hover:text-accent-base transition-colors mb-2">
+                                    <h3 className="font-bold text-sm text-neutral-darkgray group-hover:text-accent-base transition-colors mb-2">
                                         {other.title}
-                                    </h4>
+                                    </h3>
                                     <div className="flex items-center gap-1 text-xs text-accent-base opacity-0 group-hover:opacity-100 transition-opacity">
-                                        <span>Details ansehen</span>
+                                        <span>Mehr zu {other.title} ansehen</span>
                                         <ArrowRight className="w-3 h-3" />
                                     </div>
                                 </Link>

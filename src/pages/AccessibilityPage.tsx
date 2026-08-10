@@ -10,7 +10,7 @@ export const AccessibilityPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Barrierefreiheit | Memo BauT"
+                title="Digitale Barrierefreiheit & Inklusion | Memo BauT"
                 description={`Barrierefreiheitserklärung der ${COMPANY_INFO.name}. Informationen zu unserem Engagement für digitale Barrierefreiheit, Konformitätsstatus und Feedback-Möglichkeiten.`}
                 breadcrumbs={[
                     { name: 'Home', url: '/' },

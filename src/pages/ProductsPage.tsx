@@ -90,7 +90,7 @@ export const ProductsPage: React.FC = () => {
     return (
         <main className="bg-neutral-white min-h-screen">
             <SEO
-                title="Produkte | Baumaterialien & Werkzeuge"
+                title="Hochwertige Baumaterialien & Werkzeuge online entdecken"
                 description="Entdecken Sie unser umfangreiches Sortiment an Baumaterialien, Werkzeugen und technischem Zubehör. Qualitätsprodukte für Profis und Heimwerker."
                 breadcrumbs={[
                     { name: 'Home', url: '/' },
@@ -156,10 +156,10 @@ export const ProductsPage: React.FC = () => {
                     <Reveal animation="fade-in">
                         <aside className="lg:w-64 flex-shrink-0">
                             <div className="bg-neutral-white rounded-[var(--radius-lg)] border border-neutral-lightgray p-space-6 sticky top-24 shadow-elevation-1">
-                                <h3 className="font-sans font-bold text-neutral-darkgray mb-space-4 flex items-center gap-2">
+                                <h2 className="font-sans font-bold text-neutral-darkgray mb-space-4 flex items-center gap-2">
                                     <Filter className="w-4 h-4 text-accent-base" />
                                     Kategorien
-                                </h3>
+                                </h2>
                                 <ul className="space-y-space-2">
                                     <li>
                                         <button
@@ -193,7 +193,7 @@ export const ProductsPage: React.FC = () => {
                                 {/* B2B Hint */}
                                 {profile.segment === 'unknown' && (
                                     <div className="mt-space-6 p-space-4 bg-accent-base/5 rounded-[var(--radius-md)] border border-accent-base/20">
-                                        <h4 className="font-sans font-bold text-sm text-neutral-darkgray mb-2">Handwerksbetrieb?</h4>
+                                        <h3 className="font-sans font-bold text-sm text-neutral-darkgray mb-2">Handwerksbetrieb?</h3>
                                         <p className="text-xs text-neutral-midgray mb-3 font-normal">
                                             Profitieren Sie von unseren exklusiven Partnerkonditionen!
                                         </p>
@@ -237,7 +237,7 @@ export const ProductsPage: React.FC = () => {
                             <Reveal animation="scale-in">
                                 <div className="text-center py-16 bg-neutral-white rounded-[var(--radius-lg)] border border-neutral-lightgray">
                                     <Package className="w-16 h-16 text-neutral-midgray mx-auto mb-space-4 opacity-50" />
-                                    <h3 className="text-xl font-sans font-bold text-neutral-darkgray mb-space-2">Keine Produkte gefunden</h3>
+                                    <h2 className="text-xl font-sans font-bold text-neutral-darkgray mb-space-2">Keine Produkte gefunden</h2>
                                     <p className="text-neutral-midgray font-normal mb-space-8">
                                         Versuchen Sie es mit anderen Suchbegriffen oder Kategorien.
                                     </p>
