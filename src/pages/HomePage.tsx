@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ArrowRight, ChevronDown, Leaf, PenTool, Shield, Award, CheckCircle, Plus, Minus } from 'lucide-react';
+import { ArrowRight, ChevronDown, Leaf, PenTool, Shield, Award, CheckCircle } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { SERVICES, COMPANY_INFO } from '../core/constants';
 import { Button } from '../components/common/Button';

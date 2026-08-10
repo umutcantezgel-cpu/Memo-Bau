@@ -6,7 +6,7 @@ import { SEO } from '../components/common/SEO';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
 import { PageHero } from '../components/common/PageHero';
-import { CheckCircle, ArrowRight, Phone, MessageCircle, ChevronDown } from 'lucide-react';
+import { CheckCircle, ArrowRight, Phone, MessageCircle } from 'lucide-react';
 
 export const ServiceDetailPage: React.FC = () => {
     const { serviceSlug } = useParams<{ serviceSlug: string }>();

@@ -4,7 +4,7 @@ import { BLOG_POSTS } from '../core/blog.data';
 import { SEO } from '../components/common/SEO';
 import { Section } from '../components/layout/Section';
 import { Reveal } from '../components/common/Reveal';
-import { Clock, Calendar, ArrowLeft, CheckCircle, ChevronDown } from 'lucide-react';
+import { Clock, Calendar, ArrowLeft, CheckCircle } from 'lucide-react';
 
 export const BlogPostPage: React.FC = () => {
     const { postSlug } = useParams<{ postSlug: string }>();
